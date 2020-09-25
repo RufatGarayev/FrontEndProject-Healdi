@@ -85,6 +85,15 @@ main{
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 160px;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 38, 51, 0.5);
+          }
 
     }
     // best-doctors section end
