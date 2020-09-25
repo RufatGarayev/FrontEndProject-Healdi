@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  height: 60px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+header .header-links a {
+  color: black;
+  font-weight: 700;
+}
+
+header .header-links a:hover {
+  text-decoration: none;
+}
+
+header .header-links span {
+  padding: 0 10px 0 10px;
+}
+/*# sourceMappingURL=style.css.map */
