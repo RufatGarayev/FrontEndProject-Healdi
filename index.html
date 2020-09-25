@@ -1,58 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="scss/style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="scss/style.css" />
+  </head>
+  <body>
     <header class="d-flex align-items-center">
-        <div class="container p-0">
-            <div class="row">
-                <div class="col-lg-6 pl-0">
-                    <div class="covid">
-                        <h6>
-                            !Global update on Coronavirus disease <a href="#">(COVID-19)</a> Pandemic
-                        </h6>
-                    </div>
-                </div>
-                <div class="col-lg-6 pr-0">
-                    <div class="row">
-                        <div class="col-lg-9">
-                            <div class="header-links d-flex justify-content-end">
-                                <a href="#">Online Appointment</a>
-                                <span>|</span>
-                                <a href="#">WebMail</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="social-media d-flex justify-content-around">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="container p-0">
+        <div class="row">
+          <div class="col-lg-6 pl-0">
+            <div class="covid">
+              <h6>
+                !Global update on Coronavirus disease
+                <a href="#">(COVID-19)</a> Pandemic
+              </h6>
             </div>
+          </div>
+          <div class="col-lg-6 pr-0">
+            <div class="row">
+              <div class="col-lg-9">
+                <div class="header-links d-flex justify-content-end">
+                  <a href="#">Online Appointment</a>
+                  <span>|</span>
+                  <a href="#">WebMail</a>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="social-media d-flex justify-content-around">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </header>
-    <nav>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="website-logo">
-                        <img class="img-fluid" src="img/logo.png" alt="">
+    <nav class="d-flex align-items-center">
+      <div class="container p-0">
+        <div class="row">
+          <div class="col-lg-3 p-0">
+            <div class="website-logo d-flex align-items-center">
+              <a href="#"><img class="img-fluid" src="img/logo.png" alt=""/></a>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="menu d-flex justify-content-end align-items-center">
+              <ul class="m-0 d-flex align-items-center justify-content-around">
+                <li>
+                  <a href="#">HOME <i class="fas fa-angle-down"></i></a>
+                  <!-- <div class="dropdown dropdown-1">
+                    <ul>
+                      <li><a href="#"> Home Version One</a></li>
+                      <li><a href="#"> Home Version Two</a></li>
+                      <li><a href="#"> Home Version Three</a></li>
+                    </ul>
+                  </div> -->
+                </li>
+                <li>
+                  <a href="#">PAGES <i class="fas fa-angle-down"></i></a>
+                </li>
+                <li>
+                  <a href="#">DEPARTMENTS <i class="fas fa-angle-down"></i></a>
+                </li>
+                <li>
+                  <a href="#">DOCTORS <i class="fas fa-angle-down"></i></a>
+                </li>
+                <li>
+                  <a href="#">BLOG <i class="fas fa-angle-down"></i></a>
+                </li>
+                <li>
+                  <a href="#">CONTACT <i class="fas fa-angle-down"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 p-0">
+            <div
+              class="contact d-flex justify-content-around align-items-center"
+            >
+              <i class="fas fa-stethoscope"></i>
+              <p class="m-0">
+                EMERGENCY <br />
+                <span>+123 456 7890</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+        <section id="best-doctors">
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="block">
+                        <h4>Good Doctor, Healthy Life</h4>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </section>
+    </main>
 
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>

@@ -4,6 +4,7 @@ body {
   box-sizing: border-box;
 }
 
+// header start
 header {
   height: 60px;
   border-top: 1px solid gray;
@@ -22,8 +23,70 @@ header {
       padding: 0 10px 0 10px;
     }
   }
+  .social-media {
+    a {
+      color: black;
+    }
+  }
 }
+// header end
+// nav start
+nav {
+  height: 100px;
+  .website-logo {
+    height: 100%;
+  }
+  .menu {
+    height: 100%;
+    ul {
+      width: 100%;
+    }
+    li {
+      list-style: none;
+    //   .dropdown{
+    //       height: 150px;
+    //       width: 250px;
+    //       background-color: cadetblue;
+    //   }
+    }
+    li a {
+      color: black;
+      font-size: 90%;
+      font-weight: 600;
+      &:hover {
+        text-decoration: none;
+        color: #48d1cc;
+      }
+    }
+  }
+  .contact {
+    height: 100%;
+    p{
+        font-size: 13px;
+        color: #A52A2A;
+        span{
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+    i {
+      color: #48d1cc;
+      font-size: 45px;
+    }
+  }
+}
+// nav end
+// main start
+main{
+    // best-doctors section start
+    #best-doctors{
+        background-image: url(../img/doctors1.jpg);
+        height: 100vh;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
 
-nav{
-    
+    }
+    // best-doctors section end
 }
+// main end

@@ -23,4 +23,66 @@ header .header-links a:hover {
 header .header-links span {
   padding: 0 10px 0 10px;
 }
+
+header .social-media a {
+  color: black;
+}
+
+nav {
+  height: 100px;
+}
+
+nav .website-logo {
+  height: 100%;
+}
+
+nav .menu {
+  height: 100%;
+}
+
+nav .menu ul {
+  width: 100%;
+}
+
+nav .menu li {
+  list-style: none;
+}
+
+nav .menu li a {
+  color: black;
+  font-size: 90%;
+  font-weight: 600;
+}
+
+nav .menu li a:hover {
+  text-decoration: none;
+  color: #48d1cc;
+}
+
+nav .contact {
+  height: 100%;
+}
+
+nav .contact p {
+  font-size: 13px;
+  color: #A52A2A;
+}
+
+nav .contact p span {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+nav .contact i {
+  color: #48d1cc;
+  font-size: 45px;
+}
+
+main #best-doctors {
+  background-image: url(../img/doctors1.jpg);
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 /*# sourceMappingURL=style.css.map */
