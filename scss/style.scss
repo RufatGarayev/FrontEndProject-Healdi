@@ -9,15 +9,15 @@
 // header start
 header {
   height: 60px;
-  border-top: 1px solid #E4E4E4;
-  border-bottom: 1px solid #E4E4E4;
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
   .covid {
     h6 {
       font-family: $website-font-family;
       font-size: 15px;
       color: #976666;
       font-weight: 400;
-      a{
+      a {
         color: black;
         text-decoration: underline;
         font-weight: 500;
@@ -38,7 +38,7 @@ header {
 
     span {
       padding: 0 15px 0 15px;
-      color: #E4E4E4;
+      color: #e4e4e4;
       font-weight: 200;
       font-size: 14px;
     }
@@ -59,17 +59,77 @@ nav {
     height: 100%;
   }
   .menu {
-    height: 100%;
+    position: relative;
+    height: 90px;
     ul {
       width: 100%;
     }
     li {
       list-style: none;
-      //   .dropdown{
-      //       height: 150px;
-      //       width: 250px;
-      //       background-color: cadetblue;
-      //   }
+      display: flex;
+      align-items: center;
+      height: 90px;
+      // line-height: 90px;
+      &:hover .submenu {
+        display: inline-block;
+      }
+      .submenu {
+        height: 150px;
+        width: 250px;
+        background-color: white;
+        box-shadow: 0 -1px 10px #d4cece;
+        position: absolute;
+        top: 90px;
+        left: 5px;
+        display: none;
+        z-index: 1;
+        ul {
+          li {
+            padding-left: 15px;
+            height: 50px;
+          }
+          .first-li {
+            border-bottom: 1px solid #e4e4e4;
+          }
+          .second-li {
+            border-top: 1px solid #e4e4e4;
+            border-bottom: 1px solid #e4e4e4;
+          }
+          .third-li {
+            border-bottom: 1px solid #e4e4e4;
+          }
+          .fourth-li {
+            border-top: 1px solid #e4e4e4;
+            border-bottom: 1px solid #e4e4e4;
+          }
+          .sixth-li {
+            border-top: 1px solid #e4e4e4;
+          }
+        }
+      }
+      .submenu-2 {
+        position: absolute;
+        top: 90px;
+        left: 95px;
+      }
+      .submenu-3 {
+        height: 200px;
+        position: absolute;
+        top: 90px;
+        left: 193px;
+      }
+      .submenu-4 {
+        height: 100px;
+        position: absolute;
+        top: 90px;
+        left: 345px;
+      }
+      .submenu-5 {
+        height: 300px;
+        position: absolute;
+        top: 90px;
+        left: 465px;
+      }
     }
     li a {
       color: black;
@@ -78,7 +138,7 @@ nav {
       font-family: $website-font-family;
       &:hover {
         text-decoration: none;
-        color: #1EBEB6;
+        color: #1ebeb6;
       }
     }
   }
@@ -96,7 +156,7 @@ nav {
       }
     }
     i {
-      color: #1EBEB6;
+      color: #1ebeb6;
       font-size: 46px;
       padding-right: 11px;
     }
@@ -119,7 +179,7 @@ main {
       left: 0;
       height: 100%;
       width: 100%;
-      background-color: rgba(0, 38, 51, 0.5);
+      background-color: rgba(38, 39, 39, 0.6);
     }
   }
   // best-doctors section end
