@@ -1,4 +1,6 @@
-body {
+@import "partials/variables";
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,32 +9,52 @@ body {
 // header start
 header {
   height: 60px;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
+  border-top: 1px solid #E4E4E4;
+  border-bottom: 1px solid #E4E4E4;
+  .covid {
+    h6 {
+      font-family: $website-font-family;
+      font-size: 15px;
+      color: #976666;
+      font-weight: 400;
+      a{
+        color: black;
+        text-decoration: underline;
+        font-weight: 500;
+      }
+    }
+  }
 
   .header-links {
     a {
       color: black;
       font-weight: 700;
+      font-family: $website-font-family;
+      font-size: 15px;
       &:hover {
         text-decoration: none;
       }
     }
 
     span {
-      padding: 0 10px 0 10px;
+      padding: 0 15px 0 15px;
+      color: #E4E4E4;
+      font-weight: 200;
+      font-size: 14px;
     }
   }
   .social-media {
     a {
       color: black;
+      font-size: 15px;
+      font-weight: 600;
     }
   }
 }
 // header end
 // nav start
 nav {
-  height: 100px;
+  height: 90px;
   .website-logo {
     height: 100%;
   }
@@ -43,59 +65,63 @@ nav {
     }
     li {
       list-style: none;
-    //   .dropdown{
-    //       height: 150px;
-    //       width: 250px;
-    //       background-color: cadetblue;
-    //   }
+      //   .dropdown{
+      //       height: 150px;
+      //       width: 250px;
+      //       background-color: cadetblue;
+      //   }
     }
     li a {
       color: black;
-      font-size: 90%;
+      font-size: 13px;
       font-weight: 600;
+      font-family: $website-font-family;
       &:hover {
         text-decoration: none;
-        color: #48d1cc;
+        color: #1EBEB6;
       }
     }
   }
   .contact {
     height: 100%;
-    p{
-        font-size: 13px;
-        color: #A52A2A;
-        span{
-            font-size: 18px;
-            font-weight: 700;
-        }
+    p {
+      font-weight: 600;
+      font-size: 12px;
+      color: #787878;
+      font-family: $website-font-family;
+      span {
+        font-size: 18px;
+        font-weight: 800;
+        color: #666666;
+      }
     }
     i {
-      color: #48d1cc;
-      font-size: 45px;
+      color: #1EBEB6;
+      font-size: 46px;
+      padding-right: 11px;
     }
   }
 }
 // nav end
 // main start
-main{
-    // best-doctors section start
-    #best-doctors{
-        background-image: url(../img/doctors1.jpg);
-        height: 100vh;
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        &::after {
-            content: "";
-            position: absolute;
-            top: 160px;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            background-color: rgba(0, 38, 51, 0.5);
-          }
-
+main {
+  // best-doctors section start
+  #best-doctors {
+    background-image: url(../img/doctors1.jpg);
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 150px;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 38, 51, 0.5);
     }
-    // best-doctors section end
+  }
+  // best-doctors section end
 }
 // main end

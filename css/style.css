@@ -1,4 +1,4 @@
-body {
+* {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -7,13 +7,28 @@ body {
 
 header {
   height: 60px;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
+  border-top: 1px solid #E4E4E4;
+  border-bottom: 1px solid #E4E4E4;
+}
+
+header .covid h6 {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  color: #976666;
+  font-weight: 400;
+}
+
+header .covid h6 a {
+  color: black;
+  text-decoration: underline;
+  font-weight: 500;
 }
 
 header .header-links a {
   color: black;
   font-weight: 700;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
 }
 
 header .header-links a:hover {
@@ -21,15 +36,20 @@ header .header-links a:hover {
 }
 
 header .header-links span {
-  padding: 0 10px 0 10px;
+  padding: 0 15px 0 15px;
+  color: #E4E4E4;
+  font-weight: 200;
+  font-size: 14px;
 }
 
 header .social-media a {
   color: black;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 nav {
-  height: 100px;
+  height: 90px;
 }
 
 nav .website-logo {
@@ -50,13 +70,14 @@ nav .menu li {
 
 nav .menu li a {
   color: black;
-  font-size: 90%;
+  font-size: 13px;
   font-weight: 600;
+  font-family: "Inter", sans-serif;
 }
 
 nav .menu li a:hover {
   text-decoration: none;
-  color: #48d1cc;
+  color: #1EBEB6;
 }
 
 nav .contact {
@@ -64,18 +85,22 @@ nav .contact {
 }
 
 nav .contact p {
-  font-size: 13px;
-  color: #A52A2A;
+  font-weight: 600;
+  font-size: 12px;
+  color: #787878;
+  font-family: "Inter", sans-serif;
 }
 
 nav .contact p span {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 800;
+  color: #666666;
 }
 
 nav .contact i {
-  color: #48d1cc;
-  font-size: 45px;
+  color: #1EBEB6;
+  font-size: 46px;
+  padding-right: 11px;
 }
 
 main #best-doctors {
@@ -89,7 +114,7 @@ main #best-doctors {
 main #best-doctors::after {
   content: "";
   position: absolute;
-  top: 160px;
+  top: 150px;
   left: 0;
   height: 100%;
   width: 100%;
