@@ -176,7 +176,7 @@ main {
       position: absolute;
       top: 150px;
       left: 0;
-      height: 100%;
+      height: 102.3%;
       width: 100%;
       background-color: rgba(38, 39, 39, 0.6);
     }
@@ -281,7 +281,7 @@ main {
   // about section start
   #about {
     background-color: #f7f7f7;
-    padding: 120px 0 120px 0;
+    padding: 120px 0 160px 0;
     position: relative;
 
     .play-box {
@@ -434,5 +434,182 @@ main {
     }
   }
   // about section end
-  // main end
+
+  // services section start
+  #services {
+    padding-bottom: 120px;
+    background-color: #f7f7f7;
+    position: relative;
+    z-index: 1;
+    .shape {
+      img {
+        opacity: 0.1;
+        // z-index: 10;
+        position: absolute;
+        left: 0;
+        top: 55px;
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .services-caption {
+      padding-bottom: 60px;
+      h4 {
+        color: #1ebeb6;
+        font-weight: 600;
+        font-size: 22px;
+      }
+      h2 {
+        display: inline-block;
+        font-weight: 600;
+        padding-bottom: 20px;
+        margin-bottom: 0;
+        position: relative;
+        letter-spacing: 1px;
+        color: #233645;
+        &::before {
+          background: #1ebeb6 none repeat scroll 0 0;
+          bottom: 0;
+          content: "";
+          height: 3px;
+          left: 50%;
+          margin-left: -25px;
+          position: absolute;
+          width: 40px;
+        }
+        &::after {
+          background: #1ebeb6 none repeat scroll 0 0;
+          bottom: 0;
+          content: "";
+          height: 3px;
+          left: 50%;
+          margin-left: 20px;
+          position: absolute;
+          width: 5px;
+        }
+      }
+      p {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 30px;
+        margin: 0;
+        padding: 0 20px;
+        color: #666666;
+      }
+    }
+
+    // .owl-dots {
+    //   margin-top: 20px;
+    //   button {
+    //     &:focus {
+    //       outline: none;
+    //     }
+    //     span {
+    //       display: block;
+    //       height: 20px;
+    //       width: 20px;
+    //       margin: 0 5px;
+    //       border-radius: 50%;
+    //       background: #ffffff;
+    //       position: relative;
+    //       border: 2px solid #cccccc;
+    //       &::after {
+    //         content: "";
+    //         position: absolute;
+    //         left: 5px;
+    //         top: 5px;
+    //         background: #1ebeb6;
+    //         height: 5px;
+    //         width: 5px;
+    //         border-radius: 50%;
+    //       }
+    //     }
+    //   }
+    // }
+
+    .item {
+      box-shadow: 0 0 10px #e7e7e7;
+      background: #ffffff;
+      overflow: hidden;
+      z-index: 0;
+      .img-box {
+        margin: 10px;
+        margin-bottom: 0;
+      }
+      .info {
+        padding: 30px;
+        position: relative;
+        &::after {
+          content: "";
+          height: 150px;
+          width: 150px;
+          position: absolute;
+          right: -50px;
+          bottom: -80px;
+          background: url(../img/shape2.png);
+          background-size: contain;
+          z-index: 0;
+          background-repeat: no-repeat;
+          transform: rotate(-45deg);
+          opacity: 0.3;
+        }
+        h4 {
+          margin-bottom: 15px;
+          a {
+            color: #233645;
+            font-size: 22px;
+            font-weight: 700;
+          }
+        }
+        p {
+          font-size: 15px;
+          line-height: 30px;
+          color: #666666;
+        }
+        .slide-footer {
+          p {
+            strong {
+              color: #232323;
+              font-weight: 600;
+            }
+            color: #525252;
+          }
+        }
+        .link {
+          a {
+            i {
+              height: 45px;
+              width: 45px;
+              line-height: 45px;
+              text-align: center;
+              background: linear-gradient(
+                90deg,
+                rgba(30, 190, 182, 1) 0%,
+                rgba(0, 130, 124, 1) 100%
+              );
+              color: #ffffff;
+              border-radius: 50%;
+              position: relative;
+              z-index: 1;
+              // font-size: 14px;
+              &::after {
+                content: "";
+                opacity: 0.5;
+                position: absolute;
+                left: -10%;
+                top: -10%;
+                height: 120%;
+                width: 120%;
+                border-radius: 50%;
+                background-color: #1ebeb6;
+                z-index: -1;
+              }
+            }
+          }
+        }
+      }
+      // services section end
+      // main end
+    }
+  }
 }
