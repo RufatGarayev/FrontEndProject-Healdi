@@ -15,3 +15,15 @@ navLinks.forEach((link) => {
     link.lastChild.classList.remove("fa-angle-up");
   });
 });
+
+$(document).ready(function () {
+  $(".play-btn").click(function () {
+    $(".play-box").css("display", "flex");
+  });
+
+  $(".play-box").click(function (e) {
+    if ($(this).hasClass("play-box")) {
+      $(".play-box").css("display", "none");
+    }
+  });
+});
