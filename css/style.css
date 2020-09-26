@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+body {
+  font-family: "Inter", sans-serif;
+}
+
 header {
   height: 60px;
   border-top: 1px solid #e4e4e4;
@@ -12,7 +16,6 @@ header {
 }
 
 header .covid h6 {
-  font-family: "Inter", sans-serif;
   font-size: 15px;
   color: #976666;
   font-weight: 400;
@@ -27,7 +30,6 @@ header .covid h6 a {
 header .header-links a {
   color: black;
   font-weight: 700;
-  font-family: "Inter", sans-serif;
   font-size: 15px;
 }
 
@@ -151,7 +153,6 @@ nav .menu li a {
   color: black;
   font-size: 13px;
   font-weight: 600;
-  font-family: "Inter", sans-serif;
 }
 
 nav .menu li a:hover {
@@ -167,7 +168,6 @@ nav .contact p {
   font-weight: 600;
   font-size: 12px;
   color: #787878;
-  font-family: "Inter", sans-serif;
 }
 
 nav .contact p span {
@@ -182,7 +182,7 @@ nav .contact i {
   padding-right: 11px;
 }
 
-main #best-doctors {
+main #banner {
   background-image: url(../img/doctors1.jpg);
   height: 100vh;
   background-position: center center;
@@ -190,7 +190,7 @@ main #best-doctors {
   background-repeat: no-repeat;
 }
 
-main #best-doctors::after {
+main #banner::after {
   content: "";
   position: absolute;
   top: 150px;
@@ -198,5 +198,106 @@ main #best-doctors::after {
   height: 100%;
   width: 100%;
   background-color: rgba(38, 39, 39, 0.6);
+}
+
+main #banner .block h4 {
+  color: white;
+}
+
+main #banner .block h1 {
+  color: white;
+}
+
+main #entry {
+  padding: 120px 0 120px 0;
+  background-color: #ffffff;
+}
+
+main #entry .box i {
+  display: inline-block;
+  font-size: 40px;
+  margin-bottom: 40px;
+  color: #1ebeb6;
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+}
+
+main #entry .box i::after {
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  content: "";
+  height: 120px;
+  width: 120px;
+  background: url(https://webhunt.store/themeforest/healdi/assets/img/shape/3.svg);
+  background-size: contain;
+  z-index: -2;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+main #entry .box h4 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+main #entry .box p {
+  color: #767676;
+  font-size: 15px;
+  line-height: 28px;
+  border-bottom: 1px dashed #cccccc;
+}
+
+main #entry .box .phone span {
+  color: #767676;
+}
+
+main #entry .box .phone p {
+  color: #666666;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+}
+
+main #entry .doctor-pic {
+  position: relative;
+  z-index: 1;
+}
+
+main #entry .doctor-pic::after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  content: "";
+  height: 300px;
+  width: 300px;
+  background: #1ebeb6;
+  z-index: -1;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+main #entry .doctor-pic::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  content: "";
+  height: 350px;
+  width: 350px;
+  background: #1ebeb6;
+  z-index: -1;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  opacity: 0.1;
+}
+
+main #entry .doctor-pic img {
+  vertical-align: middle;
 }
 /*# sourceMappingURL=style.css.map */
