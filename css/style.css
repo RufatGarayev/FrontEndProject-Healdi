@@ -638,4 +638,142 @@ main #services .item .info .link a i::after {
   background-color: #1ebeb6;
   z-index: -1;
 }
+
+main #consultation {
+  padding: 120px 0 120px 0;
+}
+
+main #consultation .main-holder {
+  padding-right: 30px;
+}
+
+main #consultation .main-holder .text h2 {
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #233645;
+}
+
+main #consultation .main-holder .text p {
+  padding-bottom: 15px;
+  font-size: 15px;
+  line-height: 30px;
+  color: #666666;
+}
+
+main #consultation .main-holder .consult-item {
+  padding: 35px;
+  text-align: center;
+  border: 2px solid #1ebeb6;
+}
+
+main #consultation .main-holder .consult-item i {
+  color: #1ebeb6;
+  font-size: 55px;
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+main #consultation .main-holder .consult-item h5 {
+  color: #233645;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+main #consultation .appoinment-box {
+  background: #1ebeb6;
+  padding: 60px 37px;
+  position: relative;
+}
+
+main #consultation .appoinment-box:after {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: -30px;
+  height: 100%;
+  width: 100%;
+  background: #1ebeb6;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+main #consultation .appoinment-box .header {
+  text-align: center !important;
+}
+
+main #consultation .appoinment-box .header h4 {
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: 600;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+main #consultation .appoinment-box .header h4::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -60px;
+  height: 100%;
+  width: 30%;
+  background: url(../img/devider-light.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 10;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+main #consultation .appoinment-box form .form-group {
+  margin-bottom: 16px;
+}
+
+main #consultation .appoinment-box form .form-group .form-control {
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 30px;
+  min-height: 50px;
+  background: #35c5bd;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 0 25px;
+}
+
+main #consultation .appoinment-box form .form-group select {
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  background: #35c5bd;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  position: relative;
+  text-align: left !important;
+  margin-bottom: 15px;
+  padding: 0 25px;
+  outline: none;
+}
+
+main #consultation .appoinment-box form .form-group select option {
+  background-color: #f6f6f6;
+  color: black;
+  font-weight: bold;
+  height: 40px !important;
+  line-height: 40px;
+  list-style: none;
+  min-height: 40px;
+  border: none;
+  outline: none;
+  padding-left: 18px;
+  padding-right: 29px;
+  text-align: left;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+main #consultation .appoinment-box form .form-group select option:hover {
+  background-color: #D2F2F0;
+}
 /*# sourceMappingURL=style.css.map */
