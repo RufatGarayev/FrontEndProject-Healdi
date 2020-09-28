@@ -644,7 +644,8 @@ main #consultation {
 }
 
 main #consultation .main-holder {
-  padding-right: 30px;
+  padding-top: 60px;
+  padding-right: 60px;
 }
 
 main #consultation .main-holder .text h2 {
@@ -751,7 +752,6 @@ main #consultation .appoinment-box form .form-group select {
   border: 1px solid rgba(255, 255, 255, 0.4);
   position: relative;
   text-align: left !important;
-  margin-bottom: 15px;
   padding: 0 25px;
   outline: none;
 }
@@ -759,21 +759,38 @@ main #consultation .appoinment-box form .form-group select {
 main #consultation .appoinment-box form .form-group select option {
   background-color: #f6f6f6;
   color: black;
-  font-weight: bold;
-  height: 40px !important;
+  font-weight: 400;
+  height: 40px;
   line-height: 40px;
   list-style: none;
-  min-height: 40px;
   border: none;
   outline: none;
   padding-left: 18px;
   padding-right: 29px;
   text-align: left;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 
 main #consultation .appoinment-box form .form-group select option:hover {
-  background-color: #D2F2F0;
+  background-color: #d2f2f0;
+}
+
+main #consultation .appoinment-box form button {
+  padding: 12px 40px;
+  background: #ffffff;
+  color: #1ebeb6;
+  text-transform: capitalize;
+  font-weight: 600;
+  width: 100%;
+  border: none;
+  border-radius: 30px;
+}
+
+main #consultation .appoinment-box form button:focus {
+  border: none !important;
+  -webkit-box-shadow: inherit !important;
+          box-shadow: inherit !important;
+  outline: inherit !important;
 }
 /*# sourceMappingURL=style.css.map */

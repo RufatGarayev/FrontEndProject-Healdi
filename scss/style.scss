@@ -616,7 +616,8 @@ main {
   #consultation {
     padding: 120px 0 120px 0;
     .main-holder {
-      padding-right: 30px;
+      padding-top: 60px;
+      padding-right: 60px;
       .text {
         h2 {
           font-weight: 600;
@@ -712,28 +713,41 @@ main {
             border: 1px solid rgba(255, 255, 255, 0.4);
             position: relative;
             text-align: left !important;
-            margin-bottom: 15px;
             padding: 0 25px;
             outline: none;
 
             option {
               background-color: #f6f6f6;
               color: black;
-              font-weight: bold;
-              height: 40px !important;
+              font-weight: 400;
+              height: 40px;
               line-height: 40px;
               list-style: none;
-              min-height: 40px;
               border: none;
               outline: none;
               padding-left: 18px;
               padding-right: 29px;
               text-align: left;
-              transition: all 0.2s;
-              &:hover{
-                background-color: #D2F2F0;
+              transition: 0.3s linear;
+              &:hover {
+                background-color: #d2f2f0;
               }
             }
+          }
+        }
+        button {
+          padding: 12px 40px;
+          background: #ffffff;
+          color: #1ebeb6;
+          text-transform: capitalize;
+          font-weight: 600;
+          width: 100%;
+          border: none;
+          border-radius: 30px;
+          &:focus {
+            border: none !important;
+            box-shadow: inherit !important;
+            outline: inherit !important;
           }
         }
       }
