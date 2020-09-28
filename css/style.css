@@ -793,4 +793,57 @@ main #consultation .appoinment-box form button:focus {
           box-shadow: inherit !important;
   outline: inherit !important;
 }
+
+main #choose-us .bg-cover {
+  background-image: url(../img/doctor3.jpg);
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  background-position: center center !important;
+  background-size: cover !important;
+  height: 100%;
+}
+
+main #choose-us .info-box {
+  padding: 80px 50px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.08);
+  position: relative;
+  left: -120px;
+  border-bottom: 3px solid #1ebeb6;
+}
+
+main #choose-us .info-box h5 {
+  color: #1ebeb6;
+  font-weight: 600;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+main #choose-us .info-box h2 {
+  font-weight: 600;
+  margin-bottom: 25px;
+  font-size: 32px;
+}
+
+main #choose-us .info-box p {
+  font-size: 15px;
+  line-height: 30px;
+  color: #666666;
+}
+
+main #choose-us .info-box .btn {
+  margin-top: 15px;
+  position: relative;
+  z-index: 1;
+  color: #ffffff !important;
+  padding: 15px 25px;
+  font-weight: 700;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  overflow: hidden;
+  border-radius: 5px;
+  font-size: 17px;
+}
 /*# sourceMappingURL=style.css.map */
