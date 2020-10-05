@@ -32,21 +32,37 @@ $(document).ready(function () {
 // play-box popup effect end
 
 // services-owlCarousel start
-$('.owl-carousel').owlCarousel({
-  loop:false,
-  margin:30,
-  nav:false,
-  dot: true, 
-  responsive:{
-      0:{
-          items:1
-      },
-      600:{
-          items:2
-      },
-      1000:{
-          items:3
-      }
-  }
-})
+$(".owl-carousel").owlCarousel({
+  loop: false,
+  margin: 30,
+  nav: false,
+  dot: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 2,
+    },
+    1000: {
+      items: 3,
+    },
+  },
+});
 // services-owlCarousel end
+
+// doctors-section tab start
+let myBtn = document.querySelectorAll(".nav-link");
+
+myBtn.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    // if(btn.classList.contains("active")){
+    //   btn.style.color = "yellow";
+    // }
+    document.querySelector(".active").classList.remove("active");
+    document.querySelector(".show").classList.remove("show");
+    document.getElementById(this.dataset.targetSection).classList.add("show");
+    document.getElementById(this.dataset.targetSection).classList.add("active");
+  });
+});
+// doctors-section tab end

@@ -889,6 +889,7 @@ main #choose-us .info-box-holder .info-box .btn2:hover {
 }
 
 main #doctors {
+  background-color: #f7f7f7;
   padding: 120px 0 120px 0;
 }
 
@@ -937,5 +938,114 @@ main #doctors .caption p {
   margin-top: 20px;
   padding: 0 20px;
   line-height: 30px;
+}
+
+main #doctors .doctor-segments {
+  padding-top: 60px;
+}
+
+main #doctors .doctor-segments ul {
+  display: block;
+  margin-right: 50px;
+  background-color: #e1f1f1;
+}
+
+main #doctors .doctor-segments ul li a {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #233645;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  padding: 20px 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #doctors .doctor-segments .tab-content {
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+main #doctors .doctor-segments .tab-content .content {
+  display: none;
+}
+
+main #doctors .doctor-segments .tab-content .content.show {
+  display: block;
+}
+
+main #doctors .doctor-segments .tab-content .box {
+  padding-bottom: 30px;
+}
+
+main #doctors .doctor-segments .tab-content .info {
+  padding: 43px 40px;
+  background: #ffffff;
+  position: relative;
+}
+
+main #doctors .doctor-segments .tab-content .info::after {
+  position: absolute;
+  left: -15px;
+  top: 30px;
+  content: "";
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #ffffff;
+}
+
+main #doctors .doctor-segments .tab-content .info h4 {
+  color: #233645;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+main #doctors .doctor-segments .tab-content .info span {
+  color: #32c4bd;
+  font-size: 15px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+main #doctors .doctor-segments .tab-content .info p {
+  color: #6f6f6f;
+  font-size: 15px;
+  line-height: 30px;
+  padding-bottom: 15px;
+}
+
+main #doctors .doctor-segments .tab-content .info a {
+  background: -webkit-gradient(linear, left top, right top, from(#1ebeb6), to(#00827c));
+  background: linear-gradient(90deg, #1ebeb6 0%, #00827c 100%);
+  z-index: 1;
+  color: #ffffff;
+  padding: 16px 25px;
+  font-weight: 700;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  overflow: hidden;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+main #doctors .doctor-segments .tab-content .info a:hover {
+  text-decoration: none;
+}
+
+main #doctors .doctor-segments .tab-content .info a i {
+  font-size: 14px;
+  height: 30px;
+  background: #ffffff;
+  color: #1ebeb6;
+  line-height: 30px;
+  text-align: center;
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 5px;
 }
 /*# sourceMappingURL=style.css.map */
