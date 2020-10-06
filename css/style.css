@@ -249,6 +249,36 @@ main #banner .carousel-item .layer i {
   opacity: 0.3;
 }
 
+main #banner .carousel-item .layer .btn-box .banner-btn {
+  color: white;
+  font-size: 17px;
+  margin-right: 5px;
+  border-radius: 5px;
+  position: relative;
+  padding: 15px 25px;
+  display: inline-block;
+  font-weight: 700;
+  line-height: 25px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+main #banner .carousel-item .layer .btn-box .banner-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#1ebeb6), to(#00827c));
+  background: linear-gradient(90deg, #1ebeb6 0%, #00827c 100%);
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 10px rgba(255, 136, 0, 0.5), inset 0 0 1px 1px #1ebeb6;
+          box-shadow: 0 0 10px rgba(255, 136, 0, 0.5), inset 0 0 1px 1px #1ebeb6;
+}
+
 @-webkit-keyframes zoom {
   from {
     -webkit-transform: scale(1, 1);
@@ -1392,6 +1422,6 @@ main #news .item .info .bottom ul li .comments {
 }
 
 main #news .item .info .bottom ul li .comments i {
-  color: #1EBEB6;
+  color: #1ebeb6;
 }
 /*# sourceMappingURL=style.css.map */
