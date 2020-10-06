@@ -9,6 +9,13 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
+
 header {
   height: 60px;
   border-top: 1px solid #e4e4e4;
@@ -51,6 +58,7 @@ header .social-media a {
 }
 
 nav {
+  z-index: 10;
   height: 90px;
 }
 
@@ -182,30 +190,63 @@ nav .contact i {
   padding-right: 11px;
 }
 
-main #banner {
-  background-image: url(../img/doctors1.jpg);
-  height: 100vh;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-main #banner::after {
-  content: "";
-  position: absolute;
-  top: 150px;
-  left: 0;
-  height: 102.3%;
+main #banner img {
   width: 100%;
-  background-color: rgba(38, 39, 39, 0.6);
+  height: 662px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-animation: zoom 20s;
+          animation: zoom 20s;
 }
 
-main #banner .block h4 {
+main #banner .carousel-item {
+  position: relative;
+}
+
+main #banner .carousel-item .layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.288);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px 200px;
   color: white;
 }
 
-main #banner .block h1 {
-  color: white;
+main #banner .carousel-item .layer h4 {
+  font-weight: 600;
+  font-size: 22px;
+  padding-bottom: 25px;
+}
+
+main #banner .carousel-item .layer h1 {
+  font-weight: 300;
+  font-size: 80px;
+  line-height: 1;
+  padding-bottom: 45px;
+}
+
+main #banner .carousel-item .layer h1 strong {
+  font-weight: 700;
+}
+
+main #banner .carousel-item .layer i {
+  font-size: 145px;
+  position: absolute;
+  top: 136px;
+  left: 150px;
+  opacity: 0.3;
 }
 
 main #entry {
@@ -377,7 +418,7 @@ main #about .doctor-pic2 .video-box .video a i::after {
   position: absolute;
   z-index: -1;
   left: 16.5%;
-  top: 44%;
+  top: 50%;
   background-color: #1ebeb6;
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
@@ -1113,10 +1154,11 @@ main #testomonials .owl-theme {
 }
 
 main #testomonials .owl-theme .item {
-  -webkit-box-shadow: inset -1px -1px 10px #e7e7e7;
-          box-shadow: inset -1px -1px 10px #e7e7e7;
+  -webkit-box-shadow: inset -1px -1px 10px #e7e7e7 !important;
+          box-shadow: inset -1px -1px 10px #e7e7e7 !important;
   margin-bottom: 10px;
   text-align: center !important;
+  padding: 50px 30px;
 }
 
 main #testomonials .owl-theme .item .img-box img {
@@ -1147,5 +1189,79 @@ main #testomonials .owl-theme .item p {
   font-size: 15px;
   line-height: 30px;
   color: #838383;
+}
+
+main #news {
+  background-color: #f7f7f7;
+  padding: 120px 0 120px 0;
+}
+
+main #news h4 {
+  color: #1ebeb6;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+main #news h2 {
+  font-size: 32px;
+  font-weight: 600;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+  position: relative;
+  letter-spacing: 1px;
+}
+
+main #news h2::before {
+  content: "";
+  background: #1ebeb6;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 2px;
+  width: 40px;
+  margin-left: -25px;
+}
+
+main #news h2::after {
+  content: "";
+  background: #1ebeb6;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 2px;
+  width: 5px;
+  margin-left: 20px;
+}
+
+main #news p {
+  font-size: 15px;
+  color: #666666;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0 20px;
+  line-height: 30px;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  to {
+    -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
+  }
+}
+
+@keyframes zoom {
+  from {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  to {
+    -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
+  }
 }
 /*# sourceMappingURL=style.css.map */

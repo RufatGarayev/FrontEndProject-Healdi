@@ -7,6 +7,12 @@
 body {
   font-family: "Inter", sans-serif;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
 
 // header start
 header {
@@ -55,6 +61,7 @@ header {
 
 // nav start
 nav {
+  z-index: 10;
   height: 90px;
   .website-logo {
     height: 100%;
@@ -166,25 +173,46 @@ nav {
 main {
   // banner section start
   #banner {
-    background-image: url(../img/doctors1.jpg);
-    height: 100vh;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    &::after {
-      content: "";
-      position: absolute;
-      top: 150px;
-      left: 0;
-      height: 102.3%;
+    img {
       width: 100%;
-      background-color: rgba(38, 39, 39, 0.6);
+      height: 662px;
+      object-fit: cover;
+      animation: zoom 20s;
     }
-    .block {
-      h4 {
-        color: white;
-      }
-      h1 {
+    .carousel-item {
+      position: relative;
+      .layer {
+        h4 {
+          font-weight: 600;
+          font-size: 22px;
+          padding-bottom: 25px;
+        }
+        h1 {
+          font-weight: 300;
+          font-size: 80px;
+          line-height: 1;
+          padding-bottom: 45px;
+          strong{
+            font-weight: 700;
+          }
+        }
+        i {
+          font-size: 145px;
+          position: absolute;
+          top: 136px;
+          left: 150px;
+          opacity: 0.3;
+        }
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.288);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px 200px;
         color: white;
       }
     }
@@ -303,7 +331,6 @@ main {
       left: 0;
     }
     .doctor-pic2 {
-      // width: 100%;
       img {
         vertical-align: middle;
         clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
@@ -338,7 +365,7 @@ main {
                 position: absolute;
                 z-index: -1;
                 left: 16.5%;
-                top: 44%;
+                top: 50%;
                 background-color: #1ebeb6;
                 transform: translateX(-50%) translateY(-50%);
                 height: 75px;
@@ -982,6 +1009,7 @@ main {
     }
   }
   // doctors section end
+
   // testomonials-section start
   #testomonials {
     .caption {
@@ -1038,9 +1066,11 @@ main {
       margin-left: 35px;
       margin-top: 120px;
       .item {
-        box-shadow: inset -1px -1px 10px #e7e7e7;
+        box-shadow: inset -1px -1px 10px #e7e7e7 !important;
+        // box-shadow: 0 0 10px #e7e7e7;
         margin-bottom: 10px;
         text-align: center !important;
+        padding: 50px 30px;
         .img-box {
           img {
             border-radius: 50%;
@@ -1073,5 +1103,65 @@ main {
   }
   // testomonials-section end
 
+  // news-section start
+  #news {
+    background-color: #f7f7f7;
+    padding: 120px 0 120px 0;
+    h4 {
+      color: #1ebeb6;
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    h2 {
+      font-size: 32px;
+      font-weight: 600;
+      padding-bottom: 20px;
+      margin-bottom: 0;
+      position: relative;
+      letter-spacing: 1px;
+      &::before {
+        content: "";
+        background: #1ebeb6;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        height: 2px;
+        width: 40px;
+        margin-left: -25px;
+      }
+      &::after {
+        content: "";
+        background: #1ebeb6;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        height: 2px;
+        width: 5px;
+        margin-left: 20px;
+      }
+    }
+    p {
+      font-size: 15px;
+      color: #666666;
+      margin: 0;
+      margin-top: 20px;
+      padding: 0 20px;
+      line-height: 30px;
+    }
+  }
+
+  // news-section end
+
   // main end
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(1, 1);
+  }
+
+  to {
+    transform: scale(1.2, 1.2);
+  }
 }

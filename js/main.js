@@ -1,4 +1,16 @@
 let navLinks = document.querySelectorAll("nav .menu li a");
+var navbar = document.getElementsByTagName("nav");
+
+// nav-sticky start
+window.onscroll = function() {
+  if($(window).scrollTop()  >= 80 ){
+    $(navbar).addClass("sticky")
+  }
+  else{
+    $(navbar).removeClass("sticky")
+  }
+};
+// nav-sticky end
 
 // nav-links hover effects start
 navLinks.forEach((link) => {
