@@ -2,7 +2,7 @@ let navLinks = document.querySelectorAll("nav .menu li a");
 
 // nav-links hover effects start
 navLinks.forEach((link) => {
-  link.addEventListener("mouseenter", function () {
+  link.addEventListener("mouseenter", function() {
     link.style.transition = "0.2s linear";
     if (link.lastChild.classList.contains("fa-angle-down")) {
       link.lastChild.classList.remove("fa-angle-down");
@@ -10,7 +10,7 @@ navLinks.forEach((link) => {
     }
   });
 
-  link.addEventListener("mouseleave", function () {
+  link.addEventListener("mouseleave", function() {
     link.lastChild.classList.add("fa-angle-down");
     link.lastChild.classList.remove("fa-angle-up");
   });
@@ -18,12 +18,12 @@ navLinks.forEach((link) => {
 // nav-links hover effects end
 
 // play-box popup effect start
-$(document).ready(function () {
-  $(".play-btn").click(function () {
+$(document).ready(function() {
+  $(".play-btn").click(function() {
     $(".play-box").css("display", "flex");
   });
 
-  $(".play-box").click(function (e) {
+  $(".play-box").click(function(e) {
     if ($(this).hasClass("play-box")) {
       $(".play-box").css("display", "none");
     }
@@ -32,22 +32,22 @@ $(document).ready(function () {
 // play-box popup effect end
 
 // services-owlCarousel start
-$(".owl-carousel").owlCarousel({
+$(".owl-carousel.myservices").owlCarousel({
   loop: false,
   margin: 30,
   nav: false,
   dot: true,
   responsive: {
     0: {
-      items: 1,
+      items: 1
     },
     600: {
-      items: 2,
+      items: 2
     },
     1000: {
-      items: 3,
-    },
-  },
+      items: 3
+    }
+  }
 });
 // services-owlCarousel end
 
@@ -55,7 +55,7 @@ $(".owl-carousel").owlCarousel({
 let myBtn = document.querySelectorAll(".nav-link");
 
 myBtn.forEach((btn) => {
-  btn.addEventListener("click", function () {
+  btn.addEventListener("click", function() {
     // if(btn.classList.contains("active")){
     //   btn.style.color = "yellow";
     // }
@@ -67,22 +67,21 @@ myBtn.forEach((btn) => {
 });
 // doctors-section tab end
 
-// testomonials-owlCarousel start 
-$(".owl-carousel").owlCarousel({
+// testomonials-owlCarousel start
+$(".owl-carousel.myowl").owlCarousel({
   loop: true,
   margin: 30,
-  nav: false,
-  dot: true,
+  dotsEach:2,
   responsive: {
     0: {
-      items: 1,
+      items: 1
     },
     600: {
-      items: 2,
+      items: 2
     },
     1000: {
-      items: 3,
-    },
-  },
+      items: 2.6,
+    }
+  }
 });
 // testomonials-owlCarousel end

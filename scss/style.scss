@@ -1038,8 +1038,8 @@ main {
       margin-left: 35px;
       margin-top: 120px;
       .item {
-        box-shadow: 0 0 10px #e7e7e7;
-        padding: 50px 30px;
+        box-shadow: inset -1px -1px 10px #e7e7e7;
+        margin-bottom: 10px;
         text-align: center !important;
         .img-box {
           img {
@@ -1055,14 +1055,14 @@ main {
           color: #233645;
           margin-bottom: 5px;
         }
-        span{
+        span {
           font-size: 12px;
           color: #838383;
-          strong{
-            color: #1EBEB6;
+          strong {
+            color: #1ebeb6;
           }
         }
-        p{
+        p {
           padding-top: 15px;
           font-size: 15px;
           line-height: 30px;
