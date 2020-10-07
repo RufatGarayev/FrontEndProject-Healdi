@@ -762,6 +762,36 @@ main #services .item .info .link a i::after {
   z-index: -1;
 }
 
+main #services button {
+  margin-top: 20px;
+  outline: none;
+}
+
+main #services button span {
+  display: block;
+  height: 20px;
+  width: 20px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background: #ffffff;
+  position: relative;
+  z-index: 1;
+  border: 2px solid #cccccc;
+}
+
+main #services .owl-dot.active span::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 5px;
+  width: 5px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #1ebeb6;
+  border-radius: 50%;
+}
+
 main #consultation {
   padding: 120px 0 120px 0;
 }
@@ -1273,6 +1303,36 @@ main #testomonials .owl-theme .item p {
   color: #838383;
 }
 
+main #testomonials button {
+  margin-top: 20px;
+  outline: none;
+}
+
+main #testomonials button span {
+  display: block;
+  height: 20px;
+  width: 20px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background: #ffffff;
+  position: relative;
+  z-index: 1;
+  border: 2px solid #cccccc;
+}
+
+main #testomonials .owl-dot.active span::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 5px;
+  width: 5px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #1ebeb6;
+  border-radius: 50%;
+}
+
 main #news {
   background-color: #f7f7f7;
   padding: 120px 0 120px 0;
@@ -1453,5 +1513,102 @@ main #news .item .info .bottom ul li .comments {
 
 main #news .item .info .bottom ul li .comments i {
   color: #1ebeb6;
+}
+
+main #contact .contact-items {
+  padding: 120px 0;
+}
+
+main #contact .contact-items .address-box {
+  background-image: url(../img/contact-img.jpg);
+  background-size: cover;
+  height: 100%;
+}
+
+main #contact .contact-items .address-box .address-info {
+  position: absolute;
+  left: 30px;
+  bottom: 0;
+  padding: 30px;
+  background: #ffffff;
+  right: 30px;
+}
+
+main #contact .contact-items .address-box .address-info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+}
+
+main #contact .contact-items .address-box .address-info ul li {
+  margin: 0 30px;
+}
+
+main #contact .contact-items .address-box .address-info ul li h5 {
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+main #contact .contact-items .address-box .address-info ul li h5 i {
+  font-size: 32px;
+  color: #20b2aa;
+  padding-right: 5px;
+}
+
+main #contact .contact-items .address-box .address-info ul li span {
+  font-size: 15px;
+  color: #666666;
+}
+
+main #contact .contact-items .input {
+  padding-left: 30px;
+}
+
+main #contact .contact-items .input .caption h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #233645;
+}
+
+main #contact .contact-items .input .caption h2 strong {
+  display: block;
+  color: #1ebeb6;
+  margin-top: 5px;
+  font-weight: 700;
+}
+
+main #contact .contact-items .input input {
+  border: none;
+  border-bottom: 1px solid #e7e7e7;
+  padding: 0;
+}
+
+main #contact .contact-items .input textarea {
+  height: 150px;
+  border: none;
+  border-bottom: 1px solid #e7e7e7;
+  padding: 0;
+}
+
+main #contact .contact-items .input button {
+  background: -webkit-gradient(linear, left top, right top, from(#1ebeb6), to(#00827c));
+  background: linear-gradient(90deg, #1ebeb6 0%, #00827c 100%);
+  padding: 15px 35px;
+  border-radius: 30px;
+  border: none !important;
+  outline: none !important;
+  color: #ffffff;
+  font-weight: 700;
+  margin-top: 15px;
 }
 /*# sourceMappingURL=style.css.map */
