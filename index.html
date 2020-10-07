@@ -29,7 +29,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
-    <link rel="stylesheet" href="scss/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- header start -->
@@ -199,8 +199,12 @@
                         <strong>Best Doctors</strong>
                       </h1>
                       <div class="btn-box">
-                        <a class="banner-btn animate__animated animate__fadeInUp" href="#">
-                          <i class="icon-2 fas fa-angle-right"></i> Discover More
+                        <a
+                          class="banner-btn animate__animated animate__fadeInUp"
+                          href="#"
+                        >
+                          <i class="icon-2 fas fa-angle-right"></i> Discover
+                          More
                         </a>
                       </div>
                     </div>
@@ -221,8 +225,12 @@
                         <strong>Best Hospital</strong>
                       </h1>
                       <div class="btn-box">
-                        <a class="banner-btn animate__animated animate__fadeInUp" href="#">
-                          <i class="icon-2 fas fa-angle-right"></i> Discover More
+                        <a
+                          class="banner-btn animate__animated animate__fadeInUp"
+                          href="#"
+                        >
+                          <i class="icon-2 fas fa-angle-right"></i> Discover
+                          More
                         </a>
                       </div>
                     </div>
@@ -352,17 +360,19 @@
                 built under first. Forbade him but savings sending ham general.
               </p>
               <ul class="d-flex pt-2 pb-5">
-                <li>
-                  <div class="icon">
-                    <i class="flaticon-calendar"></i>
+                <li class="d-flex align-items-center">
+                  <div class="icon mr-3">
+                    <!-- <i class="flaticon-calendar"></i> -->
+                    <img src="https://www.flaticon.com/svg/static/icons/svg/1021/1021779.svg" width="50" alt="drug">
                   </div>
                   <div class="content">
                     <h5><a href="#">Online Appoinment</a></h5>
                   </div>
                 </li>
-                <li>
-                  <div class="icon">
-                    <i class="flaticon-drugs"></i>
+                <li class="d-flex align-items-center">
+                  <div class="icon mr-3">
+                    <!-- <i class="flaticon-drugs"></i> -->
+                    <img src="https://www.flaticon.com/svg/static/icons/svg/843/843420.svg" width="50" alt="drug">
                   </div>
                   <div class="content">
                     <h5><a href="#">Health Queries</a></h5>
@@ -511,19 +521,19 @@
                 <div class="row">
                   <div class="col-lg-4 col-md-4">
                     <div class="consult-item">
-                      <i class="flaticon-calendar-1"></i>
+                      <i class="far fa-calendar-check"></i>
                       <h5>Make Appointment</h5>
                     </div>
                   </div>
                   <div class="col-lg-4 col-md-4">
                     <div class="consult-item">
-                      <i class="flaticon-doctor"></i>
+                      <i class="fas fa-user-md"></i>
                       <h5>Select A Doctor</h5>
                     </div>
                   </div>
                   <div class="col-lg-4 col-md-4">
                     <div class="consult-item">
-                      <i class="flaticon-heartbeat-1"></i>
+                      <i class="fas fa-heartbeat"></i>
                       <h5>Confirm Consultation</h5>
                     </div>
                   </div>
@@ -1133,69 +1143,242 @@
         <div class="container p-0">
           <div class="contact-items">
             <div class="row p-0">
-                <div class="col-lg-7 p-0">
-                  <div class="address-box">
-                    <div class="address-info">
-                          <ul>
-                              <li>
-                                  <h5><i class="fas fa-phone-volume"></i> PHONE</h5>
-                                  <span>+44-20-7328-4499</span>
-                              </li>
-                              <li>
-                                  <h5><i class="fas fa-envelope-open-text"></i> EMAIL</h5>
-                                  <span>info@healdi.com</span>
-                              </li>
-                         </ul>
-                    </div>
+              <div class="col-lg-7 p-0">
+                <div class="address-box">
+                  <div class="address-info">
+                    <ul>
+                      <li>
+                        <h5><i class="fas fa-phone-volume"></i> PHONE</h5>
+                        <span>+44-20-7328-4499</span>
+                      </li>
+                      <li>
+                        <h5><i class="fas fa-envelope-open-text"></i> EMAIL</h5>
+                        <span>info@healdi.com</span>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-                <div class="col-lg-5">
-                  <div class="input">
-                      <div class="caption">
-                        <h2>Need help? <br> <strong>Let's ask your questions</strong></h2>
+              </div>
+              <div class="col-lg-5">
+                <div class="input">
+                  <div class="caption">
+                    <h2>
+                      Need help? <br />
+                      <strong>Let's ask your questions</strong>
+                    </h2>
+                  </div>
+                  <form method="POST" class="contact-form">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <input
+                            class="form-control"
+                            id="name"
+                            name="name"
+                            placeholder="Name"
+                            type="text"
+                          />
+                          <span class="alert-error"></span>
+                        </div>
                       </div>
-                      <form method="POST" class="contact-form">
-                          <div class="row">
-                              <div class="col-lg-12">
-                                  <div class="form-group">
-                                      <input class="form-control" id="name" name="name" placeholder="Name" type="text">
-                                      <span class="alert-error"></span>
-                                  </div>
-                              </div>
-                              <div class="col-lg-6">
-                                  <div class="form-group">
-                                      <input class="form-control" id="email" name="email" placeholder="Email*" type="email">
-                                      <span class="alert-error"></span>
-                                  </div>
-                              </div>
-                              <div class="col-lg-6">
-                                  <div class="form-group">
-                                      <input class="form-control" id="phone" name="phone" placeholder="Phone" type="text">
-                                      <span class="alert-error"></span>
-                                  </div>
-                              </div>
-                              <div class="col-lg-12">
-                                  <div class="form-group comments">
-                                      <textarea class="form-control" id="comments" name="comments" placeholder="Tell Us About Project *"></textarea>
-                                  </div>
-                              </div>
-                              <div class="col-lg-12">
-                                  <button type="submit" name="submit" id="submit">
-                                      Send Message
-                                  </button>
-                              </div>
-                              <div class="col-lg-12 alert-notification">
-                                  <div id="message" class="alert-msg"></div>
-                              </div>
-                          </div>
-                      </form>
-                  </div>
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <input
+                            class="form-control"
+                            id="email"
+                            name="email"
+                            placeholder="Email*"
+                            type="email"
+                          />
+                          <span class="alert-error"></span>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <input
+                            class="form-control"
+                            id="phone"
+                            name="phone"
+                            placeholder="Phone"
+                            type="text"
+                          />
+                          <span class="alert-error"></span>
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="form-group comments">
+                          <textarea
+                            class="form-control"
+                            id="comments"
+                            name="comments"
+                            placeholder="Tell Us About Project *"
+                          ></textarea>
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <button type="submit" name="submit" id="submit">
+                          Send Message
+                        </button>
+                      </div>
+                      <div class="col-lg-12 alert-notification">
+                        <div id="message" class="alert-msg"></div>
+                      </div>
+                    </div>
+                  </form>
                 </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <!-- contact-section end -->
+      <!-- footer start -->
+      <footer>
+        <div class="container p-0">
+          <div class="items">
+            <div class="row p-0">
+              <div class="col-lg-4 col-md-6">
+                <div class="about">
+                  <img class="img-fluid" src="img/logo.png" alt="Logo" />
+                  <p>
+                    Required honoured trifling eat pleasure man relation.
+                    Assurance yet bed was improving furniture man. Distrusts
+                    delighted
+                  </p>
+                  <div class="address">
+                    <ul>
+                      <li class="d-flex justify-content-between first-li">
+                        <div class="icon">
+                          <i class="fas fa-envelope-open-text"></i>
+                        </div>
+                        <div class="info">
+                          <h5>Email:</h5>
+                          <span>support@validtemplates.com</span>
+                        </div>
+                      </li>
+                      <li class="d-flex">
+                        <div class="icon">
+                          <i class="fas fa-phone-volume"></i>
+                        </div>
+                        <div class="info">
+                          <h5>Phone:</h5>
+                          <span>+44-20-7328-4499</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-2 col-md-6">
+                <div class="links">
+                  <h4 class="caption">Department</h4>
+                  <ul>
+                    <li>
+                      <a href="#">Medecine & Health</a>
+                    </li>
+                    <li>
+                      <a href="#">Dental Care</a>
+                    </li>
+                    <li>
+                      <a href="#">Eye Treatment</a>
+                    </li>
+                    <li>
+                      <a href="#">Children Chare</a>
+                    </li>
+                    <li>
+                      <a href="#">Traumatology</a>
+                    </li>
+                    <li>
+                      <a href="#">X-ray</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-lg-2 col-md-6">
+                <div class="links">
+                  <h4 class="caption">Usefull Links</h4>
+                  <ul>
+                    <li>
+                      <a href="#">Ambulance</a>
+                    </li>
+                    <li>
+                      <a href="#">Emergency</a>
+                    </li>
+                    <li>
+                      <a href="#">Blog</a>
+                    </li>
+                    <li>
+                      <a href="#">Project</a>
+                    </li>
+                    <li>
+                      <a href="#">About Us</a>
+                    </li>
+                    <li>
+                      <a href="#">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 p-0">
+                <div class="branches">
+                  <ul>
+                    <li class="pb-4">
+                      <strong>USA Branches:</strong>
+                      <span
+                        >4992 Bryan Avenue, Prior Lake, <br />
+                        Minnesota <br />
+                        Phone: 651-379-4698</span
+                      >
+                    </li>
+                    <li>
+                      <strong>Central Branches:</strong>
+                      <span
+                        >2001 Kia Magentis, Prior Lake, Minnesota Phone:
+                        651-379-4698</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- footer-bottom start -->
+        <div class="footer-bottom">
+          <div class="container p-0">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="copyright">
+                  <p>
+                    Copyright © 2020. Designed by
+                    <a href="#">validtemplatess</a>
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 p-0">
+                <div class="social-media">
+                  <ul>
+                    <li>
+                      <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-youtube"></i> Youtube</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- footer-bottom end -->
+      </footer>
+      <!-- footer end -->
     </main>
     <!-- main end -->
 
