@@ -173,9 +173,18 @@ nav {
 main {
   // banner section start
   #banner {
+    .carousel-control-prev{
+      position: absolute;
+      left: -150px;
+    }
+    .carousel-control-next{
+      position: absolute;
+      right: -150px;
+    }
     img {
       width: 100%;
-      height: 662px;
+      // height: 662px;
+      height: 100vh;
       object-fit: cover;
       animation: zoom 20s;
     }
@@ -199,7 +208,7 @@ main {
         i {
           font-size: 145px;
           position: absolute;
-          top: 136px;
+          top: 166px;
           left: 150px;
           opacity: 0.3;
         }
@@ -218,15 +227,33 @@ main {
           .banner-btn {
             color: white;
             font-size: 17px;
-            margin-right: 5px;
             border-radius: 5px;
             position: relative;
-            padding: 15px 25px;
+            padding: 17px 28px 17px 65px;
             display: inline-block;
             font-weight: 700;
             line-height: 25px;
             overflow: hidden;
-            z-index: 2;
+            z-index: 0;
+            .icon-2 {
+              font-size: 14px;
+              height: 30px;
+              width: 30px;
+              line-height: 30px;
+              border-radius: 50%;
+              color: #1ebeb6;
+              background: #ffffff;
+              text-align: center;
+              z-index: 1;
+              margin-left: 33px;
+              position: absolute;
+              top: 13px;
+              left: -7px;
+              opacity: 1;
+            }
+            &:hover {
+              text-decoration: none;
+            }
             &::after {
               content: "";
               position: absolute;

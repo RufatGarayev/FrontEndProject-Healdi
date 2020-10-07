@@ -1,10 +1,13 @@
 let navLinks = document.querySelectorAll("nav .menu li a");
+let banner = document.getElementById("banner");
+let arrowLeft = document.querySelector(".carousel-control-prev");
+let arrowRight = document.querySelector(".carousel-control-next");
 var navbar = document.getElementsByTagName("nav");
 
 // nav-sticky start
 window.onscroll = function() {
   if($(window).scrollTop()  >= 80 ){
-    $(navbar).addClass("sticky")
+    $(navbar).addClass("sticky");
   }
   else{
     $(navbar).removeClass("sticky")
@@ -28,6 +31,19 @@ navLinks.forEach((link) => {
   });
 });
 // nav-links hover effects end
+
+// banner arrow
+    banner.addEventListener("mouseenter", function(){
+      arrowLeft.style.left = "-70px";    
+      arrowLeft.style.transition = "0.3s";    
+      arrowRight.style.right = "-70px";
+      arrowRight.style.transition = "0.3s"; 
+    });
+    banner.addEventListener("mouseleave", function(){
+      arrowLeft.style.left = "-150px";
+      arrowRight.style.right = "-150px";
+    });
+// banner arrow
 
 // play-box popup effect start
 $(document).ready(function() {
@@ -68,9 +84,6 @@ let myBtn = document.querySelectorAll(".nav-link");
 
 myBtn.forEach((btn) => {
   btn.addEventListener("click", function() {
-    // if(btn.classList.contains("active")){
-    //   btn.style.color = "yellow";
-    // }
     document.querySelector(".active").classList.remove("active");
     document.querySelector(".show").classList.remove("show");
     document.getElementById(this.dataset.targetSection).classList.add("show");

@@ -190,9 +190,19 @@ nav .contact i {
   padding-right: 11px;
 }
 
+main #banner .carousel-control-prev {
+  position: absolute;
+  left: -150px;
+}
+
+main #banner .carousel-control-next {
+  position: absolute;
+  right: -150px;
+}
+
 main #banner img {
   width: 100%;
-  height: 662px;
+  height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-animation: zoom 20s;
@@ -244,9 +254,81 @@ main #banner .carousel-item .layer h1 strong {
 main #banner .carousel-item .layer i {
   font-size: 145px;
   position: absolute;
-  top: 136px;
+  top: 166px;
   left: 150px;
   opacity: 0.3;
+}
+
+main #banner .carousel-item .layer .btn-box .banner-btn {
+  color: white;
+  font-size: 17px;
+  border-radius: 5px;
+  position: relative;
+  padding: 17px 28px 17px 65px;
+  display: inline-block;
+  font-weight: 700;
+  line-height: 25px;
+  overflow: hidden;
+  z-index: 0;
+}
+
+main #banner .carousel-item .layer .btn-box .banner-btn .icon-2 {
+  font-size: 14px;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  color: #1ebeb6;
+  background: #ffffff;
+  text-align: center;
+  z-index: 1;
+  margin-left: 33px;
+  position: absolute;
+  top: 13px;
+  left: -7px;
+  opacity: 1;
+}
+
+main #banner .carousel-item .layer .btn-box .banner-btn:hover {
+  text-decoration: none;
+}
+
+main #banner .carousel-item .layer .btn-box .banner-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#1ebeb6), to(#00827c));
+  background: linear-gradient(90deg, #1ebeb6 0%, #00827c 100%);
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 10px rgba(255, 136, 0, 0.5), inset 0 0 1px 1px #1ebeb6;
+          box-shadow: 0 0 10px rgba(255, 136, 0, 0.5), inset 0 0 1px 1px #1ebeb6;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  to {
+    -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
+  }
+}
+
+@keyframes zoom {
+  from {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  to {
+    -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
+  }
 }
 
 main #entry {
@@ -1196,14 +1278,18 @@ main #news {
   padding: 120px 0 120px 0;
 }
 
-main #news h4 {
+main #news .site-heading {
+  padding-bottom: 60px;
+}
+
+main #news .site-heading h4 {
   color: #1ebeb6;
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 15px;
 }
 
-main #news h2 {
+main #news .site-heading h2 {
   font-size: 32px;
   font-weight: 600;
   padding-bottom: 20px;
@@ -1212,7 +1298,7 @@ main #news h2 {
   letter-spacing: 1px;
 }
 
-main #news h2::before {
+main #news .site-heading h2::before {
   content: "";
   background: #1ebeb6;
   position: absolute;
@@ -1223,7 +1309,7 @@ main #news h2::before {
   margin-left: -25px;
 }
 
-main #news h2::after {
+main #news .site-heading h2::after {
   content: "";
   background: #1ebeb6;
   position: absolute;
@@ -1234,7 +1320,7 @@ main #news h2::after {
   margin-left: 20px;
 }
 
-main #news p {
+main #news .site-heading p {
   font-size: 15px;
   color: #666666;
   margin: 0;
@@ -1243,25 +1329,129 @@ main #news p {
   line-height: 30px;
 }
 
-@-webkit-keyframes zoom {
-  from {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
-  }
-  to {
-    -webkit-transform: scale(1.2, 1.2);
-            transform: scale(1.2, 1.2);
-  }
+main #news .item .date {
+  position: absolute;
+  left: 43px;
+  top: 165px;
+  height: 70px;
+  width: 80px;
+  background: #1ebeb6;
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 15px 20px 0 20px;
+  line-height: 20px;
+  font-weight: 600;
+  border-radius: 5px 5px 0 5px;
 }
 
-@keyframes zoom {
-  from {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
-  }
-  to {
-    -webkit-transform: scale(1.2, 1.2);
-            transform: scale(1.2, 1.2);
-  }
+main #news .item .date::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+  border-right: 15px solid #1ebeb6;
+  border-bottom: 15px solid transparent;
+  border-top: 0;
+}
+
+main #news .item .info {
+  padding: 30px 30px 20px 30px;
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 10px #e4dfda;
+          box-shadow: 0 0 10px #e4dfda;
+}
+
+main #news .item .info .tags ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+main #news .item .info .tags ul li {
+  margin-bottom: 5px;
+}
+
+main #news .item .info .tags ul li a {
+  color: #666666;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+main #news .item .info .tags ul li a:hover {
+  text-decoration: none;
+}
+
+main #news .item .info h4 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+main #news .item .info h4 a {
+  color: #233645;
+}
+
+main #news .item .info h4 a:hover {
+  color: #1ebeb6;
+  text-decoration: none;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+main #news .item .info .bottom {
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #e7e7e7;
+}
+
+main #news .item .info .bottom ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #news .item .info .bottom ul li a:hover {
+  color: #1ebeb6;
+  text-decoration: none;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+main #news .item .info .bottom ul li a img {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+main #news .item .info .bottom ul li a span {
+  color: #666666;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+main #news .item .info .bottom ul li a span:hover {
+  color: #1ebeb6;
+  text-decoration: none;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+main #news .item .info .bottom ul li .comments {
+  font-size: 15px;
+  font-weight: 600;
+  color: #666666;
+}
+
+main #news .item .info .bottom ul li .comments i {
+  color: #1ebeb6;
 }
 /*# sourceMappingURL=style.css.map */
