@@ -183,8 +183,7 @@ main {
     }
     img {
       width: 100%;
-      // height: 662px;
-      height: 100vh;
+      height: 662px;
       object-fit: cover;
       animation: zoom 20s;
     }
@@ -399,6 +398,7 @@ main {
       left: 0;
     }
     .doctor-pic2 {
+      padding-right: 60px;
       img {
         vertical-align: middle;
         clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
@@ -466,65 +466,67 @@ main {
         }
       }
     }
-    h5 {
-      color: #21bfb7;
-      font-weight: 600;
-      font-size: 18px;
-    }
-    h2 {
-      font-weight: 600;
-    }
-    p {
-      color: #767676;
-      line-height: 30px;
-      font-size: 15px;
-      font-weight: 400;
-    }
-    ul {
-      list-style: none;
-      li {
-        padding-top: 5px;
-        width: 100%;
-        .content {
-          h5 {
-            font-weight: 600;
-            font-size: 18px;
-            a {
-              color: #233645;
-              &:hover {
-                text-decoration: none;
+    .text-sec {
+      h5 {
+        color: #21bfb7;
+        font-weight: 600;
+        font-size: 18px;
+      }
+      h2 {
+        font-weight: 600;
+      }
+      p {
+        color: #767676;
+        line-height: 30px;
+        font-size: 15px;
+        font-weight: 400;
+      }
+      ul {
+        list-style: none;
+        li {
+          padding-top: 5px;
+          width: 100%;
+          .content {
+            h5 {
+              font-weight: 600;
+              font-size: 18px;
+              a {
+                color: #233645;
+                &:hover {
+                  text-decoration: none;
+                }
               }
             }
           }
         }
       }
-    }
-    .btnn {
-      padding: 19px 25px;
-      color: white;
-      font-weight: 700;
-      font-size: 17px;
-      background: linear-gradient(
-        90deg,
-        rgba(30, 190, 182, 1) 0%,
-        rgba(106, 141, 139, 1) 100%
-      );
-      border-radius: 0;
-      transition: 0.3s linear;
-      i {
-        height: 30px;
-        width: 30px;
-        line-height: 30px;
-        border-radius: 50%;
-        background: #ffffff;
-        color: #1ebeb6;
-        margin-left: 0;
-        margin-right: 5px;
-        text-align: center;
-        font-size: 14px;
-      }
-      &:hover {
-        text-decoration: none;
+      .btnn {
+        padding: 19px 25px;
+        color: white;
+        font-weight: 700;
+        font-size: 17px;
+        background: linear-gradient(
+          90deg,
+          rgba(30, 190, 182, 1) 0%,
+          rgba(106, 141, 139, 1) 100%
+        );
+        border-radius: 0;
+        transition: 0.3s linear;
+        i {
+          height: 30px;
+          width: 30px;
+          line-height: 30px;
+          border-radius: 50%;
+          background: #ffffff;
+          color: #1ebeb6;
+          margin-left: 0;
+          margin-right: 5px;
+          text-align: center;
+          font-size: 14px;
+        }
+        &:hover {
+          text-decoration: none;
+        }
       }
     }
   }
@@ -539,7 +541,6 @@ main {
     .shape {
       img {
         opacity: 0.1;
-        // z-index: 10;
         position: absolute;
         left: 0;
         top: 55px;
@@ -1146,6 +1147,14 @@ main {
         }
       }
     }
+    @keyframes fadeEffect {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
   }
   // doctors section end
 
@@ -1659,8 +1668,222 @@ main {
   // main end
 }
 
-
-@keyframes fadeEffect {
-  from {opacity: 0;}
-  to {opacity: 1;}
+// web-site responsive start
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #banner {
+    img {
+      height: 580px !important;
+    }
+    .carousel-item {
+      .layer {
+        padding: 0px 40px !important;
+        .fa-heartbeat {
+          top: 50px !important;
+          left: 15px !important;
+        }
+      }
+    }
+  }
+  #entry {
+    .box {
+      margin-top: 40px;
+      margin-bottom: 35px;
+    }
+    .box-1 {
+      width: 100%;
+      margin-left: 40px;
+    }
+  }
+  #about {
+    .text-sec {
+      margin-top: 100px !important;
+    }
+    .doctor-pic2 .video-box .video a i {
+      &::after {
+        left: 12% !important;
+      }
+    }
+  }
 }
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #banner {
+    img {
+      height: 350px !important;
+    }
+    .carousel-item {
+      .layer {
+        text-align: center;
+        padding: 0px 40px !important;
+        h4 {
+          font-size: 18px !important;
+        }
+        h1 {
+          font-size: 36px !important;
+        }
+        .fa-heartbeat {
+          top: 20px !important;
+          left: 266px !important;
+        }
+      }
+    }
+  }
+  #entry {
+    .box {
+      margin-top: 40px;
+      margin-bottom: 35px;
+    }
+    .box-1 {
+      width: 100%;
+      margin-left: 40px;
+    }
+  }
+  #about {
+    width: 100% !important;
+    padding: 50px 0 160px 0 !important;
+    .text-sec {
+      width: 100% !important;
+      margin-top: 330px !important;
+    }
+    .doctor-pic2 {
+      padding-right: 0px !important;
+      img {
+        width: 456px;
+        clip-path: none !important;
+      }
+      .video-box {
+        margin-right: 20px;
+        width: 456px;
+        height: 270px;
+        left: 0 !important;
+        bottom: -298px !important;
+        text-align: center !important;
+        .text{
+          margin-top: 100px;
+          h5{
+            font-size: 16px;
+          }
+          p{
+            font-size: 15px;
+          }
+        }
+        .video {
+          position: absolute;
+          left: 180px;
+          top: 42px;
+          .play-btn{
+            a{
+              i{
+                &::after{
+                  left: 40% !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .doctor-pic2 .video-box .video a i {
+      &::after {
+        left: 12% !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+  #banner {
+    img {
+      height: 370px !important;
+    }
+    .carousel-item {
+      .layer {
+        text-align: center;
+        padding: 0px 40px !important;
+        h4 {
+          font-size: 18px !important;
+        }
+        h1 {
+          font-size: 36px !important;
+        }
+        .fa-heartbeat {
+          top: 25px !important;
+          left: 195px !important;
+        }
+      }
+    }
+  }
+  #entry {
+    .box {
+      margin-top: 40px;
+      margin-bottom: 35px;
+    }
+    .box-1 {
+      width: 100%;
+      margin-left: 40px;
+    }
+  }
+  #about {
+    width: 100% !important;
+    padding: 40px 0 100px 0 !important;
+    .text-sec {
+      text-align: center !important;
+      width: 100% !important;
+      margin-top: 330px !important;
+      ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center !important;
+        li{
+          text-align: center !important;
+          // display: block !important;
+        }
+      }
+    }
+    .doctor-pic2 {
+      padding-right: 0px !important;
+      img {
+        width: 456px;
+        clip-path: none !important;
+      }
+      .video-box {
+        margin-right: 20px;
+        width: 456px;
+        height: 270px;
+        left: 0 !important;
+        bottom: -298px !important;
+        text-align: center !important;
+        .text{
+          margin-top: 100px;
+          h5{
+            font-size: 16px;
+          }
+          p{
+            font-size: 15px;
+          }
+        }
+        .video {
+          position: absolute;
+          left: 180px;
+          top: 42px;
+          .play-btn{
+            a{
+              i{
+                &::after{
+                  left: 40% !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .doctor-pic2 .video-box .video a i {
+      &::after {
+        left: 12% !important;
+      }
+    }
+  }
+}
+// web-site responsive end

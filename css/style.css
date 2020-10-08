@@ -94,13 +94,13 @@ nav .menu li .submenu {
   height: 150px;
   width: 250px;
   background-color: white;
-  -webkit-box-shadow: 0 -1px 10px #d4cece;
-          box-shadow: 0 -1px 10px #d4cece;
+  -webkit-box-shadow: 0 -1px 15px #e6e0e0;
+          box-shadow: 0 -1px 15px #e6e0e0;
   position: absolute;
   top: 90px;
   left: 5px;
   display: none;
-  z-index: 1;
+  z-index: 5;
 }
 
 nav .menu li .submenu ul li {
@@ -202,7 +202,7 @@ main #banner .carousel-control-next {
 
 main #banner img {
   width: 100%;
-  height: 100vh;
+  height: 662px;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-animation: zoom 20s;
@@ -454,6 +454,10 @@ main #about .shape {
   left: 0;
 }
 
+main #about .doctor-pic2 {
+  padding-right: 60px;
+}
+
 main #about .doctor-pic2 img {
   vertical-align: middle;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
@@ -542,46 +546,46 @@ main #about .doctor-pic2 .video-box .text h5 {
   font-size: 20px;
 }
 
-main #about h5 {
+main #about .text-sec h5 {
   color: #21bfb7;
   font-weight: 600;
   font-size: 18px;
 }
 
-main #about h2 {
+main #about .text-sec h2 {
   font-weight: 600;
 }
 
-main #about p {
+main #about .text-sec p {
   color: #767676;
   line-height: 30px;
   font-size: 15px;
   font-weight: 400;
 }
 
-main #about ul {
+main #about .text-sec ul {
   list-style: none;
 }
 
-main #about ul li {
+main #about .text-sec ul li {
   padding-top: 5px;
   width: 100%;
 }
 
-main #about ul li .content h5 {
+main #about .text-sec ul li .content h5 {
   font-weight: 600;
   font-size: 18px;
 }
 
-main #about ul li .content h5 a {
+main #about .text-sec ul li .content h5 a {
   color: #233645;
 }
 
-main #about ul li .content h5 a:hover {
+main #about .text-sec ul li .content h5 a:hover {
   text-decoration: none;
 }
 
-main #about .btnn {
+main #about .text-sec .btnn {
   padding: 19px 25px;
   color: white;
   font-weight: 700;
@@ -593,7 +597,7 @@ main #about .btnn {
   transition: 0.3s linear;
 }
 
-main #about .btnn i {
+main #about .text-sec .btnn i {
   height: 30px;
   width: 30px;
   line-height: 30px;
@@ -606,7 +610,7 @@ main #about .btnn i {
   font-size: 14px;
 }
 
-main #about .btnn:hover {
+main #about .text-sec .btnn:hover {
   text-decoration: none;
 }
 
@@ -882,9 +886,75 @@ main #consultation .appoinment-box form .form-group {
   margin-bottom: 16px;
 }
 
+main #consultation .appoinment-box form .form-group #gender,
+main #consultation .appoinment-box form .form-group #category {
+  cursor: pointer;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+main #consultation .appoinment-box form .form-group #categoryselection {
+  top: 106%;
+}
+
+main #consultation .appoinment-box form .form-group i {
+  color: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+main #consultation .appoinment-box form .form-group #gendericon {
+  position: absolute;
+  right: 22px;
+  top: 18px;
+}
+
+main #consultation .appoinment-box form .form-group #categoryicon {
+  position: absolute;
+  right: 22px;
+  top: 18px;
+}
+
+main #consultation .appoinment-box form .form-group .dropdownselector {
+  background-color: white;
+  position: absolute;
+  top: 106%;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  display: none;
+}
+
+main #consultation .appoinment-box form .form-group .dropdownselector li {
+  list-style-type: none;
+  text-align: left;
+  padding: 7px 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+main #consultation .appoinment-box form .form-group .dropdownselector li:first-of-type {
+  border-radius: 5px;
+}
+
+main #consultation .appoinment-box form .form-group .dropdownselector li:last-of-type {
+  border-radius: 5px;
+}
+
+main #consultation .appoinment-box form .form-group .dropdownselector li:hover {
+  background-color: #f6f6f6;
+}
+
+main #consultation .appoinment-box form .form-group .dropdownselector li.selected {
+  font-weight: bold;
+  background-color: #f6f6f6;
+}
+
 main #consultation .appoinment-box form .form-group .form-control {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 14px;
   border-radius: 30px;
   min-height: 50px;
   background: #35c5bd;
@@ -892,11 +962,35 @@ main #consultation .appoinment-box form .form-group .form-control {
   padding: 0 25px;
 }
 
+main #consultation .appoinment-box form .form-group .form-control::-webkit-input-placeholder {
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+main #consultation .appoinment-box form .form-group .form-control:-ms-input-placeholder {
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+main #consultation .appoinment-box form .form-group .form-control::-ms-input-placeholder {
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+main #consultation .appoinment-box form .form-group .form-control::placeholder {
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+}
+
 main #consultation .appoinment-box form .form-group select {
   cursor: pointer;
   color: white;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   height: 50px;
   width: 100%;
   line-height: 50px;
@@ -927,6 +1021,13 @@ main #consultation .appoinment-box form .form-group select option {
 
 main #consultation .appoinment-box form .form-group select option:hover {
   background-color: #d2f2f0;
+}
+
+main #consultation .appoinment-box form .form-group .down {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 main #consultation .appoinment-box form button {
@@ -1118,13 +1219,24 @@ main #doctors .doctor-segments ul li a {
           align-items: center;
 }
 
+main #doctors .doctor-segments ul li img {
+  margin-right: 20px;
+}
+
+main #doctors .doctor-segments ul li a.active {
+  background-color: #20b2aa;
+  color: white;
+}
+
 main #doctors .doctor-segments .tab-content {
-  -webkit-transition: 0.3s linear;
-  transition: 0.3s linear;
+  -webkit-transition: linear 0.3s;
+  transition: linear 0.3s;
 }
 
 main #doctors .doctor-segments .tab-content .content {
   display: none;
+  -webkit-animation: fadeEffect 1s;
+          animation: fadeEffect 1s;
 }
 
 main #doctors .doctor-segments .tab-content .content.show {
@@ -1200,6 +1312,24 @@ main #doctors .doctor-segments .tab-content .info a i {
   width: 30px;
   border-radius: 50%;
   margin-right: 5px;
+}
+
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 main #testomonials .caption {
@@ -1731,8 +1861,8 @@ main footer .branches ul li span {
 
 main footer .footer-bottom {
   margin-top: 120px;
-  border-top: 1px solid #213A64;
-  height: 80px;
+  border-top: 1px solid #213a64;
+  padding: 25px 0 15px 0;
   background-color: #082452;
 }
 
@@ -1755,6 +1885,9 @@ main footer .footer-bottom .social-media ul {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main footer .footer-bottom .social-media ul li {
@@ -1773,5 +1906,193 @@ main footer .footer-bottom .social-media ul li a i {
 
 main footer .footer-bottom .social-media ul li a:hover {
   text-decoration: none;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #banner img {
+    height: 580px !important;
+  }
+  #banner .carousel-item .layer {
+    padding: 0px 40px !important;
+  }
+  #banner .carousel-item .layer .fa-heartbeat {
+    top: 50px !important;
+    left: 15px !important;
+  }
+  #entry .box {
+    margin-top: 40px;
+    margin-bottom: 35px;
+  }
+  #entry .box-1 {
+    width: 100%;
+    margin-left: 40px;
+  }
+  #about .text-sec {
+    margin-top: 100px !important;
+  }
+  #about .doctor-pic2 .video-box .video a i::after {
+    left: 12% !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #banner img {
+    height: 350px !important;
+  }
+  #banner .carousel-item .layer {
+    text-align: center;
+    padding: 0px 40px !important;
+  }
+  #banner .carousel-item .layer h4 {
+    font-size: 18px !important;
+  }
+  #banner .carousel-item .layer h1 {
+    font-size: 36px !important;
+  }
+  #banner .carousel-item .layer .fa-heartbeat {
+    top: 20px !important;
+    left: 266px !important;
+  }
+  #entry .box {
+    margin-top: 40px;
+    margin-bottom: 35px;
+  }
+  #entry .box-1 {
+    width: 100%;
+    margin-left: 40px;
+  }
+  #about {
+    width: 100% !important;
+    padding: 50px 0 160px 0 !important;
+  }
+  #about .text-sec {
+    width: 100% !important;
+    margin-top: 330px !important;
+  }
+  #about .doctor-pic2 {
+    padding-right: 0px !important;
+  }
+  #about .doctor-pic2 img {
+    width: 456px;
+    -webkit-clip-path: none !important;
+            clip-path: none !important;
+  }
+  #about .doctor-pic2 .video-box {
+    margin-right: 20px;
+    width: 456px;
+    height: 270px;
+    left: 0 !important;
+    bottom: -298px !important;
+    text-align: center !important;
+  }
+  #about .doctor-pic2 .video-box .text {
+    margin-top: 100px;
+  }
+  #about .doctor-pic2 .video-box .text h5 {
+    font-size: 16px;
+  }
+  #about .doctor-pic2 .video-box .text p {
+    font-size: 15px;
+  }
+  #about .doctor-pic2 .video-box .video {
+    position: absolute;
+    left: 180px;
+    top: 42px;
+  }
+  #about .doctor-pic2 .video-box .video .play-btn a i::after {
+    left: 40% !important;
+  }
+  #about .doctor-pic2 .video-box .video a i::after {
+    left: 12% !important;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+  #banner img {
+    height: 370px !important;
+  }
+  #banner .carousel-item .layer {
+    text-align: center;
+    padding: 0px 40px !important;
+  }
+  #banner .carousel-item .layer h4 {
+    font-size: 18px !important;
+  }
+  #banner .carousel-item .layer h1 {
+    font-size: 36px !important;
+  }
+  #banner .carousel-item .layer .fa-heartbeat {
+    top: 25px !important;
+    left: 195px !important;
+  }
+  #entry .box {
+    margin-top: 40px;
+    margin-bottom: 35px;
+  }
+  #entry .box-1 {
+    width: 100%;
+    margin-left: 40px;
+  }
+  #about {
+    width: 100% !important;
+    padding: 40px 0 100px 0 !important;
+  }
+  #about .text-sec {
+    text-align: center !important;
+    width: 100% !important;
+    margin-top: 330px !important;
+  }
+  #about .text-sec ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  #about .text-sec ul li {
+    text-align: center !important;
+  }
+  #about .doctor-pic2 {
+    padding-right: 0px !important;
+  }
+  #about .doctor-pic2 img {
+    width: 456px;
+    -webkit-clip-path: none !important;
+            clip-path: none !important;
+  }
+  #about .doctor-pic2 .video-box {
+    margin-right: 20px;
+    width: 456px;
+    height: 270px;
+    left: 0 !important;
+    bottom: -298px !important;
+    text-align: center !important;
+  }
+  #about .doctor-pic2 .video-box .text {
+    margin-top: 100px;
+  }
+  #about .doctor-pic2 .video-box .text h5 {
+    font-size: 16px;
+  }
+  #about .doctor-pic2 .video-box .text p {
+    font-size: 15px;
+  }
+  #about .doctor-pic2 .video-box .video {
+    position: absolute;
+    left: 180px;
+    top: 42px;
+  }
+  #about .doctor-pic2 .video-box .video .play-btn a i::after {
+    left: 40% !important;
+  }
+  #about .doctor-pic2 .video-box .video a i::after {
+    left: 12% !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */

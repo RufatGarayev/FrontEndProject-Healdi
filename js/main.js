@@ -121,20 +121,6 @@ var oldactive;
 let inputArrow = document.querySelectorAll("#consultation form .form-group i");
 let input = document.querySelectorAll("#consultation form .form-group .selectboxinput");
 
-
-
-// input.forEach((myInput) => {
-//   myInput.addEventListener("click", function() {
-//     if(!myInput.previousElementSibling.classList.contains("down")){
-//     myInput.previousElementSibling.classList.add("down");
-//     }
-//     else{
-//       myInput.previousElementSibling.classList.remove("down");
-//       myInput.previousElementSibling.style.transition = "0.2s";
-//     }
-//   });
-// });
-
 $(".selectboxinput").click(function() {
   var oldrotate = document.querySelector(".down")
   oldactive = document.querySelector(".activeul");
@@ -182,3 +168,14 @@ selectedoptions.forEach((s) => {
 // consultation-section dropdown end
 
 
+// input.forEach((myInput) => {
+//   myInput.addEventListener("click", function() {
+//     if(!myInput.previousElementSibling.classList.contains("down")){
+//     myInput.previousElementSibling.classList.add("down");
+//     }
+//     else{
+//       myInput.previousElementSibling.classList.remove("down");
+//       myInput.previousElementSibling.style.transition = "0.2s";
+//     }
+//   });
+// });
