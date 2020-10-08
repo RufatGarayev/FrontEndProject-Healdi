@@ -6,11 +6,10 @@ var navbar = document.getElementsByTagName("nav");
 
 // nav-sticky start
 window.onscroll = function() {
-  if($(window).scrollTop()  >= 80 ){
+  if ($(window).scrollTop() >= 80) {
     $(navbar).addClass("sticky");
-  }
-  else{
-    $(navbar).removeClass("sticky")
+  } else {
+    $(navbar).removeClass("sticky");
   }
 };
 // nav-sticky end
@@ -33,16 +32,16 @@ navLinks.forEach((link) => {
 // nav-links hover effects end
 
 // banner arrow
-    banner.addEventListener("mouseenter", function(){
-      arrowLeft.style.left = "-70px";    
-      arrowLeft.style.transition = "0.3s";    
-      arrowRight.style.right = "-70px";
-      arrowRight.style.transition = "0.3s"; 
-    });
-    banner.addEventListener("mouseleave", function(){
-      arrowLeft.style.left = "-150px";
-      arrowRight.style.right = "-150px";
-    });
+banner.addEventListener("mouseenter", function() {
+  arrowLeft.style.left = "-70px";
+  arrowLeft.style.transition = "0.3s";
+  arrowRight.style.right = "-70px";
+  arrowRight.style.transition = "0.3s";
+});
+banner.addEventListener("mouseleave", function() {
+  arrowLeft.style.left = "-150px";
+  arrowRight.style.right = "-150px";
+});
 // banner arrow
 
 // play-box popup effect start
@@ -96,7 +95,7 @@ myBtn.forEach((btn) => {
 $(".owl-carousel.myowl").owlCarousel({
   loop: true,
   margin: 30,
-  dotsEach:2,
+  dotsEach: 2,
   responsive: {
     0: {
       items: 1
@@ -105,8 +104,81 @@ $(".owl-carousel.myowl").owlCarousel({
       items: 2
     },
     1000: {
-      items: 2.6,
+      items: 2.6
     }
   }
 });
 // testomonials-owlCarousel end
+
+// consultation-section dropdown start
+var selectedoptions = [...document.querySelectorAll(".selectedoption")];
+var selectedli = document.querySelector(".selectedoption.selected");
+var gender = document.querySelector("#gender");
+var category = document.querySelector("#category");
+var genderul = document.querySelector("#genderselection");
+var categoryul = document.querySelector("#categoryselection");
+var oldactive;
+let inputArrow = document.querySelectorAll("#consultation form .form-group i");
+let input = document.querySelectorAll("#consultation form .form-group .selectboxinput");
+
+
+
+// input.forEach((myInput) => {
+//   myInput.addEventListener("click", function() {
+//     if(!myInput.previousElementSibling.classList.contains("down")){
+//     myInput.previousElementSibling.classList.add("down");
+//     }
+//     else{
+//       myInput.previousElementSibling.classList.remove("down");
+//       myInput.previousElementSibling.style.transition = "0.2s";
+//     }
+//   });
+// });
+
+$(".selectboxinput").click(function() {
+  var oldrotate = document.querySelector(".down")
+  oldactive = document.querySelector(".activeul");
+  if (oldactive != null) {
+    $(oldactive).fadeOut();
+    oldactive.classList.remove("activeul");
+  }  
+  if (oldrotate != null) {
+ 
+    oldrotate.classList.remove("down");
+  }
+  this.previousElementSibling.classList.add("down")
+  this.nextElementSibling.classList.add("activeul");
+});
+gender.addEventListener("click", function() {
+  if (oldactive == this.nextElementSibling) {
+    $(genderul).fadeOut(100);
+    oldactive.classList.remove("activeul");
+    this.previousElementSibling.classList.remove("down")
+    return;
+  }
+  $(genderul).fadeToggle(100);
+});
+category.addEventListener("click", function() {
+  if (oldactive == this.nextElementSibling) {
+    $(categoryul).fadeOut(100);
+    oldactive.classList.remove("activeul");
+    this.previousElementSibling.classList.remove("down")
+
+    return;
+  }
+  $(categoryul).fadeToggle(100);
+});
+
+selectedoptions.forEach((s) => {
+  s.addEventListener("click", function(e) {
+    var oldselected = this.parentElement.querySelector(".selected");
+    oldselected.classList.remove("selected");
+    this.classList.add("selected");
+    this.parentElement.previousElementSibling.value = this.innerText;
+    var parent = this.parentElement;
+    $(parent).fadeOut();
+  });
+});
+// consultation-section dropdown end
+
+

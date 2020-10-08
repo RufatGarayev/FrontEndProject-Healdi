@@ -84,12 +84,12 @@ nav {
         height: 150px;
         width: 250px;
         background-color: white;
-        box-shadow: 0 -1px 10px #d4cece;
+        box-shadow: 0 -1px 15px #e6e0e0;
         position: absolute;
         top: 90px;
         left: 5px;
         display: none;
-        z-index: 1;
+        z-index: 5;
         ul {
           li {
             padding-left: 15px;
@@ -785,20 +785,79 @@ main {
       form {
         .form-group {
           margin-bottom: 16px;
+          #gender,
+          #category {
+            cursor: pointer;
+            box-shadow: none;
+          }
+          #categoryselection {
+            top: 106%;
+          }
+          i {
+            color: white;
+            transition: 0.2s;
+          }
+          #gendericon {
+            position: absolute;
+            right: 22px;
+            top: 18px;
+          }
+          #categoryicon {
+            position: absolute;
+            right: 22px;
+            top: 18px;
+          }
+          .dropdownselector {
+            background-color: white;
+            position: absolute;
+            top: 106%;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+            border: 1px solid #d3d3d3;
+            border-radius: 5px;
+            display: none;
+
+            li {
+              list-style-type: none;
+              text-align: left;
+              padding: 7px 15px;
+              font-size: 14px;
+              cursor: pointer;
+              &:first-of-type {
+                border-radius: 5px;
+              }
+              &:last-of-type {
+                border-radius: 5px;
+              }
+              &:hover {
+                background-color: #f6f6f6;
+              }
+            }
+            li.selected {
+              font-weight: bold;
+              background-color: #f6f6f6;
+            }
+          }
           .form-control {
             color: #ffffff;
-            font-size: 16px;
+            font-size: 14px;
             border-radius: 30px;
             min-height: 50px;
             background: #35c5bd;
             border: 1px solid rgba(255, 255, 255, 0.4);
             padding: 0 25px;
+            &::placeholder {
+              color: white;
+              font-weight: 500;
+              font-size: 14px;
+            }
           }
           select {
             cursor: pointer;
             color: white;
             font-size: 14px;
-            font-weight: 600;
+            font-weight: 500;
             height: 50px;
             width: 100%;
             line-height: 50px;
@@ -827,6 +886,10 @@ main {
                 background-color: #d2f2f0;
               }
             }
+          }
+          .down {
+            transform: rotate(-180deg);
+            transition: 0.2s;
           }
         }
         button {
@@ -1002,13 +1065,22 @@ main {
             padding: 20px 15px;
             align-items: center;
           }
+          img {
+            margin-right: 20px;
+          }
+          a.active {
+            background-color: #20b2aa;
+            color: white;
+          }
         }
       }
       .tab-content {
-        transition: 0.3s linear;
+        transition: linear 0.3s;
         .content {
           display: none;
+          animation: fadeEffect 1s;
         }
+
         .content.show {
           display: block;
         }
@@ -1542,38 +1614,38 @@ main {
         }
       }
     }
-    .footer-bottom{
+    .footer-bottom {
       margin-top: 120px;
-      border-top: 1px solid #213A64;
-      // padding: 20px 0;
-      height: 80px;
+      border-top: 1px solid #213a64;
+      padding: 25px 0 15px 0;
       background-color: #082452;
-      .copyright{
-        p{
+      .copyright {
+        p {
           font-size: 15px;
           font-weight: 400;
           color: white;
-          a{
+          a {
             font-weight: 600;
             color: white;
           }
         }
       }
-      .social-media{
-        ul{
+      .social-media {
+        ul {
           list-style: none;
           display: flex;
           justify-content: flex-end;
-          li{
+          align-items: center;
+          li {
             padding-left: 20px;
-            a{
+            a {
               font-size: 15px;
               color: white;
               font-weight: 600;
-              i{
+              i {
                 padding-right: 5px;
               }
-              &:hover{
+              &:hover {
                 text-decoration: none;
               }
             }
@@ -1585,4 +1657,10 @@ main {
   // footer end
 
   // main end
+}
+
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
