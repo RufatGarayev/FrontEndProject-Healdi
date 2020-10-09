@@ -62,115 +62,115 @@ header {
 // header end
 
 // nav start
-nav {
-  z-index: 10;
-  height: 90px;
-  display: flex;
-  align-items: center;
-  .website-logo {
-    height: 100%;
-  }
-  .menu {
-    position: relative;
-    height: 90px;
-    ul {
-      width: 100%;
-    }
-    li {
-      list-style: none;
-      display: flex;
-      align-items: center;
-      height: 90px;
-      &:hover .submenu {
-        display: inline-block;
-      }
-      .submenu {
-        height: 150px;
-        width: 250px;
-        background-color: white;
-        box-shadow: 0 -1px 15px #e6e0e0;
-        position: absolute;
-        top: 90px;
-        left: 5px;
-        display: none;
-        z-index: 5;
-        ul {
-          li {
-            padding-left: 15px;
-            height: 50px;
-          }
-          .first-li {
-            border-bottom: 1px solid #e4e4e4;
-          }
-          .second-li {
-            border-top: 1px solid #e4e4e4;
-            border-bottom: 1px solid #e4e4e4;
-          }
-          .third-li {
-            border-bottom: 1px solid #e4e4e4;
-          }
-          .fourth-li {
-            border-top: 1px solid #e4e4e4;
-            border-bottom: 1px solid #e4e4e4;
-          }
-          .sixth-li {
-            border-top: 1px solid #e4e4e4;
-          }
-        }
-      }
-      .submenu-2 {
-        position: absolute;
-        top: 90px;
-        left: 95px;
-      }
-      .submenu-3 {
-        height: 200px;
-        position: absolute;
-        top: 90px;
-        left: 193px;
-      }
-      .submenu-4 {
-        height: 100px;
-        position: absolute;
-        top: 90px;
-        left: 345px;
-      }
-      .submenu-5 {
-        height: 300px;
-        position: absolute;
-        top: 90px;
-        left: 465px;
-      }
-    }
-    li a {
-      color: black;
-      font-size: 13px;
-      font-weight: 600;
-      &:hover {
-        text-decoration: none;
-        color: #1ebeb6;
-      }
-    }
-  }
-  .contact {
-    height: 100%;
-    p {
-      font-weight: 600;
-      font-size: 12px;
-      color: #787878;
-      span {
-        font-size: 18px;
-        font-weight: 800;
-        color: #666666;
-      }
-    }
-    i {
-      color: #1ebeb6;
-      font-size: 46px;
-      padding-right: 11px;
-    }
-  }
-}
+// nav {
+//   z-index: 10;
+//   height: 90px;
+//   display: flex;
+//   align-items: center;
+//   .website-logo {
+//     height: 100%;
+//   }
+//   .menu {
+//     position: relative;
+//     height: 90px;
+//     ul {
+//       width: 100%;
+//     }
+//     li {
+//       list-style: none;
+//       display: flex;
+//       align-items: center;
+//       height: 90px;
+//       &:hover .submenu {
+//         display: inline-block;
+//       }
+//       .submenu {
+//         height: 150px;
+//         width: 250px;
+//         background-color: white;
+//         box-shadow: 0 -1px 15px #e6e0e0;
+//         position: absolute;
+//         top: 90px;
+//         left: 5px;
+//         display: none;
+//         z-index: 5;
+//         ul {
+//           li {
+//             padding-left: 15px;
+//             height: 50px;
+//           }
+//           .first-li {
+//             border-bottom: 1px solid #e4e4e4;
+//           }
+//           .second-li {
+//             border-top: 1px solid #e4e4e4;
+//             border-bottom: 1px solid #e4e4e4;
+//           }
+//           .third-li {
+//             border-bottom: 1px solid #e4e4e4;
+//           }
+//           .fourth-li {
+//             border-top: 1px solid #e4e4e4;
+//             border-bottom: 1px solid #e4e4e4;
+//           }
+//           .sixth-li {
+//             border-top: 1px solid #e4e4e4;
+//           }
+//         }
+//       }
+//       .submenu-2 {
+//         position: absolute;
+//         top: 90px;
+//         left: 95px;
+//       }
+//       .submenu-3 {
+//         height: 200px;
+//         position: absolute;
+//         top: 90px;
+//         left: 193px;
+//       }
+//       .submenu-4 {
+//         height: 100px;
+//         position: absolute;
+//         top: 90px;
+//         left: 345px;
+//       }
+//       .submenu-5 {
+//         height: 300px;
+//         position: absolute;
+//         top: 90px;
+//         left: 465px;
+//       }
+//     }
+//     li a {
+//       color: black;
+//       font-size: 13px;
+//       font-weight: 600;
+//       &:hover {
+//         text-decoration: none;
+//         color: #1ebeb6;
+//       }
+//     }
+//   }
+//   .contact {
+//     height: 100%;
+//     p {
+//       font-weight: 600;
+//       font-size: 12px;
+//       color: #787878;
+//       span {
+//         font-size: 18px;
+//         font-weight: 800;
+//         color: #666666;
+//       }
+//     }
+//     i {
+//       color: #1ebeb6;
+//       font-size: 46px;
+//       padding-right: 11px;
+//     }
+//   }
+// }
 // nav end
 
 // main start
@@ -1776,19 +1776,44 @@ main {
   #choose-us {
     overflow: hidden;
     .bg-cover {
+      overflow: hidden !important;
       height: 300px !important;
-      background-position: center !important;
-      vertical-align: middle;
+      background-position: center center !important;
+      // vertical-align: middle;
     }
     .info-box-holder {
+      padding-bottom: 0 !important;
       .info-box {
         width: 100%;
-        padding: 50px 30px;
+        width: 788px !important;
         position: relative;
-        top: -121px !important;
+        top: -120px !important;
         left: -19px !important;
         &::after {
           display: none;
+        }
+      }
+    }
+  }
+  #doctors {
+    .caption {
+      padding-right: 56px;
+      text-align: center;
+    }
+    .doctor-segments {
+      width: 100% !important;
+      #tabs {
+        .nav-item {
+          float: left;
+          width: 340px;
+          margin: 5px;
+          background-color: #e1f1f1;
+        }
+      }
+      .tab-content {
+        margin-top: 40px;
+        img {
+          width: 690px !important;
         }
       }
     }
@@ -1963,6 +1988,48 @@ main {
       margin-left: 15px;
     }
   }
+  #choose-us {
+    overflow: hidden;
+    .bg-cover {
+      overflow: hidden !important;
+      height: 300px !important;
+      background-position: center center !important;
+      // vertical-align: middle;
+    }
+    .info-box-holder {
+      padding-bottom: 0 !important;
+      .info-box {
+        width: 100%;
+        width: 788px !important;
+        position: relative;
+        top: -120px !important;
+        left: -19px !important;
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+  #doctors {
+    .caption {
+      text-align: center;
+    }
+    .doctor-segments {
+      #tabs {
+        width: 100% !important;
+        .nav-item {
+          width: 100%;
+          background-color: #e1f1f1;
+        }
+      }
+      .tab-content {
+        margin-top: 40px;
+        img {
+          width: 690px !important;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 320px) and (max-width: 575.98px) {
@@ -2083,6 +2150,48 @@ main {
       width: 95%;
       margin-top: 80px;
       margin-left: 15px;
+    }
+  }
+  #choose-us {
+    overflow: hidden;
+    .bg-cover {
+      overflow: hidden !important;
+      height: 300px !important;
+      background-position: center center !important;
+      vertical-align: middle;
+    }
+    .info-box-holder {
+      padding-bottom: 0 !important;
+      .info-box {
+        width: 100%;
+        width: 788px !important;
+        position: relative;
+        top: -120px !important;
+        left: -19px !important;
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+  #doctors {
+    .caption {
+      text-align: center;
+    }
+    .doctor-segments {
+      #tabs {
+        width: 100% !important;
+        .nav-item {
+          width: 100%;
+          background-color: #e1f1f1;
+        }
+      }
+      .tab-content {
+        margin-top: 40px;
+        img {
+          width: 690px !important;
+        }
+      }
     }
   }
 }
