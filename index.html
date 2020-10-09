@@ -29,11 +29,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="scss/style.css" />
   </head>
   <body>
     <!-- header start -->
-    <header class="d-flex align-items-center">
+    <header>
       <div class="container p-0">
         <div class="row">
           <div class="col-lg-6 pl-0">
@@ -71,90 +71,109 @@
     </header>
     <!-- header end -->
     <!-- nav start -->
-    <nav class="d-flex align-items-center">
+    <nav class="navbar navbar-expand-lg">
       <div class="container p-0">
         <div class="row">
           <div class="col-lg-3 p-0">
             <div class="website-logo d-flex align-items-center">
-              <a href="#"
+              <a class="navbar-brand" href="#"
                 ><img class="img-fluid" src="img/logo.png" alt="healdi"
               /></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
             </div>
           </div>
           <div class="col-lg-7">
-            <div class="menu d-flex justify-content-end align-items-center">
-              <ul class="m-0 d-flex justify-content-around">
-                <li>
-                  <a class="active" href="#"
+            <div class="collapse navbar-collapse menu d-flex justify-content-end align-items-center">
+              <ul class="navbar-nav mr-auto m-0 d-flex justify-content-around">
+                <li class="nav-item">
+                  <a class="active nav-link" href="#"
                     >HOME <i class="fas fa-angle-down"></i
                   ></a>
                   <div class="submenu submenu-1">
-                    <ul>
-                      <li><a href="#"> Home Version One</a></li>
-                      <li class="second-li">
-                        <a href="#"> Home Version Two</a>
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"> Home Version One</a>
                       </li>
-                      <li><a href="#"> Home Version Three</a></li>
+                      <li class="nav-item second-li">
+                        <a class="nav-link" href="#"> Home Version Two</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"> Home Version Three</a>
+                      </li>
                     </ul>
                   </div>
                 </li>
-                <li>
-                  <a href="#">PAGES <i class="fas fa-angle-down"></i></a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">PAGES <i class="fas fa-angle-down"></i></a>
                   <div class="submenu submenu-2">
-                    <ul>
-                      <li><a href="#">About Us</a></li>
-                      <li class="second-li"><a href="#">Get In Touch</a></li>
-                      <li><a href="#">Error Page</a></li>
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                      <li class="second-li nav-item"><a class="nav-link" href="#">Get In Touch</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#">Error Page</a></li>
                     </ul>
                   </div>
                 </li>
-                <li>
-                  <a href="#">DEPARTMENTS <i class="fas fa-angle-down"></i></a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">DEPARTMENTS <i class="fas fa-angle-down"></i></a>
                   <div class="submenu submenu-3">
-                    <ul>
-                      <li><a href="#">Departments Version One</a></li>
-                      <li class="second-li">
-                        <a href="#">Departments Version Two</a>
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Departments Version One</a>
                       </li>
-                      <li class="third-li">
-                        <a href="#">Departments Version Three</a>
+                      <li class="nav-item second-li">
+                        <a class="nav-link" href="#">Departments Version Two</a>
                       </li>
-                      <li><a href="#">Departments Version Four</a></li>
+                      <li class="nav-item third-li">
+                        <a class="nav-link" href="#">Departments Version Three</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Departments Version Four</a>
+                      </li>
                     </ul>
                   </div>
                 </li>
                 <li>
-                  <a href="#">DOCTORS <i class="fas fa-angle-down"></i></a>
+                  <a class="nav-link" href="#">DOCTORS <i class="fas fa-angle-down"></i></a>
                   <div class="submenu submenu-4">
-                    <ul>
-                      <li class="first-li">
-                        <a href="#">Doctors Version One</a>
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item first-li">
+                        <a class="nav-link" href="#">Doctors Version One</a>
                       </li>
-                      <li><a href="#">Doctors Version Two</a></li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Doctors Version Two</a>
+                      </li>
                     </ul>
                   </div>
                 </li>
                 <li>
-                  <a href="#">BLOG <i class="fas fa-angle-down"></i></a>
+                  <a class="nav-link" href="#">BLOG <i class="fas fa-angle-down"></i></a>
                   <div class="submenu submenu-5">
-                    <ul>
-                      <li><a href="#">Blog Standard</a></li>
-                      <li class="second-li">
-                        <a href="#">Blog With Sidebar</a>
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Blog Standard</a>
                       </li>
-                      <li><a href="#">Blog Grid Two Colum</a></li>
-                      <li class="fourth-li">
-                        <a href="#">Blog Grid Three Colum</a>
+                      <li class="nav-item second-li">
+                        <a class="nav-link" href="#">Blog With Sidebar</a>
                       </li>
-                      <li><a href="#">Blog Single</a></li>
-                      <li class="sixth-li">
-                        <a href="#">Blog Single With Sidebar</a>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Blog Grid Two Colum</a>
+                      </li>
+                      <li class="nav-item fourth-li">
+                        <a class="nav-link" href="#">Blog Grid Three Colum</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Blog Single</a>
+                      </li>
+                      <li class="nav-item sixth-li">
+                        <a class="nav-link" href="#">Blog Single With Sidebar</a>
                       </li>
                     </ul>
                   </div>
                 </li>
-                <li>
-                  <a href="#">CONTACT </a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">CONTACT </a>
                 </li>
               </ul>
             </div>
@@ -363,7 +382,7 @@
                 </p>
                 <ul class="d-flex pt-2 pb-5">
                   <li class="d-flex align-items-center">
-                    <div class="icon mr-3">
+                    <div class="icon">
                       <!-- <i class="flaticon-calendar"></i> -->
                       <img
                         src="https://www.flaticon.com/svg/static/icons/svg/1021/1021779.svg"
@@ -376,7 +395,7 @@
                     </div>
                   </li>
                   <li class="d-flex align-items-center">
-                    <div class="icon mr-3">
+                    <div class="icon">
                       <!-- <i class="flaticon-drugs"></i> -->
                       <img
                         src="https://www.flaticon.com/svg/static/icons/svg/843/843420.svg"
@@ -405,7 +424,7 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 offset-2">
+            <div class="col-lg-8 col-md-12 offset-lg-2">
               <div class="services-caption text-center">
                 <h4>SERVICES</h4>
                 <h2>Our Department</h2>
@@ -653,7 +672,7 @@
       </section>
       <!-- consultation section start -->
       <!-- choose us section start -->
-      <section id="choose-us">
+      <section id="choose-us" style="overflow: hidden">
         <div class="row">
           <div class="col-lg-6 p-0">
             <div class="bg-cover"></div>

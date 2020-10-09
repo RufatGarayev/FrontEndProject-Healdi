@@ -16,6 +16,8 @@ body {
 
 // header start
 header {
+  display: flex;
+  align-items: center;
   height: 60px;
   border-top: 1px solid #e4e4e4;
   border-bottom: 1px solid #e4e4e4;
@@ -63,6 +65,8 @@ header {
 nav {
   z-index: 10;
   height: 90px;
+  display: flex;
+  align-items: center;
   .website-logo {
     height: 100%;
   }
@@ -173,6 +177,7 @@ nav {
 main {
   // banner section start
   #banner {
+    overflow-x: hidden;
     .carousel-control-prev {
       position: absolute;
       left: -150px;
@@ -486,6 +491,9 @@ main {
         li {
           padding-top: 5px;
           width: 100%;
+          .icon {
+            margin-right: 18px;
+          }
           .content {
             h5 {
               font-weight: 600;
@@ -917,9 +925,9 @@ main {
   #choose-us {
     .bg-cover {
       background-image: url(../img/doctor3.jpg);
-      height: 839px !important;
+      height: 839px;
       width: 100% !important;
-      background-position: center center !important;
+      background-position: center !important;
       background-size: cover !important;
       background-repeat: no-repeat;
     }
@@ -1160,6 +1168,7 @@ main {
 
   // testomonials-section start
   #testomonials {
+    overflow-x: hidden;
     .caption {
       padding: 220px 0 220px 218px;
       background-color: #1ebeb6;
@@ -1670,7 +1679,34 @@ main {
 
 // web-site responsive start
 @media (min-width: 768px) and (max-width: 991.98px) {
+  header {
+    margin-top: 10px !important;
+    .covid {
+      text-align: center;
+    }
+    .header-links {
+      position: absolute;
+      top: 5px;
+      left: 174px;
+      width: 38%;
+      display: inline-block !important;
+    }
+    .social-media {
+      a {
+        padding-left: 20px;
+      }
+      position: absolute;
+      top: 5px;
+      left: 424px;
+      width: 38%;
+      display: inline-block !important;
+    }
+  }
+  nav {
+    visibility: hidden;
+  }
   #banner {
+    overflow-x: hidden !important;
     img {
       height: 580px !important;
     }
@@ -1704,9 +1740,71 @@ main {
       }
     }
   }
+  #services {
+    .services-caption {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h4 {
+        font-size: 18px !important;
+      }
+      h2 {
+        font-size: 26px !important;
+      }
+      p {
+        font-size: 14px !important;
+      }
+    }
+  }
+  #consultation {
+    padding-top: 60px !important;
+    padding-left: 70px !important;
+    .appoinment-box {
+      padding: 50px 37px;
+      width: 83%;
+      margin-top: 80px;
+      margin-left: 46px;
+    }
+    .main-holder {
+      .text {
+        h2 {
+          font-size: 25px !important;
+        }
+      }
+    }
+  }
+  #choose-us {
+    overflow: hidden;
+    .bg-cover {
+      height: 300px !important;
+      background-position: center !important;
+      vertical-align: middle;
+    }
+    .info-box-holder {
+      .info-box {
+        width: 100%;
+        padding: 50px 30px;
+        position: relative;
+        top: -121px !important;
+        left: -19px !important;
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+  #testomonials {
+    overflow: hidden;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
+  header {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
   #banner {
     img {
       height: 350px !important;
@@ -1740,10 +1838,45 @@ main {
   }
   #about {
     width: 100% !important;
-    padding: 50px 0 160px 0 !important;
+    padding: 50px 0 200px 116px !important;
     .text-sec {
+      padding-right: 126px;
       width: 100% !important;
       margin-top: 330px !important;
+      text-align: center;
+      h5 {
+        font-size: 16px !important;
+      }
+      h2 {
+        font-size: 22px;
+      }
+      p {
+        font-size: 14px !important;
+      }
+      ul {
+        position: absolute;
+        bottom: -115px;
+        left: 18px;
+        width: 440px;
+        li {
+          margin-left: 10px;
+          .icon {
+            img {
+              margin-right: -1px;
+            }
+          }
+          .content {
+            h5 {
+              font-size: 14px !important;
+            }
+          }
+        }
+      }
+      .btnn {
+        position: absolute;
+        bottom: -148px;
+        right: 220px;
+      }
     }
     .doctor-pic2 {
       padding-right: 0px !important;
@@ -1758,12 +1891,12 @@ main {
         left: 0 !important;
         bottom: -298px !important;
         text-align: center !important;
-        .text{
+        .text {
           margin-top: 100px;
-          h5{
+          h5 {
             font-size: 16px;
           }
-          p{
+          p {
             font-size: 15px;
           }
         }
@@ -1771,10 +1904,10 @@ main {
           position: absolute;
           left: 180px;
           top: 42px;
-          .play-btn{
-            a{
-              i{
-                &::after{
+          .play-btn {
+            a {
+              i {
+                &::after {
                   left: 40% !important;
                 }
               }
@@ -1787,6 +1920,47 @@ main {
       &::after {
         left: 12% !important;
       }
+    }
+  }
+  #services {
+    .services-caption {
+      padding-bottom: 40px !important;
+      h4 {
+        font-size: 18px !important;
+      }
+      h2 {
+        font-size: 22px !important;
+      }
+      p {
+        font-size: 14px !important;
+      }
+    }
+  }
+  #consultation {
+    .main-holder {
+      padding-top: 0 !important;
+      padding-right: 0 !important;
+      .text {
+        text-align: center;
+        h2 {
+          font-size: 22px !important;
+        }
+        p {
+          font-size: 14px !important;
+        }
+      }
+      .consult-item {
+        margin-top: 20px;
+      }
+    }
+    .appoinment-box {
+      padding: 50px 37px;
+      &::after {
+        display: none !important;
+      }
+      width: 95%;
+      margin-top: 40px;
+      margin-left: 15px;
     }
   }
 }
@@ -1830,12 +2004,12 @@ main {
       text-align: center !important;
       width: 100% !important;
       margin-top: 330px !important;
-      ul{
+      ul {
         width: 100%;
         display: flex;
         flex-direction: column !important;
         justify-content: center !important;
-        li{
+        li {
           text-align: center !important;
           // display: block !important;
         }
@@ -1854,12 +2028,12 @@ main {
         left: 0 !important;
         bottom: -298px !important;
         text-align: center !important;
-        .text{
+        .text {
           margin-top: 100px;
-          h5{
+          h5 {
             font-size: 16px;
           }
-          p{
+          p {
             font-size: 15px;
           }
         }
@@ -1867,10 +2041,10 @@ main {
           position: absolute;
           left: 180px;
           top: 42px;
-          .play-btn{
-            a{
-              i{
-                &::after{
+          .play-btn {
+            a {
+              i {
+                &::after {
                   left: 40% !important;
                 }
               }
@@ -1883,6 +2057,32 @@ main {
       &::after {
         left: 12% !important;
       }
+    }
+  }
+  #consultation {
+    .main-holder {
+      padding-top: 0 !important;
+      padding-right: 0 !important;
+      .text {
+        text-align: center;
+        h2 {
+          font-size: 22px !important;
+        }
+        p {
+          font-size: 14px !important;
+        }
+      }
+      .consult-item {
+        margin-top: 20px;
+      }
+    }
+    .appoinment-box {
+      &::after {
+        display: none !important;
+      }
+      width: 95%;
+      margin-top: 80px;
+      margin-left: 15px;
     }
   }
 }
