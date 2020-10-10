@@ -1833,6 +1833,9 @@ main footer .footer-bottom .social-media ul li a:hover {
     top: 50px !important;
     left: 15px !important;
   }
+  #entry {
+    padding-right: 20px !important;
+  }
   #entry .box {
     margin-top: 40px;
     margin-bottom: 35px;
@@ -1843,6 +1846,9 @@ main footer .footer-bottom .social-media ul li a:hover {
   }
   #about .text-sec {
     margin-top: 100px !important;
+  }
+  #about .doctor-pic2 {
+    padding-left: 70px !important;
   }
   #about .doctor-pic2 .video-box .video a i::after {
     left: 12% !important;
@@ -1923,6 +1929,45 @@ main footer .footer-bottom .social-media ul li a:hover {
   }
   #testomonials {
     overflow: hidden;
+    padding-bottom: 60px;
+  }
+  #testomonials .caption {
+    text-align: center;
+    padding: 220px 0 220px 4px !important;
+  }
+  #testomonials .caption .icon {
+    position: absolute !important;
+    left: 342px !important;
+  }
+  #testomonials .owl-carousel {
+    margin-left: 0 !important;
+  }
+  #contact .address-box {
+    margin-bottom: 482px;
+  }
+  #contact .address-box .address-info {
+    -webkit-box-shadow: 0 0 10px #e7e7e7;
+            box-shadow: 0 0 10px #e7e7e7;
+  }
+  #contact .input {
+    padding-top: 40px;
+  }
+  footer .links-2 {
+    margin-top: 40px;
+  }
+  footer .branches {
+    margin-top: 40px !important;
+  }
+  footer .copyright {
+    text-align: center;
+  }
+  footer .social-media ul {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
   }
 }
 
@@ -1948,7 +1993,10 @@ main footer .footer-bottom .social-media ul li a:hover {
   }
   #banner .carousel-item .layer .fa-heartbeat {
     top: 20px !important;
-    left: 266px !important;
+    left: 314px !important;
+  }
+  #entry {
+    padding-right: 20px !important;
   }
   #entry .box {
     margin-top: 40px;
@@ -1960,7 +2008,7 @@ main footer .footer-bottom .social-media ul li a:hover {
   }
   #about {
     width: 100% !important;
-    padding: 50px 0 200px 116px !important;
+    padding: 50px 0 230px 110px !important;
   }
   #about .text-sec {
     padding-right: 126px;
@@ -2107,9 +2155,60 @@ main footer .footer-bottom .social-media ul li a:hover {
   #doctors .doctor-segments .tab-content img {
     width: 690px !important;
   }
+  #testomonials {
+    overflow: hidden;
+    padding-bottom: 60px;
+  }
+  #testomonials .caption {
+    text-align: center;
+    padding: 220px 0 220px 4px !important;
+  }
+  #testomonials .caption .icon {
+    position: absolute !important;
+    left: 342px !important;
+  }
+  #testomonials .owl-carousel {
+    margin-left: 0 !important;
+  }
+  #news .info {
+    margin-bottom: 30px;
+  }
+  #contact .address-box {
+    margin-bottom: 482px;
+  }
+  #contact .address-box .address-info {
+    -webkit-box-shadow: 0 0 10px #e7e7e7;
+            box-shadow: 0 0 10px #e7e7e7;
+  }
+  #contact .input {
+    padding-top: 40px;
+  }
+  footer .address {
+    margin-bottom: 30px;
+  }
+  footer .links-2 {
+    margin-top: 40px;
+  }
+  footer .branches {
+    margin-top: 40px !important;
+  }
+  footer .copyright {
+    text-align: center;
+  }
+  footer .social-media ul {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
 }
 
-@media (min-width: 320px) and (max-width: 575.98px) {
+@media (min-width: 500px) and (max-width: 575.98px) {
+  #banner {
+    overflow: hidden !important;
+  }
   #banner img {
     height: 370px !important;
   }
@@ -2127,6 +2226,9 @@ main footer .footer-bottom .social-media ul li a:hover {
     top: 25px !important;
     left: 195px !important;
   }
+  #entry {
+    padding-right: 20px !important;
+  }
   #entry .box {
     margin-top: 40px;
     margin-bottom: 35px;
@@ -2137,18 +2239,22 @@ main footer .footer-bottom .social-media ul li a:hover {
   }
   #about {
     width: 100% !important;
-    padding: 40px 0 100px 0 !important;
+    padding: 50px 0 230px 60px !important;
   }
   #about .text-sec {
     text-align: center !important;
     width: 100% !important;
     margin-top: 330px !important;
+    padding-right: 50px;
+  }
+  #about .text-sec h2 {
+    font-size: 22px;
   }
   #about .text-sec ul {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
@@ -2158,7 +2264,13 @@ main footer .footer-bottom .social-media ul li a:hover {
             justify-content: center !important;
   }
   #about .text-sec ul li {
-    text-align: center !important;
+    margin-top: 20px;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
   }
   #about .doctor-pic2 {
     padding-right: 0px !important;
@@ -2257,6 +2369,544 @@ main footer .footer-bottom .social-media ul li a:hover {
   }
   #doctors .doctor-segments .tab-content img {
     width: 690px !important;
+  }
+  #testomonials {
+    overflow: hidden !important;
+    padding-bottom: 60px;
+  }
+  #testomonials .caption {
+    text-align: center;
+    padding: 100px 0 100px 4px !important;
+  }
+  #testomonials .caption .icon {
+    position: absolute !important;
+    top: 38px !important;
+    left: 242px !important;
+  }
+  #testomonials .owl-carousel {
+    margin-left: 0 !important;
+  }
+  #news .info {
+    margin-bottom: 30px;
+  }
+  #contact .address-box {
+    margin-bottom: 482px;
+  }
+  #contact .address-box .address-info {
+    -webkit-box-shadow: 0 0 10px #e7e7e7;
+            box-shadow: 0 0 10px #e7e7e7;
+  }
+  #contact .input {
+    padding-top: 40px;
+  }
+  #contact .input .caption {
+    text-align: center;
+  }
+  #contact .input .caption h2 {
+    font-size: 26px !important;
+  }
+  footer {
+    padding: 60px 30px 0 20px !important;
+  }
+  footer .address {
+    margin-bottom: 30px;
+  }
+  footer .links-2 {
+    margin-top: 40px;
+  }
+  footer .branches {
+    margin-right: 10px !important;
+    margin-top: 40px !important;
+  }
+  footer .copyright {
+    text-align: center;
+  }
+  footer .social-media ul {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 499.98px) {
+  #banner {
+    overflow: hidden !important;
+  }
+  #banner img {
+    height: 370px !important;
+  }
+  #banner .carousel-item .layer {
+    text-align: center;
+    padding: 0px 40px !important;
+  }
+  #banner .carousel-item .layer h4 {
+    font-size: 18px !important;
+  }
+  #banner .carousel-item .layer h1 {
+    font-size: 36px !important;
+  }
+  #banner .carousel-item .layer .fa-heartbeat {
+    top: 25px !important;
+    left: 140px !important;
+  }
+  #entry {
+    padding-right: 20px !important;
+  }
+  #entry .box {
+    margin-top: 40px;
+    margin-bottom: 35px;
+  }
+  #entry .box-1 {
+    width: 100%;
+    margin-left: 40px;
+  }
+  #about {
+    width: 100% !important;
+    padding: 50px 0 230px 38px !important;
+  }
+  #about .text-sec {
+    text-align: center !important;
+    width: 100% !important;
+    margin-top: 330px !important;
+    padding-right: 44px;
+  }
+  #about .text-sec h2 {
+    font-size: 22px;
+  }
+  #about .text-sec ul {
+    width: 100%;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  #about .text-sec ul li {
+    margin-top: 20px;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  #about .doctor-pic2 {
+    padding-right: 22px !important;
+  }
+  #about .doctor-pic2 img {
+    width: 456px;
+    -webkit-clip-path: none !important;
+            clip-path: none !important;
+  }
+  #about .doctor-pic2 .video-box {
+    margin-right: 20px;
+    width: 377px;
+    height: 270px;
+    left: 0 !important;
+    bottom: -298px !important;
+    text-align: center !important;
+  }
+  #about .doctor-pic2 .video-box .text {
+    width: 100%;
+    margin-top: 100px;
+  }
+  #about .doctor-pic2 .video-box .text h5 {
+    font-size: 16px;
+  }
+  #about .doctor-pic2 .video-box .text p {
+    font-size: 15px;
+  }
+  #about .doctor-pic2 .video-box .video {
+    position: absolute;
+    left: 143px;
+    top: 42px;
+  }
+  #about .doctor-pic2 .video-box .video .play-btn a i::after {
+    left: 40% !important;
+  }
+  #about .doctor-pic2 .video-box .video a i::after {
+    left: 12% !important;
+  }
+  #consultation .main-holder {
+    padding-top: 0 !important;
+    padding-right: 0 !important;
+  }
+  #consultation .main-holder .text {
+    text-align: center;
+  }
+  #consultation .main-holder .text h2 {
+    font-size: 22px !important;
+  }
+  #consultation .main-holder .text p {
+    font-size: 14px !important;
+  }
+  #consultation .main-holder .consult-item {
+    margin-top: 20px;
+  }
+  #consultation .appoinment-box {
+    width: 95%;
+    margin-top: 80px;
+    margin-left: 15px;
+  }
+  #consultation .appoinment-box::after {
+    display: none !important;
+  }
+  #choose-us {
+    overflow: hidden;
+  }
+  #choose-us .bg-cover {
+    overflow: hidden !important;
+    height: 300px !important;
+    background-position: center center !important;
+    vertical-align: middle;
+  }
+  #choose-us .info-box-holder {
+    padding-bottom: 0 !important;
+  }
+  #choose-us .info-box-holder .info-box {
+    width: 100%;
+    width: 788px !important;
+    position: relative;
+    top: -120px !important;
+    left: -19px !important;
+  }
+  #choose-us .info-box-holder .info-box::after {
+    display: none;
+  }
+  #doctors .caption {
+    text-align: center;
+  }
+  #doctors .doctor-segments #tabs {
+    width: 100% !important;
+  }
+  #doctors .doctor-segments #tabs .nav-item {
+    width: 100%;
+    background-color: #e1f1f1;
+  }
+  #doctors .doctor-segments .tab-content {
+    margin-top: 40px;
+  }
+  #testomonials {
+    overflow: hidden !important;
+    padding-bottom: 60px;
+  }
+  #testomonials .caption {
+    text-align: center;
+    padding: 100px 0 100px 4px !important;
+  }
+  #testomonials .caption .icon {
+    position: absolute !important;
+    top: 38px !important;
+    left: 242px !important;
+  }
+  #testomonials .owl-carousel {
+    margin-left: 0 !important;
+  }
+  #news .info {
+    margin-bottom: 30px;
+  }
+  #contact .address-box {
+    margin-bottom: 482px;
+  }
+  #contact .address-box .address-info {
+    -webkit-box-shadow: 0 0 10px #e7e7e7;
+            box-shadow: 0 0 10px #e7e7e7;
+  }
+  #contact .input {
+    padding-top: 40px;
+  }
+  #contact .input .caption {
+    text-align: center;
+  }
+  #contact .input .caption h2 {
+    font-size: 26px !important;
+  }
+  footer {
+    padding: 60px 30px 0 20px !important;
+  }
+  footer .address {
+    margin-bottom: 30px;
+  }
+  footer .links-2 {
+    margin-top: 40px;
+  }
+  footer .branches {
+    margin-right: 10px !important;
+    margin-top: 40px !important;
+  }
+  footer .copyright {
+    text-align: center;
+  }
+  footer .social-media ul {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 399.98px) {
+  header {
+    display: none;
+  }
+  #banner {
+    overflow: hidden !important;
+  }
+  #banner img {
+    height: 370px !important;
+  }
+  #banner .carousel-item .layer {
+    text-align: center;
+    padding: 0px 40px !important;
+  }
+  #banner .carousel-item .layer h4 {
+    font-size: 18px !important;
+  }
+  #banner .carousel-item .layer h1 {
+    font-size: 36px !important;
+  }
+  #banner .carousel-item .layer .fa-heartbeat {
+    top: 25px !important;
+    left: 112px !important;
+  }
+  #entry {
+    padding-right: 20px !important;
+  }
+  #entry .box {
+    margin-top: 40px;
+    margin-bottom: 35px;
+  }
+  #entry .box-1 {
+    width: 100%;
+    margin-left: 40px;
+  }
+  #about {
+    width: 100% !important;
+    padding: 50px 0 230px 38px !important;
+  }
+  #about .text-sec {
+    text-align: center !important;
+    width: 100% !important;
+    margin-top: 330px !important;
+    padding-right: 44px;
+  }
+  #about .text-sec h2 {
+    font-size: 22px;
+  }
+  #about .text-sec ul {
+    width: 100%;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  #about .text-sec ul li {
+    margin-top: 20px;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  #about .doctor-pic2 {
+    padding-right: 22px !important;
+  }
+  #about .doctor-pic2 img {
+    width: 456px;
+    -webkit-clip-path: none !important;
+            clip-path: none !important;
+  }
+  #about .doctor-pic2 .video-box {
+    margin-right: 20px;
+    width: 330px;
+    height: 270px;
+    left: 0 !important;
+    bottom: -298px !important;
+    text-align: center !important;
+  }
+  #about .doctor-pic2 .video-box .text {
+    width: 100%;
+    margin-top: 100px;
+  }
+  #about .doctor-pic2 .video-box .text h5 {
+    font-size: 16px;
+  }
+  #about .doctor-pic2 .video-box .text p {
+    font-size: 15px;
+  }
+  #about .doctor-pic2 .video-box .video {
+    position: absolute;
+    left: 124px;
+    top: 42px;
+  }
+  #about .doctor-pic2 .video-box .video .play-btn a i::after {
+    left: 40% !important;
+  }
+  #about .doctor-pic2 .video-box .video a i::after {
+    left: 12% !important;
+  }
+  #consultation .main-holder {
+    padding-top: 0 !important;
+    padding-right: 0 !important;
+  }
+  #consultation .main-holder .text {
+    text-align: center;
+  }
+  #consultation .main-holder .text h2 {
+    font-size: 22px !important;
+  }
+  #consultation .main-holder .text p {
+    font-size: 14px !important;
+  }
+  #consultation .main-holder .consult-item {
+    margin-top: 20px;
+  }
+  #consultation .appoinment-box {
+    width: 95%;
+    margin-top: 80px;
+    margin-left: 15px;
+  }
+  #consultation .appoinment-box::after {
+    display: none !important;
+  }
+  #choose-us {
+    overflow: hidden;
+  }
+  #choose-us .bg-cover {
+    overflow: hidden !important;
+    height: 300px !important;
+    background-position: center center !important;
+    vertical-align: middle;
+  }
+  #choose-us .info-box-holder {
+    padding-bottom: 0 !important;
+  }
+  #choose-us .info-box-holder .info-box {
+    width: 100%;
+    width: 788px !important;
+    position: relative;
+    top: -120px !important;
+    left: -19px !important;
+  }
+  #choose-us .info-box-holder .info-box::after {
+    display: none;
+  }
+  #doctors .caption {
+    text-align: center;
+  }
+  #doctors .doctor-segments #tabs {
+    width: 100% !important;
+  }
+  #doctors .doctor-segments #tabs .nav-item {
+    width: 100%;
+    background-color: #e1f1f1;
+  }
+  #doctors .doctor-segments .tab-content {
+    margin-top: 40px;
+  }
+  #testomonials {
+    overflow: hidden !important;
+    padding-bottom: 60px;
+  }
+  #testomonials .caption {
+    text-align: center;
+    padding: 100px 0 100px 4px !important;
+  }
+  #testomonials .caption .icon {
+    position: absolute !important;
+    top: 38px !important;
+    left: 144px !important;
+  }
+  #testomonials .owl-carousel {
+    margin-left: 0 !important;
+  }
+  #news .info {
+    margin-bottom: 30px;
+  }
+  #contact .address-box {
+    margin-bottom: 482px;
+  }
+  #contact .address-box .address-info {
+    left: 40px !important;
+    right: 30px;
+    bottom: -35px !important;
+    -webkit-box-shadow: 0 0 10px #e7e7e7;
+            box-shadow: 0 0 10px #e7e7e7;
+  }
+  #contact .address-box .address-info ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #contact .address-box .address-info ul li {
+    padding-top: 27px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #contact .input {
+    padding-top: 65px;
+  }
+  #contact .input .caption {
+    text-align: center;
+  }
+  #contact .input .caption h2 {
+    font-size: 26px !important;
+  }
+  footer {
+    padding: 60px 30px 0 20px !important;
+  }
+  footer .address {
+    margin-bottom: 30px;
+  }
+  footer .links-2 {
+    margin-top: 40px;
+  }
+  footer .branches {
+    margin-right: 10px !important;
+    margin-top: 40px !important;
+  }
+  footer .copyright {
+    text-align: center;
+  }
+  footer .social-media ul {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

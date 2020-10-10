@@ -1677,7 +1677,10 @@ main {
   // main end
 }
 
-// web-site responsive start
+
+// WEB-SITE RESPONSIVE START
+
+// tablet layout start
 @media (min-width: 768px) and (max-width: 991.98px) {
   header {
     margin-top: 10px !important;
@@ -1721,6 +1724,7 @@ main {
     }
   }
   #entry {
+    padding-right: 20px !important;
     .box {
       margin-top: 40px;
       margin-bottom: 35px;
@@ -1733,6 +1737,9 @@ main {
   #about {
     .text-sec {
       margin-top: 100px !important;
+    }
+    .doctor-pic2 {
+      padding-left: 70px !important;
     }
     .doctor-pic2 .video-box .video a i {
       &::after {
@@ -1820,9 +1827,51 @@ main {
   }
   #testomonials {
     overflow: hidden;
+    padding-bottom: 60px;
+    .caption {
+      text-align: center;
+      padding: 220px 0 220px 4px !important;
+      .icon {
+        position: absolute !important;
+        left: 342px !important;
+      }
+    }
+    .owl-carousel {
+      margin-left: 0 !important;
+    }
+  }
+  #contact {
+    .address-box {
+      margin-bottom: 482px;
+      .address-info {
+        box-shadow: 0 0 10px #e7e7e7;
+      }
+    }
+    .input {
+      padding-top: 40px;
+    }
+  }
+  footer {
+    .links-2 {
+      margin-top: 40px;
+    }
+    .branches {
+      margin-top: 40px !important;
+    }
+    .copyright {
+      text-align: center;
+    }
+    .social-media {
+      ul {
+        display: flex !important;
+        justify-content: center !important;
+      }
+    }
   }
 }
+// tablet layout end
 
+// phone layout start
 @media (min-width: 576px) and (max-width: 767.98px) {
   header {
     display: none;
@@ -1846,12 +1895,13 @@ main {
         }
         .fa-heartbeat {
           top: 20px !important;
-          left: 266px !important;
+          left: 314px !important;
         }
       }
     }
   }
   #entry {
+    padding-right: 20px !important;
     .box {
       margin-top: 40px;
       margin-bottom: 35px;
@@ -1863,7 +1913,7 @@ main {
   }
   #about {
     width: 100% !important;
-    padding: 50px 0 200px 116px !important;
+    padding: 50px 0 230px 110px !important;
     .text-sec {
       padding-right: 126px;
       width: 100% !important;
@@ -2030,10 +2080,64 @@ main {
       }
     }
   }
+  #testomonials {
+    overflow: hidden;
+    padding-bottom: 60px;
+    .caption {
+      text-align: center;
+      padding: 220px 0 220px 4px !important;
+      .icon {
+        position: absolute !important;
+        left: 342px !important;
+      }
+    }
+    .owl-carousel {
+      margin-left: 0 !important;
+    }
+  }
+  #news {
+    .info {
+      margin-bottom: 30px;
+    }
+  }
+  #contact {
+    .address-box {
+      margin-bottom: 482px;
+      .address-info {
+        box-shadow: 0 0 10px #e7e7e7;
+      }
+    }
+    .input {
+      padding-top: 40px;
+    }
+  }
+  footer {
+    .address {
+      margin-bottom: 30px;
+    }
+    .links-2 {
+      margin-top: 40px;
+    }
+    .branches {
+      margin-top: 40px !important;
+    }
+    .copyright {
+      text-align: center;
+    }
+    .social-media {
+      ul {
+        display: flex !important;
+        justify-content: center !important;
+      }
+    }
+  }
 }
+// phone layout end
 
-@media (min-width: 320px) and (max-width: 575.98px) {
+// small-phone layout start
+@media (min-width: 500px) and (max-width: 575.98px) {
   #banner {
+    overflow: hidden !important;
     img {
       height: 370px !important;
     }
@@ -2055,6 +2159,7 @@ main {
     }
   }
   #entry {
+    padding-right: 20px !important;
     .box {
       margin-top: 40px;
       margin-bottom: 35px;
@@ -2066,19 +2171,24 @@ main {
   }
   #about {
     width: 100% !important;
-    padding: 40px 0 100px 0 !important;
+    padding: 50px 0 230px 60px !important;
     .text-sec {
       text-align: center !important;
       width: 100% !important;
       margin-top: 330px !important;
+      padding-right: 50px;
+      h2 {
+        font-size: 22px;
+      }
       ul {
         width: 100%;
-        display: flex;
+        display: flex !important;
         flex-direction: column !important;
         justify-content: center !important;
         li {
-          text-align: center !important;
-          // display: block !important;
+          margin-top: 20px;
+          display: flex !important;
+          justify-content: center !important;
         }
       }
     }
@@ -2194,5 +2304,546 @@ main {
       }
     }
   }
+  #testomonials {
+    overflow: hidden !important;
+    padding-bottom: 60px;
+    .caption {
+      text-align: center;
+      padding: 100px 0 100px 4px !important;
+      .icon {
+        position: absolute !important;
+        top: 38px !important;
+        left: 242px !important;
+      }
+    }
+    .owl-carousel {
+      margin-left: 0 !important;
+    }
+  }
+  #news {
+    .info {
+      margin-bottom: 30px;
+    }
+  }
+  #contact {
+    .address-box {
+      margin-bottom: 482px;
+      .address-info {
+        box-shadow: 0 0 10px #e7e7e7;
+      }
+    }
+    .input {
+      padding-top: 40px;
+      .caption {
+        text-align: center;
+        h2 {
+          font-size: 26px !important;
+        }
+      }
+    }
+  }
+  footer {
+    padding: 60px 30px 0 20px !important;
+    .address {
+      margin-bottom: 30px;
+    }
+    .links-2 {
+      margin-top: 40px;
+    }
+    .branches {
+      margin-right: 10px !important;
+      margin-top: 40px !important;
+    }
+    .copyright {
+      text-align: center;
+    }
+    .social-media {
+      ul {
+        display: flex !important;
+        justify-content: center !important;
+      }
+    }
+  }
 }
-// web-site responsive end
+// small-phone layout end
+
+// extra-small-phone layout start
+@media (min-width: 400px) and (max-width: 499.98px) {
+  #banner {
+    overflow: hidden !important;
+    img {
+      height: 370px !important;
+    }
+    .carousel-item {
+      .layer {
+        text-align: center;
+        padding: 0px 40px !important;
+        h4 {
+          font-size: 18px !important;
+        }
+        h1 {
+          font-size: 36px !important;
+        }
+        .fa-heartbeat {
+          top: 25px !important;
+          left: 140px !important;
+        }
+      }
+    }
+  }
+  #entry {
+    padding-right: 20px !important;
+    .box {
+      margin-top: 40px;
+      margin-bottom: 35px;
+    }
+    .box-1 {
+      width: 100%;
+      margin-left: 40px;
+    }
+  }
+  #about {
+    width: 100% !important;
+    padding: 50px 0 230px 38px !important;
+    .text-sec {
+      text-align: center !important;
+      width: 100% !important;
+      margin-top: 330px !important;
+      padding-right: 44px;
+      h2 {
+        font-size: 22px;
+      }
+      ul {
+        width: 100%;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        li {
+          margin-top: 20px;
+          display: flex !important;
+          justify-content: center !important;
+        }
+      }
+    }
+    .doctor-pic2 {
+      padding-right: 22px !important;
+      img {
+        width: 456px;
+        clip-path: none !important;
+      }
+      .video-box {
+        margin-right: 20px;
+        width: 377px;
+        height: 270px;
+        left: 0 !important;
+        bottom: -298px !important;
+        text-align: center !important;
+        .text {
+          width: 100%;
+          margin-top: 100px;
+          h5 {
+            font-size: 16px;
+          }
+          p {
+            font-size: 15px;
+          }
+        }
+        .video {
+          position: absolute;
+          left: 143px;
+          top: 42px;
+          .play-btn {
+            a {
+              i {
+                &::after {
+                  left: 40% !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .doctor-pic2 .video-box .video a i {
+      &::after {
+        left: 12% !important;
+      }
+    }
+  }
+  #consultation {
+    .main-holder {
+      padding-top: 0 !important;
+      padding-right: 0 !important;
+      .text {
+        text-align: center;
+        h2 {
+          font-size: 22px !important;
+        }
+        p {
+          font-size: 14px !important;
+        }
+      }
+      .consult-item {
+        margin-top: 20px;
+      }
+    }
+    .appoinment-box {
+      &::after {
+        display: none !important;
+      }
+      width: 95%;
+      margin-top: 80px;
+      margin-left: 15px;
+    }
+  }
+  #choose-us {
+    overflow: hidden;
+    .bg-cover {
+      overflow: hidden !important;
+      height: 300px !important;
+      background-position: center center !important;
+      vertical-align: middle;
+    }
+    .info-box-holder {
+      padding-bottom: 0 !important;
+      .info-box {
+        width: 100%;
+        width: 788px !important;
+        position: relative;
+        top: -120px !important;
+        left: -19px !important;
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+  #doctors {
+    .caption {
+      text-align: center;
+    }
+    .doctor-segments {
+      #tabs {
+        width: 100% !important;
+        .nav-item {
+          width: 100%;
+          background-color: #e1f1f1;
+        }
+      }
+      .tab-content {
+        margin-top: 40px;
+      }
+    }
+  }
+  #testomonials {
+    overflow: hidden !important;
+    padding-bottom: 60px;
+    .caption {
+      text-align: center;
+      padding: 100px 0 100px 4px !important;
+      .icon {
+        position: absolute !important;
+        top: 38px !important;
+        left: 242px !important;
+      }
+    }
+    .owl-carousel {
+      margin-left: 0 !important;
+    }
+  }
+  #news {
+    .info {
+      margin-bottom: 30px;
+    }
+  }
+  #contact {
+    .address-box {
+      margin-bottom: 482px;
+      .address-info {
+        box-shadow: 0 0 10px #e7e7e7;
+      }
+    }
+    .input {
+      padding-top: 40px;
+      .caption {
+        text-align: center;
+        h2 {
+          font-size: 26px !important;
+        }
+      }
+    }
+  }
+  footer {
+    padding: 60px 30px 0 20px !important;
+    .address {
+      margin-bottom: 30px;
+    }
+    .links-2 {
+      margin-top: 40px;
+    }
+    .branches {
+      margin-right: 10px !important;
+      margin-top: 40px !important;
+    }
+    .copyright {
+      text-align: center;
+    }
+    .social-media {
+      ul {
+        display: flex !important;
+        justify-content: center !important;
+      }
+    }
+  }
+}
+// extra-small-phone layout end
+
+// extra-small-phone2 layout start
+@media (min-width: 300px) and (max-width: 399.98px) {
+  header{
+    display: none;
+  }
+  #banner {
+    overflow: hidden !important;
+    img {
+      height: 370px !important;
+    }
+    .carousel-item {
+      .layer {
+        text-align: center;
+        padding: 0px 40px !important;
+        h4 {
+          font-size: 18px !important;
+        }
+        h1 {
+          font-size: 36px !important;
+        }
+        .fa-heartbeat {
+          top: 25px !important;
+          left: 112px !important;
+        }
+      }
+    }
+  }
+  #entry {
+    padding-right: 20px !important;
+    .box {
+      margin-top: 40px;
+      margin-bottom: 35px;
+    }
+    .box-1 {
+      width: 100%;
+      margin-left: 40px;
+    }
+  }
+  #about {
+    width: 100% !important;
+    padding: 50px 0 230px 38px !important;
+    .text-sec {
+      text-align: center !important;
+      width: 100% !important;
+      margin-top: 330px !important;
+      padding-right: 44px;
+      h2 {
+        font-size: 22px;
+      }
+      ul {
+        width: 100%;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        li {
+          margin-top: 20px;
+          display: flex !important;
+          justify-content: center !important;
+        }
+      }
+    }
+    .doctor-pic2 {
+      padding-right: 22px !important;
+      img {
+        width: 456px;
+        clip-path: none !important;
+      }
+      .video-box {
+        margin-right: 20px;
+        width: 330px;
+        height: 270px;
+        left: 0 !important;
+        bottom: -298px !important;
+        text-align: center !important;
+        .text {
+          width: 100%;
+          margin-top: 100px;
+          h5 {
+            font-size: 16px;
+          }
+          p {
+            font-size: 15px;
+          }
+        }
+        .video {
+          position: absolute;
+          left: 124px;
+          top: 42px;
+          .play-btn {
+            a {
+              i {
+                &::after {
+                  left: 40% !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .doctor-pic2 .video-box .video a i {
+      &::after {
+        left: 12% !important;
+      }
+    }
+  }
+  #consultation {
+    .main-holder {
+      padding-top: 0 !important;
+      padding-right: 0 !important;
+      .text {
+        text-align: center;
+        h2 {
+          font-size: 22px !important;
+        }
+        p {
+          font-size: 14px !important;
+        }
+      }
+      .consult-item {
+        margin-top: 20px;
+      }
+    }
+    .appoinment-box {
+      &::after {
+        display: none !important;
+      }
+      width: 95%;
+      margin-top: 80px;
+      margin-left: 15px;
+    }
+  }
+  #choose-us {
+    overflow: hidden;
+    .bg-cover {
+      overflow: hidden !important;
+      height: 300px !important;
+      background-position: center center !important;
+      vertical-align: middle;
+    }
+    .info-box-holder {
+      padding-bottom: 0 !important;
+      .info-box {
+        width: 100%;
+        width: 788px !important;
+        position: relative;
+        top: -120px !important;
+        left: -19px !important;
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+  #doctors {
+    .caption {
+      text-align: center;
+    }
+    .doctor-segments {
+      #tabs {
+        width: 100% !important;
+        .nav-item {
+          width: 100%;
+          background-color: #e1f1f1;
+        }
+      }
+      .tab-content {
+        margin-top: 40px;
+      }
+    }
+  }
+  #testomonials {
+    overflow: hidden !important;
+    padding-bottom: 60px;
+    .caption {
+      text-align: center;
+      padding: 100px 0 100px 4px !important;
+      .icon {
+        position: absolute !important;
+        top: 38px !important;
+        left: 144px !important;
+      }
+    }
+    .owl-carousel {
+      margin-left: 0 !important;
+    }
+  }
+  #news {
+    .info {
+      margin-bottom: 30px;
+    }
+  }
+  #contact {
+    .address-box {
+      margin-bottom: 482px;
+      .address-info {
+        left: 40px !important;
+        right: 30px;
+        bottom: -35px !important;
+        box-shadow: 0 0 10px #e7e7e7;
+        ul{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          li{
+            padding-top: 27px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+      }
+    }
+    .input {
+      padding-top: 65px;
+      .caption {
+        text-align: center;
+        h2 {
+          font-size: 26px !important;
+        }
+      }
+    }
+  }
+  footer {
+    padding: 60px 30px 0 20px !important;
+    .address {
+      margin-bottom: 30px;
+    }
+    .links-2 {
+      margin-top: 40px;
+    }
+    .branches {
+      margin-right: 10px !important;
+      margin-top: 40px !important;
+    }
+    .copyright {
+      text-align: center;
+    }
+    .social-media {
+      ul {
+        display: flex !important;
+        justify-content: center !important;
+      }
+    }
+  }
+}
+// extra-small-phone2 layout start
+
+// WEB-SITE RESPONSIVE END

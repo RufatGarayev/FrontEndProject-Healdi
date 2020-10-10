@@ -101,7 +101,7 @@ $(".owl-carousel.myowl").owlCarousel({
       items: 1
     },
     600: {
-      items: 2
+      items: 1
     },
     1000: {
       items: 2.6
@@ -135,6 +135,7 @@ $(".selectboxinput").click(function() {
   this.previousElementSibling.classList.add("down")
   this.nextElementSibling.classList.add("activeul");
 });
+
 gender.addEventListener("click", function() {
   if (oldactive == this.nextElementSibling) {
     $(genderul).fadeOut(100);
@@ -144,6 +145,7 @@ gender.addEventListener("click", function() {
   }
   $(genderul).fadeToggle(100);
 });
+
 category.addEventListener("click", function() {
   if (oldactive == this.nextElementSibling) {
     $(categoryul).fadeOut(100);
@@ -166,16 +168,3 @@ selectedoptions.forEach((s) => {
   });
 });
 // consultation-section dropdown end
-
-
-// input.forEach((myInput) => {
-//   myInput.addEventListener("click", function() {
-//     if(!myInput.previousElementSibling.classList.contains("down")){
-//     myInput.previousElementSibling.classList.add("down");
-//     }
-//     else{
-//       myInput.previousElementSibling.classList.remove("down");
-//       myInput.previousElementSibling.style.transition = "0.2s";
-//     }
-//   });
-// });
