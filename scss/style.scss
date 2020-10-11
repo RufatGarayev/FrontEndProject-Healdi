@@ -1677,7 +1677,6 @@ main {
   // main end
 }
 
-
 // WEB-SITE RESPONSIVE START
 
 // tablet layout start
@@ -2600,7 +2599,7 @@ main {
 
 // extra-small-phone2 layout start
 @media (min-width: 300px) and (max-width: 399.98px) {
-  header{
+  header {
     display: none;
   }
   #banner {
@@ -2798,11 +2797,11 @@ main {
         right: 30px;
         bottom: -35px !important;
         box-shadow: 0 0 10px #e7e7e7;
-        ul{
+        ul {
           display: flex;
           flex-direction: column;
           align-items: center;
-          li{
+          li {
             padding-top: 27px;
             display: flex;
             flex-direction: column;
