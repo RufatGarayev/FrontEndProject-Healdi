@@ -15,50 +15,50 @@ body {
 }
 
 // header start
-header {
-  display: flex;
-  align-items: center;
-  height: 60px;
-  border-top: 1px solid #e4e4e4;
-  border-bottom: 1px solid #e4e4e4;
-  .covid {
-    h6 {
-      font-size: 15px;
-      color: #976666;
-      font-weight: 400;
-      a {
-        color: black;
-        text-decoration: underline;
-        font-weight: 500;
-      }
-    }
-  }
+// header {
+//   display: flex;
+//   align-items: center;
+//   height: 60px;
+//   border-top: 1px solid #e4e4e4;
+//   border-bottom: 1px solid #e4e4e4;
+//   .covid {
+//     h6 {
+//       font-size: 15px;
+//       color: #976666;
+//       font-weight: 400;
+//       a {
+//         color: black;
+//         text-decoration: underline;
+//         font-weight: 500;
+//       }
+//     }
+//   }
 
-  .header-links {
-    a {
-      color: black;
-      font-weight: 700;
-      font-size: 15px;
-      &:hover {
-        text-decoration: none;
-      }
-    }
+//   .header-links {
+//     a {
+//       color: black;
+//       font-weight: 700;
+//       font-size: 15px;
+//       &:hover {
+//         text-decoration: none;
+//       }
+//     }
 
-    span {
-      padding: 0 15px 0 15px;
-      color: #e4e4e4;
-      font-weight: 200;
-      font-size: 14px;
-    }
-  }
-  .social-media {
-    a {
-      color: black;
-      font-size: 15px;
-      font-weight: 600;
-    }
-  }
-}
+//     span {
+//       padding: 0 15px 0 15px;
+//       color: #e4e4e4;
+//       font-weight: 200;
+//       font-size: 14px;
+//     }
+//   }
+//   .social-media {
+//     a {
+//       color: black;
+//       font-size: 15px;
+//       font-weight: 600;
+//     }
+//   }
+// }
 // header end
 
 // nav start
@@ -212,7 +212,7 @@ main {
         i {
           font-size: 145px;
           position: absolute;
-          top: 166px;
+          top: 16%;
           left: 150px;
           opacity: 0.3;
         }
@@ -380,9 +380,11 @@ main {
 
   // about section start
   #about {
+    width: 100%;
     background-color: #f7f7f7;
     padding: 120px 0 160px 0;
     position: relative;
+    overflow: hidden;
 
     .play-box {
       position: absolute;
@@ -472,6 +474,7 @@ main {
       }
     }
     .text-sec {
+      padding-left: 25px;
       h5 {
         color: #21bfb7;
         font-weight: 600;
@@ -542,6 +545,7 @@ main {
 
   // services section start
   #services {
+    overflow: hidden;
     padding-bottom: 120px;
     background-color: #f7f7f7;
     position: relative;
@@ -1011,6 +1015,8 @@ main {
 
   // doctors section start
   #doctors {
+    width: 100%;
+    overflow: hidden;
     background-color: #f7f7f7;
     padding: 120px 0 120px 0;
     .caption {
@@ -1078,7 +1084,7 @@ main {
             margin-right: 20px;
           }
           a.active {
-            background-color: #20b2aa;
+            background-color: #1ebeb6;
             color: white;
           }
         }
@@ -1446,8 +1452,9 @@ main {
 
   // contact-section start
   #contact {
+    overflow: hidden;
+    padding: 120px 0;
     .contact-items {
-      padding: 120px 0;
       .address-box {
         background-image: url(../img/contact-img.jpg);
         background-size: cover;
@@ -1735,10 +1742,16 @@ main {
   }
   #about {
     .text-sec {
+      padding-left: 0 !important;
       margin-top: 100px !important;
     }
     .doctor-pic2 {
-      padding-left: 70px !important;
+      padding-right: 0 !important;
+      width: 100%;
+      padding-left: 20px !important;
+      img {
+        width: 100%;
+      }
     }
     .doctor-pic2 .video-box .video a i {
       &::after {
@@ -1774,7 +1787,7 @@ main {
     .main-holder {
       .text {
         h2 {
-          font-size: 25px !important;
+          font-size: 32px !important;
         }
       }
     }
@@ -1802,6 +1815,7 @@ main {
     }
   }
   #doctors {
+    padding: 100px 65px 120px 65px;
     .caption {
       padding-right: 56px;
       text-align: center;
@@ -1809,9 +1823,12 @@ main {
     .doctor-segments {
       width: 100% !important;
       #tabs {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #f7f7f7;
         .nav-item {
-          float: left;
-          width: 340px;
+          width: 48% !important;
           margin: 5px;
           background-color: #e1f1f1;
         }
@@ -1819,7 +1836,7 @@ main {
       .tab-content {
         margin-top: 40px;
         img {
-          width: 690px !important;
+          width: 100%;
         }
       }
     }
@@ -2017,7 +2034,7 @@ main {
       .text {
         text-align: center;
         h2 {
-          font-size: 22px !important;
+          font-size: 26px !important;
         }
         p {
           font-size: 14px !important;
@@ -2064,17 +2081,20 @@ main {
       text-align: center;
     }
     .doctor-segments {
+      width: 100% !important;
       #tabs {
-        width: 100% !important;
+        width: 100%;
+        background-color: #f7f7f7;
         .nav-item {
-          width: 100%;
+          width: 100% !important;
+          margin: 5px;
           background-color: #e1f1f1;
         }
       }
       .tab-content {
         margin-top: 40px;
         img {
-          width: 690px !important;
+          width: 100%;
         }
       }
     }
@@ -2095,6 +2115,15 @@ main {
     }
   }
   #news {
+    padding: 60px 0 60px 0 !important;
+    .site-heading {
+      h4 {
+        font-size: 18px !important;
+      }
+      h2 {
+        font-size: 26px !important;
+      }
+    }
     .info {
       margin-bottom: 30px;
     }
@@ -2170,14 +2199,14 @@ main {
   }
   #about {
     width: 100% !important;
-    padding: 50px 0 230px 60px !important;
+    padding: 50px 15px 130px 30px !important;
     .text-sec {
       text-align: center !important;
       width: 100% !important;
       margin-top: 330px !important;
-      padding-right: 50px;
+      padding-left: 0 !important;
       h2 {
-        font-size: 22px;
+        font-size: 26px;
       }
       ul {
         width: 100%;
@@ -2194,12 +2223,12 @@ main {
     .doctor-pic2 {
       padding-right: 0px !important;
       img {
-        width: 456px;
+        width: 100%;
         clip-path: none !important;
       }
       .video-box {
         margin-right: 20px;
-        width: 456px;
+        width: 97%;
         height: 270px;
         left: 0 !important;
         bottom: -298px !important;
@@ -2215,7 +2244,7 @@ main {
         }
         .video {
           position: absolute;
-          left: 180px;
+          left: 213px;
           top: 42px;
           .play-btn {
             a {
@@ -2235,6 +2264,20 @@ main {
       }
     }
   }
+  #services {
+    .services-caption {
+      padding-bottom: 40px !important;
+      h4 {
+        font-size: 18px !important;
+      }
+      h2 {
+        font-size: 25px !important;
+      }
+      p {
+        font-size: 15px !important;
+      }
+    }
+  }
   #consultation {
     .main-holder {
       padding-top: 0 !important;
@@ -2242,7 +2285,7 @@ main {
       .text {
         text-align: center;
         h2 {
-          font-size: 22px !important;
+          font-size: 26px !important;
         }
         p {
           font-size: 14px !important;
@@ -2288,17 +2331,19 @@ main {
       text-align: center;
     }
     .doctor-segments {
+      width: 100% !important;
       #tabs {
-        width: 100% !important;
+        width: 100%;
+        background-color: #f7f7f7;
         .nav-item {
-          width: 100%;
+          margin: 5px;
           background-color: #e1f1f1;
         }
       }
       .tab-content {
         margin-top: 40px;
         img {
-          width: 690px !important;
+          width: 100%;
         }
       }
     }
@@ -2320,11 +2365,21 @@ main {
     }
   }
   #news {
+    padding: 60px 0 60px 0 !important;
+    .site-heading {
+      h4 {
+        font-size: 18px !important;
+      }
+      h2 {
+        font-size: 26px !important;
+      }
+    }
     .info {
       margin-bottom: 30px;
     }
   }
   #contact {
+    padding: 85px 0 !important;
     .address-box {
       margin-bottom: 482px;
       .address-info {
@@ -2403,12 +2458,12 @@ main {
   }
   #about {
     width: 100% !important;
-    padding: 50px 0 230px 38px !important;
+    padding: 50px 10px 130px 25px !important;
     .text-sec {
       text-align: center !important;
       width: 100% !important;
       margin-top: 330px !important;
-      padding-right: 44px;
+      padding-left: 0 !important;
       h2 {
         font-size: 22px;
       }
@@ -2425,14 +2480,14 @@ main {
       }
     }
     .doctor-pic2 {
-      padding-right: 22px !important;
+      padding-right: 0 !important;
       img {
-        width: 456px;
+        width: 100%;
         clip-path: none !important;
       }
       .video-box {
         margin-right: 20px;
-        width: 377px;
+        width: 97%;
         height: 270px;
         left: 0 !important;
         bottom: -298px !important;
@@ -2449,7 +2504,7 @@ main {
         }
         .video {
           position: absolute;
-          left: 143px;
+          left: 152px;
           top: 42px;
           .play-btn {
             a {
@@ -2469,6 +2524,20 @@ main {
       }
     }
   }
+  #services {
+    .services-caption {
+      padding-bottom: 40px !important;
+      h4 {
+        font-size: 18px !important;
+      }
+      h2 {
+        font-size: 25px !important;
+      }
+      p {
+        font-size: 15px !important;
+      }
+    }
+  }
   #consultation {
     .main-holder {
       padding-top: 0 !important;
@@ -2476,7 +2545,7 @@ main {
       .text {
         text-align: center;
         h2 {
-          font-size: 22px !important;
+          font-size: 26px !important;
         }
         p {
           font-size: 14px !important;
@@ -2511,6 +2580,12 @@ main {
         position: relative;
         top: -120px !important;
         left: -19px !important;
+        h5{
+          font-size: 16px !important;
+        }
+        h2{
+          font-size: 26px !important;
+        }
         &::after {
           display: none;
         }
@@ -2520,17 +2595,29 @@ main {
   #doctors {
     .caption {
       text-align: center;
+      h4{
+        font-size: 16px !important;
+      }
+      h2{
+        font-size: 26px !important;
+      }
     }
     .doctor-segments {
+      width: 100% !important;
       #tabs {
-        width: 100% !important;
+        width: 100%;
+        background-color: #f7f7f7;
         .nav-item {
-          width: 100%;
+          width: 100% !important;
+          margin: 5px;
           background-color: #e1f1f1;
         }
       }
       .tab-content {
         margin-top: 40px;
+        img {
+          width: 100%;
+        }
       }
     }
   }
@@ -2543,7 +2630,7 @@ main {
       .icon {
         position: absolute !important;
         top: 38px !important;
-        left: 242px !important;
+        left: 37% !important;
       }
     }
     .owl-carousel {
@@ -2551,19 +2638,43 @@ main {
     }
   }
   #news {
+    padding: 60px 0 50px 0 !important;
+    .site-heading {
+      h4 {
+        font-size: 18px !important;
+      }
+      h2 {
+        font-size: 26px !important;
+      }
+    }
     .info {
       margin-bottom: 30px;
     }
   }
   #contact {
+    padding: 85px 0 !important;
     .address-box {
       margin-bottom: 482px;
       .address-info {
+        left: 40px !important;
+        right: 39px;
+        bottom: -35px !important;
         box-shadow: 0 0 10px #e7e7e7;
+        ul {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          li {
+            padding-top: 27px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+        }
       }
     }
     .input {
-      padding-top: 40px;
+      padding-top: 65px;
       .caption {
         text-align: center;
         h2 {
@@ -2637,7 +2748,7 @@ main {
   }
   #about {
     width: 100% !important;
-    padding: 50px 0 230px 38px !important;
+    padding: 50px 0 130px 38px !important;
     .text-sec {
       text-align: center !important;
       width: 100% !important;
@@ -2703,6 +2814,20 @@ main {
       }
     }
   }
+  #services {
+    .services-caption {
+      padding-bottom: 40px !important;
+      h4 {
+        font-size: 18px !important;
+      }
+      h2 {
+        font-size: 25px !important;
+      }
+      p {
+        font-size: 15px !important;
+      }
+    }
+  }
   #consultation {
     .main-holder {
       padding-top: 0 !important;
@@ -2710,7 +2835,7 @@ main {
       .text {
         text-align: center;
         h2 {
-          font-size: 22px !important;
+          font-size: 26px !important;
         }
         p {
           font-size: 14px !important;
@@ -2745,6 +2870,12 @@ main {
         position: relative;
         top: -120px !important;
         left: -19px !important;
+        h5{
+          font-size: 16px !important;
+        }
+        h2{
+          font-size: 26px !important;
+        }
         &::after {
           display: none;
         }
@@ -2754,17 +2885,29 @@ main {
   #doctors {
     .caption {
       text-align: center;
+      h4{
+        font-size: 16px !important;
+      }
+      h2{
+        font-size: 26px !important;
+      }
     }
     .doctor-segments {
+      width: 100% !important;
       #tabs {
-        width: 100% !important;
+        width: 100%;
+        background-color: #f7f7f7;
         .nav-item {
-          width: 100%;
+          width: 100% !important;
+          margin: 5px;
           background-color: #e1f1f1;
         }
       }
       .tab-content {
         margin-top: 40px;
+        img {
+          width: 100%;
+        }
       }
     }
   }
@@ -2785,11 +2928,21 @@ main {
     }
   }
   #news {
+    padding: 60px 0 50px 0 !important;
+    .site-heading {
+      h4 {
+        font-size: 18px !important;
+      }
+      h2 {
+        font-size: 26px !important;
+      }
+    }
     .info {
       margin-bottom: 30px;
     }
   }
   #contact {
+    padding: 85px 0 !important;
     .address-box {
       margin-bottom: 482px;
       .address-info {

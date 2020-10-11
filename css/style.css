@@ -16,53 +16,6 @@ body {
   background-color: white;
 }
 
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 60px;
-  border-top: 1px solid #e4e4e4;
-  border-bottom: 1px solid #e4e4e4;
-}
-
-header .covid h6 {
-  font-size: 15px;
-  color: #976666;
-  font-weight: 400;
-}
-
-header .covid h6 a {
-  color: black;
-  text-decoration: underline;
-  font-weight: 500;
-}
-
-header .header-links a {
-  color: black;
-  font-weight: 700;
-  font-size: 15px;
-}
-
-header .header-links a:hover {
-  text-decoration: none;
-}
-
-header .header-links span {
-  padding: 0 15px 0 15px;
-  color: #e4e4e4;
-  font-weight: 200;
-  font-size: 14px;
-}
-
-header .social-media a {
-  color: black;
-  font-size: 15px;
-  font-weight: 600;
-}
-
 main #banner {
   overflow-x: hidden;
 }
@@ -131,7 +84,7 @@ main #banner .carousel-item .layer h1 strong {
 main #banner .carousel-item .layer i {
   font-size: 145px;
   position: absolute;
-  top: 166px;
+  top: 16%;
   left: 150px;
   opacity: 0.3;
 }
@@ -302,9 +255,11 @@ main #entry .doctor-pic img {
 }
 
 main #about {
+  width: 100%;
   background-color: #f7f7f7;
   padding: 120px 0 160px 0;
   position: relative;
+  overflow: hidden;
 }
 
 main #about .play-box {
@@ -423,6 +378,10 @@ main #about .doctor-pic2 .video-box .text h5 {
   font-size: 20px;
 }
 
+main #about .text-sec {
+  padding-left: 25px;
+}
+
 main #about .text-sec h5 {
   color: #21bfb7;
   font-weight: 600;
@@ -496,6 +455,7 @@ main #about .text-sec .btnn:hover {
 }
 
 main #services {
+  overflow: hidden;
   padding-bottom: 120px;
   background-color: #f7f7f7;
   position: relative;
@@ -1024,6 +984,8 @@ main #choose-us .info-box-holder .info-box .btn2:hover {
 }
 
 main #doctors {
+  width: 100%;
+  overflow: hidden;
   background-color: #f7f7f7;
   padding: 120px 0 120px 0;
 }
@@ -1105,7 +1067,7 @@ main #doctors .doctor-segments ul li img {
 }
 
 main #doctors .doctor-segments ul li a.active {
-  background-color: #20b2aa;
+  background-color: #1ebeb6;
   color: white;
 }
 
@@ -1530,7 +1492,8 @@ main #news .item .info .bottom ul li .comments i {
   color: #1ebeb6;
 }
 
-main #contact .contact-items {
+main #contact {
+  overflow: hidden;
   padding: 120px 0;
 }
 
@@ -1845,10 +1808,16 @@ main footer .footer-bottom .social-media ul li a:hover {
     margin-left: 40px;
   }
   #about .text-sec {
+    padding-left: 0 !important;
     margin-top: 100px !important;
   }
   #about .doctor-pic2 {
-    padding-left: 70px !important;
+    padding-right: 0 !important;
+    width: 100%;
+    padding-left: 20px !important;
+  }
+  #about .doctor-pic2 img {
+    width: 100%;
   }
   #about .doctor-pic2 .video-box .video a i::after {
     left: 12% !important;
@@ -1885,7 +1854,7 @@ main footer .footer-bottom .social-media ul li a:hover {
     margin-left: 46px;
   }
   #consultation .main-holder .text h2 {
-    font-size: 25px !important;
+    font-size: 32px !important;
   }
   #choose-us {
     overflow: hidden;
@@ -1908,6 +1877,9 @@ main footer .footer-bottom .social-media ul li a:hover {
   #choose-us .info-box-holder .info-box::after {
     display: none;
   }
+  #doctors {
+    padding: 100px 65px 120px 65px;
+  }
   #doctors .caption {
     padding-right: 56px;
     text-align: center;
@@ -1915,9 +1887,17 @@ main footer .footer-bottom .social-media ul li a:hover {
   #doctors .doctor-segments {
     width: 100% !important;
   }
+  #doctors .doctor-segments #tabs {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background-color: #f7f7f7;
+  }
   #doctors .doctor-segments #tabs .nav-item {
-    float: left;
-    width: 340px;
+    width: 48% !important;
     margin: 5px;
     background-color: #e1f1f1;
   }
@@ -1925,7 +1905,7 @@ main footer .footer-bottom .social-media ul li a:hover {
     margin-top: 40px;
   }
   #doctors .doctor-segments .tab-content img {
-    width: 690px !important;
+    width: 100%;
   }
   #testomonials {
     overflow: hidden;
@@ -2101,7 +2081,7 @@ main footer .footer-bottom .social-media ul li a:hover {
     text-align: center;
   }
   #consultation .main-holder .text h2 {
-    font-size: 22px !important;
+    font-size: 26px !important;
   }
   #consultation .main-holder .text p {
     font-size: 14px !important;
@@ -2142,18 +2122,23 @@ main footer .footer-bottom .social-media ul li a:hover {
   #doctors .caption {
     text-align: center;
   }
-  #doctors .doctor-segments #tabs {
+  #doctors .doctor-segments {
     width: 100% !important;
   }
-  #doctors .doctor-segments #tabs .nav-item {
+  #doctors .doctor-segments #tabs {
     width: 100%;
+    background-color: #f7f7f7;
+  }
+  #doctors .doctor-segments #tabs .nav-item {
+    width: 100% !important;
+    margin: 5px;
     background-color: #e1f1f1;
   }
   #doctors .doctor-segments .tab-content {
     margin-top: 40px;
   }
   #doctors .doctor-segments .tab-content img {
-    width: 690px !important;
+    width: 100%;
   }
   #testomonials {
     overflow: hidden;
@@ -2169,6 +2154,15 @@ main footer .footer-bottom .social-media ul li a:hover {
   }
   #testomonials .owl-carousel {
     margin-left: 0 !important;
+  }
+  #news {
+    padding: 60px 0 60px 0 !important;
+  }
+  #news .site-heading h4 {
+    font-size: 18px !important;
+  }
+  #news .site-heading h2 {
+    font-size: 26px !important;
   }
   #news .info {
     margin-bottom: 30px;
@@ -2239,16 +2233,16 @@ main footer .footer-bottom .social-media ul li a:hover {
   }
   #about {
     width: 100% !important;
-    padding: 50px 0 230px 60px !important;
+    padding: 50px 15px 130px 30px !important;
   }
   #about .text-sec {
     text-align: center !important;
     width: 100% !important;
     margin-top: 330px !important;
-    padding-right: 50px;
+    padding-left: 0 !important;
   }
   #about .text-sec h2 {
-    font-size: 22px;
+    font-size: 26px;
   }
   #about .text-sec ul {
     width: 100%;
@@ -2276,13 +2270,13 @@ main footer .footer-bottom .social-media ul li a:hover {
     padding-right: 0px !important;
   }
   #about .doctor-pic2 img {
-    width: 456px;
+    width: 100%;
     -webkit-clip-path: none !important;
             clip-path: none !important;
   }
   #about .doctor-pic2 .video-box {
     margin-right: 20px;
-    width: 456px;
+    width: 97%;
     height: 270px;
     left: 0 !important;
     bottom: -298px !important;
@@ -2299,7 +2293,7 @@ main footer .footer-bottom .social-media ul li a:hover {
   }
   #about .doctor-pic2 .video-box .video {
     position: absolute;
-    left: 180px;
+    left: 213px;
     top: 42px;
   }
   #about .doctor-pic2 .video-box .video .play-btn a i::after {
@@ -2307,6 +2301,18 @@ main footer .footer-bottom .social-media ul li a:hover {
   }
   #about .doctor-pic2 .video-box .video a i::after {
     left: 12% !important;
+  }
+  #services .services-caption {
+    padding-bottom: 40px !important;
+  }
+  #services .services-caption h4 {
+    font-size: 18px !important;
+  }
+  #services .services-caption h2 {
+    font-size: 25px !important;
+  }
+  #services .services-caption p {
+    font-size: 15px !important;
   }
   #consultation .main-holder {
     padding-top: 0 !important;
@@ -2316,7 +2322,7 @@ main footer .footer-bottom .social-media ul li a:hover {
     text-align: center;
   }
   #consultation .main-holder .text h2 {
-    font-size: 22px !important;
+    font-size: 26px !important;
   }
   #consultation .main-holder .text p {
     font-size: 14px !important;
@@ -2357,18 +2363,22 @@ main footer .footer-bottom .social-media ul li a:hover {
   #doctors .caption {
     text-align: center;
   }
-  #doctors .doctor-segments #tabs {
+  #doctors .doctor-segments {
     width: 100% !important;
   }
-  #doctors .doctor-segments #tabs .nav-item {
+  #doctors .doctor-segments #tabs {
     width: 100%;
+    background-color: #f7f7f7;
+  }
+  #doctors .doctor-segments #tabs .nav-item {
+    margin: 5px;
     background-color: #e1f1f1;
   }
   #doctors .doctor-segments .tab-content {
     margin-top: 40px;
   }
   #doctors .doctor-segments .tab-content img {
-    width: 690px !important;
+    width: 100%;
   }
   #testomonials {
     overflow: hidden !important;
@@ -2386,8 +2396,20 @@ main footer .footer-bottom .social-media ul li a:hover {
   #testomonials .owl-carousel {
     margin-left: 0 !important;
   }
+  #news {
+    padding: 60px 0 60px 0 !important;
+  }
+  #news .site-heading h4 {
+    font-size: 18px !important;
+  }
+  #news .site-heading h2 {
+    font-size: 26px !important;
+  }
   #news .info {
     margin-bottom: 30px;
+  }
+  #contact {
+    padding: 85px 0 !important;
   }
   #contact .address-box {
     margin-bottom: 482px;
@@ -2465,13 +2487,13 @@ main footer .footer-bottom .social-media ul li a:hover {
   }
   #about {
     width: 100% !important;
-    padding: 50px 0 230px 38px !important;
+    padding: 50px 10px 130px 25px !important;
   }
   #about .text-sec {
     text-align: center !important;
     width: 100% !important;
     margin-top: 330px !important;
-    padding-right: 44px;
+    padding-left: 0 !important;
   }
   #about .text-sec h2 {
     font-size: 22px;
@@ -2499,16 +2521,16 @@ main footer .footer-bottom .social-media ul li a:hover {
             justify-content: center !important;
   }
   #about .doctor-pic2 {
-    padding-right: 22px !important;
+    padding-right: 0 !important;
   }
   #about .doctor-pic2 img {
-    width: 456px;
+    width: 100%;
     -webkit-clip-path: none !important;
             clip-path: none !important;
   }
   #about .doctor-pic2 .video-box {
     margin-right: 20px;
-    width: 377px;
+    width: 97%;
     height: 270px;
     left: 0 !important;
     bottom: -298px !important;
@@ -2526,7 +2548,7 @@ main footer .footer-bottom .social-media ul li a:hover {
   }
   #about .doctor-pic2 .video-box .video {
     position: absolute;
-    left: 143px;
+    left: 152px;
     top: 42px;
   }
   #about .doctor-pic2 .video-box .video .play-btn a i::after {
@@ -2534,6 +2556,18 @@ main footer .footer-bottom .social-media ul li a:hover {
   }
   #about .doctor-pic2 .video-box .video a i::after {
     left: 12% !important;
+  }
+  #services .services-caption {
+    padding-bottom: 40px !important;
+  }
+  #services .services-caption h4 {
+    font-size: 18px !important;
+  }
+  #services .services-caption h2 {
+    font-size: 25px !important;
+  }
+  #services .services-caption p {
+    font-size: 15px !important;
   }
   #consultation .main-holder {
     padding-top: 0 !important;
@@ -2543,7 +2577,7 @@ main footer .footer-bottom .social-media ul li a:hover {
     text-align: center;
   }
   #consultation .main-holder .text h2 {
-    font-size: 22px !important;
+    font-size: 26px !important;
   }
   #consultation .main-holder .text p {
     font-size: 14px !important;
@@ -2578,21 +2612,41 @@ main footer .footer-bottom .social-media ul li a:hover {
     top: -120px !important;
     left: -19px !important;
   }
+  #choose-us .info-box-holder .info-box h5 {
+    font-size: 16px !important;
+  }
+  #choose-us .info-box-holder .info-box h2 {
+    font-size: 26px !important;
+  }
   #choose-us .info-box-holder .info-box::after {
     display: none;
   }
   #doctors .caption {
     text-align: center;
   }
-  #doctors .doctor-segments #tabs {
+  #doctors .caption h4 {
+    font-size: 16px !important;
+  }
+  #doctors .caption h2 {
+    font-size: 26px !important;
+  }
+  #doctors .doctor-segments {
     width: 100% !important;
   }
-  #doctors .doctor-segments #tabs .nav-item {
+  #doctors .doctor-segments #tabs {
     width: 100%;
+    background-color: #f7f7f7;
+  }
+  #doctors .doctor-segments #tabs .nav-item {
+    width: 100% !important;
+    margin: 5px;
     background-color: #e1f1f1;
   }
   #doctors .doctor-segments .tab-content {
     margin-top: 40px;
+  }
+  #doctors .doctor-segments .tab-content img {
+    width: 100%;
   }
   #testomonials {
     overflow: hidden !important;
@@ -2605,23 +2659,63 @@ main footer .footer-bottom .social-media ul li a:hover {
   #testomonials .caption .icon {
     position: absolute !important;
     top: 38px !important;
-    left: 242px !important;
+    left: 37% !important;
   }
   #testomonials .owl-carousel {
     margin-left: 0 !important;
   }
+  #news {
+    padding: 60px 0 50px 0 !important;
+  }
+  #news .site-heading h4 {
+    font-size: 18px !important;
+  }
+  #news .site-heading h2 {
+    font-size: 26px !important;
+  }
   #news .info {
     margin-bottom: 30px;
+  }
+  #contact {
+    padding: 85px 0 !important;
   }
   #contact .address-box {
     margin-bottom: 482px;
   }
   #contact .address-box .address-info {
+    left: 40px !important;
+    right: 39px;
+    bottom: -35px !important;
     -webkit-box-shadow: 0 0 10px #e7e7e7;
             box-shadow: 0 0 10px #e7e7e7;
   }
+  #contact .address-box .address-info ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #contact .address-box .address-info ul li {
+    padding-top: 27px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   #contact .input {
-    padding-top: 40px;
+    padding-top: 65px;
   }
   #contact .input .caption {
     text-align: center;
@@ -2692,7 +2786,7 @@ main footer .footer-bottom .social-media ul li a:hover {
   }
   #about {
     width: 100% !important;
-    padding: 50px 0 230px 38px !important;
+    padding: 50px 0 130px 38px !important;
   }
   #about .text-sec {
     text-align: center !important;
@@ -2762,6 +2856,18 @@ main footer .footer-bottom .social-media ul li a:hover {
   #about .doctor-pic2 .video-box .video a i::after {
     left: 12% !important;
   }
+  #services .services-caption {
+    padding-bottom: 40px !important;
+  }
+  #services .services-caption h4 {
+    font-size: 18px !important;
+  }
+  #services .services-caption h2 {
+    font-size: 25px !important;
+  }
+  #services .services-caption p {
+    font-size: 15px !important;
+  }
   #consultation .main-holder {
     padding-top: 0 !important;
     padding-right: 0 !important;
@@ -2770,7 +2876,7 @@ main footer .footer-bottom .social-media ul li a:hover {
     text-align: center;
   }
   #consultation .main-holder .text h2 {
-    font-size: 22px !important;
+    font-size: 26px !important;
   }
   #consultation .main-holder .text p {
     font-size: 14px !important;
@@ -2805,21 +2911,41 @@ main footer .footer-bottom .social-media ul li a:hover {
     top: -120px !important;
     left: -19px !important;
   }
+  #choose-us .info-box-holder .info-box h5 {
+    font-size: 16px !important;
+  }
+  #choose-us .info-box-holder .info-box h2 {
+    font-size: 26px !important;
+  }
   #choose-us .info-box-holder .info-box::after {
     display: none;
   }
   #doctors .caption {
     text-align: center;
   }
-  #doctors .doctor-segments #tabs {
+  #doctors .caption h4 {
+    font-size: 16px !important;
+  }
+  #doctors .caption h2 {
+    font-size: 26px !important;
+  }
+  #doctors .doctor-segments {
     width: 100% !important;
   }
-  #doctors .doctor-segments #tabs .nav-item {
+  #doctors .doctor-segments #tabs {
     width: 100%;
+    background-color: #f7f7f7;
+  }
+  #doctors .doctor-segments #tabs .nav-item {
+    width: 100% !important;
+    margin: 5px;
     background-color: #e1f1f1;
   }
   #doctors .doctor-segments .tab-content {
     margin-top: 40px;
+  }
+  #doctors .doctor-segments .tab-content img {
+    width: 100%;
   }
   #testomonials {
     overflow: hidden !important;
@@ -2837,8 +2963,20 @@ main footer .footer-bottom .social-media ul li a:hover {
   #testomonials .owl-carousel {
     margin-left: 0 !important;
   }
+  #news {
+    padding: 60px 0 50px 0 !important;
+  }
+  #news .site-heading h4 {
+    font-size: 18px !important;
+  }
+  #news .site-heading h2 {
+    font-size: 26px !important;
+  }
   #news .info {
     margin-bottom: 30px;
+  }
+  #contact {
+    padding: 85px 0 !important;
   }
   #contact .address-box {
     margin-bottom: 482px;
