@@ -4,6 +4,10 @@ let arrowLeft = document.querySelector(".carousel-control-prev");
 let arrowRight = document.querySelector(".carousel-control-next");
 var navbar = document.getElementsByTagName("nav");
 
+$(window).on("load", function() {
+  $(".pre-icon").fadeOut("slow");
+});
+
 // nav-sticky start
 window.onscroll = function() {
   if ($(window).scrollTop() >= 80) {
@@ -15,20 +19,20 @@ window.onscroll = function() {
 // nav-sticky end
 
 // nav-links hover effects start
-navLinks.forEach((link) => {
-  link.addEventListener("mouseenter", function() {
-    link.style.transition = "0.2s linear";
-    if (link.lastChild.classList.contains("fa-angle-down")) {
-      link.lastChild.classList.remove("fa-angle-down");
-      link.lastChild.classList.add("fa-angle-up");
-    }
-  });
+// navLinks.forEach((link) => {
+//   link.addEventListener("mouseenter", function() {
+//     link.style.transition = "0.2s linear";
+//     if (link.lastChild.classList.contains("fa-angle-down")) {
+//       link.lastChild.classList.remove("fa-angle-down");
+//       link.lastChild.classList.add("fa-angle-up");
+//     }
+//   });
 
-  link.addEventListener("mouseleave", function() {
-    link.lastChild.classList.add("fa-angle-down");
-    link.lastChild.classList.remove("fa-angle-up");
-  });
-});
+//   link.addEventListener("mouseleave", function() {
+//     link.lastChild.classList.add("fa-angle-down");
+//     link.lastChild.classList.remove("fa-angle-up");
+//   });
+// });
 // nav-links hover effects end
 
 // banner arrow
@@ -79,16 +83,16 @@ $(".owl-carousel.myservices").owlCarousel({
 // services-owlCarousel end
 
 // doctors-section tab start
-let myBtn = document.querySelectorAll(".nav-link");
+// let myBtn = document.querySelectorAll(".nav-link");
 
-myBtn.forEach((btn) => {
-  btn.addEventListener("click", function() {
-    document.querySelector(".active").classList.remove("active");
-    document.querySelector(".show").classList.remove("show");
-    document.getElementById(this.dataset.targetSection).classList.add("show");
-    document.getElementById(this.dataset.targetSection).classList.add("active");
-  });
-});
+// myBtn.forEach((btn) => {
+//   btn.addEventListener("click", function() {
+//     document.querySelector(".active").classList.remove("active");
+//     document.querySelector(".show").classList.remove("show");
+//     document.getElementById(this.dataset.targetSection).classList.add("show");
+//     document.getElementById(this.dataset.targetSection).classList.add("active");
+//   });
+// });
 // doctors-section tab end
 
 // testomonials-owlCarousel start
@@ -119,20 +123,21 @@ var genderul = document.querySelector("#genderselection");
 var categoryul = document.querySelector("#categoryselection");
 var oldactive;
 let inputArrow = document.querySelectorAll("#consultation form .form-group i");
-let input = document.querySelectorAll("#consultation form .form-group .selectboxinput");
+let input = document.querySelectorAll(
+  "#consultation form .form-group .selectboxinput"
+);
 
 $(".selectboxinput").click(function() {
-  var oldrotate = document.querySelector(".down")
+  var oldrotate = document.querySelector(".down");
   oldactive = document.querySelector(".activeul");
   if (oldactive != null) {
     $(oldactive).fadeOut();
     oldactive.classList.remove("activeul");
-  }  
+  }
   if (oldrotate != null) {
- 
     oldrotate.classList.remove("down");
   }
-  this.previousElementSibling.classList.add("down")
+  this.previousElementSibling.classList.add("down");
   this.nextElementSibling.classList.add("activeul");
 });
 
@@ -140,7 +145,7 @@ gender.addEventListener("click", function() {
   if (oldactive == this.nextElementSibling) {
     $(genderul).fadeOut(100);
     oldactive.classList.remove("activeul");
-    this.previousElementSibling.classList.remove("down")
+    this.previousElementSibling.classList.remove("down");
     return;
   }
   $(genderul).fadeToggle(100);
@@ -150,7 +155,7 @@ category.addEventListener("click", function() {
   if (oldactive == this.nextElementSibling) {
     $(categoryul).fadeOut(100);
     oldactive.classList.remove("activeul");
-    this.previousElementSibling.classList.remove("down")
+    this.previousElementSibling.classList.remove("down");
 
     return;
   }
