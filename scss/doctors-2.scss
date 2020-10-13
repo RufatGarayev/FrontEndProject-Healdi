@@ -8,6 +8,201 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+// navbar-sticky position start
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
+// navbar-sticky position end
+
+// reload-img start
+.pre-icon {
+  background: url("../img/preloader.gif") no-repeat center;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  z-index: 999;
+}
+// reload-img end
+
+// header start
+header {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+  .covid {
+    h6 {
+      font-size: 15px;
+      color: #976666;
+      font-weight: 400;
+      a {
+        color: black;
+        text-decoration: underline;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .header-links {
+    a {
+      color: black;
+      font-weight: 700;
+      font-size: 15px;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    span {
+      padding: 0 15px 0 15px;
+      color: #e4e4e4;
+      font-weight: 200;
+      font-size: 14px;
+    }
+  }
+  .social-media {
+    a {
+      color: black;
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
+}
+// header end
+
+// nav start
+nav {
+  z-index: 50;
+  height: 90px;
+  .website-logo {
+    height: 100%;
+  }
+  .nav-button {
+    display: none;
+  }
+  .menu {
+    position: relative;
+    height: 90px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    ul {
+      width: 100%;
+    }
+    li {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      height: 90px;
+      &:hover .submenu {
+        display: inline-block;
+      }
+      a.active{
+        color: #1ebeb6;
+      }
+      .submenu {
+        height: 150px;
+        width: 250px;
+        background-color: white;
+        box-shadow: 0 -1px 10px #d4cece;
+        position: absolute;
+        top: 90px;
+        left: 5px;
+        display: none;
+        z-index: 1;
+        ul {
+          li {
+            padding-left: 15px;
+            height: 50px;
+          }
+          .first-li {
+            border-bottom: 1px solid #e4e4e4;
+          }
+          .second-li {
+            border-top: 1px solid #e4e4e4;
+            border-bottom: 1px solid #e4e4e4;
+          }
+          .third-li {
+            border-bottom: 1px solid #e4e4e4;
+          }
+          .fourth-li {
+            border-top: 1px solid #e4e4e4;
+            border-bottom: 1px solid #e4e4e4;
+          }
+          .sixth-li {
+            border-top: 1px solid #e4e4e4;
+          }
+        }
+      }
+      .submenu-2 {
+        position: absolute;
+        top: 90px;
+        left: 95px;
+      }
+      .submenu-3 {
+        height: 200px;
+        position: absolute;
+        top: 90px;
+        left: 193px;
+      }
+      .submenu-4 {
+        height: 100px;
+        position: absolute;
+        top: 90px;
+        left: 345px;
+      }
+      .submenu-5 {
+        height: 300px;
+        position: absolute;
+        top: 90px;
+        left: 465px;
+      }
+    }
+    li a {
+      color: black;
+      font-size: 13px;
+      font-weight: 600;
+      &:hover {
+        text-decoration: none;
+        color: #1ebeb6;
+        transition: 0.3s linear;
+      }
+    }
+  }
+  .contact {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    p {
+      font-weight: 600;
+      font-size: 12px;
+      color: #787878;
+      span {
+        font-size: 18px;
+        font-weight: 800;
+        color: #666666;
+      }
+    }
+    i {
+      color: #1ebeb6;
+      font-size: 46px;
+      padding-right: 11px;
+    }
+  }
+}
+// nav end
+
+// main start
+main{
 // breadcrumb-section start
 #breadcrumb {
   background-image: url(../img/back-pic1.png);
@@ -78,6 +273,7 @@ body {
   width: 100%;
   background-color: #f7f7f7;
   padding: 120px 0 120px 0;
+  overflow: hidden;
   .doctor-segments {
     padding-top: 60px;
     ul {
@@ -186,6 +382,8 @@ body {
   }
 }
 // doctors-section end
+}
+// main end
 
 // footer start
 footer {
@@ -333,6 +531,89 @@ footer {
 // ----- WEB-SITE RESPONSIVE START -----
 // tablet layout start
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 70px 0 30px 0;
+    background-color: white;
+  }
+  header {
+    height: 137px;
+    margin-top: -32px;
+    margin-bottom: 20px !important;
+    .covid {
+      text-align: center;
+    }
+    .header-links {
+      position: absolute;
+      top: 5px;
+      left: 174px;
+      width: 38%;
+      display: inline-block !important;
+    }
+    .social-media {
+      a {
+        padding-left: 20px;
+      }
+      position: absolute;
+      top: 5px;
+      left: 424px;
+      width: 38%;
+      display: inline-block !important;
+    }
+  }
+  nav {
+    height: 50px !important;
+    position: relative;
+    .nav-button {
+      display: inline-block !important;
+      position: absolute;
+      left: 50px;
+      bottom: 4px;
+    }
+    .menu {
+      padding-left: 55px !important;
+      padding-right: 55px !important;
+      padding-top: 25px;
+      position: absolute;
+      left: -9px;
+      bottom: -310px;
+      height: 300px;
+      width: 103%;
+      background-color: white;
+      display: none;
+      .submenu {
+        position: absolute;
+        top: 24px !important;
+        left: 200px !important;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px !important;
+        li {
+          height: 45px;
+        }
+        :not(:last-of-type) {
+          border-bottom: 1px solid LightGray;
+        }
+      }
+    }
+    .website-logo {
+      width: 150px;
+      display: inline-block;
+      position: absolute;
+      right: 290px;
+      bottom: 14px;
+    }
+    .contact {
+      position: absolute;
+      right: 50px;
+      bottom: 14px;
+      width: 200px;
+    }
+  }
   #breadcrumb {
     h1 {
       font-size: 36px;
@@ -383,6 +664,89 @@ footer {
 
 // phone layout start
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 90px 0 30px 0;
+    background-color: white;
+  }
+  header {
+    height: 137px;
+    margin-top: -32px;
+    margin-bottom: 20px !important;
+    .covid {
+      text-align: center;
+    }
+    .header-links {
+      position: absolute;
+      top: 5px;
+      left: 174px;
+      width: 38%;
+      display: inline-block !important;
+    }
+    .social-media {
+      a {
+        padding-left: 20px;
+      }
+      position: absolute;
+      top: 5px;
+      left: 424px;
+      width: 38%;
+      display: inline-block !important;
+    }
+  }
+  nav {
+    height: 50px !important;
+    position: relative;
+    .nav-button {
+      display: inline-block !important;
+      position: absolute;
+      left: 50px;
+      bottom: 4px;
+    }
+    .menu {
+      padding-left: 55px !important;
+      padding-right: 55px !important;
+      padding-top: 25px;
+      position: absolute;
+      left: -9px;
+      bottom: -310px;
+      height: 300px;
+      width: 103%;
+      background-color: white;
+      display: none;
+      .submenu {
+        position: absolute;
+        top: 24px !important;
+        left: 200px !important;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px !important;
+        li {
+          height: 45px;
+        }
+        :not(:last-of-type) {
+          border-bottom: 1px solid LightGray;
+        }
+      }
+    }
+    .website-logo {
+      width: 150px;
+      display: inline-block;
+      position: absolute;
+      right: 290px;
+      bottom: 14px;
+    }
+    .contact {
+      position: absolute;
+      right: 50px;
+      bottom: 14px;
+      width: 200px;
+    }
+  }
   #doctors {
     width: 100%;
     padding: 100px 65px 120px 65px;
@@ -430,6 +794,65 @@ footer {
 
 // small-phone layout start
 @media (min-width: 500px) and (max-width: 575.98px) {
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 80px 0 30px 0;
+    background-color: white;
+  }
+  header {
+    display: none;
+  }
+  nav {
+    padding: 50px 0 30px 0;
+    height: 50px !important;
+    position: relative;
+    .nav-button {
+      display: inline-block !important;
+      position: absolute;
+      left: 50px;
+      bottom: 4px;
+    }
+    .menu {
+      padding-left: 55px !important;
+      padding-right: 55px !important;
+      padding-top: 25px;
+      position: absolute;
+      left: -9px;
+      bottom: -310px;
+      height: 300px;
+      width: 103%;
+      background-color: white;
+      display: none;
+      .submenu {
+        position: absolute;
+        top: 24px !important;
+        left: 200px !important;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px !important;
+        li {
+          height: 45px;
+        }
+        :not(:last-of-type) {
+          border-bottom: 1px solid LightGray;
+        }
+      }
+    }
+    .website-logo {
+      width: 150px;
+      display: inline-block;
+      position: absolute;
+      right: 215px;
+      bottom: 14px;
+    }
+    .contact {
+      display: none;
+    }
+  }
   #breadcrumb {
     height: 250px;
     h1 {
@@ -484,6 +907,59 @@ footer {
 
 // extra-small-phone layout start
 @media (min-width: 400px) and (max-width: 450px) {
+  header {
+    display: none;
+  }
+  nav {
+    padding: 50px 0 30px 0;
+    height: 50px !important;
+    position: relative;
+    .nav-button {
+      display: inline-block !important;
+      position: absolute;
+      left: 50px;
+      bottom: 4px;
+    }
+    .menu {
+      padding-left: 55px !important;
+      padding-right: 55px !important;
+      padding-top: 25px;
+      position: absolute;
+      left: -9px;
+      bottom: -310px;
+      height: 300px;
+      width: 103%;
+      background-color: white;
+      display: none;
+      .submenu {
+        position: absolute;
+        top: 35px !important;
+        left: 190px !important;
+        width: 210px !important;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px !important;
+        li {
+          height: 45px;
+        }
+        :not(:last-of-type) {
+          border-bottom: 1px solid LightGray;
+        }
+      }
+    }
+    .website-logo {
+      width: 150px;
+      display: inline-block;
+      position: absolute;
+      right: 142px;
+      bottom: 14px;
+    }
+    .contact {
+      display: none;
+    }
+  }
   #breadcrumb {
     height: 250px;
     h1 {
@@ -538,6 +1014,59 @@ footer {
 
 // extra-small-phone2 layout start
 @media (min-width: 300px) and (max-width: 399.98px) {
+  header {
+    display: none;
+  }
+  nav {
+    padding: 50px 0 30px 0;
+    height: 50px !important;
+    position: relative;
+    .nav-button {
+      display: inline-block !important;
+      position: absolute;
+      left: 50px;
+      bottom: 4px;
+    }
+    .menu {
+      padding-left: 55px !important;
+      padding-right: 55px !important;
+      padding-top: 25px;
+      position: absolute;
+      left: -9px;
+      bottom: -310px;
+      height: 300px;
+      width: 103%;
+      background-color: white;
+      display: none;
+      .submenu {
+        position: absolute;
+        top: 35px !important;
+        left: 190px !important;
+        width: 200px !important;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px !important;
+        li {
+          height: 45px;
+        }
+        :not(:last-of-type) {
+          border-bottom: 1px solid LightGray;
+        }
+      }
+    }
+    .website-logo {
+      width: 150px;
+      display: inline-block;
+      position: absolute;
+      right: 130px;
+      bottom: 14px;
+    }
+    .contact {
+      display: none;
+    }
+  }
   #breadcrumb {
     height: 250px;
     h1 {

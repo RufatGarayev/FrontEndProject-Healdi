@@ -1,41 +1,50 @@
-let navLinks = document.querySelectorAll("nav .menu li a");
-let banner = document.getElementById("banner");
-let arrowLeft = document.querySelector(".carousel-control-prev");
-let arrowRight = document.querySelector(".carousel-control-next");
-var navbar = document.getElementsByTagName("nav");
-
+// reload-img start
 $(window).on("load", function() {
   $(".pre-icon").fadeOut("slow");
 });
+// reload-img end
 
 // nav-sticky start
 window.onscroll = function() {
   if ($(window).scrollTop() >= 80) {
-    $(navbar).addClass("sticky");
+    $(".navBar").addClass("sticky");
   } else {
-    $(navbar).removeClass("sticky");
+    $(".navBar").removeClass("sticky");
   }
 };
 // nav-sticky end
 
 // nav-links hover effects start
-// navLinks.forEach((link) => {
-//   link.addEventListener("mouseenter", function() {
-//     link.style.transition = "0.2s linear";
-//     if (link.lastChild.classList.contains("fa-angle-down")) {
-//       link.lastChild.classList.remove("fa-angle-down");
-//       link.lastChild.classList.add("fa-angle-up");
-//     }
-//   });
-
-//   link.addEventListener("mouseleave", function() {
-//     link.lastChild.classList.add("fa-angle-down");
-//     link.lastChild.classList.remove("fa-angle-up");
-//   });
-// });
+let navLinks = document.querySelectorAll("nav .menu li a");
+navLinks.forEach((link) => {
+  link.addEventListener("mouseenter", function() {
+    if (link.lastChild.classList.contains("fa-angle-down")) {
+      link.lastChild.classList.remove("fa-angle-down");
+      link.lastChild.classList.add("fa-angle-up");
+    }
+  });
+  link.addEventListener("mouseleave", function() {
+    link.lastChild.classList.add("fa-angle-down");
+    link.lastChild.classList.remove("fa-angle-up");
+  });
+});
 // nav-links hover effects end
 
-// banner arrow
+// nav burger-button start
+let navButton = document.querySelector(".nav-button");
+let navMenu = document.querySelector("nav .menu");
+
+navButton.addEventListener("click", function(){
+    navMenu.classList.toggle("d-block");
+    navButton.classList.toggle("fa-times");
+});
+// nav burger-button end
+
+// banner-arrow start
+let banner = document.getElementById("banner");
+let arrowLeft = document.querySelector(".carousel-control-prev");
+let arrowRight = document.querySelector(".carousel-control-next");
+
 banner.addEventListener("mouseenter", function() {
   arrowLeft.style.left = "-70px";
   arrowLeft.style.transition = "0.3s";
@@ -46,7 +55,7 @@ banner.addEventListener("mouseleave", function() {
   arrowLeft.style.left = "-150px";
   arrowRight.style.right = "-150px";
 });
-// banner arrow
+// banner-arrow end
 
 // play-box popup effect start
 $(document).ready(function() {
@@ -83,16 +92,16 @@ $(".owl-carousel.myservices").owlCarousel({
 // services-owlCarousel end
 
 // doctors-section tab start
-// let myBtn = document.querySelectorAll(".nav-link");
+let myBtn = document.querySelectorAll(".nav-link");
 
-// myBtn.forEach((btn) => {
-//   btn.addEventListener("click", function() {
-//     document.querySelector(".active").classList.remove("active");
-//     document.querySelector(".show").classList.remove("show");
-//     document.getElementById(this.dataset.targetSection).classList.add("show");
-//     document.getElementById(this.dataset.targetSection).classList.add("active");
-//   });
-// });
+myBtn.forEach((btn) => {
+  btn.addEventListener("click", function() {
+    document.querySelector(".active").classList.remove("active");
+    document.querySelector(".show").classList.remove("show");
+    document.getElementById(this.dataset.targetSection).classList.add("show");
+    document.getElementById(this.dataset.targetSection).classList.add("active");
+  });
+});
 // doctors-section tab end
 
 // testomonials-owlCarousel start

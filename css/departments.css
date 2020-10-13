@@ -9,7 +9,233 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-#breadcrumb {
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
+
+.pre-icon {
+  background: url("../img/preloader.gif") no-repeat center;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  z-index: 999;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+header .covid h6 {
+  font-size: 15px;
+  color: #976666;
+  font-weight: 400;
+}
+
+header .covid h6 a {
+  color: black;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+header .header-links a {
+  color: black;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+header .header-links a:hover {
+  text-decoration: none;
+}
+
+header .header-links span {
+  padding: 0 15px 0 15px;
+  color: #e4e4e4;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+header .social-media a {
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+nav {
+  z-index: 50;
+  height: 90px;
+}
+
+nav .website-logo {
+  height: 100%;
+}
+
+nav .nav-button {
+  display: none;
+}
+
+nav .menu {
+  position: relative;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .menu ul {
+  width: 100%;
+}
+
+nav .menu li {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90px;
+}
+
+nav .menu li:hover .submenu {
+  display: inline-block;
+}
+
+nav .menu li a.active {
+  color: #1ebeb6;
+}
+
+nav .menu li .submenu {
+  height: 150px;
+  width: 250px;
+  background-color: white;
+  -webkit-box-shadow: 0 -1px 10px #d4cece;
+          box-shadow: 0 -1px 10px #d4cece;
+  position: absolute;
+  top: 90px;
+  left: 5px;
+  display: none;
+  z-index: 1;
+}
+
+nav .menu li .submenu ul li {
+  padding-left: 15px;
+  height: 50px;
+}
+
+nav .menu li .submenu ul .first-li {
+  border-bottom: 1px solid #e4e4e4;
+}
+
+nav .menu li .submenu ul .second-li {
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+nav .menu li .submenu ul .third-li {
+  border-bottom: 1px solid #e4e4e4;
+}
+
+nav .menu li .submenu ul .fourth-li {
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+nav .menu li .submenu ul .sixth-li {
+  border-top: 1px solid #e4e4e4;
+}
+
+nav .menu li .submenu-2 {
+  position: absolute;
+  top: 90px;
+  left: 95px;
+}
+
+nav .menu li .submenu-3 {
+  height: 200px;
+  position: absolute;
+  top: 90px;
+  left: 193px;
+}
+
+nav .menu li .submenu-4 {
+  height: 100px;
+  position: absolute;
+  top: 90px;
+  left: 345px;
+}
+
+nav .menu li .submenu-5 {
+  height: 300px;
+  position: absolute;
+  top: 90px;
+  left: 465px;
+}
+
+nav .menu li a {
+  color: black;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+nav .menu li a:hover {
+  text-decoration: none;
+  color: #1ebeb6;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+nav .contact {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .contact p {
+  font-weight: 600;
+  font-size: 12px;
+  color: #787878;
+}
+
+nav .contact p span {
+  font-size: 18px;
+  font-weight: 800;
+  color: #666666;
+}
+
+nav .contact i {
+  color: #1ebeb6;
+  font-size: 46px;
+  padding-right: 11px;
+}
+
+main #breadcrumb {
   background-image: url(../img/back-pic1.png);
   background-position: center center;
   background-size: cover;
@@ -25,14 +251,14 @@ body {
           align-items: center;
 }
 
-#breadcrumb h1 {
+main #breadcrumb h1 {
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 15px;
   text-align: center;
 }
 
-#breadcrumb ul {
+main #breadcrumb ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -46,26 +272,26 @@ body {
           justify-content: center;
 }
 
-#breadcrumb ul li {
+main #breadcrumb ul li {
   position: relative;
 }
 
-#breadcrumb ul li i {
+main #breadcrumb ul li i {
   margin-right: 5px;
 }
 
-#breadcrumb ul li:last-of-type {
+main #breadcrumb ul li:last-of-type {
   color: #dddddd;
   text-decoration: underline;
   padding-left: 15px;
   margin-right: 15px;
 }
 
-#breadcrumb ul li:last-of-type::after {
+main #breadcrumb ul li:last-of-type::after {
   display: none;
 }
 
-#breadcrumb ul li::after {
+main #breadcrumb ul li::after {
   content: "";
   font-weight: 600;
   color: #ffffff;
@@ -78,7 +304,7 @@ body {
   border: 2px solid rgba(255, 255, 255, 0.7);
 }
 
-#breadcrumb ul li a {
+main #breadcrumb ul li a {
   font-weight: 600;
   font-size: 14px;
   display: inline-block;
@@ -87,11 +313,11 @@ body {
   padding: 0 7px;
 }
 
-#breadcrumb ul li a:hover {
+main #breadcrumb ul li a:hover {
   text-decoration: none;
 }
 
-#services {
+main #services {
   padding-bottom: 320px;
   padding-top: 120px;
   background-color: #f7f7f7;
@@ -99,7 +325,7 @@ body {
   z-index: 1;
 }
 
-#services .item-box .item {
+main #services .item-box .item {
   background-color: white;
   width: 100%;
   padding: 50px 30px 50px;
@@ -108,27 +334,27 @@ body {
   text-align: center;
 }
 
-#services .item-box .item .info h4 {
+main #services .item-box .item .info h4 {
   margin-bottom: 40px;
 }
 
-#services .item-box .item .info h4 a {
+main #services .item-box .item .info h4 a {
   color: #233645;
   font-weight: 700;
   font-size: 22px;
 }
 
-#services .item-box .item .info h4 a:hover {
+main #services .item-box .item .info h4 a:hover {
   text-decoration: none;
 }
 
-#services .item-box .item .info p {
+main #services .item-box .item .info p {
   color: #666666;
   font-size: 15px;
   line-height: 30px;
 }
 
-#services .item-box .item .info .btn {
+main #services .item-box .item .info .btn {
   margin-top: 15px;
   font-weight: 700;
   padding: 10px 25px;
@@ -138,21 +364,21 @@ body {
   border: 2px solid #1ebeb6 !important;
 }
 
-#services .item-box .item .info .btn:hover {
+main #services .item-box .item .info .btn:hover {
   background-color: #1ebeb6;
   color: white !important;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
 }
 
-#services .item-box .item .info .btn:hover i {
+main #services .item-box .item .info .btn:hover i {
   background-color: white;
   color: #1ebeb6;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
 }
 
-#services .item-box .item .info .btn i {
+main #services .item-box .item .info .btn i {
   height: 30px;
   background: #1ebeb6;
   color: white;
@@ -163,7 +389,7 @@ body {
   margin-right: 5px;
 }
 
-#services .item-box .item .info .icon {
+main #services .item-box .item .info .icon {
   display: inline-block;
   font-size: 40px !important;
   margin-bottom: 35px;
@@ -175,14 +401,14 @@ body {
   line-height: 90px;
 }
 
-#services .item-box .item .info .icon img {
+main #services .item-box .item .info .icon img {
   width: 55%;
   position: absolute;
   left: 20px;
   top: 20px;
 }
 
-#services .item-box .item .info .icon::before {
+main #services .item-box .item .info .icon::before {
   content: "";
   position: absolute;
   left: -10%;
@@ -199,7 +425,7 @@ body {
   transition: all 0.35s ease-in-out;
 }
 
-#services .item-box .item .info .icon::after {
+main #services .item-box .item .info .icon::after {
   position: absolute;
   left: 3%;
   top: 2%;
@@ -211,12 +437,12 @@ body {
   border-radius: 50%;
 }
 
-#services button {
+main #services button {
   margin-top: 20px;
   outline: none;
 }
 
-#services button span {
+main #services button span {
   display: block;
   height: 20px;
   width: 20px;
@@ -228,7 +454,7 @@ body {
   border: 2px solid #cccccc;
 }
 
-#services .owl-dot.active span::after {
+main #services .owl-dot.active span::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -241,7 +467,7 @@ body {
   border-radius: 50%;
 }
 
-#fun-factor .fun-fact-items {
+main #fun-factor .fun-fact-items {
   background-image: url(../img/back-pic1.png);
   background-position: center center;
   background-size: cover;
@@ -262,60 +488,66 @@ body {
   text-align: center;
 }
 
-#fun-factor .fun-fact-items .fun-fact span {
+main #fun-factor .fun-fact-items .fun-fact h3 {
+  color: white;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+main #fun-factor .fun-fact-items .fun-fact span {
   color: white;
   font-size: 15px;
   font-weight: 700;
 }
 
-#consultation {
+main #consultation {
   padding: 0 0 120px 0;
 }
 
-#consultation .main-holder {
+main #consultation .main-holder {
   padding-top: 60px;
   padding-right: 60px;
 }
 
-#consultation .main-holder .text h2 {
+main #consultation .main-holder .text h2 {
   font-weight: 600;
   margin-bottom: 25px;
   color: #233645;
 }
 
-#consultation .main-holder .text p {
+main #consultation .main-holder .text p {
   padding-bottom: 23px;
   font-size: 15px;
   line-height: 30px;
   color: #666666;
 }
 
-#consultation .main-holder .consult-item {
+main #consultation .main-holder .consult-item {
   padding: 35px;
   text-align: center;
   border: 2px solid #1ebeb6;
 }
 
-#consultation .main-holder .consult-item i {
+main #consultation .main-holder .consult-item i {
   color: #1ebeb6;
   font-size: 55px;
   display: inline-block;
   margin-bottom: 25px;
 }
 
-#consultation .main-holder .consult-item h5 {
+main #consultation .main-holder .consult-item h5 {
   color: #233645;
   font-size: 18px;
   font-weight: 600;
 }
 
-#consultation .appoinment-box {
+main #consultation .appoinment-box {
   background: #1ebeb6;
   padding: 60px 37px;
   position: relative;
 }
 
-#consultation .appoinment-box:after {
+main #consultation .appoinment-box:after {
   content: "";
   position: absolute;
   left: -30px;
@@ -327,11 +559,11 @@ body {
   opacity: 0.2;
 }
 
-#consultation .appoinment-box .header {
+main #consultation .appoinment-box .header {
   text-align: center !important;
 }
 
-#consultation .appoinment-box .header h4 {
+main #consultation .appoinment-box .header h4 {
   font-size: 22px;
   color: #ffffff;
   font-weight: 600;
@@ -339,7 +571,7 @@ body {
   position: relative;
 }
 
-#consultation .appoinment-box .header h4::after {
+main #consultation .appoinment-box .header h4::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -354,40 +586,40 @@ body {
           transform: translate(-50%, -50%);
 }
 
-#consultation .appoinment-box form .form-group {
+main #consultation .appoinment-box form .form-group {
   margin-bottom: 16px;
 }
 
-#consultation .appoinment-box form .form-group #gender,
-#consultation .appoinment-box form .form-group #category {
+main #consultation .appoinment-box form .form-group #gender,
+main #consultation .appoinment-box form .form-group #category {
   cursor: pointer;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-#consultation .appoinment-box form .form-group #categoryselection {
+main #consultation .appoinment-box form .form-group #categoryselection {
   top: 106%;
 }
 
-#consultation .appoinment-box form .form-group i {
+main #consultation .appoinment-box form .form-group i {
   color: white;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
-#consultation .appoinment-box form .form-group #gendericon {
+main #consultation .appoinment-box form .form-group #gendericon {
   position: absolute;
   right: 22px;
   top: 18px;
 }
 
-#consultation .appoinment-box form .form-group #categoryicon {
+main #consultation .appoinment-box form .form-group #categoryicon {
   position: absolute;
   right: 22px;
   top: 18px;
 }
 
-#consultation .appoinment-box form .form-group .dropdownselector {
+main #consultation .appoinment-box form .form-group .dropdownselector {
   background-color: white;
   position: absolute;
   top: 106%;
@@ -399,7 +631,7 @@ body {
   display: none;
 }
 
-#consultation .appoinment-box form .form-group .dropdownselector li {
+main #consultation .appoinment-box form .form-group .dropdownselector li {
   list-style-type: none;
   text-align: left;
   padding: 7px 15px;
@@ -407,24 +639,24 @@ body {
   cursor: pointer;
 }
 
-#consultation .appoinment-box form .form-group .dropdownselector li:first-of-type {
+main #consultation .appoinment-box form .form-group .dropdownselector li:first-of-type {
   border-radius: 5px;
 }
 
-#consultation .appoinment-box form .form-group .dropdownselector li:last-of-type {
+main #consultation .appoinment-box form .form-group .dropdownselector li:last-of-type {
   border-radius: 5px;
 }
 
-#consultation .appoinment-box form .form-group .dropdownselector li:hover {
+main #consultation .appoinment-box form .form-group .dropdownselector li:hover {
   background-color: #f6f6f6;
 }
 
-#consultation .appoinment-box form .form-group .dropdownselector li.selected {
+main #consultation .appoinment-box form .form-group .dropdownselector li.selected {
   font-weight: bold;
   background-color: #f6f6f6;
 }
 
-#consultation .appoinment-box form .form-group .form-control {
+main #consultation .appoinment-box form .form-group .form-control {
   color: #ffffff;
   font-size: 14px;
   border-radius: 30px;
@@ -434,31 +666,31 @@ body {
   padding: 0 25px;
 }
 
-#consultation .appoinment-box form .form-group .form-control::-webkit-input-placeholder {
+main #consultation .appoinment-box form .form-group .form-control::-webkit-input-placeholder {
   color: white;
   font-weight: 500;
   font-size: 14px;
 }
 
-#consultation .appoinment-box form .form-group .form-control:-ms-input-placeholder {
+main #consultation .appoinment-box form .form-group .form-control:-ms-input-placeholder {
   color: white;
   font-weight: 500;
   font-size: 14px;
 }
 
-#consultation .appoinment-box form .form-group .form-control::-ms-input-placeholder {
+main #consultation .appoinment-box form .form-group .form-control::-ms-input-placeholder {
   color: white;
   font-weight: 500;
   font-size: 14px;
 }
 
-#consultation .appoinment-box form .form-group .form-control::placeholder {
+main #consultation .appoinment-box form .form-group .form-control::placeholder {
   color: white;
   font-weight: 500;
   font-size: 14px;
 }
 
-#consultation .appoinment-box form .form-group select {
+main #consultation .appoinment-box form .form-group select {
   cursor: pointer;
   color: white;
   font-size: 14px;
@@ -475,7 +707,7 @@ body {
   outline: none;
 }
 
-#consultation .appoinment-box form .form-group select option {
+main #consultation .appoinment-box form .form-group select option {
   background-color: #f6f6f6;
   color: black;
   font-weight: 400;
@@ -491,18 +723,18 @@ body {
   transition: 0.3s linear;
 }
 
-#consultation .appoinment-box form .form-group select option:hover {
+main #consultation .appoinment-box form .form-group select option:hover {
   background-color: #d2f2f0;
 }
 
-#consultation .appoinment-box form .form-group .down {
+main #consultation .appoinment-box form .form-group .down {
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
-#consultation .appoinment-box form button {
+main #consultation .appoinment-box form button {
   padding: 12px 40px;
   background: #ffffff;
   color: #1ebeb6;
@@ -513,7 +745,7 @@ body {
   border-radius: 30px;
 }
 
-#consultation .appoinment-box form button:focus {
+main #consultation .appoinment-box form button:focus {
   border: none !important;
   -webkit-box-shadow: inherit !important;
           box-shadow: inherit !important;
@@ -687,6 +919,94 @@ footer .footer-bottom .social-media ul li a:hover {
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 70px 0 30px 0;
+    background-color: white;
+  }
+  header {
+    height: 137px;
+    margin-top: -32px;
+    margin-bottom: 20px !important;
+  }
+  header .covid {
+    text-align: center;
+  }
+  header .header-links {
+    position: absolute;
+    top: 5px;
+    left: 174px;
+    width: 38%;
+    display: inline-block !important;
+  }
+  header .social-media {
+    position: absolute;
+    top: 5px;
+    left: 424px;
+    width: 38%;
+    display: inline-block !important;
+  }
+  header .social-media a {
+    padding-left: 20px;
+  }
+  nav {
+    height: 50px !important;
+    position: relative;
+  }
+  nav .nav-button {
+    display: inline-block !important;
+    position: absolute;
+    left: 50px;
+    bottom: 4px;
+  }
+  nav .menu {
+    padding-left: 55px !important;
+    padding-right: 55px !important;
+    padding-top: 25px;
+    position: absolute;
+    left: -9px;
+    bottom: -310px;
+    height: 300px;
+    width: 103%;
+    background-color: white;
+    display: none;
+  }
+  nav .menu .submenu {
+    position: absolute;
+    top: 24px !important;
+    left: 200px !important;
+  }
+  nav .menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 40px !important;
+  }
+  nav .menu ul li {
+    height: 45px;
+  }
+  nav .menu ul :not(:last-of-type) {
+    border-bottom: 1px solid LightGray;
+  }
+  nav .website-logo {
+    width: 150px;
+    display: inline-block;
+    position: absolute;
+    right: 290px;
+    bottom: 14px;
+  }
+  nav .contact {
+    position: absolute;
+    right: 50px;
+    bottom: 14px;
+    width: 200px;
+  }
   #fun-factor .fun-fact-items {
     height: 450px !important;
     display: -webkit-box;
@@ -735,6 +1055,94 @@ footer .footer-bottom .social-media ul li a:hover {
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 90px 0 30px 0;
+    background-color: white;
+  }
+  header {
+    height: 137px;
+    margin-top: -32px;
+    margin-bottom: 20px !important;
+  }
+  header .covid {
+    text-align: center;
+  }
+  header .header-links {
+    position: absolute;
+    top: 5px;
+    left: 174px;
+    width: 38%;
+    display: inline-block !important;
+  }
+  header .social-media {
+    position: absolute;
+    top: 5px;
+    left: 424px;
+    width: 38%;
+    display: inline-block !important;
+  }
+  header .social-media a {
+    padding-left: 20px;
+  }
+  nav {
+    height: 50px !important;
+    position: relative;
+  }
+  nav .nav-button {
+    display: inline-block !important;
+    position: absolute;
+    left: 50px;
+    bottom: 4px;
+  }
+  nav .menu {
+    padding-left: 55px !important;
+    padding-right: 55px !important;
+    padding-top: 25px;
+    position: absolute;
+    left: -9px;
+    bottom: -310px;
+    height: 300px;
+    width: 103%;
+    background-color: white;
+    display: none;
+  }
+  nav .menu .submenu {
+    position: absolute;
+    top: 24px !important;
+    left: 200px !important;
+  }
+  nav .menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 40px !important;
+  }
+  nav .menu ul li {
+    height: 45px;
+  }
+  nav .menu ul :not(:last-of-type) {
+    border-bottom: 1px solid LightGray;
+  }
+  nav .website-logo {
+    width: 150px;
+    display: inline-block;
+    position: absolute;
+    right: 290px;
+    bottom: 14px;
+  }
+  nav .contact {
+    position: absolute;
+    right: 50px;
+    bottom: 14px;
+    width: 200px;
+  }
   #fun-factor .fun-fact-items {
     height: 750px !important;
     display: -webkit-box;
@@ -798,6 +1206,70 @@ footer .footer-bottom .social-media ul li a:hover {
 }
 
 @media (min-width: 500px) and (max-width: 575.98px) {
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 80px 0 30px 0;
+    background-color: white;
+  }
+  header {
+    display: none;
+  }
+  nav {
+    padding: 50px 0 30px 0;
+    height: 50px !important;
+    position: relative;
+  }
+  nav .nav-button {
+    display: inline-block !important;
+    position: absolute;
+    left: 50px;
+    bottom: 4px;
+  }
+  nav .menu {
+    padding-left: 55px !important;
+    padding-right: 55px !important;
+    padding-top: 25px;
+    position: absolute;
+    left: -9px;
+    bottom: -310px;
+    height: 300px;
+    width: 103%;
+    background-color: white;
+    display: none;
+  }
+  nav .menu .submenu {
+    position: absolute;
+    top: 24px !important;
+    left: 200px !important;
+  }
+  nav .menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 40px !important;
+  }
+  nav .menu ul li {
+    height: 45px;
+  }
+  nav .menu ul :not(:last-of-type) {
+    border-bottom: 1px solid LightGray;
+  }
+  nav .website-logo {
+    width: 150px;
+    display: inline-block;
+    position: absolute;
+    right: 215px;
+    bottom: 14px;
+  }
+  nav .contact {
+    display: none;
+  }
   #fun-factor .fun-fact-items {
     height: 750px !important;
     display: -webkit-box;
@@ -864,6 +1336,64 @@ footer .footer-bottom .social-media ul li a:hover {
 }
 
 @media (min-width: 400px) and (max-width: 450px) {
+  header {
+    display: none;
+  }
+  nav {
+    padding: 70px 0 30px 0;
+    height: 50px !important;
+    position: relative;
+  }
+  nav .nav-button {
+    display: inline-block !important;
+    position: absolute;
+    left: 50px;
+    bottom: 4px;
+  }
+  nav .menu {
+    padding-left: 55px !important;
+    padding-right: 55px !important;
+    padding-top: 25px;
+    position: absolute;
+    left: -9px;
+    bottom: -310px;
+    height: 300px;
+    width: 103%;
+    background-color: white;
+    display: none;
+  }
+  nav .menu .submenu {
+    position: absolute;
+    top: 35px !important;
+    left: 190px !important;
+    width: 210px !important;
+  }
+  nav .menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 40px !important;
+  }
+  nav .menu ul li {
+    height: 45px;
+  }
+  nav .menu ul :not(:last-of-type) {
+    border-bottom: 1px solid LightGray;
+  }
+  nav .website-logo {
+    width: 150px;
+    display: inline-block;
+    position: absolute;
+    right: 142px;
+    bottom: 14px;
+  }
+  nav .contact {
+    display: none;
+  }
   #fun-factor .fun-fact-items {
     height: 750px !important;
     display: -webkit-box;
@@ -930,6 +1460,64 @@ footer .footer-bottom .social-media ul li a:hover {
 }
 
 @media (min-width: 300px) and (max-width: 399.98px) {
+  header {
+    display: none;
+  }
+  nav {
+    padding: 70px 0 30px 0;
+    height: 50px !important;
+    position: relative;
+  }
+  nav .nav-button {
+    display: inline-block !important;
+    position: absolute;
+    left: 50px;
+    bottom: 4px;
+  }
+  nav .menu {
+    padding-left: 55px !important;
+    padding-right: 55px !important;
+    padding-top: 25px;
+    position: absolute;
+    left: -9px;
+    bottom: -310px;
+    height: 300px;
+    width: 103%;
+    background-color: white;
+    display: none;
+  }
+  nav .menu .submenu {
+    position: absolute;
+    top: 35px !important;
+    left: 190px !important;
+    width: 200px !important;
+  }
+  nav .menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 40px !important;
+  }
+  nav .menu ul li {
+    height: 45px;
+  }
+  nav .menu ul :not(:last-of-type) {
+    border-bottom: 1px solid LightGray;
+  }
+  nav .website-logo {
+    width: 150px;
+    display: inline-block;
+    position: absolute;
+    right: 130px;
+    bottom: 14px;
+  }
+  nav .contact {
+    display: none;
+  }
   #fun-factor .fun-fact-items {
     height: 750px !important;
     display: -webkit-box;
