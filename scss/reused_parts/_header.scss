@@ -1,0 +1,114 @@
+// header start
+header {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+
+  .covid {
+    h6 {
+      font-size: 15px;
+      color: #976666;
+      font-weight: 400;
+      a {
+        color: black;
+        text-decoration: underline;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .header-links {
+    a {
+      color: black;
+      font-weight: 700;
+      font-size: 15px;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    span {
+      padding: 0 15px 0 15px;
+      color: #e4e4e4;
+      font-weight: 200;
+      font-size: 14px;
+    }
+  }
+  .social-media {
+    padding-left: 20px;
+    a {
+      color: black;
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
+}
+// header end
+
+
+// ===== Responsive Design Start ===== //
+@media (min-width: 768px) and (max-width: 991.98px) {
+  header {
+    .covid {
+      padding-bottom: 10px;
+      text-align: center;
+    }
+    .header-links {
+      padding-right: 20px;
+    }
+
+    .social-media {
+      padding-right: 192px;
+      padding-left: 0 !important;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  header {
+    height: 137px;
+    margin-top: -32px;
+    margin-bottom: 20px !important;
+    .covid {
+      text-align: center;
+    }
+    .header-links {
+      position: absolute;
+      top: 5px;
+      left: 174px;
+      width: 38%;
+      display: inline-block !important;
+    }
+    .social-media {
+      a {
+        padding-left: 20px;
+      }
+      position: absolute;
+      top: 5px;
+      left: 424px;
+      width: 38%;
+      display: inline-block !important;
+    }
+  }
+}
+
+@media (min-width: 500px) and (max-width: 575.98px) {
+  header {
+    display: none;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 499.98px) {
+  header {
+    display: none;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 399.98px) {
+  header {
+    display: none;
+  }
+}
+// ===== Responsive Design End ===== //

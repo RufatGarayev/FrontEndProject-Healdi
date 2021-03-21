@@ -1096,76 +1096,76 @@ main #testomonials .owl-dot.active span::after {
   border-radius: 50%;
 }
 
-main footer {
+footer {
   background: #001d4c;
   padding: 120px 0 0 0;
 }
 
-main footer .about img {
+footer .about img {
   margin-bottom: 30px;
 }
 
-main footer .about p {
+footer .about p {
   font-size: 15px;
   color: #96aac1;
   line-height: 30px;
   padding-bottom: 10px;
 }
 
-main footer .about .address {
+footer .about .address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main footer .about .address .first-li {
+footer .about .address .first-li {
   padding-bottom: 30px;
 }
 
-main footer .about .address .icon {
+footer .about .address .icon {
   display: inline-block;
 }
 
-main footer .about .address .icon i {
+footer .about .address .icon i {
   color: white;
   font-size: 30px;
   width: 50px;
 }
 
-main footer .about .address .info {
+footer .about .address .info {
   display: inline-block;
 }
 
-main footer .about .address .info h5 {
+footer .about .address .info h5 {
   color: white;
   margin-bottom: 10px;
   font-weight: 600;
   font-size: 18px;
 }
 
-main footer .about .address .info span {
+footer .about .address .info span {
   color: #96aac1;
 }
 
-main footer .links h4 {
+footer .links h4 {
   color: white;
   margin-bottom: 30px;
   font-weight: 700;
   font-size: 22px;
 }
 
-main footer .links ul {
+footer .links ul {
   list-style: none;
 }
 
-main footer .links ul li {
+footer .links ul li {
   margin-bottom: 15px;
   position: relative;
   z-index: 1;
   padding-left: 20px;
 }
 
-main footer .links ul li::after {
+footer .links ul li::after {
   content: "";
   position: absolute;
   left: 0;
@@ -1177,61 +1177,61 @@ main footer .links ul li::after {
   border-radius: 50%;
 }
 
-main footer .links ul li a {
+footer .links ul li a {
   color: #96aac1;
   font-weight: 600;
   font-size: 15px;
   line-height: 30px;
 }
 
-main footer .links ul li a:hover {
+footer .links ul li a:hover {
   text-decoration: none;
   color: white;
 }
 
-main footer .branches {
+footer .branches {
   background-color: #0d2955;
   padding: 35px;
   margin-left: 15px;
   border-bottom: 2px solid #1ebeb6;
 }
 
-main footer .branches ul {
+footer .branches ul {
   list-style: none;
 }
 
-main footer .branches ul li strong {
+footer .branches ul li strong {
   font-size: 15px;
   display: block;
   margin-bottom: 5px;
   color: #ffffff;
 }
 
-main footer .branches ul li span {
+footer .branches ul li span {
   color: #96aac1;
   font-size: 15px;
   line-height: 30px;
 }
 
-main footer .footer-bottom {
+footer .footer-bottom {
   margin-top: 120px;
   border-top: 1px solid #213a64;
   padding: 25px 0 15px 0;
   background-color: #082452;
 }
 
-main footer .footer-bottom .copyright p {
+footer .footer-bottom .copyright p {
   font-size: 15px;
   font-weight: 400;
   color: white;
 }
 
-main footer .footer-bottom .copyright p a {
+footer .footer-bottom .copyright p a {
   font-weight: 600;
   color: white;
 }
 
-main footer .footer-bottom .social-media ul {
+footer .footer-bottom .social-media ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1244,21 +1244,21 @@ main footer .footer-bottom .social-media ul {
           align-items: center;
 }
 
-main footer .footer-bottom .social-media ul li {
+footer .footer-bottom .social-media ul li {
   padding-left: 20px;
 }
 
-main footer .footer-bottom .social-media ul li a {
+footer .footer-bottom .social-media ul li a {
   font-size: 15px;
   color: white;
   font-weight: 600;
 }
 
-main footer .footer-bottom .social-media ul li a i {
+footer .footer-bottom .social-media ul li a i {
   padding-right: 5px;
 }
 
-main footer .footer-bottom .social-media ul li a:hover {
+footer .footer-bottom .social-media ul li a:hover {
   text-decoration: none;
 }
 

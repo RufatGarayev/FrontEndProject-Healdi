@@ -1,0 +1,378 @@
+// navbar-sticky position start
+.sticky {
+  position: fixed !important;
+  left: 0;
+  top: 0;
+  border-top: 0;
+}
+// navbar-sticky position end
+
+// navbar start
+nav {
+  z-index: 99;
+  height: 90px;
+  width: 100%;
+  box-shadow: 0px 4px 10px -6px #afafaf;
+  background-color: white;
+  position: relative;
+
+  .website-logo {
+    height: 100%;
+  }
+  .nav-button {
+    display: none;
+  }
+  .menu {
+    position: relative;
+    height: 90px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    ul {
+      width: 100%;
+    }
+    li {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      height: 90px;
+      &:hover .submenu {
+        display: inline-block;
+      }
+      a.active {
+        color: #1ebeb6;
+      }
+      .submenu {
+        height: 150px;
+        width: 250px;
+        background-color: white;
+        box-shadow: 0 -1px 10px #d4cece;
+        position: absolute;
+        top: 90px;
+        left: 5px;
+        display: none;
+        z-index: 1;
+        ul {
+          li {
+            padding-left: 15px;
+            height: 50px;
+          }
+          .first-li {
+            border-bottom: 1px solid #e4e4e4;
+          }
+        }
+      }
+
+      .submenu-1 {
+        height: 103px;
+        position: absolute;
+        top: 90px;
+        left: 465px;
+      }
+    }
+    li a {
+      color: black;
+      font-size: 13px;
+      font-weight: 600;
+      &:hover {
+        text-decoration: none;
+        color: #1ebeb6;
+        transition: 0.3s linear;
+      }
+    }
+  }
+
+  .contact {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    p {
+      font-weight: 600;
+      font-size: 12px;
+      color: #787878;
+      span {
+        font-size: 18px;
+        font-weight: 800;
+        color: #666666;
+      }
+    }
+    i {
+      color: #1ebeb6;
+      font-size: 46px;
+      padding-right: 11px;
+    }
+  }
+}
+// navbar end
+
+
+
+// ===== Responsive Design Start ===== //
+@media (min-width: 768px) and (max-width: 991.98px) {
+  nav {
+    height: 75px !important;
+
+    .nav-button {
+      font-size: 20px;
+      display: inline-block !important;
+      position: absolute;
+      left: 50px;
+      bottom: -9px;
+    }
+    .menu {
+      padding-left: 55px !important;
+      padding-right: 55px !important;
+      padding-top: 25px;
+      position: absolute;
+      left: -9px;
+      bottom: -330px;
+      height: 300px;
+      width: 103%;
+      background-color: white;
+      display: none;
+      .submenu {
+        position: absolute;
+        top: 24px !important;
+        left: 200px !important;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px !important;
+        li {
+          height: 45px;
+        }
+        :not(:last-of-type) {
+          border-bottom: 1px solid LightGray;
+        }
+      }
+    }
+    .website-logo {
+      width: 150px;
+      display: inline-block;
+      position: absolute;
+      right: 290px;
+      bottom: 2px;
+    }
+    .contact {
+      position: absolute;
+      right: 50px;
+      bottom: 2px;
+      width: 200px;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  nav {
+    height: 50px !important;
+    position: relative;
+    .nav-button {
+      display: inline-block !important;
+      position: absolute;
+      left: 50px;
+      bottom: 4px;
+    }
+    .menu {
+      padding-left: 55px !important;
+      padding-right: 55px !important;
+      padding-top: 25px;
+      position: absolute;
+      left: -9px;
+      bottom: -310px;
+      height: 300px;
+      width: 103%;
+      background-color: white;
+      display: none;
+      .submenu {
+        position: absolute;
+        top: 24px !important;
+        left: 200px !important;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px !important;
+        li {
+          height: 45px;
+        }
+        :not(:last-of-type) {
+          border-bottom: 1px solid LightGray;
+        }
+      }
+    }
+    .website-logo {
+      width: 150px;
+      display: inline-block;
+      position: absolute;
+      right: 290px;
+      bottom: 14px;
+    }
+    .contact {
+      position: absolute;
+      right: 50px;
+      bottom: 14px;
+      width: 200px;
+    }
+  }
+}
+
+@media (min-width: 500px) and (max-width: 575.98px) {
+  nav {
+    padding: 50px 0 30px 0;
+    height: 50px !important;
+    position: relative;
+    .nav-button {
+      display: inline-block !important;
+      position: absolute;
+      left: 50px;
+      bottom: 4px;
+    }
+    .menu {
+      padding-left: 55px !important;
+      padding-right: 55px !important;
+      padding-top: 25px;
+      position: absolute;
+      left: -9px;
+      bottom: -310px;
+      height: 300px;
+      width: 103%;
+      background-color: white;
+      display: none;
+      .submenu {
+        position: absolute;
+        top: 24px !important;
+        left: 200px !important;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px !important;
+        li {
+          height: 45px;
+        }
+        :not(:last-of-type) {
+          border-bottom: 1px solid LightGray;
+        }
+      }
+    }
+    .website-logo {
+      width: 150px;
+      display: inline-block;
+      position: absolute;
+      right: 215px;
+      bottom: 14px;
+    }
+    .contact {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 400px) and (max-width: 499.98px) {
+  nav {
+    padding: 50px 0 30px 0;
+    height: 50px !important;
+    position: relative;
+    .nav-button {
+      display: inline-block !important;
+      position: absolute;
+      left: 50px;
+      bottom: 4px;
+    }
+    .menu {
+      padding-left: 55px !important;
+      padding-right: 55px !important;
+      padding-top: 25px;
+      position: absolute;
+      left: -9px;
+      bottom: -310px;
+      height: 300px;
+      width: 103%;
+      background-color: white;
+      display: none;
+      .submenu {
+        position: absolute;
+        top: 35px !important;
+        left: 190px !important;
+        width: 210px !important;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px !important;
+        li {
+          height: 45px;
+        }
+        :not(:last-of-type) {
+          border-bottom: 1px solid LightGray;
+        }
+      }
+    }
+    .website-logo {
+      width: 150px;
+      display: inline-block;
+      position: absolute;
+      right: 142px;
+      bottom: 14px;
+    }
+    .contact {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 300px) and (max-width: 399.98px) {
+  nav {
+    padding: 50px 0 30px 0;
+    height: 50px !important;
+    position: relative;
+    .nav-button {
+      display: inline-block !important;
+      position: absolute;
+      left: 50px;
+      bottom: 4px;
+    }
+    .menu {
+      padding-left: 55px !important;
+      padding-right: 55px !important;
+      padding-top: 25px;
+      position: absolute;
+      left: -9px;
+      bottom: -310px;
+      height: 300px;
+      width: 103%;
+      background-color: white;
+      display: none;
+      .submenu {
+        position: absolute;
+        top: 35px !important;
+        left: 190px !important;
+        width: 200px !important;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px !important;
+        li {
+          height: 45px;
+        }
+        :not(:last-of-type) {
+          border-bottom: 1px solid LightGray;
+        }
+      }
+    }
+    .website-logo {
+      width: 150px;
+      display: inline-block;
+      position: absolute;
+      right: 130px;
+      bottom: 14px;
+    }
+    .contact {
+      display: none;
+    }
+  }
+}
+// ===== Responsive Design End ===== //

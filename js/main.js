@@ -1,42 +1,35 @@
 // reload-img start
-$(window).on("load", function() {
+$(window).on("load", function () {
   $(".pre-icon").fadeOut("slow");
 });
 // reload-img end
 
 // nav-sticky start
-window.onscroll = function() {
-  if ($(window).scrollTop() >= 80) {
-    $(".navBar").addClass("sticky");
+let stickyNavTop = $('.navBar').offset().top;
+
+let stickyNav = function () {
+  let scrollTop = $(window).scrollTop();
+
+  if (scrollTop > stickyNavTop) {
+    $('.navBar').addClass('sticky');
   } else {
-    $(".navBar").removeClass("sticky");
+    $('.navBar').removeClass('sticky');
   }
 };
-// nav-sticky end
 
-// nav-links hover effects start
-let navLinks = document.querySelectorAll("nav .menu li a");
-navLinks.forEach((link) => {
-  link.addEventListener("mouseenter", function() {
-    if (link.lastChild.classList.contains("fa-angle-down")) {
-      link.lastChild.classList.remove("fa-angle-down");
-      link.lastChild.classList.add("fa-angle-up");
-    }
-  });
-  link.addEventListener("mouseleave", function() {
-    link.lastChild.classList.add("fa-angle-down");
-    link.lastChild.classList.remove("fa-angle-up");
-  });
+stickyNav();
+$(window).scroll(function () {
+  stickyNav();
 });
-// nav-links hover effects end
+// nav-sticky end
 
 // nav burger-button start
 let navButton = document.querySelector(".nav-button");
 let navMenu = document.querySelector("nav .menu");
 
-navButton.addEventListener("click", function(){
-    navMenu.classList.toggle("d-block");
-    navButton.classList.toggle("fa-times");
+navButton.addEventListener("click", function () {
+  navMenu.classList.toggle("d-block");
+  navButton.classList.toggle("fa-times");
 });
 // nav burger-button end
 
@@ -45,25 +38,25 @@ let banner = document.getElementById("banner");
 let arrowLeft = document.querySelector(".carousel-control-prev");
 let arrowRight = document.querySelector(".carousel-control-next");
 
-banner.addEventListener("mouseenter", function() {
+banner.addEventListener("mouseenter", function () {
   arrowLeft.style.left = "-70px";
   arrowLeft.style.transition = "0.3s";
   arrowRight.style.right = "-70px";
   arrowRight.style.transition = "0.3s";
 });
-banner.addEventListener("mouseleave", function() {
+banner.addEventListener("mouseleave", function () {
   arrowLeft.style.left = "-150px";
   arrowRight.style.right = "-150px";
 });
 // banner-arrow end
 
 // play-box popup effect start
-$(document).ready(function() {
-  $(".play-btn").click(function() {
+$(document).ready(function () {
+  $(".play-btn").click(function () {
     $(".play-box").css("display", "flex");
   });
 
-  $(".play-box").click(function(e) {
+  $(".play-box").click(function (e) {
     if ($(this).hasClass("play-box")) {
       $(".play-box").css("display", "none");
     }
@@ -95,7 +88,7 @@ $(".owl-carousel.myservices").owlCarousel({
 let myBtn = document.querySelectorAll(".nav-link");
 
 myBtn.forEach((btn) => {
-  btn.addEventListener("click", function() {
+  btn.addEventListener("click", function () {
     document.querySelector(".active").classList.remove("active");
     document.querySelector(".show").classList.remove("show");
     document.getElementById(this.dataset.targetSection).classList.add("show");
@@ -136,7 +129,7 @@ let input = document.querySelectorAll(
   "#consultation form .form-group .selectboxinput"
 );
 
-$(".selectboxinput").click(function() {
+$(".selectboxinput").click(function () {
   var oldrotate = document.querySelector(".down");
   oldactive = document.querySelector(".activeul");
   if (oldactive != null) {
@@ -150,7 +143,7 @@ $(".selectboxinput").click(function() {
   this.nextElementSibling.classList.add("activeul");
 });
 
-gender.addEventListener("click", function() {
+gender.addEventListener("click", function () {
   if (oldactive == this.nextElementSibling) {
     $(genderul).fadeOut(100);
     oldactive.classList.remove("activeul");
@@ -160,7 +153,7 @@ gender.addEventListener("click", function() {
   $(genderul).fadeToggle(100);
 });
 
-category.addEventListener("click", function() {
+category.addEventListener("click", function () {
   if (oldactive == this.nextElementSibling) {
     $(categoryul).fadeOut(100);
     oldactive.classList.remove("activeul");
@@ -172,7 +165,7 @@ category.addEventListener("click", function() {
 });
 
 selectedoptions.forEach((s) => {
-  s.addEventListener("click", function(e) {
+  s.addEventListener("click", function (e) {
     var oldselected = this.parentElement.querySelector(".selected");
     oldselected.classList.remove("selected");
     this.classList.add("selected");
