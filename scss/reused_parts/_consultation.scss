@@ -1,0 +1,324 @@
+// consultation section start
+#consultation {
+  padding: 120px 0 120px 0;
+  overflow: hidden;
+  .main-holder {
+    padding: 60px 70px 0 0;
+    .text {
+      h2 {
+        font-weight: 600;
+        margin-bottom: 25px;
+        color: #233645;
+      }
+      p {
+        padding-bottom: 23px;
+        font-size: 15px;
+        line-height: 30px;
+        color: #666666;
+      }
+    }
+    .consult-item {
+      padding: 35px;
+      text-align: center;
+      border: 2px solid #1ebeb6;
+      i {
+        color: #1ebeb6;
+        font-size: 55px;
+        display: inline-block;
+        margin-bottom: 25px;
+      }
+      h5 {
+        color: #233645;
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+  }
+  .appointment-holder {
+    .appoinment-box {
+      background: #1ebeb6;
+      padding: 60px 37px;
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: -30px;
+        top: -30px;
+        height: 100%;
+        width: 100%;
+        background: #1ebeb6;
+        z-index: -1;
+        opacity: 0.2;
+      }
+      .header {
+        text-align: center !important;
+        h4 {
+          font-size: 22px;
+          color: #ffffff;
+          font-weight: 600;
+          padding-bottom: 60px;
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: -60px;
+            height: 100%;
+            width: 30%;
+            background: url(../img/devider-light.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: 10;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+      form {
+        .form-group {
+          margin-bottom: 16px;
+          #gender,
+          #category {
+            cursor: pointer;
+            box-shadow: none;
+          }
+          #categoryselection {
+            top: 106%;
+          }
+          i {
+            color: white;
+            transition: 0.2s;
+          }
+          #gendericon {
+            position: absolute;
+            right: 22px;
+            top: 18px;
+          }
+          #categoryicon {
+            position: absolute;
+            right: 22px;
+            top: 18px;
+          }
+          .dropdownselector {
+            background-color: white;
+            position: absolute;
+            top: 106%;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+            border: 1px solid #d3d3d3;
+            border-radius: 5px;
+            display: none;
+
+            li {
+              list-style-type: none;
+              text-align: left;
+              padding: 7px 15px;
+              font-size: 14px;
+              cursor: pointer;
+              &:first-of-type {
+                border-radius: 5px;
+              }
+              &:last-of-type {
+                border-radius: 5px;
+              }
+              &:hover {
+                background-color: #f6f6f6;
+              }
+            }
+            li.selected {
+              font-weight: bold;
+              background-color: #f6f6f6;
+            }
+          }
+          .form-control {
+            color: #ffffff;
+            font-size: 14px;
+            border-radius: 30px;
+            min-height: 50px;
+            background: #35c5bd;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            padding: 0 25px;
+            &::placeholder {
+              color: white;
+              font-weight: 500;
+              font-size: 14px;
+            }
+          }
+          select {
+            cursor: pointer;
+            color: white;
+            font-size: 14px;
+            font-weight: 500;
+            height: 50px;
+            width: 100%;
+            line-height: 50px;
+            background: #35c5bd;
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            position: relative;
+            text-align: left !important;
+            padding: 0 25px;
+            outline: none;
+
+            option {
+              background-color: #f6f6f6;
+              color: black;
+              font-weight: 400;
+              height: 40px;
+              line-height: 40px;
+              list-style: none;
+              border: none;
+              outline: none;
+              padding-left: 18px;
+              padding-right: 29px;
+              text-align: left;
+              transition: 0.3s linear;
+              &:hover {
+                background-color: #d2f2f0;
+              }
+            }
+          }
+          .down {
+            transform: rotate(-180deg);
+            transition: 0.2s;
+          }
+        }
+        button {
+          padding: 12px 40px;
+          background: #ffffff;
+          color: #1ebeb6;
+          text-transform: capitalize;
+          font-weight: 600;
+          width: 100%;
+          border: none;
+          border-radius: 30px;
+          &:focus {
+            border: none !important;
+            box-shadow: inherit !important;
+            outline: inherit !important;
+          }
+        }
+      }
+    }
+  }
+}
+// consultation section end
+
+
+
+// ======= Responsive Design Start ======= //
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #consultation {
+    padding-top: 60px !important;
+    .main-holder {
+      padding: 60px 16px 0 19px !important;
+      .text {
+        h2 {
+          font-size: 32px !important;
+        }
+      }
+    }
+    .appointment-holder {
+      padding: 0 30px 0 65px;
+      .appoinment-box {
+        padding: 50px 37px;
+        width: 100%;
+        margin-top: 80px;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #consultation {
+    .main-holder {
+      padding-top: 0 !important;
+      padding-right: 0 !important;
+      .text {
+        text-align: center;
+        h2 {
+          font-size: 26px !important;
+        }
+        p {
+          font-size: 14px !important;
+        }
+      }
+      .consult-item {
+        margin-top: 20px;
+      }
+    }
+    .appoinment-box {
+      padding: 50px 37px;
+      &::after {
+        display: none !important;
+      }
+      width: 95%;
+      margin-top: 40px;
+      margin-left: 15px;
+    }
+  }
+}
+
+@media (min-width: 375px) and (max-width: 575.98px) {
+  #consultation {
+    padding: 120px 20px 120px 20px !important;
+    .main-holder {
+      padding-top: 0 !important;
+      padding-right: 0 !important;
+      .text {
+        text-align: center;
+        h2 {
+          font-size: 26px !important;
+        }
+        p {
+          font-size: 14px !important;
+        }
+      }
+      .consult-item {
+        margin-top: 20px;
+      }
+    }
+    .appoinment-box {
+      padding: 50px 37px;
+      &::after {
+        display: none !important;
+      }
+      width: 94% !important;
+      margin-top: 40px;
+      margin-left: 15px;
+    }
+  }
+}
+
+@media (min-width: 300px) and (max-width: 374.98px) {
+  #consultation {
+    padding: 120px 20px 70px 20px !important;
+    .main-holder {
+      padding-top: 0 !important;
+      padding-right: 0 !important;
+      .text {
+        text-align: center;
+        h2 {
+          font-size: 26px !important;
+        }
+        p {
+          font-size: 14px !important;
+        }
+      }
+      .consult-item {
+        margin-top: 20px;
+      }
+    }
+    .appoinment-box {
+      padding: 50px 24px !important;
+      &::after {
+        display: none !important;
+      }
+      width: 92% !important;
+      margin-top: 40px;
+      margin-left: 15px;
+    }
+  }
+}
+// ======= Responsive Design End ======= //

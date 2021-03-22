@@ -1,27 +1,30 @@
-// reload-img start
-$(window).on("load", function () {
-  $(".pre-icon").fadeOut("slow");
-});
-// reload-img end
+$(document).ready(function () {
+  // reload-img start
+  $(window).on("load", function () {
+    $(".pre-icon").fadeOut("slow");
+  });
+  // reload-img end
 
-// nav-sticky start
-let stickyNavTop = $('.navBar').offset().top;
+  // nav-sticky start
+  let stickyNavTop = $(".navBar").offset().top;
 
-let stickyNav = function () {
-  let scrollTop = $(window).scrollTop();
+  let stickyNav = function () {
+    let scrollTop = $(window).scrollTop();
 
-  if (scrollTop > stickyNavTop) {
-    $('.navBar').addClass('sticky');
-  } else {
-    $('.navBar').removeClass('sticky');
-  }
-};
+    if (scrollTop > stickyNavTop) {
+      $(".navBar").addClass("sticky");
+    } else {
+      $(".navBar").removeClass("sticky");
+    }
+  };
 
-stickyNav();
-$(window).scroll(function () {
   stickyNav();
+
+  $(window).scroll(function () {
+    stickyNav();
+  });
+  // nav-sticky end
 });
-// nav-sticky end
 
 // nav burger-button start
 let navButton = document.querySelector(".nav-button");
@@ -64,28 +67,8 @@ $(document).ready(function () {
 });
 // play-box popup effect end
 
-// services-owlCarousel start
-$(".owl-carousel.myservices").owlCarousel({
-  loop: false,
-  margin: 30,
-  nav: false,
-  dot: true,
-  responsive: {
-    0: {
-      items: 1
-    },
-    600: {
-      items: 1
-    },
-    1000: {
-      items: 3
-    }
-  }
-});
-// services-owlCarousel end
-
 // doctors-section tab start
-let myBtn = document.querySelectorAll(".nav-link");
+let myBtn = document.querySelectorAll("#doctors .nav-link");
 
 myBtn.forEach((btn) => {
   btn.addEventListener("click", function () {
@@ -96,25 +79,6 @@ myBtn.forEach((btn) => {
   });
 });
 // doctors-section tab end
-
-// testomonials-owlCarousel start
-$(".owl-carousel.myowl").owlCarousel({
-  loop: true,
-  margin: 30,
-  dotsEach: 2,
-  responsive: {
-    0: {
-      items: 1
-    },
-    600: {
-      items: 1
-    },
-    1000: {
-      items: 2.6
-    }
-  }
-});
-// testomonials-owlCarousel end
 
 // consultation-section dropdown start
 var selectedoptions = [...document.querySelectorAll(".selectedoption")];
@@ -175,3 +139,107 @@ selectedoptions.forEach((s) => {
   });
 });
 // consultation-section dropdown end
+
+
+
+// ======= Owl Carousel Start ======= //
+
+// home services-owlCarousel start
+$(".owl-carousel.myservices").owlCarousel({
+  loop: false,
+  margin: 30,
+  nav: false,
+  dot: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 1,
+    },
+    1000: {
+      items: 3,
+    },
+  },
+});
+// home services-owlCarousel end
+
+// about-us services-owlCarousel start
+$(".owl-carousel.myservices-2").owlCarousel({
+  loop: false,
+  margin: 30,
+  nav: false,
+  dot: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 1,
+    },
+    1000: {
+      items: 3,
+    },
+  },
+});
+// about-us services-owlCarousel end
+
+// about-us services-owlCarousel start
+$(".owl-carousel.myservices-3").owlCarousel({
+  loop: false,
+  margin: 30,
+  nav: false,
+  dot: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 1,
+    },
+    1000: {
+      items: 3,
+    },
+  },
+});
+// about-us services-owlCarousel end
+
+// testomonials-owlCarousel start
+$(".owl-carousel.myowl").owlCarousel({
+  loop: true,
+  margin: 30,
+  dotsEach: 2,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 1,
+    },
+    1000: {
+      items: 2.6,
+    },
+  },
+});
+// testomonials-owlCarousel end
+
+// testomonials-owlCarousel start
+$(".owl-carousel.myowl2").owlCarousel({
+  loop: true,
+  margin: 30,
+  dotsEach: 2,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 1,
+    },
+    1000: {
+      items: 2.6,
+    },
+  },
+});
+// testomonials-owlCarousel end
+
+// ======= Owl Carousel End ======= //

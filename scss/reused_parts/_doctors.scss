@@ -1,0 +1,356 @@
+// doctors section start
+#doctors {
+  width: 100%;
+  overflow: hidden;
+  background-color: #f7f7f7;
+  padding: 120px 0 120px 0;
+  .caption {
+    h4 {
+      color: #1ebeb6;
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    h2 {
+      font-size: 32px;
+      font-weight: 600;
+      padding-bottom: 20px;
+      margin-bottom: 0;
+      position: relative;
+      letter-spacing: 1px;
+      &::before {
+        content: "";
+        background: #1ebeb6;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        height: 2px;
+        width: 40px;
+        margin-left: -25px;
+      }
+      &::after {
+        content: "";
+        background: #1ebeb6;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        height: 2px;
+        width: 5px;
+        margin-left: 20px;
+      }
+    }
+    p {
+      font-size: 15px;
+      color: #666666;
+      margin: 0;
+      margin-top: 20px;
+      padding: 0 20px;
+      line-height: 30px;
+    }
+  }
+  .doctor-segments {
+    padding-top: 60px;
+    ul {
+      display: block;
+      margin-right: 50px;
+      background-color: #e1f1f1;
+      li {
+        a {
+          font-size: 15px;
+          line-height: 30px;
+          font-weight: 700;
+          color: #233645;
+          display: flex;
+          border: none;
+          padding: 20px 15px;
+          align-items: center;
+          .doctors-small-img {
+            width: 45px;
+            margin-right: 20px;
+            img {
+              width: 100%;
+            }
+          }
+        }
+        a.active {
+          background-color: #1ebeb6;
+          color: white;
+        }
+      }
+    }
+    .tab-content {
+      transition: linear 0.3s;
+      .content {
+        display: none;
+        animation: fadeEffect 1s;
+      }
+
+      .content.show {
+        display: block;
+      }
+      .box {
+        padding-bottom: 30px;
+      }
+      .doctors-big-img {
+        width: 370px;
+        img {
+          width: 100%;
+        }
+      }
+      .info {
+        padding: 43px 40px;
+        background: #ffffff;
+        position: relative;
+        &::after {
+          position: absolute;
+          left: -15px;
+          top: 30px;
+          content: "";
+          border-top: 15px solid transparent;
+          border-bottom: 15px solid transparent;
+          border-right: 15px solid #ffffff;
+        }
+        h4 {
+          color: #233645;
+          font-size: 22px;
+          font-weight: 600;
+          margin-bottom: 15px;
+        }
+        span {
+          color: #32c4bd;
+          font-size: 15px;
+          display: block;
+          margin-bottom: 15px;
+        }
+        p {
+          color: #6f6f6f;
+          font-size: 15px;
+          line-height: 30px;
+          padding-bottom: 15px;
+        }
+        a {
+          background: linear-gradient(90deg, #1ebeb6 0%, #00827c 100%);
+          z-index: 1;
+          color: #ffffff;
+          padding: 16px 25px;
+          font-weight: 700;
+          transition: 0.3s linear;
+          overflow: hidden;
+          font-size: 14px;
+          border-radius: 3px;
+          &:hover {
+            text-decoration: none;
+          }
+          i {
+            font-size: 14px;
+            height: 30px;
+            background: #ffffff;
+            color: #1ebeb6;
+            line-height: 30px;
+            text-align: center;
+            width: 30px;
+            border-radius: 50%;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+  @keyframes fadeEffect {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+// doctors section end
+
+
+
+// ======= Responsive Design Start ======= //
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #doctors {
+    padding: 100px 65px 120px 65px;
+    .caption {
+      padding-right: 56px;
+      text-align: center;
+    }
+    .doctor-segments {
+      width: 100% !important;
+      #tabs {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #f7f7f7;
+        padding: 0 15px 0 25px;
+        border-bottom: 0;
+
+        .nav-item {
+          width: 48% !important;
+          margin: 5px;
+          background-color: #e1f1f1;
+        }
+      }
+      .tab-content {
+        margin-top: 40px;
+        .doctors-big-img {
+          width: 720px !important;
+          padding-left: 32px;
+          img {
+            width: 100%;
+          }
+        }
+
+        .info {
+          margin: 0 30px;
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #doctors {
+    padding: 100px 65px 120px 65px;
+    .caption {
+      text-align: center;
+    }
+    .doctor-segments {
+      width: 100% !important;
+      #tabs {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #f7f7f7;
+        padding: 0 15px 0 15px;
+        border-bottom: 0;
+
+        .nav-item {
+          width: 100% !important;
+          margin: 5px;
+          background-color: #e1f1f1;
+        }
+      }
+      .tab-content {
+        margin-top: 40px;
+        .doctors-big-img {
+          width: 549px !important;
+          padding-left: 22px;
+          img {
+            width: 100%;
+          }
+        }
+
+        .info {
+          margin: 0 22px;
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 375px) and (max-width: 575.98px) {
+  #doctors {
+    padding: 100px 10px 80px 10px !important;
+    .caption {
+      text-align: center;
+    }
+    .doctor-segments {
+      width: 100% !important;
+      #tabs {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #f7f7f7;
+        padding: 0 15px 0 15px;
+        border-bottom: 0;
+
+        .nav-item {
+          width: 100% !important;
+          margin: 5px;
+          background-color: #e1f1f1;
+        }
+      }
+      .tab-content {
+        margin-top: 40px;
+        .doctors-big-img {
+          width: 100% !important;
+          padding: 0 22px;
+          img {
+            width: 100%;
+          }
+        }
+
+        .info {
+          margin: 0 22px;
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 300px) and (max-width: 374.98px) {
+  #doctors {
+    padding: 50px 10px 30px !important;
+    .caption {
+      text-align: center;
+
+      h4 {
+        font-size: 18px !important;
+      }
+      h2 {
+        font-size: 24px !important;
+      }
+      p {
+        padding: 0 !important;
+      }
+    }
+    .doctor-segments {
+      width: 100% !important;
+      #tabs {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #f7f7f7;
+        padding: 0 15px 0 15px;
+        border-bottom: 0;
+
+        .nav-item {
+          width: 100% !important;
+          margin: 5px;
+          background-color: #e1f1f1;
+        }
+      }
+      .tab-content {
+        margin-top: 40px;
+        .doctors-big-img {
+          width: 100% !important;
+          padding: 0 22px;
+          img {
+            width: 100%;
+          }
+        }
+
+        .info {
+          margin: 0 22px;
+          padding: 43px 20px !important;
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+// ======= Responsive Design End ======= //

@@ -1,0 +1,190 @@
+// contact-section start
+#contact {
+  overflow: hidden;
+  padding: 120px 0;
+  .contact-items {
+    .address-box {
+      background-image: url(../img/contact-img.jpg);
+      background-size: cover;
+      height: 100%;
+      .address-info {
+        position: absolute;
+        left: 30px;
+        bottom: 0;
+        padding: 30px;
+        background: #ffffff;
+        right: 30px;
+        ul {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          list-style: none;
+          li {
+            margin: 0 30px;
+            h5 {
+              font-weight: 600;
+              text-transform: uppercase;
+              margin-bottom: 15px;
+              font-size: 18px;
+              i {
+                font-size: 32px;
+                color: #20b2aa;
+                padding-right: 5px;
+              }
+            }
+            span {
+              font-size: 15px;
+              color: #666666;
+            }
+          }
+        }
+      }
+    }
+    .input {
+      padding-left: 30px;
+      .caption {
+        h2 {
+          font-size: 32px;
+          font-weight: 600;
+          margin-bottom: 20px;
+          color: #233645;
+          strong {
+            display: block;
+            color: #1ebeb6;
+            margin-top: 5px;
+            font-weight: 700;
+          }
+        }
+      }
+      input,
+      textarea {
+        border: none;
+        border-bottom: 1px solid #e7e7e7;
+        padding: 0;
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+
+      textarea {
+        height: 150px;
+      }
+      button {
+        background: linear-gradient(
+          90deg,
+          rgba(30, 190, 182, 1) 0%,
+          rgba(0, 130, 124, 1) 100%
+        );
+        padding: 15px 35px;
+        border-radius: 30px;
+        border: none !important;
+        outline: none !important;
+        color: #ffffff;
+        font-weight: 700;
+        margin-top: 15px;
+      }
+    }
+  }
+}
+// contact-section end
+
+
+
+// ======= Responsive Design Start ======= //
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #contact {
+    padding: 120px 50px !important;
+    .address-box {
+      margin-bottom: 482px;
+      .address-info {
+        box-shadow: 0 0 10px #e7e7e7;
+        bottom: -30px !important;
+      }
+    }
+    .input {
+      padding: 65px 0 0 !important;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #contact {
+    padding: 90px 25px !important;
+    .address-box {
+      margin-bottom: 482px;
+      .address-info {
+        box-shadow: 0 0 10px #e7e7e7;
+        bottom: -30px !important;
+      }
+    }
+    .input {
+      padding: 65px 0 0 !important;
+    }
+  }
+}
+
+@media (min-width: 375px) and (max-width: 575.98px) {
+  #contact {
+    padding: 90px 15px 80px !important;
+    .address-box {
+      height: 80% !important;
+      margin-bottom: 482px;
+      .address-info {
+        box-shadow: 0 0 10px #e7e7e7;
+        bottom: 30px !important;
+        ul {
+          flex-direction: column;
+          justify-content: space-between !important;
+          height: 170px;
+        }
+      }
+    }
+    .input {
+      padding: 5px 0 0 !important;
+
+      .caption {
+        text-align: center;
+        h2 {
+          font-size: 24px !important;
+          strong {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 300px) and (max-width: 374.98px) {
+  #contact {
+    padding: 90px 15px 80px !important;
+    .address-box {
+      height: 80% !important;
+      margin-bottom: 482px;
+      .address-info {
+        box-shadow: 0 0 10px #e7e7e7;
+        bottom: 30px !important;
+        ul {
+          flex-direction: column;
+          justify-content: space-between !important;
+          height: 170px;
+        }
+      }
+    }
+    .input {
+      padding: 5px 0 0 !important;
+
+      .caption {
+        text-align: center;
+        h2 {
+          font-size: 24px !important;
+          strong {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+// ======= Responsive Design End ======= //

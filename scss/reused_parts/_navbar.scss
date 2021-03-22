@@ -1,11 +1,11 @@
 // navbar-sticky position start
 .sticky {
   position: fixed !important;
-  left: 0;
   top: 0;
   border-top: 0;
 }
 // navbar-sticky position end
+
 
 // navbar start
 nav {
@@ -14,7 +14,12 @@ nav {
   width: 100%;
   box-shadow: 0px 4px 10px -6px #afafaf;
   background-color: white;
-  position: relative;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  left: 0;
+  right: 0;
+  // display: none !important;
 
   .website-logo {
     height: 100%;
@@ -92,7 +97,7 @@ nav {
       font-size: 12px;
       color: #787878;
       span {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 800;
         color: #666666;
       }
@@ -105,7 +110,6 @@ nav {
   }
 }
 // navbar end
-
 
 
 // ===== Responsive Design Start ===== //
