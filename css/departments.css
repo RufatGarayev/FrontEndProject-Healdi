@@ -116,7 +116,7 @@ header .social-media a {
   border-top: 0;
 }
 
-nav {
+.navBar {
   z-index: 99;
   height: 90px;
   width: 100%;
@@ -135,15 +135,15 @@ nav {
   right: 0;
 }
 
-nav .website-logo {
+.navBar .website-logo {
   height: 100%;
 }
 
-nav .nav-button {
+.navBar .nav-button {
   display: none;
 }
 
-nav .menu {
+.navBar .menu {
   position: relative;
   height: 90px;
   display: -webkit-box;
@@ -157,11 +157,11 @@ nav .menu {
           align-items: center;
 }
 
-nav .menu ul {
+.navBar .menu ul {
   width: 100%;
 }
 
-nav .menu li {
+.navBar .menu li {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -172,15 +172,15 @@ nav .menu li {
   height: 90px;
 }
 
-nav .menu li:hover .submenu {
+.navBar .menu li:hover .submenu {
   display: inline-block;
 }
 
-nav .menu li a.active {
+.navBar .menu li a.active {
   color: #1ebeb6;
 }
 
-nav .menu li .submenu {
+.navBar .menu li .submenu {
   height: 150px;
   width: 250px;
   background-color: white;
@@ -193,36 +193,36 @@ nav .menu li .submenu {
   z-index: 1;
 }
 
-nav .menu li .submenu ul li {
+.navBar .menu li .submenu ul li {
   padding-left: 15px;
   height: 50px;
 }
 
-nav .menu li .submenu ul .first-li {
+.navBar .menu li .submenu ul .first-li {
   border-bottom: 1px solid #e4e4e4;
 }
 
-nav .menu li .submenu-1 {
+.navBar .menu li .submenu-1 {
   height: 103px;
   position: absolute;
   top: 90px;
   left: 465px;
 }
 
-nav .menu li a {
+.navBar .menu li a {
   color: black;
   font-size: 13px;
   font-weight: 600;
 }
 
-nav .menu li a:hover {
+.navBar .menu li a:hover {
   text-decoration: none;
   color: #1ebeb6;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
 }
 
-nav .contact {
+.navBar .contact {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -234,36 +234,36 @@ nav .contact {
           align-items: center;
 }
 
-nav .contact p {
+.navBar .contact p {
   font-weight: 600;
   font-size: 12px;
   color: #787878;
 }
 
-nav .contact p span {
+.navBar .contact p span {
   font-size: 16px;
   font-weight: 800;
   color: #666666;
 }
 
-nav .contact i {
+.navBar .contact i {
   color: #1ebeb6;
   font-size: 46px;
   padding-right: 11px;
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  nav {
+  .navBar {
     height: 75px !important;
   }
-  nav .nav-button {
+  .navBar .nav-button {
     font-size: 20px;
     display: inline-block !important;
     position: absolute;
     left: 50px;
     bottom: -9px;
   }
-  nav .menu {
+  .navBar .menu {
     padding-left: 55px !important;
     padding-right: 55px !important;
     padding-top: 25px;
@@ -275,12 +275,12 @@ nav .contact i {
     background-color: white;
     display: none;
   }
-  nav .menu .submenu {
+  .navBar .menu .submenu {
     position: absolute;
     top: 24px !important;
     left: 200px !important;
   }
-  nav .menu ul {
+  .navBar .menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -290,20 +290,20 @@ nav .contact i {
             flex-direction: column;
     margin-bottom: 40px !important;
   }
-  nav .menu ul li {
+  .navBar .menu ul li {
     height: 45px;
   }
-  nav .menu ul :not(:last-of-type) {
+  .navBar .menu ul :not(:last-of-type) {
     border-bottom: 1px solid LightGray;
   }
-  nav .website-logo {
+  .navBar .website-logo {
     width: 150px;
     display: inline-block;
     position: absolute;
     right: 290px;
     bottom: 2px;
   }
-  nav .contact {
+  .navBar .contact {
     position: absolute;
     right: 50px;
     bottom: 2px;
@@ -312,17 +312,17 @@ nav .contact i {
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  nav {
+  .navBar {
     height: 50px !important;
     position: relative;
   }
-  nav .nav-button {
+  .navBar .nav-button {
     display: inline-block !important;
     position: absolute;
     left: 50px;
     bottom: 4px;
   }
-  nav .menu {
+  .navBar .menu {
     padding-left: 55px !important;
     padding-right: 55px !important;
     padding-top: 25px;
@@ -334,12 +334,12 @@ nav .contact i {
     background-color: white;
     display: none;
   }
-  nav .menu .submenu {
+  .navBar .menu .submenu {
     position: absolute;
     top: 24px !important;
     left: 200px !important;
   }
-  nav .menu ul {
+  .navBar .menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -349,20 +349,20 @@ nav .contact i {
             flex-direction: column;
     margin-bottom: 40px !important;
   }
-  nav .menu ul li {
+  .navBar .menu ul li {
     height: 45px;
   }
-  nav .menu ul :not(:last-of-type) {
+  .navBar .menu ul :not(:last-of-type) {
     border-bottom: 1px solid LightGray;
   }
-  nav .website-logo {
+  .navBar .website-logo {
     width: 150px;
     display: inline-block;
     position: absolute;
     right: 290px;
     bottom: 14px;
   }
-  nav .contact {
+  .navBar .contact {
     position: absolute;
     right: 50px;
     bottom: 14px;
@@ -371,18 +371,18 @@ nav .contact i {
 }
 
 @media (min-width: 500px) and (max-width: 575.98px) {
-  nav {
+  .navBar {
     padding: 50px 0 30px 0;
     height: 50px !important;
     position: relative;
   }
-  nav .nav-button {
+  .navBar .nav-button {
     display: inline-block !important;
     position: absolute;
     left: 50px;
     bottom: 4px;
   }
-  nav .menu {
+  .navBar .menu {
     padding-left: 55px !important;
     padding-right: 55px !important;
     padding-top: 25px;
@@ -394,12 +394,12 @@ nav .contact i {
     background-color: white;
     display: none;
   }
-  nav .menu .submenu {
+  .navBar .menu .submenu {
     position: absolute;
     top: 24px !important;
     left: 200px !important;
   }
-  nav .menu ul {
+  .navBar .menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -409,37 +409,37 @@ nav .contact i {
             flex-direction: column;
     margin-bottom: 40px !important;
   }
-  nav .menu ul li {
+  .navBar .menu ul li {
     height: 45px;
   }
-  nav .menu ul :not(:last-of-type) {
+  .navBar .menu ul :not(:last-of-type) {
     border-bottom: 1px solid LightGray;
   }
-  nav .website-logo {
+  .navBar .website-logo {
     width: 150px;
     display: inline-block;
     position: absolute;
     right: 215px;
     bottom: 14px;
   }
-  nav .contact {
+  .navBar .contact {
     display: none;
   }
 }
 
 @media (min-width: 400px) and (max-width: 499.98px) {
-  nav {
+  .navBar {
     padding: 50px 0 30px 0;
     height: 50px !important;
     position: relative;
   }
-  nav .nav-button {
+  .navBar .nav-button {
     display: inline-block !important;
     position: absolute;
     left: 50px;
     bottom: 4px;
   }
-  nav .menu {
+  .navBar .menu {
     padding-left: 55px !important;
     padding-right: 55px !important;
     padding-top: 25px;
@@ -451,13 +451,13 @@ nav .contact i {
     background-color: white;
     display: none;
   }
-  nav .menu .submenu {
+  .navBar .menu .submenu {
     position: absolute;
     top: 35px !important;
     left: 190px !important;
     width: 210px !important;
   }
-  nav .menu ul {
+  .navBar .menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -467,37 +467,37 @@ nav .contact i {
             flex-direction: column;
     margin-bottom: 40px !important;
   }
-  nav .menu ul li {
+  .navBar .menu ul li {
     height: 45px;
   }
-  nav .menu ul :not(:last-of-type) {
+  .navBar .menu ul :not(:last-of-type) {
     border-bottom: 1px solid LightGray;
   }
-  nav .website-logo {
+  .navBar .website-logo {
     width: 150px;
     display: inline-block;
     position: absolute;
     right: 142px;
     bottom: 14px;
   }
-  nav .contact {
+  .navBar .contact {
     display: none;
   }
 }
 
 @media (min-width: 300px) and (max-width: 399.98px) {
-  nav {
+  .navBar {
     padding: 50px 0 30px 0;
     height: 50px !important;
     position: relative;
   }
-  nav .nav-button {
+  .navBar .nav-button {
     display: inline-block !important;
     position: absolute;
     left: 50px;
     bottom: 4px;
   }
-  nav .menu {
+  .navBar .menu {
     padding-left: 55px !important;
     padding-right: 55px !important;
     padding-top: 25px;
@@ -509,13 +509,13 @@ nav .contact i {
     background-color: white;
     display: none;
   }
-  nav .menu .submenu {
+  .navBar .menu .submenu {
     position: absolute;
     top: 35px !important;
     left: 190px !important;
     width: 200px !important;
   }
-  nav .menu ul {
+  .navBar .menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -525,20 +525,20 @@ nav .contact i {
             flex-direction: column;
     margin-bottom: 40px !important;
   }
-  nav .menu ul li {
+  .navBar .menu ul li {
     height: 45px;
   }
-  nav .menu ul :not(:last-of-type) {
+  .navBar .menu ul :not(:last-of-type) {
     border-bottom: 1px solid LightGray;
   }
-  nav .website-logo {
+  .navBar .website-logo {
     width: 150px;
     display: inline-block;
     position: absolute;
     right: 130px;
     bottom: 14px;
   }
-  nav .contact {
+  .navBar .contact {
     display: none;
   }
 }
@@ -1118,6 +1118,12 @@ footer .footer-bottom .social-media ul li a:hover {
   outline: inherit !important;
 }
 
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #consultation .consult-item {
+    padding: 35px 11px !important;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 991.98px) {
   #consultation {
     padding-top: 60px !important;
@@ -1228,89 +1234,7 @@ footer .footer-bottom .social-media ul li a:hover {
   }
 }
 
-main #breadcrumb {
-  background-image: url(../img/back-pic1.png);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #666666;
-  height: 350px;
-  opacity: 0.8;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-main #breadcrumb h1 {
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-main #breadcrumb ul {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-main #breadcrumb ul li {
-  position: relative;
-}
-
-main #breadcrumb ul li i {
-  margin-right: 5px;
-}
-
-main #breadcrumb ul li:last-of-type {
-  color: #dddddd;
-  text-decoration: underline;
-  padding-left: 15px;
-  margin-right: 15px;
-}
-
-main #breadcrumb ul li:last-of-type::after {
-  display: none;
-}
-
-main #breadcrumb ul li::after {
-  content: "";
-  font-weight: 600;
-  color: #ffffff;
-  position: absolute;
-  top: 8px;
-  right: -3px;
-  height: 8px;
-  width: 8px;
-  border-radius: 50%;
-  border: 2px solid rgba(255, 255, 255, 0.7);
-}
-
-main #breadcrumb ul li a {
-  font-weight: 600;
-  font-size: 14px;
-  display: inline-block;
-  color: #ffffff;
-  margin: 0 7px;
-  padding: 0 7px;
-}
-
-main #breadcrumb ul li a:hover {
-  text-decoration: none;
-}
-
-main #services {
+#services {
   padding-bottom: 320px;
   padding-top: 120px;
   background-color: #f7f7f7;
@@ -1318,36 +1242,41 @@ main #services {
   z-index: 1;
 }
 
-main #services .item-box .item {
+#services .item-box .owl-carousel .owl-stage-outer {
+  padding: 15px;
+  margin: -15px -15px;
+}
+
+#services .item-box .owl-carousel .owl-stage-outer .item {
   background-color: white;
+  -webkit-box-shadow: 0 0 10px #e7e7e7;
+          box-shadow: 0 0 10px #e7e7e7;
   width: 100%;
   padding: 50px 30px 50px;
-  -webkit-box-shadow: inset -1px -1px 5px #d6d2d2;
-          box-shadow: inset -1px -1px 5px #d6d2d2;
   text-align: center;
 }
 
-main #services .item-box .item .info h4 {
+#services .item-box .owl-carousel .owl-stage-outer .item .info h4 {
   margin-bottom: 40px;
 }
 
-main #services .item-box .item .info h4 a {
+#services .item-box .owl-carousel .owl-stage-outer .item .info h4 a {
   color: #233645;
   font-weight: 700;
   font-size: 22px;
 }
 
-main #services .item-box .item .info h4 a:hover {
+#services .item-box .owl-carousel .owl-stage-outer .item .info h4 a:hover {
   text-decoration: none;
 }
 
-main #services .item-box .item .info p {
+#services .item-box .owl-carousel .owl-stage-outer .item .info p {
   color: #666666;
   font-size: 15px;
   line-height: 30px;
 }
 
-main #services .item-box .item .info .btn {
+#services .item-box .owl-carousel .owl-stage-outer .item .info .btn {
   margin-top: 15px;
   font-weight: 700;
   padding: 10px 25px;
@@ -1357,21 +1286,21 @@ main #services .item-box .item .info .btn {
   border: 2px solid #1ebeb6 !important;
 }
 
-main #services .item-box .item .info .btn:hover {
+#services .item-box .owl-carousel .owl-stage-outer .item .info .btn:hover {
   background-color: #1ebeb6;
   color: white !important;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
 }
 
-main #services .item-box .item .info .btn:hover i {
+#services .item-box .owl-carousel .owl-stage-outer .item .info .btn:hover i {
   background-color: white;
   color: #1ebeb6;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
 }
 
-main #services .item-box .item .info .btn i {
+#services .item-box .owl-carousel .owl-stage-outer .item .info .btn i {
   height: 30px;
   background: #1ebeb6;
   color: white;
@@ -1382,7 +1311,7 @@ main #services .item-box .item .info .btn i {
   margin-right: 5px;
 }
 
-main #services .item-box .item .info .icon {
+#services .item-box .owl-carousel .owl-stage-outer .item .info .icon {
   display: inline-block;
   font-size: 40px !important;
   margin-bottom: 35px;
@@ -1394,14 +1323,14 @@ main #services .item-box .item .info .icon {
   line-height: 90px;
 }
 
-main #services .item-box .item .info .icon img {
+#services .item-box .owl-carousel .owl-stage-outer .item .info .icon img {
   width: 55%;
   position: absolute;
   left: 20px;
   top: 20px;
 }
 
-main #services .item-box .item .info .icon::before {
+#services .item-box .owl-carousel .owl-stage-outer .item .info .icon::before {
   content: "";
   position: absolute;
   left: -10%;
@@ -1418,7 +1347,7 @@ main #services .item-box .item .info .icon::before {
   transition: all 0.35s ease-in-out;
 }
 
-main #services .item-box .item .info .icon::after {
+#services .item-box .owl-carousel .owl-stage-outer .item .info .icon::after {
   position: absolute;
   left: 3%;
   top: 2%;
@@ -1430,12 +1359,12 @@ main #services .item-box .item .info .icon::after {
   border-radius: 50%;
 }
 
-main #services button {
+#services .item-box button {
   margin-top: 20px;
   outline: none;
 }
 
-main #services button span {
+#services .item-box button span {
   display: block;
   height: 20px;
   width: 20px;
@@ -1447,7 +1376,7 @@ main #services button span {
   border: 2px solid #cccccc;
 }
 
-main #services .owl-dot.active span::after {
+#services .item-box .owl-dot.active span::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -1460,6 +1389,116 @@ main #services .owl-dot.active span::after {
   border-radius: 50%;
 }
 
+@media (min-width: 300px) and (max-width: 575.98px) {
+  #services .item {
+    margin-left: 16px !important;
+    width: calc(100% - 32px) !important;
+  }
+}
+
+#breadcrumb {
+  background-image: url(../img/back-pic1.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #666666;
+  height: 350px;
+  opacity: 0.8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#breadcrumb h1 {
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#breadcrumb ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#breadcrumb ul li {
+  position: relative;
+}
+
+#breadcrumb ul li i {
+  margin-right: 5px;
+}
+
+#breadcrumb ul li:last-of-type {
+  color: #dddddd;
+  text-decoration: underline;
+  padding-left: 15px;
+  margin-right: 15px;
+}
+
+#breadcrumb ul li:last-of-type::after {
+  display: none;
+}
+
+#breadcrumb ul li::after {
+  content: "";
+  font-weight: 600;
+  color: #ffffff;
+  position: absolute;
+  top: 8px;
+  right: -3px;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+#breadcrumb ul li a {
+  font-weight: 600;
+  font-size: 14px;
+  display: inline-block;
+  color: #ffffff;
+  margin: 0 7px;
+  padding: 0 7px;
+}
+
+#breadcrumb ul li a:hover {
+  text-decoration: none;
+}
+
+@media (min-width: 300px) and (max-width: 374.98px) {
+  #breadcrumb h1 {
+    font-size: 36px;
+  }
+  #breadcrumb ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #breadcrumb ul li {
+    margin-top: 5px;
+  }
+}
+
+main {
+  overflow: hidden;
+}
+
+main #services {
+  padding-bottom: 160px;
+}
+
 main #fun-factor .fun-fact-items {
   background-image: url(../img/back-pic1.png);
   background-position: center center;
@@ -1470,7 +1509,7 @@ main #fun-factor .fun-fact-items {
   z-index: 10;
   opacity: 1;
   position: relative;
-  top: -205px;
+  top: -67px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1483,6 +1522,9 @@ main #fun-factor .fun-fact-items {
 
 main #fun-factor .fun-fact-items .fun-fact h3 {
   color: white;
+}
+
+main #fun-factor .fun-fact-items .fun-fact h3 span {
   font-size: 38px;
   font-weight: 700;
 }
@@ -1491,6 +1533,10 @@ main #fun-factor .fun-fact-items .fun-fact span {
   color: white;
   font-size: 15px;
   font-weight: 700;
+}
+
+main #consultation {
+  padding: 60px 0 120px;
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -1509,6 +1555,9 @@ main #fun-factor .fun-fact-items .fun-fact span {
     color: white;
     font-size: 14px;
     font-weight: 700;
+  }
+  #consultation {
+    padding: 0 0 120px !important;
   }
 }
 
@@ -1531,8 +1580,37 @@ main #fun-factor .fun-fact-items .fun-fact span {
 }
 
 @media (min-width: 375px) and (max-width: 575.98px) {
+  #services {
+    padding-top: 90px !important;
+  }
   #fun-factor .fun-fact-items {
     height: 750px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: 0 20px;
+  }
+  #consultation {
+    padding: 30px 20px 80px 20px !important;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 374.98px) {
+  #services {
+    padding: 80px 0 140px !important;
+  }
+  #fun-factor .fun-fact-items {
+    height: 700px !important;
+    padding: 60px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1546,23 +1624,8 @@ main #fun-factor .fun-fact-items .fun-fact span {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-}
-
-@media (min-width: 300px) and (max-width: 374.98px) {
-  #fun-factor .fun-fact-items {
-    height: 750px !important;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+  #consultation {
+    padding: 30px 20px 70px 20px !important;
   }
 }
 /*# sourceMappingURL=departments.css.map */

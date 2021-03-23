@@ -1,214 +1,23 @@
+@import "../scss/partials/extends";
 @import "../scss/reused_parts/header";
 @import "../scss/reused_parts/navbar";
 @import "../scss/reused_parts/common-features";
 @import "../scss/reused_parts/loader";
 @import "../scss/reused_parts/footer";
 @import "../scss/reused_parts/consultation";
+@import "../scss/reused_parts/departments-services";
+@import "../scss/reused_parts/breadcrumb";
 
 
 // main start
 main {
-  // breadcrumb-section start
-  #breadcrumb {
-    background-image: url(../img/back-pic1.png);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #666666;
-    height: 350px;
-    opacity: 0.8;
-    display: flex;
-    align-items: center;
-    h1 {
-      font-weight: 700;
-      color: #ffffff;
-      margin-bottom: 15px;
-      text-align: center;
-    }
-    ul {
-      list-style: none;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      li {
-        i {
-          margin-right: 5px;
-        }
-        &:last-of-type {
-          color: #dddddd;
-          text-decoration: underline;
-          padding-left: 15px;
-          margin-right: 15px;
-          &::after {
-            display: none;
-          }
-        }
-        position: relative;
-        &::after {
-          content: "";
-          font-weight: 600;
-          color: #ffffff;
-          position: absolute;
-          top: 8px;
-          right: -3px;
-          height: 8px;
-          width: 8px;
-          border-radius: 50%;
-          border: 2px solid rgba(255, 255, 255, 0.7);
-        }
-        a {
-          font-weight: 600;
-          font-size: 14px;
-          display: inline-block;
-          color: #ffffff;
-          margin: 0 7px;
-          padding: 0 7px;
-          &:hover {
-            text-decoration: none;
-          }
-        }
-      }
-    }
-  }
-  // breadcrumb-section end
+  overflow: hidden;
 
-  // services-section start
+  // services start
   #services {
-    padding-bottom: 320px;
-    padding-top: 120px;
-    background-color: #f7f7f7;
-    position: relative;
-    z-index: 1;
-    .item-box {
-      .item {
-        background-color: white;
-        width: 100%;
-        padding: 50px 30px 50px;
-        box-shadow: inset -1px -1px 5px #d6d2d2;
-        text-align: center;
-        .info {
-          h4 {
-            margin-bottom: 40px;
-            a {
-              color: #233645;
-              font-weight: 700;
-              font-size: 22px;
-              &:hover {
-                text-decoration: none;
-              }
-            }
-          }
-          p {
-            color: #666666;
-            font-size: 15px;
-            line-height: 30px;
-          }
-          .btn {
-            margin-top: 15px;
-            font-weight: 700;
-            padding: 10px 25px;
-            font-size: 14px;
-            border-radius: 40px;
-            color: #1ebeb6 !important;
-            border: 2px solid #1ebeb6 !important;
-            &:hover {
-              background-color: #1ebeb6;
-              color: white !important;
-              transition: 0.3s linear;
-              i {
-                background-color: white;
-                color: #1ebeb6;
-                transition: 0.3s linear;
-              }
-            }
-            i {
-              height: 30px;
-              background: #1ebeb6;
-              color: white;
-              line-height: 30px;
-              width: 30px;
-              border-radius: 50%;
-              margin-left: 0;
-              margin-right: 5px;
-            }
-          }
-          .icon {
-            img {
-              width: 55%;
-              position: absolute;
-              left: 20px;
-              top: 20px;
-            }
-            display: inline-block;
-            font-size: 40px !important;
-            margin-bottom: 35px;
-            position: relative;
-            z-index: 1;
-            color: #ffffff;
-            height: 90px;
-            width: 90px;
-            line-height: 90px;
-            &::before {
-              content: "";
-              position: absolute;
-              left: -10%;
-              top: -10%;
-              height: 120%;
-              width: 120%;
-              background: url(../img/shape7.png);
-              z-index: 1 !important;
-              border-radius: 50%;
-              opacity: 0.3;
-              background-size: contain;
-              background-repeat: no-repeat;
-              transition: all 0.35s ease-in-out;
-            }
-            &::after {
-              position: absolute;
-              left: 3%;
-              top: 2%;
-              content: "";
-              height: 95%;
-              width: 95%;
-              background: #1ebeb6;
-              z-index: -1;
-              border-radius: 50%;
-            }
-          }
-        }
-      }
-    }
-    button {
-      margin-top: 20px;
-      outline: none;
-
-      span {
-        display: block;
-        height: 20px;
-        width: 20px;
-        margin: 0 5px;
-        border-radius: 50%;
-        background: #ffffff;
-        position: relative;
-        z-index: 1;
-        border: 2px solid #cccccc;
-      }
-    }
-    .owl-dot.active span {
-      &::after {
-        content: "";
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        height: 5px;
-        width: 5px;
-        transform: translate(-50%, -50%);
-        background: #1ebeb6;
-        border-radius: 50%;
-      }
-    }
+    padding-bottom: 160px;
   }
-  // services-section end
+  // services end
 
   // fun-factor area start
   #fun-factor {
@@ -222,7 +31,7 @@ main {
       z-index: 10;
       opacity: 1;
       position: relative;
-      top: -205px;
+      top: -67px;
       width: 100%;
       display: flex;
       align-items: center;
@@ -230,8 +39,10 @@ main {
       .fun-fact {
         h3 {
           color: white;
-          font-size: 38px;
-          font-weight: 700;
+          span {
+            font-size: 38px;
+            font-weight: 700;
+          }
         }
         span {
           color: white;
@@ -242,6 +53,12 @@ main {
     }
   }
   // fun-factor area end
+
+  // consultation start
+  #consultation {
+    padding: 60px 0 120px;
+  }
+  // consultation end
 }
 // main end
 
@@ -262,6 +79,10 @@ main {
       font-weight: 700;
     }
   }
+
+  #consultation{
+    padding: 0 0 120px !important;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -277,26 +98,40 @@ main {
 }
 
 @media (min-width: 375px) and (max-width: 575.98px) {
+  #services{
+    padding-top: 90px !important;
+  }
   #fun-factor {
     .fun-fact-items {
       height: 750px !important;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin: 0 20px;
+    }
+  }
+  #consultation {
+    padding: 30px 20px 80px 20px !important;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 374.98px) {
+  #services{
+    padding: 80px 0 140px !important;
+  }
+  #fun-factor {
+    .fun-fact-items {
+      height: 700px !important;
+      padding: 60px 0;
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
       justify-content: space-evenly;
     }
   }
-}
-
-@media (min-width: 300px) and (max-width: 374.98px) {
-  #fun-factor {
-    .fun-fact-items {
-      height: 750px !important;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      justify-content: space-evenly;
-    }
+  #consultation {
+    padding: 30px 20px 70px 20px !important;
   }
 }
 // ======= Responsive Design End ======= //

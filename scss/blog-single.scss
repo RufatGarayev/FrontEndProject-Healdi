@@ -1,77 +1,14 @@
+@import "../scss/partials/extends";
 @import "../scss/reused_parts/header";
 @import "../scss/reused_parts/navbar";
 @import "../scss/reused_parts/common-features";
 @import "../scss/reused_parts/loader";
 @import "../scss/reused_parts/footer";
+@import "../scss/reused_parts/breadcrumb";
 
 
 // main start
 main {
-  // breadcrumb-section start
-  #breadcrumb {
-    background-image: url(../img/back-pic1.png);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #666666;
-    height: 350px;
-    width: 100%;
-    opacity: 0.8;
-    display: flex;
-    align-items: center;
-    h1 {
-      font-weight: 700;
-      color: #ffffff;
-      margin-bottom: 15px;
-      text-align: center;
-    }
-    ul {
-      list-style: none;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      li {
-        i {
-          margin-right: 5px;
-        }
-        &:last-of-type {
-          color: #dddddd;
-          text-decoration: underline;
-          padding-left: 15px;
-          margin-right: 15px;
-          &::after {
-            display: none;
-          }
-        }
-        position: relative;
-        &::after {
-          content: "";
-          font-weight: 600;
-          color: #ffffff;
-          position: absolute;
-          top: 8px;
-          right: -3px;
-          height: 8px;
-          width: 8px;
-          border-radius: 50%;
-          border: 2px solid rgba(255, 255, 255, 0.7);
-        }
-        a {
-          font-weight: 600;
-          font-size: 14px;
-          display: inline-block;
-          color: #ffffff;
-          margin: 0 7px;
-          padding: 0 7px;
-          &:hover {
-            text-decoration: none;
-          }
-        }
-      }
-    }
-  }
-  // breadcrumb-section end
-
   // blog-section start
   #blog {
     overflow: hidden;
@@ -80,6 +17,7 @@ main {
     .item {
       box-shadow: 0 0 10px #e7e7e7;
       .image {
+        position: relative;
         a {
           img {
             width: 100%;
@@ -340,13 +278,19 @@ main {
 
 
 // ======= Responsive Design Start ======= //
-@media (min-width: 768px) and (max-width: 991.98px) {
-  #breadcrumb {
-    h1 {
-      font-size: 36px;
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #blog {
+    .item {
+      .date {
+        top: 335px !important;
+      }
     }
   }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
   #blog {
+    padding: 120px 35px 50px 35px !important;
     .item {
       .image {
         .date {
@@ -359,10 +303,11 @@ main {
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   #blog {
+    padding: 120px 35px 50px 35px !important;
     .item {
       .image {
         .date {
-          top: 305px;
+          top: 188px !important;
         }
       }
     }
@@ -370,18 +315,12 @@ main {
 }
 
 @media (min-width: 375px) and (max-width: 575.98px) {
-  #breadcrumb {
-    height: 250px;
-    h1 {
-      font-size: 34px;
-    }
-  }
   #blog {
-    padding: 50px 25px 50px 25px;
+    padding: 50px 30px 50px 30px !important;
     .item {
       .image {
         .date {
-          top: 114px !important;
+          top: calc(100% - 110px) !important;
         }
       }
       .info {
@@ -414,21 +353,20 @@ main {
 }
 
 @media (min-width: 300px) and (max-width: 374.98px) {
-  #breadcrumb {
-    height: 250px;
-    h1 {
-      font-size: 34px;
-    }
-  }
   #blog {
-    padding: 50px 25px 50px 25px;
+    padding: 50px 30px 50px 30px !important;
     .item {
       .image {
         .date {
-          top: 95px !important;
+          left: 16px !important;
+          top: calc(100% - 98px) !important;
         }
       }
       .info {
+        padding: 30px 20px !important;
+        .tags {
+          flex-wrap: wrap;
+        }
         .buttons {
           flex-direction: column;
           align-items: center;
@@ -447,11 +385,35 @@ main {
     }
     .comments {
       padding: 50px 10px 20px 10px;
-      span {
-        font-size: 13px !important;
+      .title {
+        h4 {
+          font-size: 18px !important;
+        }
       }
-      p {
-        font-size: 13px !important;
+      .media {
+        flex-direction: column;
+        align-items: center;
+        img {
+          margin: 0 0 15px !important;
+        }
+        .mr-3 {
+          margin-right: 0 !important;
+        }
+        .media-body {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          span {
+            font-size: 13px !important;
+            border: 0 !important;
+            padding-left: 0 !important;
+            margin-left: 0 !important;
+          }
+          p {
+            font-size: 13px !important;
+          }
+        }
       }
     }
   }

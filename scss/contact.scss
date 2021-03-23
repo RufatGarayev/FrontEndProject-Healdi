@@ -1,166 +1,16 @@
+@import "../scss/partials/extends";
 @import "../scss/reused_parts/header";
 @import "../scss/reused_parts/navbar";
 @import "../scss/reused_parts/common-features";
 @import "../scss/reused_parts/loader";
 @import "../scss/reused_parts/footer";
 @import "../scss/reused_parts/contact";
+@import "../scss/reused_parts/breadcrumb";
 
 
 // main start
 main {
-  // breadcrumb-section start
-  #breadcrumb {
-    background-image: url(../img/back-pic1.png);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #666666;
-    height: 390px;
-    width: 100%;
-    opacity: 0.8;
-    display: flex;
-    align-items: center;
-    h1 {
-      font-weight: 700;
-      color: #ffffff;
-      margin-bottom: 15px;
-      text-align: center;
-    }
-    ul {
-      list-style: none;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      li {
-        i {
-          margin-right: 5px;
-        }
-        &:last-of-type {
-          color: #dddddd;
-          text-decoration: underline;
-          padding-left: 15px;
-          margin-right: 15px;
-          &::after {
-            display: none;
-          }
-        }
-        position: relative;
-        &::after {
-          content: "";
-          font-weight: 600;
-          color: #ffffff;
-          position: absolute;
-          top: 8px;
-          right: -3px;
-          height: 8px;
-          width: 8px;
-          border-radius: 50%;
-          border: 2px solid rgba(255, 255, 255, 0.7);
-        }
-        a {
-          font-weight: 600;
-          font-size: 14px;
-          display: inline-block;
-          color: #ffffff;
-          margin: 0 7px;
-          padding: 0 7px;
-          &:hover {
-            text-decoration: none;
-          }
-        }
-      }
-    }
-  }
-  // breadcrumb-section end
-
-  // contact-section start
-  #contact {
-    overflow: hidden;
-    padding: 120px 0;
-    .contact-items {
-      .address-box {
-        background-image: url(../img/contact-img.jpg);
-        background-size: cover;
-        height: 100%;
-        .address-info {
-          position: absolute;
-          left: 30px;
-          bottom: 0;
-          padding: 30px;
-          background: #ffffff;
-          right: 30px;
-          ul {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            list-style: none;
-            li {
-              margin: 0 30px;
-              h5 {
-                font-weight: 600;
-                text-transform: uppercase;
-                margin-bottom: 15px;
-                font-size: 18px;
-                i {
-                  font-size: 32px;
-                  color: #20b2aa;
-                  padding-right: 5px;
-                }
-              }
-              span {
-                font-size: 15px;
-                color: #666666;
-              }
-            }
-          }
-        }
-      }
-      .input {
-        padding-left: 30px;
-        .caption {
-          h2 {
-            font-size: 32px;
-            font-weight: 600;
-            margin-bottom: 20px;
-            color: #233645;
-            strong {
-              display: block;
-              color: #1ebeb6;
-              margin-top: 5px;
-              font-weight: 700;
-            }
-          }
-        }
-        input {
-          border: none;
-          border-bottom: 1px solid #e7e7e7;
-          padding: 0;
-        }
-        textarea {
-          height: 150px;
-          border: none;
-          border-bottom: 1px solid #e7e7e7;
-          padding: 0;
-        }
-        button {
-          background: linear-gradient(
-            90deg,
-            rgba(30, 190, 182, 1) 0%,
-            rgba(0, 130, 124, 1) 100%
-          );
-          padding: 15px 35px;
-          border-radius: 30px;
-          border: none !important;
-          outline: none !important;
-          color: #ffffff;
-          font-weight: 700;
-          margin-top: 15px;
-        }
-      }
-    }
-  }
-  // contact-section end
-
+  overflow: hidden;
   // google-maps start
   .maps-area {
     height: 100%;
@@ -175,21 +25,7 @@ main {
 
 
 // ======= Responsive Design Start ======= //
-@media (min-width: 768px) and (max-width: 991.98px) {
-  #breadcrumb {
-    h1 {
-      font-size: 36px;
-    }
-  }
-}
-
 @media (min-width: 375px) and (max-width: 575.98px) {
-  #breadcrumb {
-    height: 250px;
-    h1 {
-      font-size: 34px;
-    }
-  }
   .maps-area {
     height: 100%;
     iframe {
@@ -200,12 +36,6 @@ main {
 }
 
 @media (min-width: 300px) and (max-width: 374.98px) {
-  #breadcrumb {
-    height: 250px;
-    h1 {
-      font-size: 34px;
-    }
-  }
   .maps-area {
     height: 100%;
     iframe {

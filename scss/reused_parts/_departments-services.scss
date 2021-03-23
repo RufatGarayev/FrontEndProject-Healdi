@@ -1,0 +1,156 @@
+// services-section start
+#services {
+  padding-bottom: 320px;
+  padding-top: 120px;
+  background-color: #f7f7f7;
+  position: relative;
+  z-index: 1;
+  .item-box {
+    .owl-carousel {
+      .owl-stage-outer {
+        padding: 15px;
+        margin: -15px -15px;
+        .item {
+          background-color: white;
+          box-shadow: 0 0 10px #e7e7e7;
+          width: 100%;
+          padding: 50px 30px 50px;
+          text-align: center;
+          .info {
+            h4 {
+              margin-bottom: 40px;
+              a {
+                color: #233645;
+                font-weight: 700;
+                font-size: 22px;
+                &:hover {
+                  text-decoration: none;
+                }
+              }
+            }
+            p {
+              color: #666666;
+              font-size: 15px;
+              line-height: 30px;
+            }
+            .btn {
+              margin-top: 15px;
+              font-weight: 700;
+              padding: 10px 25px;
+              font-size: 14px;
+              border-radius: 40px;
+              color: #1ebeb6 !important;
+              border: 2px solid #1ebeb6 !important;
+              &:hover {
+                background-color: #1ebeb6;
+                color: white !important;
+                transition: 0.3s linear;
+                i {
+                  background-color: white;
+                  color: #1ebeb6;
+                  transition: 0.3s linear;
+                }
+              }
+              i {
+                height: 30px;
+                background: #1ebeb6;
+                color: white;
+                line-height: 30px;
+                width: 30px;
+                border-radius: 50%;
+                margin-left: 0;
+                margin-right: 5px;
+              }
+            }
+            .icon {
+              img {
+                width: 55%;
+                position: absolute;
+                left: 20px;
+                top: 20px;
+              }
+              display: inline-block;
+              font-size: 40px !important;
+              margin-bottom: 35px;
+              position: relative;
+              z-index: 1;
+              color: #ffffff;
+              height: 90px;
+              width: 90px;
+              line-height: 90px;
+              &::before {
+                content: "";
+                position: absolute;
+                left: -10%;
+                top: -10%;
+                height: 120%;
+                width: 120%;
+                background: url(../img/shape7.png);
+                z-index: 1 !important;
+                border-radius: 50%;
+                opacity: 0.3;
+                background-size: contain;
+                background-repeat: no-repeat;
+                transition: all 0.35s ease-in-out;
+              }
+              &::after {
+                position: absolute;
+                left: 3%;
+                top: 2%;
+                content: "";
+                height: 95%;
+                width: 95%;
+                background: #1ebeb6;
+                z-index: -1;
+                border-radius: 50%;
+              }
+            }
+          }
+        }
+      }
+    }
+    button {
+      margin-top: 20px;
+      outline: none;
+
+      span {
+        display: block;
+        height: 20px;
+        width: 20px;
+        margin: 0 5px;
+        border-radius: 50%;
+        background: #ffffff;
+        position: relative;
+        z-index: 1;
+        border: 2px solid #cccccc;
+      }
+    }
+    .owl-dot.active span {
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        height: 5px;
+        width: 5px;
+        transform: translate(-50%, -50%);
+        background: #1ebeb6;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+// services-section end
+
+
+
+// ======= Responsive Design Start ======= //
+@media (min-width: 300px) and (max-width: 575.98px) {
+  #services{
+    .item {
+      margin-left: 16px !important;
+      width: calc(100% - 32px) !important;
+    }
+  }
+}
+// ======= Responsive Design End ======= //

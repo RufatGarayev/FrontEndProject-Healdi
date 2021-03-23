@@ -6,11 +6,12 @@
     .address-box {
       background-image: url(../img/contact-img.jpg);
       background-size: cover;
+      position: relative;
       height: 100%;
       .address-info {
         position: absolute;
         left: 30px;
-        bottom: 0;
+        bottom: -5px;
         padding: 30px;
         background: #ffffff;
         right: 30px;
@@ -132,7 +133,7 @@
       margin-bottom: 482px;
       .address-info {
         box-shadow: 0 0 10px #e7e7e7;
-        bottom: 30px !important;
+        bottom: -38px !important;
         ul {
           flex-direction: column;
           justify-content: space-between !important;
@@ -164,7 +165,7 @@
       margin-bottom: 482px;
       .address-info {
         box-shadow: 0 0 10px #e7e7e7;
-        bottom: 30px !important;
+        bottom: -63px !important;
         ul {
           flex-direction: column;
           justify-content: space-between !important;

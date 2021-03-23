@@ -1,3 +1,12 @@
+@media (min-width: 300px) and (max-width: 767.98px) {
+  #doctors .caption h4 {
+    font-size: 18px !important;
+  }
+  #doctors .caption h2 {
+    font-size: 26px !important;
+  }
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -116,7 +125,7 @@ header .social-media a {
   border-top: 0;
 }
 
-nav {
+.navBar {
   z-index: 99;
   height: 90px;
   width: 100%;
@@ -135,15 +144,15 @@ nav {
   right: 0;
 }
 
-nav .website-logo {
+.navBar .website-logo {
   height: 100%;
 }
 
-nav .nav-button {
+.navBar .nav-button {
   display: none;
 }
 
-nav .menu {
+.navBar .menu {
   position: relative;
   height: 90px;
   display: -webkit-box;
@@ -157,11 +166,11 @@ nav .menu {
           align-items: center;
 }
 
-nav .menu ul {
+.navBar .menu ul {
   width: 100%;
 }
 
-nav .menu li {
+.navBar .menu li {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -172,15 +181,15 @@ nav .menu li {
   height: 90px;
 }
 
-nav .menu li:hover .submenu {
+.navBar .menu li:hover .submenu {
   display: inline-block;
 }
 
-nav .menu li a.active {
+.navBar .menu li a.active {
   color: #1ebeb6;
 }
 
-nav .menu li .submenu {
+.navBar .menu li .submenu {
   height: 150px;
   width: 250px;
   background-color: white;
@@ -193,36 +202,36 @@ nav .menu li .submenu {
   z-index: 1;
 }
 
-nav .menu li .submenu ul li {
+.navBar .menu li .submenu ul li {
   padding-left: 15px;
   height: 50px;
 }
 
-nav .menu li .submenu ul .first-li {
+.navBar .menu li .submenu ul .first-li {
   border-bottom: 1px solid #e4e4e4;
 }
 
-nav .menu li .submenu-1 {
+.navBar .menu li .submenu-1 {
   height: 103px;
   position: absolute;
   top: 90px;
   left: 465px;
 }
 
-nav .menu li a {
+.navBar .menu li a {
   color: black;
   font-size: 13px;
   font-weight: 600;
 }
 
-nav .menu li a:hover {
+.navBar .menu li a:hover {
   text-decoration: none;
   color: #1ebeb6;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
 }
 
-nav .contact {
+.navBar .contact {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -234,36 +243,36 @@ nav .contact {
           align-items: center;
 }
 
-nav .contact p {
+.navBar .contact p {
   font-weight: 600;
   font-size: 12px;
   color: #787878;
 }
 
-nav .contact p span {
+.navBar .contact p span {
   font-size: 16px;
   font-weight: 800;
   color: #666666;
 }
 
-nav .contact i {
+.navBar .contact i {
   color: #1ebeb6;
   font-size: 46px;
   padding-right: 11px;
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  nav {
+  .navBar {
     height: 75px !important;
   }
-  nav .nav-button {
+  .navBar .nav-button {
     font-size: 20px;
     display: inline-block !important;
     position: absolute;
     left: 50px;
     bottom: -9px;
   }
-  nav .menu {
+  .navBar .menu {
     padding-left: 55px !important;
     padding-right: 55px !important;
     padding-top: 25px;
@@ -275,12 +284,12 @@ nav .contact i {
     background-color: white;
     display: none;
   }
-  nav .menu .submenu {
+  .navBar .menu .submenu {
     position: absolute;
     top: 24px !important;
     left: 200px !important;
   }
-  nav .menu ul {
+  .navBar .menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -290,20 +299,20 @@ nav .contact i {
             flex-direction: column;
     margin-bottom: 40px !important;
   }
-  nav .menu ul li {
+  .navBar .menu ul li {
     height: 45px;
   }
-  nav .menu ul :not(:last-of-type) {
+  .navBar .menu ul :not(:last-of-type) {
     border-bottom: 1px solid LightGray;
   }
-  nav .website-logo {
+  .navBar .website-logo {
     width: 150px;
     display: inline-block;
     position: absolute;
     right: 290px;
     bottom: 2px;
   }
-  nav .contact {
+  .navBar .contact {
     position: absolute;
     right: 50px;
     bottom: 2px;
@@ -312,17 +321,17 @@ nav .contact i {
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  nav {
+  .navBar {
     height: 50px !important;
     position: relative;
   }
-  nav .nav-button {
+  .navBar .nav-button {
     display: inline-block !important;
     position: absolute;
     left: 50px;
     bottom: 4px;
   }
-  nav .menu {
+  .navBar .menu {
     padding-left: 55px !important;
     padding-right: 55px !important;
     padding-top: 25px;
@@ -334,12 +343,12 @@ nav .contact i {
     background-color: white;
     display: none;
   }
-  nav .menu .submenu {
+  .navBar .menu .submenu {
     position: absolute;
     top: 24px !important;
     left: 200px !important;
   }
-  nav .menu ul {
+  .navBar .menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -349,20 +358,20 @@ nav .contact i {
             flex-direction: column;
     margin-bottom: 40px !important;
   }
-  nav .menu ul li {
+  .navBar .menu ul li {
     height: 45px;
   }
-  nav .menu ul :not(:last-of-type) {
+  .navBar .menu ul :not(:last-of-type) {
     border-bottom: 1px solid LightGray;
   }
-  nav .website-logo {
+  .navBar .website-logo {
     width: 150px;
     display: inline-block;
     position: absolute;
     right: 290px;
     bottom: 14px;
   }
-  nav .contact {
+  .navBar .contact {
     position: absolute;
     right: 50px;
     bottom: 14px;
@@ -371,18 +380,18 @@ nav .contact i {
 }
 
 @media (min-width: 500px) and (max-width: 575.98px) {
-  nav {
+  .navBar {
     padding: 50px 0 30px 0;
     height: 50px !important;
     position: relative;
   }
-  nav .nav-button {
+  .navBar .nav-button {
     display: inline-block !important;
     position: absolute;
     left: 50px;
     bottom: 4px;
   }
-  nav .menu {
+  .navBar .menu {
     padding-left: 55px !important;
     padding-right: 55px !important;
     padding-top: 25px;
@@ -394,12 +403,12 @@ nav .contact i {
     background-color: white;
     display: none;
   }
-  nav .menu .submenu {
+  .navBar .menu .submenu {
     position: absolute;
     top: 24px !important;
     left: 200px !important;
   }
-  nav .menu ul {
+  .navBar .menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -409,37 +418,37 @@ nav .contact i {
             flex-direction: column;
     margin-bottom: 40px !important;
   }
-  nav .menu ul li {
+  .navBar .menu ul li {
     height: 45px;
   }
-  nav .menu ul :not(:last-of-type) {
+  .navBar .menu ul :not(:last-of-type) {
     border-bottom: 1px solid LightGray;
   }
-  nav .website-logo {
+  .navBar .website-logo {
     width: 150px;
     display: inline-block;
     position: absolute;
     right: 215px;
     bottom: 14px;
   }
-  nav .contact {
+  .navBar .contact {
     display: none;
   }
 }
 
 @media (min-width: 400px) and (max-width: 499.98px) {
-  nav {
+  .navBar {
     padding: 50px 0 30px 0;
     height: 50px !important;
     position: relative;
   }
-  nav .nav-button {
+  .navBar .nav-button {
     display: inline-block !important;
     position: absolute;
     left: 50px;
     bottom: 4px;
   }
-  nav .menu {
+  .navBar .menu {
     padding-left: 55px !important;
     padding-right: 55px !important;
     padding-top: 25px;
@@ -451,13 +460,13 @@ nav .contact i {
     background-color: white;
     display: none;
   }
-  nav .menu .submenu {
+  .navBar .menu .submenu {
     position: absolute;
     top: 35px !important;
     left: 190px !important;
     width: 210px !important;
   }
-  nav .menu ul {
+  .navBar .menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -467,37 +476,37 @@ nav .contact i {
             flex-direction: column;
     margin-bottom: 40px !important;
   }
-  nav .menu ul li {
+  .navBar .menu ul li {
     height: 45px;
   }
-  nav .menu ul :not(:last-of-type) {
+  .navBar .menu ul :not(:last-of-type) {
     border-bottom: 1px solid LightGray;
   }
-  nav .website-logo {
+  .navBar .website-logo {
     width: 150px;
     display: inline-block;
     position: absolute;
     right: 142px;
     bottom: 14px;
   }
-  nav .contact {
+  .navBar .contact {
     display: none;
   }
 }
 
 @media (min-width: 300px) and (max-width: 399.98px) {
-  nav {
+  .navBar {
     padding: 50px 0 30px 0;
     height: 50px !important;
     position: relative;
   }
-  nav .nav-button {
+  .navBar .nav-button {
     display: inline-block !important;
     position: absolute;
     left: 50px;
     bottom: 4px;
   }
-  nav .menu {
+  .navBar .menu {
     padding-left: 55px !important;
     padding-right: 55px !important;
     padding-top: 25px;
@@ -509,13 +518,13 @@ nav .contact i {
     background-color: white;
     display: none;
   }
-  nav .menu .submenu {
+  .navBar .menu .submenu {
     position: absolute;
     top: 35px !important;
     left: 190px !important;
     width: 200px !important;
   }
-  nav .menu ul {
+  .navBar .menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -525,20 +534,20 @@ nav .contact i {
             flex-direction: column;
     margin-bottom: 40px !important;
   }
-  nav .menu ul li {
+  .navBar .menu ul li {
     height: 45px;
   }
-  nav .menu ul :not(:last-of-type) {
+  .navBar .menu ul :not(:last-of-type) {
     border-bottom: 1px solid LightGray;
   }
-  nav .website-logo {
+  .navBar .website-logo {
     width: 150px;
     display: inline-block;
     position: absolute;
     right: 130px;
     bottom: 14px;
   }
-  nav .contact {
+  .navBar .contact {
     display: none;
   }
 }
@@ -1071,6 +1080,12 @@ footer .footer-bottom .social-media ul li a:hover {
   }
 }
 
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #doctors .tab-content .doctors-big-img {
+    width: 315px !important;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 991.98px) {
   #doctors {
     padding: 100px 65px 120px 65px;
@@ -1090,7 +1105,6 @@ footer .footer-bottom .social-media ul li a:hover {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     background-color: #f7f7f7;
-    padding: 0 15px 0 25px;
     border-bottom: 0;
   }
   #doctors .doctor-segments #tabs .nav-item {
@@ -1102,14 +1116,14 @@ footer .footer-bottom .social-media ul li a:hover {
     margin-top: 40px;
   }
   #doctors .doctor-segments .tab-content .doctors-big-img {
-    width: 720px !important;
-    padding-left: 32px;
+    width: 100% !important;
+    padding: 0 14px 0 7px;
   }
   #doctors .doctor-segments .tab-content .doctors-big-img img {
     width: 100%;
   }
   #doctors .doctor-segments .tab-content .info {
-    margin: 0 30px;
+    margin: 0 14px 0 7px;
   }
   #doctors .doctor-segments .tab-content .info::after {
     display: none;
@@ -1118,7 +1132,7 @@ footer .footer-bottom .social-media ul li a:hover {
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   #doctors {
-    padding: 100px 65px 120px 65px;
+    padding: 100px 15px 120px 15px;
   }
   #doctors .caption {
     text-align: center;
@@ -1146,8 +1160,8 @@ footer .footer-bottom .social-media ul li a:hover {
     margin-top: 40px;
   }
   #doctors .doctor-segments .tab-content .doctors-big-img {
-    width: 549px !important;
-    padding-left: 22px;
+    width: 100% !important;
+    padding: 0 21px;
   }
   #doctors .doctor-segments .tab-content .doctors-big-img img {
     width: 100%;
@@ -1258,14 +1272,13 @@ footer .footer-bottom .social-media ul li a:hover {
   }
 }
 
-main #breadcrumb {
+#breadcrumb {
   background-image: url(../img/back-pic1.png);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #666666;
   height: 350px;
-  width: 100%;
   opacity: 0.8;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1275,14 +1288,14 @@ main #breadcrumb {
           align-items: center;
 }
 
-main #breadcrumb h1 {
+#breadcrumb h1 {
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 15px;
   text-align: center;
 }
 
-main #breadcrumb ul {
+#breadcrumb ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1296,26 +1309,26 @@ main #breadcrumb ul {
           justify-content: center;
 }
 
-main #breadcrumb ul li {
+#breadcrumb ul li {
   position: relative;
 }
 
-main #breadcrumb ul li i {
+#breadcrumb ul li i {
   margin-right: 5px;
 }
 
-main #breadcrumb ul li:last-of-type {
+#breadcrumb ul li:last-of-type {
   color: #dddddd;
   text-decoration: underline;
   padding-left: 15px;
   margin-right: 15px;
 }
 
-main #breadcrumb ul li:last-of-type::after {
+#breadcrumb ul li:last-of-type::after {
   display: none;
 }
 
-main #breadcrumb ul li::after {
+#breadcrumb ul li::after {
   content: "";
   font-weight: 600;
   color: #ffffff;
@@ -1328,7 +1341,7 @@ main #breadcrumb ul li::after {
   border: 2px solid rgba(255, 255, 255, 0.7);
 }
 
-main #breadcrumb ul li a {
+#breadcrumb ul li a {
   font-weight: 600;
   font-size: 14px;
   display: inline-block;
@@ -1337,31 +1350,20 @@ main #breadcrumb ul li a {
   padding: 0 7px;
 }
 
-main #breadcrumb ul li a:hover {
+#breadcrumb ul li a:hover {
   text-decoration: none;
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 300px) and (max-width: 374.98px) {
   #breadcrumb h1 {
     font-size: 36px;
   }
-}
-
-@media (min-width: 375px) and (max-width: 575.98px) {
-  #breadcrumb {
-    height: 250px;
+  #breadcrumb ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-  #breadcrumb h1 {
-    font-size: 34px;
-  }
-}
-
-@media (min-width: 300px) and (max-width: 374.98px) {
-  #breadcrumb {
-    height: 250px;
-  }
-  #breadcrumb h1 {
-    font-size: 34px;
+  #breadcrumb ul li {
+    margin-top: 5px;
   }
 }
 /*# sourceMappingURL=doctors-2.css.map */

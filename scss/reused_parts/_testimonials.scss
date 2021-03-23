@@ -1,12 +1,13 @@
 // testimonials-section start
 #testimonials {
   overflow: hidden;
+  display: block !important;
   .caption {
-    padding: 220px 0 220px 218px;
+    position: relative;
+    padding: 220px 0 220px calc(80% - 281px);
     background-color: #1ebeb6;
     .icon {
       position: absolute;
-      left: 238px;
       top: 145px;
       font-weight: 600;
       font-size: 120px;
@@ -51,43 +52,50 @@
       }
     }
   }
+
   .owl-theme {
     margin-left: 35px;
     margin-top: 120px;
-    .item {
-      box-shadow: inset -1px -1px 10px #e7e7e7 !important;
-      margin-bottom: 10px;
-      text-align: center !important;
-      padding: 50px 30px;
-      .img-box {
-        img {
-          border-radius: 50%;
-          height: 80px;
-          width: 80px;
-          margin: auto auto 30px;
+    .owl-stage-outer {
+      margin: -15px -15px;
+      padding: 15px;
+
+      .item {
+        box-shadow: 0 0 10px #e7e7e7;
+        margin-bottom: 10px;
+        text-align: center !important;
+        padding: 50px 30px;
+        .img-box {
+          img {
+            border-radius: 50%;
+            height: 80px;
+            width: 80px;
+            margin: auto auto 30px;
+          }
         }
-      }
-      h5 {
-        font-size: 20px;
-        font-weight: 600;
-        color: #233645;
-        margin-bottom: 5px;
-      }
-      span {
-        font-size: 12px;
-        color: #838383;
-        strong {
-          color: #1ebeb6;
+        h5 {
+          font-size: 20px;
+          font-weight: 600;
+          color: #233645;
+          margin-bottom: 5px;
         }
-      }
-      p {
-        padding-top: 15px;
-        font-size: 15px;
-        line-height: 30px;
-        color: #838383;
+        span {
+          font-size: 12px;
+          color: #838383;
+          strong {
+            color: #1ebeb6;
+          }
+        }
+        p {
+          padding-top: 15px;
+          font-size: 15px;
+          line-height: 30px;
+          color: #838383;
+        }
       }
     }
   }
+
   button {
     margin-top: 20px;
     outline: none;
@@ -121,8 +129,16 @@
 // testimonials-section end
 
 
-
 // ======= Responsive Design Start ======= //
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #testimonials{
+    .owl-carousel{
+      margin-top: 0 !important;
+      padding: 70px 0 42px 0;
+    }
+  }
+}
+
 @media (min-width: 768px) and (max-width: 991.98px) {
   #testimonials {
     padding-bottom: 100px;

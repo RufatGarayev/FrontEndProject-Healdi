@@ -8,7 +8,7 @@
 
 
 // navbar start
-nav {
+.navBar {
   z-index: 99;
   height: 90px;
   width: 100%;
@@ -114,7 +114,7 @@ nav {
 
 // ===== Responsive Design Start ===== //
 @media (min-width: 768px) and (max-width: 991.98px) {
-  nav {
+  .navBar {
     height: 75px !important;
 
     .nav-button {
@@ -169,7 +169,7 @@ nav {
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  nav {
+  .navBar {
     height: 50px !important;
     position: relative;
     .nav-button {
@@ -223,7 +223,7 @@ nav {
 }
 
 @media (min-width: 500px) and (max-width: 575.98px) {
-  nav {
+  .navBar {
     padding: 50px 0 30px 0;
     height: 50px !important;
     position: relative;
@@ -275,7 +275,7 @@ nav {
 }
 
 @media (min-width: 400px) and (max-width: 499.98px) {
-  nav {
+  .navBar {
     padding: 50px 0 30px 0;
     height: 50px !important;
     position: relative;
@@ -328,7 +328,7 @@ nav {
 }
 
 @media (min-width: 300px) and (max-width: 399.98px) {
-  nav {
+  .navBar {
     padding: 50px 0 30px 0;
     height: 50px !important;
     position: relative;

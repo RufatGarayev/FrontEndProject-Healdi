@@ -1,83 +1,23 @@
+@import "../scss/partials/extends";
 @import "../scss/reused_parts/header";
 @import "../scss/reused_parts/navbar";
 @import "../scss/reused_parts/common-features";
 @import "../scss/reused_parts/loader";
 @import "../scss/reused_parts/footer";
+@import "../scss/reused_parts/breadcrumb";
 
 
 // main start
 main {
-  // breadcrumb-section start
-  #breadcrumb {
-    background-image: url(../img/back-pic1.png);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #666666;
-    height: 350px;
-    width: 100%;
-    opacity: 0.8;
-    display: flex;
-    align-items: center;
-    h1 {
-      font-weight: 700;
-      color: #ffffff;
-      margin-bottom: 15px;
-      text-align: center;
-    }
-    ul {
-      list-style: none;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      li {
-        i {
-          margin-right: 5px;
-        }
-        &:last-of-type {
-          color: #dddddd;
-          text-decoration: underline;
-          padding-left: 15px;
-          margin-right: 15px;
-          &::after {
-            display: none;
-          }
-        }
-        position: relative;
-        &::after {
-          content: "";
-          font-weight: 600;
-          color: #ffffff;
-          position: absolute;
-          top: 8px;
-          right: -3px;
-          height: 8px;
-          width: 8px;
-          border-radius: 50%;
-          border: 2px solid rgba(255, 255, 255, 0.7);
-        }
-        a {
-          font-weight: 600;
-          font-size: 14px;
-          display: inline-block;
-          color: #ffffff;
-          margin: 0 7px;
-          padding: 0 7px;
-          &:hover {
-            text-decoration: none;
-          }
-        }
-      }
-    }
-  }
-  // breadcrumb-section end
-
+  overflow: hidden;
   // news-section start
   #news {
     background-color: #f7f7f7;
     padding: 120px 0 120px 0;
-    .items {
-      .item {
+    .item {
+      margin-bottom: 30px;
+      .img-box {
+        position: relative;
         .date {
           position: absolute;
           left: 43px;
@@ -102,86 +42,86 @@ main {
             border-top: 0;
           }
         }
-        .info {
-          padding: 30px 30px 20px 30px;
-          background: #ffffff;
-          box-shadow: 0 0 10px #e4dfda;
-          .tags {
-            ul {
-              display: flex;
-              list-style: none;
-              li {
-                margin-bottom: 5px;
-                color: #1ebeb6;
-                a {
-                  color: #666666;
-                  font-weight: 400;
-                  font-size: 15px;
-                  &:hover {
-                    text-decoration: none;
-                  }
+      }
+      .info {
+        padding: 30px 30px 20px 30px;
+        background: #ffffff;
+        box-shadow: 0 0 10px #e4dfda;
+        .tags {
+          ul {
+            display: flex;
+            list-style: none;
+            li {
+              margin-bottom: 5px;
+              color: #1ebeb6;
+              a {
+                color: #666666;
+                font-weight: 400;
+                font-size: 15px;
+                &:hover {
+                  text-decoration: none;
                 }
               }
             }
           }
-          h4 {
-            font-size: 22px;
-            font-weight: 600;
-            a {
-              color: #233645;
-              &:hover {
-                color: #1ebeb6;
-                text-decoration: none;
-                transition: 0.3s linear;
-              }
+        }
+        h4 {
+          font-size: 22px;
+          font-weight: 600;
+          a {
+            color: #233645;
+            &:hover {
+              color: #1ebeb6;
+              text-decoration: none;
+              transition: 0.3s linear;
             }
           }
-          p {
-            padding-top: 10px;
-            color: #666666;
-            font-size: 15px;
-            line-height: 30px;
-          }
-          .bottom {
-            margin-top: 25px;
-            padding-top: 20px;
-            border-top: 1px solid #e7e7e7;
-            ul {
-              list-style: none;
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-              li {
-                a {
+        }
+        p {
+          padding-top: 10px;
+          color: #666666;
+          font-size: 15px;
+          line-height: 30px;
+        }
+        .bottom {
+          margin-top: 25px;
+          padding-top: 20px;
+          border-top: 1px solid #e7e7e7;
+          ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li {
+              a {
+                &:hover {
+                  color: #1ebeb6;
+                  text-decoration: none;
+                  transition: 0.3s linear;
+                }
+                img {
+                  height: 45px;
+                  width: 45px;
+                  border-radius: 50%;
+                  margin-right: 6px;
+                }
+                span {
+                  color: #666666;
+                  font-size: 15px;
+                  font-weight: 600;
                   &:hover {
                     color: #1ebeb6;
                     text-decoration: none;
                     transition: 0.3s linear;
                   }
-                  img {
-                    height: 45px;
-                    width: 45px;
-                    border-radius: 50%;
-                    margin-right: 6px;
-                  }
-                  span {
-                    color: #666666;
-                    font-size: 15px;
-                    font-weight: 600;
-                    &:hover {
-                      color: #1ebeb6;
-                      text-decoration: none;
-                      transition: 0.3s linear;
-                    }
-                  }
                 }
-                .comments {
-                  font-size: 15px;
-                  font-weight: 600;
-                  color: #666666;
-                  i {
-                    color: #1ebeb6;
-                  }
+              }
+              .comments {
+                font-size: 15px;
+                font-weight: 600;
+                color: #666666;
+                i {
+                  color: #1ebeb6;
                 }
               }
             }
@@ -194,7 +134,7 @@ main {
       .pagination {
         display: flex;
         justify-content: center;
-        padding-top: 80px;
+        padding-top: 60px;
         li {
           a {
             display: inline-block;
@@ -218,19 +158,28 @@ main {
 
 
 // ======= Responsive Design Start ======= //
-@media (min-width: 768px) and (max-width: 991.98px) {
-  #breadcrumb {
-    h1 {
-      font-size: 36px;
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #news {
+    .item {
+      .date {
+        left: 32px !important;
+        top: 125px !important;
+      }
     }
   }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
   #news {
-    padding: 60px 0 60px 0 !important;
-    .info {
-      margin-bottom: 30px;
+    padding: 90px 0 60px 0 !important;
+    .item {
+      .date {
+        left: 35px !important;
+        top: 145px !important;
+      }
     }
     nav {
-      padding: 0 !important;
+      padding: 40px !important;
       .pagination {
         padding-top: 0 !important;
       }
@@ -241,11 +190,14 @@ main {
 @media (min-width: 576px) and (max-width: 767.98px) {
   #news {
     padding: 60px 0 60px 0 !important;
-    .info {
-      margin-bottom: 30px;
+    .item {
+      .date {
+        left: 45px !important;
+        top: 255px !important;
+      }
     }
     nav {
-      padding: 0 !important;
+      padding: 40px !important;
       .pagination {
         padding-top: 0 !important;
       }
@@ -254,19 +206,16 @@ main {
 }
 
 @media (min-width: 375px) and (max-width: 575.98px) {
-  #breadcrumb {
-    height: 250px;
-    h1 {
-      font-size: 34px;
-    }
-  }
   #news {
     padding: 60px 0 50px 0 !important;
-    .info {
-      margin-bottom: 30px;
+    .item {
+      .date {
+        left: 45px !important;
+        top: calc(100% - 110px) !important;
+      }
     }
     nav {
-      padding: 0 !important;
+      padding: 20px !important;
       .pagination {
         padding-top: 0 !important;
       }
@@ -275,21 +224,27 @@ main {
 }
 
 @media (min-width: 300px) and (max-width: 374.98px) {
-  #breadcrumb {
-    height: 250px;
-    h1 {
-      font-size: 34px;
-    }
-  }
   #news {
     padding: 60px 0 50px 0 !important;
-    .info {
-      margin-bottom: 30px;
+    .item {
+      .date {
+        left: 20px !important;
+        top: calc(100% - 100px) !important;
+      }
+
+      .info{
+        padding: 30px 15px 20px 16px !important;
+      }
     }
     nav {
-      padding: 0 !important;
+      padding: 20px !important;
       .pagination {
         padding-top: 0 !important;
+        li{
+          a{
+            padding: 12px 17px !important;
+          }
+        }
       }
     }
   }

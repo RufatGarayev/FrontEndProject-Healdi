@@ -1,3 +1,12 @@
+@media (min-width: 300px) and (max-width: 767.98px) {
+  #doctors .caption h4, main #services .services-caption h4, main #news .site-heading h4 {
+    font-size: 18px !important;
+  }
+  #doctors .caption h2, main #services .services-caption h2, main #news .site-heading h2 {
+    font-size: 26px !important;
+  }
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -116,7 +125,7 @@ header .social-media a {
   border-top: 0;
 }
 
-nav {
+.navBar {
   z-index: 99;
   height: 90px;
   width: 100%;
@@ -135,15 +144,15 @@ nav {
   right: 0;
 }
 
-nav .website-logo {
+.navBar .website-logo {
   height: 100%;
 }
 
-nav .nav-button {
+.navBar .nav-button {
   display: none;
 }
 
-nav .menu {
+.navBar .menu {
   position: relative;
   height: 90px;
   display: -webkit-box;
@@ -157,11 +166,11 @@ nav .menu {
           align-items: center;
 }
 
-nav .menu ul {
+.navBar .menu ul {
   width: 100%;
 }
 
-nav .menu li {
+.navBar .menu li {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -172,15 +181,15 @@ nav .menu li {
   height: 90px;
 }
 
-nav .menu li:hover .submenu {
+.navBar .menu li:hover .submenu {
   display: inline-block;
 }
 
-nav .menu li a.active {
+.navBar .menu li a.active {
   color: #1ebeb6;
 }
 
-nav .menu li .submenu {
+.navBar .menu li .submenu {
   height: 150px;
   width: 250px;
   background-color: white;
@@ -193,36 +202,36 @@ nav .menu li .submenu {
   z-index: 1;
 }
 
-nav .menu li .submenu ul li {
+.navBar .menu li .submenu ul li {
   padding-left: 15px;
   height: 50px;
 }
 
-nav .menu li .submenu ul .first-li {
+.navBar .menu li .submenu ul .first-li {
   border-bottom: 1px solid #e4e4e4;
 }
 
-nav .menu li .submenu-1 {
+.navBar .menu li .submenu-1 {
   height: 103px;
   position: absolute;
   top: 90px;
   left: 465px;
 }
 
-nav .menu li a {
+.navBar .menu li a {
   color: black;
   font-size: 13px;
   font-weight: 600;
 }
 
-nav .menu li a:hover {
+.navBar .menu li a:hover {
   text-decoration: none;
   color: #1ebeb6;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
 }
 
-nav .contact {
+.navBar .contact {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -234,36 +243,36 @@ nav .contact {
           align-items: center;
 }
 
-nav .contact p {
+.navBar .contact p {
   font-weight: 600;
   font-size: 12px;
   color: #787878;
 }
 
-nav .contact p span {
+.navBar .contact p span {
   font-size: 16px;
   font-weight: 800;
   color: #666666;
 }
 
-nav .contact i {
+.navBar .contact i {
   color: #1ebeb6;
   font-size: 46px;
   padding-right: 11px;
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  nav {
+  .navBar {
     height: 75px !important;
   }
-  nav .nav-button {
+  .navBar .nav-button {
     font-size: 20px;
     display: inline-block !important;
     position: absolute;
     left: 50px;
     bottom: -9px;
   }
-  nav .menu {
+  .navBar .menu {
     padding-left: 55px !important;
     padding-right: 55px !important;
     padding-top: 25px;
@@ -275,12 +284,12 @@ nav .contact i {
     background-color: white;
     display: none;
   }
-  nav .menu .submenu {
+  .navBar .menu .submenu {
     position: absolute;
     top: 24px !important;
     left: 200px !important;
   }
-  nav .menu ul {
+  .navBar .menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -290,20 +299,20 @@ nav .contact i {
             flex-direction: column;
     margin-bottom: 40px !important;
   }
-  nav .menu ul li {
+  .navBar .menu ul li {
     height: 45px;
   }
-  nav .menu ul :not(:last-of-type) {
+  .navBar .menu ul :not(:last-of-type) {
     border-bottom: 1px solid LightGray;
   }
-  nav .website-logo {
+  .navBar .website-logo {
     width: 150px;
     display: inline-block;
     position: absolute;
     right: 290px;
     bottom: 2px;
   }
-  nav .contact {
+  .navBar .contact {
     position: absolute;
     right: 50px;
     bottom: 2px;
@@ -312,17 +321,17 @@ nav .contact i {
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  nav {
+  .navBar {
     height: 50px !important;
     position: relative;
   }
-  nav .nav-button {
+  .navBar .nav-button {
     display: inline-block !important;
     position: absolute;
     left: 50px;
     bottom: 4px;
   }
-  nav .menu {
+  .navBar .menu {
     padding-left: 55px !important;
     padding-right: 55px !important;
     padding-top: 25px;
@@ -334,12 +343,12 @@ nav .contact i {
     background-color: white;
     display: none;
   }
-  nav .menu .submenu {
+  .navBar .menu .submenu {
     position: absolute;
     top: 24px !important;
     left: 200px !important;
   }
-  nav .menu ul {
+  .navBar .menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -349,20 +358,20 @@ nav .contact i {
             flex-direction: column;
     margin-bottom: 40px !important;
   }
-  nav .menu ul li {
+  .navBar .menu ul li {
     height: 45px;
   }
-  nav .menu ul :not(:last-of-type) {
+  .navBar .menu ul :not(:last-of-type) {
     border-bottom: 1px solid LightGray;
   }
-  nav .website-logo {
+  .navBar .website-logo {
     width: 150px;
     display: inline-block;
     position: absolute;
     right: 290px;
     bottom: 14px;
   }
-  nav .contact {
+  .navBar .contact {
     position: absolute;
     right: 50px;
     bottom: 14px;
@@ -371,18 +380,18 @@ nav .contact i {
 }
 
 @media (min-width: 500px) and (max-width: 575.98px) {
-  nav {
+  .navBar {
     padding: 50px 0 30px 0;
     height: 50px !important;
     position: relative;
   }
-  nav .nav-button {
+  .navBar .nav-button {
     display: inline-block !important;
     position: absolute;
     left: 50px;
     bottom: 4px;
   }
-  nav .menu {
+  .navBar .menu {
     padding-left: 55px !important;
     padding-right: 55px !important;
     padding-top: 25px;
@@ -394,12 +403,12 @@ nav .contact i {
     background-color: white;
     display: none;
   }
-  nav .menu .submenu {
+  .navBar .menu .submenu {
     position: absolute;
     top: 24px !important;
     left: 200px !important;
   }
-  nav .menu ul {
+  .navBar .menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -409,37 +418,37 @@ nav .contact i {
             flex-direction: column;
     margin-bottom: 40px !important;
   }
-  nav .menu ul li {
+  .navBar .menu ul li {
     height: 45px;
   }
-  nav .menu ul :not(:last-of-type) {
+  .navBar .menu ul :not(:last-of-type) {
     border-bottom: 1px solid LightGray;
   }
-  nav .website-logo {
+  .navBar .website-logo {
     width: 150px;
     display: inline-block;
     position: absolute;
     right: 215px;
     bottom: 14px;
   }
-  nav .contact {
+  .navBar .contact {
     display: none;
   }
 }
 
 @media (min-width: 400px) and (max-width: 499.98px) {
-  nav {
+  .navBar {
     padding: 50px 0 30px 0;
     height: 50px !important;
     position: relative;
   }
-  nav .nav-button {
+  .navBar .nav-button {
     display: inline-block !important;
     position: absolute;
     left: 50px;
     bottom: 4px;
   }
-  nav .menu {
+  .navBar .menu {
     padding-left: 55px !important;
     padding-right: 55px !important;
     padding-top: 25px;
@@ -451,13 +460,13 @@ nav .contact i {
     background-color: white;
     display: none;
   }
-  nav .menu .submenu {
+  .navBar .menu .submenu {
     position: absolute;
     top: 35px !important;
     left: 190px !important;
     width: 210px !important;
   }
-  nav .menu ul {
+  .navBar .menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -467,37 +476,37 @@ nav .contact i {
             flex-direction: column;
     margin-bottom: 40px !important;
   }
-  nav .menu ul li {
+  .navBar .menu ul li {
     height: 45px;
   }
-  nav .menu ul :not(:last-of-type) {
+  .navBar .menu ul :not(:last-of-type) {
     border-bottom: 1px solid LightGray;
   }
-  nav .website-logo {
+  .navBar .website-logo {
     width: 150px;
     display: inline-block;
     position: absolute;
     right: 142px;
     bottom: 14px;
   }
-  nav .contact {
+  .navBar .contact {
     display: none;
   }
 }
 
 @media (min-width: 300px) and (max-width: 399.98px) {
-  nav {
+  .navBar {
     padding: 50px 0 30px 0;
     height: 50px !important;
     position: relative;
   }
-  nav .nav-button {
+  .navBar .nav-button {
     display: inline-block !important;
     position: absolute;
     left: 50px;
     bottom: 4px;
   }
-  nav .menu {
+  .navBar .menu {
     padding-left: 55px !important;
     padding-right: 55px !important;
     padding-top: 25px;
@@ -509,13 +518,13 @@ nav .contact i {
     background-color: white;
     display: none;
   }
-  nav .menu .submenu {
+  .navBar .menu .submenu {
     position: absolute;
     top: 35px !important;
     left: 190px !important;
     width: 200px !important;
   }
-  nav .menu ul {
+  .navBar .menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -525,20 +534,20 @@ nav .contact i {
             flex-direction: column;
     margin-bottom: 40px !important;
   }
-  nav .menu ul li {
+  .navBar .menu ul li {
     height: 45px;
   }
-  nav .menu ul :not(:last-of-type) {
+  .navBar .menu ul :not(:last-of-type) {
     border-bottom: 1px solid LightGray;
   }
-  nav .website-logo {
+  .navBar .website-logo {
     width: 150px;
     display: inline-block;
     position: absolute;
     right: 130px;
     bottom: 14px;
   }
-  nav .contact {
+  .navBar .contact {
     display: none;
   }
 }
@@ -947,7 +956,7 @@ footer .footer-bottom .social-media ul li a:hover {
   content: "";
   position: absolute;
   z-index: -1;
-  left: 16.5%;
+  left: 16.9%;
   top: 50%;
   background-color: #1ebeb6;
   -webkit-transform: translateX(-50%) translateY(-50%);
@@ -1027,6 +1036,7 @@ footer .footer-bottom .social-media ul li a:hover {
 #about .text-sec ul li .content h5 {
   font-weight: 600;
   font-size: 18px;
+  font-weight: 700;
 }
 
 #about .text-sec ul li .content h5 a {
@@ -1066,12 +1076,9 @@ footer .footer-bottom .social-media ul li a:hover {
   text-decoration: none;
 }
 
-@media (min-width: 375px) and (max-width: 405px) {
-  #about {
-    padding: 50px 20px 174px 29px !important;
-  }
-  #about .about-btn {
-    bottom: -160px !important;
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #about .video .play-btn i::after {
+    left: 21.5% !important;
   }
 }
 
@@ -1131,9 +1138,6 @@ footer .footer-bottom .social-media ul li a:hover {
   #about .text-sec ul li .icon img {
     margin-right: -1px;
   }
-  #about .text-sec ul li .content h5 {
-    font-size: 14px !important;
-  }
   #about .text-sec .about-btn {
     position: absolute;
     bottom: -148px;
@@ -1178,7 +1182,7 @@ footer .footer-bottom .social-media ul li a:hover {
 @media (min-width: 375px) and (max-width: 575.98px) {
   #about {
     width: 100% !important;
-    padding: 50px 0 145px 0 !important;
+    padding: 50px 0 175px 0 !important;
   }
   #about .text-sec {
     padding: 330px 0 0 !important;
@@ -1202,6 +1206,7 @@ footer .footer-bottom .social-media ul li a:hover {
     position: absolute;
     left: 0;
     right: 0;
+    padding: 0 20px;
   }
   #about .text-sec ul li {
     width: -webkit-fit-content !important;
@@ -1214,12 +1219,9 @@ footer .footer-bottom .social-media ul li a:hover {
   #about .text-sec ul li .icon img {
     margin-right: -1px;
   }
-  #about .text-sec ul li .content h5 {
-    font-size: 14px !important;
-  }
   #about .text-sec .about-btn {
     position: relative;
-    bottom: -130px;
+    bottom: -150px !important;
     right: 0px;
   }
   #about .text-sec .about-btn .btnn {
@@ -1306,9 +1308,6 @@ footer .footer-bottom .social-media ul li a:hover {
   #about .text-sec ul li .icon img {
     margin-right: -1px;
   }
-  #about .text-sec ul li .content h5 {
-    font-size: 14px !important;
-  }
   #about .text-sec .about-btn {
     position: relative;
     bottom: -185px;
@@ -1361,16 +1360,17 @@ footer .footer-bottom .social-media ul li a:hover {
 
 #testimonials {
   overflow: hidden;
+  display: block !important;
 }
 
 #testimonials .caption {
-  padding: 220px 0 220px 218px;
+  position: relative;
+  padding: 220px 0 220px calc(80% - 281px);
   background-color: #1ebeb6;
 }
 
 #testimonials .caption .icon {
   position: absolute;
-  left: 238px;
   top: 145px;
   font-weight: 600;
   font-size: 120px;
@@ -1426,38 +1426,43 @@ footer .footer-bottom .social-media ul li a:hover {
   margin-top: 120px;
 }
 
-#testimonials .owl-theme .item {
-  -webkit-box-shadow: inset -1px -1px 10px #e7e7e7 !important;
-          box-shadow: inset -1px -1px 10px #e7e7e7 !important;
+#testimonials .owl-theme .owl-stage-outer {
+  margin: -15px -15px;
+  padding: 15px;
+}
+
+#testimonials .owl-theme .owl-stage-outer .item {
+  -webkit-box-shadow: 0 0 10px #e7e7e7;
+          box-shadow: 0 0 10px #e7e7e7;
   margin-bottom: 10px;
   text-align: center !important;
   padding: 50px 30px;
 }
 
-#testimonials .owl-theme .item .img-box img {
+#testimonials .owl-theme .owl-stage-outer .item .img-box img {
   border-radius: 50%;
   height: 80px;
   width: 80px;
   margin: auto auto 30px;
 }
 
-#testimonials .owl-theme .item h5 {
+#testimonials .owl-theme .owl-stage-outer .item h5 {
   font-size: 20px;
   font-weight: 600;
   color: #233645;
   margin-bottom: 5px;
 }
 
-#testimonials .owl-theme .item span {
+#testimonials .owl-theme .owl-stage-outer .item span {
   font-size: 12px;
   color: #838383;
 }
 
-#testimonials .owl-theme .item span strong {
+#testimonials .owl-theme .owl-stage-outer .item span strong {
   color: #1ebeb6;
 }
 
-#testimonials .owl-theme .item p {
+#testimonials .owl-theme .owl-stage-outer .item p {
   padding-top: 15px;
   font-size: 15px;
   line-height: 30px;
@@ -1492,6 +1497,13 @@ footer .footer-bottom .social-media ul li a:hover {
           transform: translate(-50%, -50%);
   background: #1ebeb6;
   border-radius: 50%;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #testimonials .owl-carousel {
+    margin-top: 0 !important;
+    padding: 70px 0 42px 0;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -1850,6 +1862,12 @@ footer .footer-bottom .social-media ul li a:hover {
   outline: inherit !important;
 }
 
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #consultation .consult-item {
+    padding: 35px 11px !important;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 991.98px) {
   #consultation {
     padding-top: 60px !important;
@@ -2165,6 +2183,12 @@ footer .footer-bottom .social-media ul li a:hover {
   }
 }
 
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #doctors .tab-content .doctors-big-img {
+    width: 315px !important;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 991.98px) {
   #doctors {
     padding: 100px 65px 120px 65px;
@@ -2184,7 +2208,6 @@ footer .footer-bottom .social-media ul li a:hover {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     background-color: #f7f7f7;
-    padding: 0 15px 0 25px;
     border-bottom: 0;
   }
   #doctors .doctor-segments #tabs .nav-item {
@@ -2196,14 +2219,14 @@ footer .footer-bottom .social-media ul li a:hover {
     margin-top: 40px;
   }
   #doctors .doctor-segments .tab-content .doctors-big-img {
-    width: 720px !important;
-    padding-left: 32px;
+    width: 100% !important;
+    padding: 0 14px 0 7px;
   }
   #doctors .doctor-segments .tab-content .doctors-big-img img {
     width: 100%;
   }
   #doctors .doctor-segments .tab-content .info {
-    margin: 0 30px;
+    margin: 0 14px 0 7px;
   }
   #doctors .doctor-segments .tab-content .info::after {
     display: none;
@@ -2212,7 +2235,7 @@ footer .footer-bottom .social-media ul li a:hover {
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   #doctors {
-    padding: 100px 65px 120px 65px;
+    padding: 100px 15px 120px 15px;
   }
   #doctors .caption {
     text-align: center;
@@ -2240,8 +2263,8 @@ footer .footer-bottom .social-media ul li a:hover {
     margin-top: 40px;
   }
   #doctors .doctor-segments .tab-content .doctors-big-img {
-    width: 549px !important;
-    padding-left: 22px;
+    width: 100% !important;
+    padding: 0 21px;
   }
   #doctors .doctor-segments .tab-content .doctors-big-img img {
     width: 100%;
@@ -2360,13 +2383,14 @@ footer .footer-bottom .social-media ul li a:hover {
 #contact .contact-items .address-box {
   background-image: url(../img/contact-img.jpg);
   background-size: cover;
+  position: relative;
   height: 100%;
 }
 
 #contact .contact-items .address-box .address-info {
   position: absolute;
   left: 30px;
-  bottom: 0;
+  bottom: -5px;
   padding: 30px;
   background: #ffffff;
   right: 30px;
@@ -2499,7 +2523,7 @@ footer .footer-bottom .social-media ul li a:hover {
   #contact .address-box .address-info {
     -webkit-box-shadow: 0 0 10px #e7e7e7;
             box-shadow: 0 0 10px #e7e7e7;
-    bottom: 30px !important;
+    bottom: -38px !important;
   }
   #contact .address-box .address-info ul {
     -webkit-box-orient: vertical;
@@ -2536,7 +2560,7 @@ footer .footer-bottom .social-media ul li a:hover {
   #contact .address-box .address-info {
     -webkit-box-shadow: 0 0 10px #e7e7e7;
             box-shadow: 0 0 10px #e7e7e7;
-    bottom: 30px !important;
+    bottom: -63px !important;
   }
   #contact .address-box .address-info ul {
     -webkit-box-orient: vertical;
@@ -3269,6 +3293,20 @@ main #news .item .info .bottom ul li .comments {
 
 main #news .item .info .bottom ul li .comments i {
   color: #1ebeb6;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #services .item .img-box {
+    width: 100% !important;
+    padding-right: 20px;
+  }
+  #services .item .info {
+    padding: 33px !important;
+  }
+  #news .date {
+    left: 35px !important;
+    top: 130px !important;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {

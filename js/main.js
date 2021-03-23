@@ -24,7 +24,15 @@ $(document).ready(function () {
     stickyNav();
   });
   // nav-sticky end
+
+  // Counter-Up Start 
+  $(".counter-up").counterUp({
+    delay: 50,
+    time: 5000,
+  });
+  // Counter-Up End
 });
+
 
 // nav burger-button start
 let navButton = document.querySelector(".nav-button");
@@ -35,6 +43,7 @@ navButton.addEventListener("click", function () {
   navButton.classList.toggle("fa-times");
 });
 // nav burger-button end
+
 
 // banner-arrow start
 let banner = document.getElementById("banner");
@@ -53,6 +62,7 @@ banner.addEventListener("mouseleave", function () {
 });
 // banner-arrow end
 
+
 // play-box popup effect start
 $(document).ready(function () {
   $(".play-btn").click(function () {
@@ -67,6 +77,7 @@ $(document).ready(function () {
 });
 // play-box popup effect end
 
+
 // doctors-section tab start
 let myBtn = document.querySelectorAll("#doctors .nav-link");
 
@@ -79,6 +90,7 @@ myBtn.forEach((btn) => {
   });
 });
 // doctors-section tab end
+
 
 // consultation-section dropdown start
 var selectedoptions = [...document.querySelectorAll(".selectedoption")];
@@ -139,107 +151,3 @@ selectedoptions.forEach((s) => {
   });
 });
 // consultation-section dropdown end
-
-
-
-// ======= Owl Carousel Start ======= //
-
-// home services-owlCarousel start
-$(".owl-carousel.myservices").owlCarousel({
-  loop: false,
-  margin: 30,
-  nav: false,
-  dot: true,
-  responsive: {
-    0: {
-      items: 1,
-    },
-    600: {
-      items: 1,
-    },
-    1000: {
-      items: 3,
-    },
-  },
-});
-// home services-owlCarousel end
-
-// about-us services-owlCarousel start
-$(".owl-carousel.myservices-2").owlCarousel({
-  loop: false,
-  margin: 30,
-  nav: false,
-  dot: true,
-  responsive: {
-    0: {
-      items: 1,
-    },
-    600: {
-      items: 1,
-    },
-    1000: {
-      items: 3,
-    },
-  },
-});
-// about-us services-owlCarousel end
-
-// about-us services-owlCarousel start
-$(".owl-carousel.myservices-3").owlCarousel({
-  loop: false,
-  margin: 30,
-  nav: false,
-  dot: true,
-  responsive: {
-    0: {
-      items: 1,
-    },
-    600: {
-      items: 1,
-    },
-    1000: {
-      items: 3,
-    },
-  },
-});
-// about-us services-owlCarousel end
-
-// testomonials-owlCarousel start
-$(".owl-carousel.myowl").owlCarousel({
-  loop: true,
-  margin: 30,
-  dotsEach: 2,
-  responsive: {
-    0: {
-      items: 1,
-    },
-    600: {
-      items: 1,
-    },
-    1000: {
-      items: 2.6,
-    },
-  },
-});
-// testomonials-owlCarousel end
-
-// testomonials-owlCarousel start
-$(".owl-carousel.myowl2").owlCarousel({
-  loop: true,
-  margin: 30,
-  dotsEach: 2,
-  responsive: {
-    0: {
-      items: 1,
-    },
-    600: {
-      items: 1,
-    },
-    1000: {
-      items: 2.6,
-    },
-  },
-});
-// testomonials-owlCarousel end
-
-// ======= Owl Carousel End ======= //

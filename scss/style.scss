@@ -1,3 +1,4 @@
+@import "../scss/partials/extends";
 @import "../scss/reused_parts/header";
 @import "../scss/reused_parts/navbar";
 @import "../scss/reused_parts/common-features";
@@ -281,6 +282,8 @@ main {
         padding: 0 20px;
         color: #666666;
       }
+
+      @extend %section-header;
     }
 
     .item {
@@ -540,6 +543,8 @@ main {
         padding: 0 20px;
         line-height: 30px;
       }
+
+      @extend %section-header;
     }
     .item {
       .date {
@@ -652,6 +657,27 @@ main {
 
 
 // ======= Responsive Design Start ======= //
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #services{
+    .item{
+      .img-box{
+        width: 100% !important;
+        padding-right: 20px;
+      }
+      .info{
+        padding: 33px !important;
+      }
+    }
+  }
+
+  #news{
+    .date{
+      left: 35px !important;
+      top: 130px !important;
+    }
+  }
+}
+
 @media (min-width: 768px) and (max-width: 991.98px) {
   #banner {
     img {
