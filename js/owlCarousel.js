@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    // home - services-owlCarousel start
+    // home > services-owlCarousel start
     $(".owl-carousel.myservices").owlCarousel({
         loop: false,
         margin: 30,
@@ -17,9 +17,9 @@ $(document).ready(function () {
             }
         }
     });
-    // home - services-owlCarousel end
+    // home > services-owlCarousel end
 
-    // about-us - services-owlCarousel start
+    // about-us > services-owlCarousel start
     $(".owl-carousel.myservices-2").owlCarousel({
         loop: false,
         margin: 30,
@@ -29,7 +29,7 @@ $(document).ready(function () {
             0: {
                 items: 1
             },
-            600: {
+            700: {
                 items: 2
             },
             1000: {
@@ -37,29 +37,29 @@ $(document).ready(function () {
             }
         }
     });
-    // about-us - services-owlCarousel end
+    // about-us > services-owlCarousel end
 
-    // testimonials - services-owlCarousel start
+    // departments > services-owlCarousel start
     $(".owl-carousel.myservices-3").owlCarousel({
         loop: false,
         margin: 30,
         nav: false,
         dot: true,
         responsive: {
-          0: {
-            items: 1
-          },
-          600: {
-            items: 2
-          },
-          1000: {
-            items: 3
-          }
+            0: {
+                items: 1
+            },
+            700: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
         }
-      });
-    // testimonials - services-owlCarousel end
+    });
+    // departments > services-owlCarousel end
 
-    // home - testomonials-owlCarousel start
+    // home > testomonials-owlCarousel start
     $(".owl-carousel.myowl").owlCarousel({
         loop: true,
         margin: 30,
@@ -76,9 +76,9 @@ $(document).ready(function () {
             }
         }
     });
-    // home - testomonials-owlCarousel end
+    // home > testomonials-owlCarousel end
 
-    // about-us - testomonials-owlCarousel start
+    // about-us > testomonials-owlCarousel start
     $(".owl-carousel.myowl2").owlCarousel({
         loop: true,
         margin: 30,
@@ -95,5 +95,5 @@ $(document).ready(function () {
             }
         }
     });
-    // about-us - testomonials-owlCarousel end
+    // about-us > testomonials-owlCarousel end
 });

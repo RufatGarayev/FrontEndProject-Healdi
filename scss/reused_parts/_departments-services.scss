@@ -107,9 +107,9 @@
             }
           }
 
-          &:hover{
-            .icon{
-              &:before{
+          &:hover {
+            .icon {
+              &:before {
                 animation: rotating 10s linear infinite;
                 transition: opacity 0.3s;
                 opacity: 1;
@@ -162,9 +162,34 @@
 // services-section end
 
 
+
 // ======= Responsive Design Start ======= //
+@media (min-width: 767px) and (max-width: 991.98px) {
+  #services {
+    .info {
+      h4 {
+        a {
+          font-size: 21px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #services {
+    .info {
+      h4 {
+        a {
+          font-size: 21px !important;
+        }
+      }
+    }
+  }
+}
+
 @media (min-width: 300px) and (max-width: 575.98px) {
-  #services{
+  #services {
     .item {
       margin-left: 16px !important;
       width: calc(100% - 32px) !important;

@@ -1946,6 +1946,18 @@ footer .footer-bottom .social-media ul li a:hover {
   border-radius: 50%;
 }
 
+@media (min-width: 767px) and (max-width: 991.98px) {
+  #services .info h4 a {
+    font-size: 21px !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #services .info h4 a {
+    font-size: 21px !important;
+  }
+}
+
 @media (min-width: 300px) and (max-width: 575.98px) {
   #services .item {
     margin-left: 16px !important;
