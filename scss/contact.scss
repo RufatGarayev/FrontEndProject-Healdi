@@ -1,3 +1,4 @@
+// importing partials and reused sections
 @import "../scss/partials/extends";
 @import "../scss/reused_parts/header";
 @import "../scss/reused_parts/navbar";
@@ -24,8 +25,25 @@ main {
 // main end
 
 
+
 // ======= Responsive Design Start ======= //
+@media (min-width: 767px) and (max-width: 991.98px) {
+  #contact{
+    padding: 100px 50px !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #contact{
+    padding: 60px 25px !important;
+  }
+}
+
 @media (min-width: 375px) and (max-width: 575.98px) {
+  #contact{
+    padding: 55px 25px !important;
+  }
+
   .maps-area {
     height: 100%;
     iframe {
@@ -36,6 +54,10 @@ main {
 }
 
 @media (min-width: 300px) and (max-width: 374.98px) {
+  #contact{
+    padding: 55px 15px 55px !important;
+  }
+
   .maps-area {
     height: 100%;
     iframe {

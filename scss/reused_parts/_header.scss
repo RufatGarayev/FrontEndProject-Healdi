@@ -5,11 +5,11 @@ header {
   padding: 15px 0;
   border-top: 1px solid #e4e4e4;
   border-bottom: 1px solid #e4e4e4;
-  display: none !important;
 
   .covid {
     h6 {
       font-size: 15px;
+      margin-bottom: 0;
       color: #976666;
       font-weight: 400;
       a {
@@ -56,58 +56,27 @@ header {
       padding-bottom: 10px;
       text-align: center;
     }
-    .header-links {
-      padding-right: 20px;
-    }
 
     .social-media {
-      padding-right: 192px;
-      padding-left: 0 !important;
+      padding-right: 135px;
+      padding-left: 15px !important;
     }
   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   header {
-    height: 137px;
-    margin-top: -32px;
-    margin-bottom: 20px !important;
-    .covid {
-      text-align: center;
-    }
-    .header-links {
-      position: absolute;
-      top: 5px;
-      left: 174px;
-      width: 38%;
-      display: inline-block !important;
-    }
-    .social-media {
-      a {
-        padding-left: 20px;
-      }
-      position: absolute;
-      top: 5px;
-      left: 424px;
-      width: 38%;
-      display: inline-block !important;
-    }
+    display: none;
   }
 }
 
-@media (min-width: 500px) and (max-width: 575.98px) {
+@media (min-width: 375px) and (max-width: 575.98px) {
   header {
     display: none;
   }
 }
 
-@media (min-width: 400px) and (max-width: 499.98px) {
-  header {
-    display: none;
-  }
-}
-
-@media (min-width: 300px) and (max-width: 399.98px) {
+@media (min-width: 300px) and (max-width: 374.98px) {
   header {
     display: none;
   }

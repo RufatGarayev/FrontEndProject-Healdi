@@ -1,3 +1,4 @@
+// importing partials and reused sections
 @import "../scss/partials/extends";
 @import "../scss/reused_parts/header";
 @import "../scss/reused_parts/navbar";
@@ -13,14 +14,14 @@ main {
   // news-section start
   #news {
     background-color: #f7f7f7;
-    padding: 120px 0 120px 0;
+    padding: 120px 0 100px 0;
     .item {
       margin-bottom: 30px;
       .img-box {
         position: relative;
         .date {
           position: absolute;
-          left: 43px;
+          left: 30px;
           top: 165px;
           height: 70px;
           width: 80px;
@@ -134,7 +135,7 @@ main {
       .pagination {
         display: flex;
         justify-content: center;
-        padding-top: 60px;
+        padding-top: 30px;
         li {
           a {
             display: inline-block;

@@ -1,3 +1,4 @@
+// importing partials and reused sections
 @import "../scss/partials/extends";
 @import "../scss/reused_parts/header";
 @import "../scss/reused_parts/navbar";
@@ -277,6 +278,7 @@ main {
 // main end
 
 
+
 // ======= Responsive Design Start ======= //
 @media (min-width: 992px) and (max-width: 1199.98px) {
   #blog {
@@ -412,6 +414,7 @@ main {
           }
           p {
             font-size: 13px !important;
+            text-align: center;
           }
         }
       }

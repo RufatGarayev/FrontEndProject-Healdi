@@ -1,20 +1,21 @@
 $(document).ready(function () {
-  // reload-img start
+  // loader - start
   $(window).on("load", function () {
     $(".pre-icon").fadeOut("slow");
   });
-  // reload-img end
+  // loader - end
 
-  // nav-sticky start
-  let stickyNavTop = $(".navBar").offset().top;
+
+  // nav-sticky - start
+  let stickyNavTop = $(".navbar").offset().top;
 
   let stickyNav = function () {
     let scrollTop = $(window).scrollTop();
 
     if (scrollTop > stickyNavTop) {
-      $(".navBar").addClass("sticky");
+      $(".navbar").addClass("sticky");
     } else {
-      $(".navBar").removeClass("sticky");
+      $(".navbar").removeClass("sticky");
     }
   };
 
@@ -23,48 +24,24 @@ $(document).ready(function () {
   $(window).scroll(function () {
     stickyNav();
   });
-  // nav-sticky end
+  // nav-sticky - end
 
-  // Counter-Up Start 
-  $(".counter-up").counterUp({
-    delay: 50,
-    time: 5000,
+
+  // changing navbar li icon - start
+  $(".navbar .blog").hover(function () {
+    $(".navbar .blog i").toggleClass("fa-angle-up");
   });
-  // Counter-Up End
-});
+  // changing navbar li icon - end
 
 
-// nav burger-button start
-let navButton = document.querySelector(".nav-button");
-let navMenu = document.querySelector("nav .menu");
-
-navButton.addEventListener("click", function () {
-  navMenu.classList.toggle("d-block");
-  navButton.classList.toggle("fa-times");
-});
-// nav burger-button end
+  // changing navbar button - start
+  $(document).on("click", ".navbar button i", () => {
+    $(".navbar button i").toggleClass("fa-times");
+  });
+  // changing navbar button - end 
 
 
-// banner-arrow start
-let banner = document.getElementById("banner");
-let arrowLeft = document.querySelector(".carousel-control-prev");
-let arrowRight = document.querySelector(".carousel-control-next");
-
-banner.addEventListener("mouseenter", function () {
-  arrowLeft.style.left = "-70px";
-  arrowLeft.style.transition = "0.3s";
-  arrowRight.style.right = "-70px";
-  arrowRight.style.transition = "0.3s";
-});
-banner.addEventListener("mouseleave", function () {
-  arrowLeft.style.left = "-150px";
-  arrowRight.style.right = "-150px";
-});
-// banner-arrow end
-
-
-// play-box popup effect start
-$(document).ready(function () {
+  // play-box popup effect - start
   $(".play-btn").click(function () {
     $(".play-box").css("display", "flex");
   });
@@ -74,11 +51,19 @@ $(document).ready(function () {
       $(".play-box").css("display", "none");
     }
   });
+  // play-box popup effect - end
+
+
+  // counter-up - start
+  $(".counter-up").counterUp({
+    delay: 50,
+    time: 5000,
+  });
+  // counter-up - end
 });
-// play-box popup effect end
 
 
-// doctors-section tab start
+// doctors section > tab - start
 let myBtn = document.querySelectorAll("#doctors .nav-link");
 
 myBtn.forEach((btn) => {
@@ -89,24 +74,26 @@ myBtn.forEach((btn) => {
     document.getElementById(this.dataset.targetSection).classList.add("active");
   });
 });
-// doctors-section tab end
+// doctors section > tab - end
 
 
-// consultation-section dropdown start
-var selectedoptions = [...document.querySelectorAll(".selectedoption")];
-var selectedli = document.querySelector(".selectedoption.selected");
-var gender = document.querySelector("#gender");
-var category = document.querySelector("#category");
-var genderul = document.querySelector("#genderselection");
-var categoryul = document.querySelector("#categoryselection");
-var oldactive;
+// === consultation section > dropdown - start === //
+// taking the elements
+let selectedoptions = [...document.querySelectorAll(".selectedoption")];
+let selectedli = document.querySelector(".selectedoption.selected");
+let gender = document.querySelector("#gender");
+let category = document.querySelector("#category");
+let genderul = document.querySelector("#genderselection");
+let categoryul = document.querySelector("#categoryselection");
+let oldactive;
 let inputArrow = document.querySelectorAll("#consultation form .form-group i");
 let input = document.querySelectorAll(
   "#consultation form .form-group .selectboxinput"
 );
 
+// processes that happen when clicking on the input
 $(".selectboxinput").click(function () {
-  var oldrotate = document.querySelector(".down");
+  let oldrotate = document.querySelector(".down");
   oldactive = document.querySelector(".activeul");
   if (oldactive != null) {
     $(oldactive).fadeOut();
@@ -119,6 +106,7 @@ $(".selectboxinput").click(function () {
   this.nextElementSibling.classList.add("activeul");
 });
 
+// processes that happen when clicking on the gender input
 gender.addEventListener("click", function () {
   if (oldactive == this.nextElementSibling) {
     $(genderul).fadeOut(100);
@@ -129,25 +117,27 @@ gender.addEventListener("click", function () {
   $(genderul).fadeToggle(100);
 });
 
+// processes that happen when clicking on the category input
 category.addEventListener("click", function () {
   if (oldactive == this.nextElementSibling) {
     $(categoryul).fadeOut(100);
     oldactive.classList.remove("activeul");
     this.previousElementSibling.classList.remove("down");
-
     return;
   }
   $(categoryul).fadeToggle(100);
 });
 
+// processes that happen when clicking on the dropdown_li
 selectedoptions.forEach((s) => {
   s.addEventListener("click", function (e) {
-    var oldselected = this.parentElement.querySelector(".selected");
+    let oldselected = this.parentElement.querySelector(".selected");
+    let parent = this.parentElement;
     oldselected.classList.remove("selected");
     this.classList.add("selected");
     this.parentElement.previousElementSibling.value = this.innerText;
-    var parent = this.parentElement;
+    this.parentElement.parentElement.firstElementChild.classList.remove("down");
     $(parent).fadeOut();
   });
 });
-// consultation-section dropdown end
+// === consultation section > dropdown - end === //

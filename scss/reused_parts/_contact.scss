@@ -71,6 +71,7 @@
       textarea {
         height: 150px;
       }
+      .send-msg-btn{
       button {
         background: linear-gradient(
           90deg,
@@ -86,6 +87,7 @@
         margin-top: 15px;
       }
     }
+  }
   }
 }
 // contact-section end
@@ -121,6 +123,10 @@
     }
     .input {
       padding: 65px 0 0 !important;
+      .send-msg-btn{
+        display: flex;
+        justify-content: center;
+      }
     }
   }
 }
@@ -143,7 +149,6 @@
     }
     .input {
       padding: 5px 0 0 !important;
-
       .caption {
         text-align: center;
         h2 {
@@ -152,6 +157,10 @@
             font-size: 20px;
           }
         }
+      }
+      .send-msg-btn{
+        display: flex;
+        justify-content: center;
       }
     }
   }
@@ -175,7 +184,6 @@
     }
     .input {
       padding: 5px 0 0 !important;
-
       .caption {
         text-align: center;
         h2 {
@@ -184,6 +192,10 @@
             font-size: 20px;
           }
         }
+      }
+      .send-msg-btn{
+        display: flex;
+        justify-content: center;
       }
     }
   }

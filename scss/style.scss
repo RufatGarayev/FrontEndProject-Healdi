@@ -1,3 +1,4 @@
+// importing partials and reused sections
 @import "../scss/partials/extends";
 @import "../scss/reused_parts/header";
 @import "../scss/reused_parts/navbar";
@@ -11,20 +12,34 @@
 @import "../scss/reused_parts/contact";
 
 
-
+// main start
 main {
   // banner section start
   #banner {
     overflow: hidden;
     position: relative;
+    &:hover{
+      .carousel-control-prev {
+        left: -60px;
+        transition: 0.3s linear;
+      }
+      .carousel-control-next {
+        right: -60px;
+        transition: 0.3s linear;
+      }
+    }
 
     .carousel-control-prev {
+      font-size: 26px;
       position: absolute;
       left: -150px;
+      transition: 0.3s linear;
     }
     .carousel-control-next {
+      font-size: 26px;
       position: absolute;
       right: -150px;
+      transition: 0.3s linear;
     }
     img {
       width: 100%;
@@ -653,6 +668,7 @@ main {
   }
   // news-section end
 }
+// main end
 
 
 
@@ -811,6 +827,7 @@ main {
     max-width: 570px;
     width: 100%;
     margin: auto;
+    overflow: visible !important;
     padding: 0 15px;
     .bg-cover {
       overflow: hidden !important;

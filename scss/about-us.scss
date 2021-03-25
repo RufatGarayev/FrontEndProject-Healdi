@@ -1,3 +1,4 @@
+// importing partials and reused sections
 @import "../scss/partials/extends";
 @import "../scss/reused_parts/header";
 @import "../scss/reused_parts/navbar";
@@ -332,7 +333,6 @@ main {
     width: 100%;
     margin: auto;
     padding: 0px 15px;
-    overflow: hidden;
     .bg-cover {
       overflow: hidden !important;
       height: 300px !important;
