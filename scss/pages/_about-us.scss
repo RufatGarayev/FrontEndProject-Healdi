@@ -1,0 +1,216 @@
+// services section
+#department-services {
+  .services-caption {
+    @extend %section-caption;
+  }
+}
+
+// choose-us section
+.about-chooseUs {
+  .bg-cover {
+    height: 100% !important;
+
+    @media screen and (max-width: 991.98px) {
+      height: 300px !important;
+    }
+  }
+
+  .info-box-holder {
+    .info-box {
+      ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        li {
+          display: flex;
+          flex-direction: column;
+          padding: 0 15px;
+          width: 50%;
+          margin-top: 20px;
+          padding-left: 35px;
+          position: relative;
+          z-index: 1;
+          i {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 5px;
+            color: #1ebeb6;
+            font-weight: 600;
+          }
+          h5 {
+            color: #000000 !important;
+            font-weight: 600;
+          }
+          p {
+            font-size: 15px;
+            line-height: 30px;
+            color: #666666;
+          }
+        }
+      }
+    }
+  }
+}
+
+// team section
+#team {
+  background-color: #f7f7f7;
+  padding-top: 100px;
+  padding-bottom: 90px;
+
+  .caption {
+    @extend %section-caption;
+  }
+
+  .item {
+    margin-bottom: 30px;
+    .img-box {
+      width: 100% !important;
+      img {
+        width: 100%;
+      }
+    }
+    .contact {
+      background: linear-gradient(
+        90deg,
+        rgba(30, 190, 182, 1) 0%,
+        rgba(0, 130, 124, 1) 100%
+      );
+      position: absolute;
+      left: 50%;
+      bottom: 136px;
+      transform: translate(-50%, 0);
+      padding: 10px 25px 0 25px;
+      border-radius: 30px;
+      ul {
+        list-style: none;
+        li {
+          display: inline-flex;
+          margin: 0 5px;
+          position: relative;
+          padding: 0 5px;
+          &:first-of-type {
+            &::after {
+              content: "";
+              position: absolute;
+              right: -7px;
+              top: 5px;
+              height: 18px;
+              width: 1px;
+              background: rgba(255, 255, 255, 0.7);
+            }
+          }
+          a {
+            padding-top: 3px;
+            color: white;
+          }
+        }
+      }
+    }
+    .info {
+      padding: 30px;
+      padding-top: 50px;
+      background-color: white;
+      h5 {
+        font-size: 20px;
+        color: #233645;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+      span {
+        font-size: 15px;
+        color: #1ebeb6;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+// ======= Responsive Design ======= //
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #team {
+    .item {
+      .contact {
+        padding: 10px 20px 0 20px !important;
+      }
+
+      .info {
+        padding: 50px 22px 30px !important;
+        h5 {
+          font-size: 18px !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .about-chooseUs {
+    .info-box-holder {
+      .info-box {
+        width: 104.5% !important;
+        left: -16px !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .about-chooseUs {
+    max-width: 540px !important;
+
+    .info-box-holder {
+      .info-box {
+        left: -14px !important;
+        width: 105% !important;
+
+        ul {
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .about-chooseUs {
+    padding: 0 30px !important;
+
+    .info-box-holder {
+      .info-box {
+        h2 {
+          font-size: 26px !important;
+        }
+
+        padding: 60px 30px !important;
+        width: calc(100% + 29px) !important;
+        left: -14px !important;
+
+        ul {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+
+          li {
+            width: 100% !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 374.98px) {
+  .about-chooseUs {
+    .info-box-holder {
+      .info-box {
+        padding: 45px 24px 60px !important;
+      }
+    }
+  }
+
+  #team {
+    padding: 70px 0 60px !important;
+  }
+}

@@ -1,4 +1,4 @@
-// about section start
+// about section
 #about {
   width: 100%;
   background-color: #f7f7f7;
@@ -167,38 +167,37 @@
     }
   }
 }
-// about section end
 
-
-
-// ======= Responsive Design Start ======= //
+// ======= Responsive Design ======= //
 @media (min-width: 992px) and (max-width: 1199.98px) {
   #about {
-    .video {
-      .play-btn {
-        i {
-          &::after {
-            left: 21.5% !important;
-          }
+    .play-btn {
+      i {
+        &::after {
+          left: 21.5% !important;
         }
       }
     }
   }
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media screen and (max-width: 991.98px) {
   #about {
+    padding: 120px 0 125px 0;
+
     .text-sec {
-      margin-top: 100px !important;
+      padding-top: 100px;
     }
+
     .doctor-pic2 {
       padding-right: 0 !important;
       width: 100%;
-      padding-left: 20px !important;
+      padding-left: 20px;
       img {
         width: 100%;
       }
     }
+
     .video {
       a {
         i {
@@ -211,30 +210,27 @@
   }
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media screen and (max-width: 767.98px) {
   #about {
-    width: 100% !important;
-    padding: 50px 0 160px !important;
+    width: 100%;
+    padding: 50px 0 92px;
 
     .text-sec {
-      padding: 330px 0 0 !important;
+      padding: 340px 0 0;
       text-align: center;
 
       h5 {
-        font-size: 16px !important;
+        font-size: 16px;
       }
       h2 {
         font-size: 22px;
       }
       p {
-        font-size: 14px !important;
+        font-size: 14px;
+        margin-bottom: 30px;
       }
       ul {
         justify-content: center;
-        position: absolute;
-        bottom: -115px;
-        left: 0;
-        right: 0;
         li {
           margin-left: 10px;
           width: fit-content !important;
@@ -248,17 +244,11 @@
           }
         }
       }
-      .about-btn {
-        position: absolute;
-        bottom: -148px;
-        right: 0;
-        left: 0;
-      }
     }
+
     .doctor-pic2 {
-      padding-right: 0px !important;
+      padding-left: 0;
       img {
-        width: 100%;
         clip-path: none !important;
       }
     }
@@ -269,21 +259,23 @@
       right: 15px !important;
       left: 15px !important;
       bottom: -298px !important;
-      text-align: center !important;
+      text-align: center;
 
       .text {
         margin-top: 100px;
         h5 {
-          font-size: 16px;
+          font-size: 16px !important;
         }
         p {
           font-size: 15px;
         }
       }
+
       .video {
         position: absolute;
         left: 212px;
         top: 42px;
+
         .play-btn {
           a {
             i {
@@ -298,89 +290,39 @@
   }
 }
 
-@media (min-width: 375px) and (max-width: 575.98px) {
+@media screen and (max-width: 575.98px) {
   #about {
-    width: 100% !important;
-    padding: 50px 0 175px 0 !important;
-
     .text-sec {
-      padding: 330px 0 0 !important;
-      text-align: center;
-
-      h5 {
-        font-size: 16px !important;
-      }
-      h2 {
-        font-size: 22px;
-      }
-      p {
-        font-size: 14px !important;
-      }
       ul {
         flex-wrap: wrap;
-        justify-content: center;
-        position: absolute;
-        left: 0;
-        right: 0;
         padding: 0 20px;
-        li {
-          width: fit-content !important;
-          &:first-of-type {
-            margin-right: 20px;
-          }
-          .icon {
-            img {
-              margin-right: -1px;
-            }
-          }
-        }
       }
       .about-btn {
-        position: relative;
-        bottom: -150px !important;
-        right: 0px;
         .btnn {
-          padding: 17px 25px !important;
+          padding: 17px 25px;
         }
-      }
-    }
-    .doctor-pic2 {
-      padding-right: 0px !important;
-      img {
-        width: 100%;
-        clip-path: none !important;
       }
     }
 
     .video-box {
       height: 288px;
-      padding: 50px 35px !important;
-      right: 15px !important;
-      left: 15px !important;
       bottom: -305px !important;
-      text-align: center !important;
 
       .text {
-        margin-top: 100px;
         h5 {
-          font-size: 16px !important;
           font-weight: 700;
           margin-top: 30px !important;
         }
-        p {
-          font-size: 15px;
-        }
       }
+
       .video {
-        position: absolute;
         padding-right: 0 !important;
         left: 0 !important;
         right: 0 !important;
-        top: 42px;
         .play-btn {
           a {
             i {
-              margin-left: 0 !important;
+              margin-left: 0;
               &::after {
                 left: 50% !important;
               }
@@ -392,96 +334,16 @@
   }
 }
 
-@media (min-width: 300px) and (max-width: 374.98px) {
+@media screen and (max-width: 374.98px) {
   #about {
-    width: 100% !important;
-    padding: 50px 0 200px 0 !important;
-
     .text-sec {
-      padding: 330px 0 0 !important;
-      text-align: center;
-
-      h5 {
-        font-size: 16px !important;
-      }
-      h2 {
-        font-size: 22px;
-      }
-      p {
-        font-size: 14px !important;
-      }
       ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        position: absolute;
-        left: 0;
-        right: 0;
         li {
-          width: fit-content !important;
           &:first-of-type {
             margin: 0 0 15px !important;
           }
-          .icon {
-            img {
-              margin-right: -1px;
-            }
-          }
-        }
-      }
-      .about-btn {
-        position: relative;
-        bottom: -185px;
-        right: 0px;
-        .btnn {
-          padding: 17px 25px !important;
-        }
-      }
-    }
-    .doctor-pic2 {
-      padding-right: 0px !important;
-      img {
-        width: 100%;
-        clip-path: none !important;
-      }
-    }
-
-    .video-box {
-      height: 288px;
-      padding: 50px 35px !important;
-      right: 15px !important;
-      left: 15px !important;
-      bottom: -305px !important;
-      text-align: center !important;
-
-      .text {
-        margin-top: 100px;
-        h5 {
-          font-size: 16px !important;
-          font-weight: 700;
-          margin-top: 30px !important;
-        }
-        p {
-          font-size: 15px;
-        }
-      }
-      .video {
-        position: absolute;
-        padding-right: 0 !important;
-        left: 0 !important;
-        right: 0 !important;
-        top: 42px;
-        .play-btn {
-          a {
-            i {
-              margin-left: 0 !important;
-              &::after {
-                left: 50% !important;
-              }
-            }
-          }
         }
       }
     }
   }
 }
-// ======= Responsive Design End ======= //

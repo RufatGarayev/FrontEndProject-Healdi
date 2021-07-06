@@ -1,7 +1,8 @@
-// testimonials-section start
+// testimonials-section
 #testimonials {
   overflow: hidden;
   display: block !important;
+
   .caption {
     position: relative;
     padding: 220px 0 220px calc(80% - 281px);
@@ -126,10 +127,8 @@
     }
   }
 }
-// testimonials-section end
 
-
-// ======= Responsive Design Start ======= //
+// ======= Responsive Design ======= //
 @media (min-width: 992px) and (max-width: 1199.98px) {
   #testimonials{
     .owl-carousel{
@@ -139,19 +138,22 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media screen and (max-width: 991.98px) {
   #testimonials {
     padding-bottom: 100px;
     background-color: #1ebeb6;
+
     .caption {
       text-align: center;
-      padding: 101px 0 40px 4px !important;
+      padding: 101px 0 40px 4px;
+      
       .icon {
-        position: absolute !important;
-        left: calc(50% - 59px) !important;
-        top: 60px !important;
+        position: absolute;
+        left: calc(50% - 59px);
+        top: 60px;
       }
     }
+
     .owl-carousel {
       margin: 0 !important;
 
@@ -163,87 +165,23 @@
   }
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
-  #testimonials {
-    padding-bottom: 100px;
-    background-color: #1ebeb6;
-    .caption {
-      text-align: center;
-      padding: 101px 0 40px 4px !important;
-      .icon {
-        position: absolute !important;
-        left: calc(50% - 59px) !important;
-        top: 60px !important;
-      }
-    }
-    .owl-carousel {
-      margin: 0 !important;
-
-      .item {
-        background-color: white;
-        margin: 0 40px;
-      }
-    }
-  }
-}
-
-@media (min-width: 375px) and (max-width: 575.98px) {
+@media screen and (max-width: 575.98px) {
   #testimonials {
     padding-bottom: 60px;
-    background-color: #1ebeb6;
+
     .caption {
-      text-align: center;
-      padding: 101px 0 40px 4px !important;
       h5 {
-        font-size: 18px !important;
+        font-size: 18px;
       }
       h2 {
-        font-size: 26px !important;
-      }
-      .icon {
-        position: absolute !important;
-        left: calc(50% - 59px) !important;
-        top: 60px !important;
+        font-size: 26px;
       }
     }
-    .owl-carousel {
-      margin: 0 !important;
 
+    .owl-carousel {
       .item {
-        background-color: white;
         margin: 0 10px;
       }
     }
   }
 }
-
-@media (min-width: 300px) and (max-width: 374.98px) {
-  #testimonials {
-    padding-bottom: 60px;
-    background-color: #1ebeb6;
-    .caption {
-      text-align: center;
-      padding: 101px 0 40px 4px !important;
-      h5 {
-        font-size: 18px !important;
-      }
-      h2 {
-        font-size: 26px !important;
-      }
-      .icon {
-        position: absolute !important;
-        left: calc(50% - 59px) !important;
-        top: 60px !important;
-      }
-    }
-    .owl-carousel {
-      margin: 0 !important;
-
-      .item {
-        background-color: white;
-        margin: 0 10px;
-      }
-    }
-  }
-}
-// ======= Responsive Design End ======= //

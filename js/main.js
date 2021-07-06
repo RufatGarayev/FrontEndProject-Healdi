@@ -1,12 +1,11 @@
+// loader
+window.addEventListener("load", () => {
+  const preload = document.querySelector(".pre-icon");
+  preload.classList.add("loader-finish");
+});
+
 $(document).ready(function () {
-  // loader - start
-  $(window).on("load", function () {
-    $(".pre-icon").fadeOut("slow");
-  });
-  // loader - end
-
-
-  // nav-sticky - start
+  // nav-sticky 
   let stickyNavTop = $(".navbar").offset().top;
 
   let stickyNav = function () {
@@ -24,24 +23,18 @@ $(document).ready(function () {
   $(window).scroll(function () {
     stickyNav();
   });
-  // nav-sticky - end
 
-
-  // changing navbar li icon - start
+  // changing navbar li icon
   $(".navbar .blog").hover(function () {
     $(".navbar .blog i").toggleClass("fa-angle-up");
   });
-  // changing navbar li icon - end
 
-
-  // changing navbar button - start
+  // changing navbar button
   $(document).on("click", ".navbar button i", () => {
     $(".navbar button i").toggleClass("fa-times");
   });
-  // changing navbar button - end 
 
-
-  // play-box popup effect - start
+  // play-box popup effect
   $(".play-btn").click(function () {
     $(".play-box").css("display", "flex");
   });
@@ -51,19 +44,16 @@ $(document).ready(function () {
       $(".play-box").css("display", "none");
     }
   });
-  // play-box popup effect - end
 
-
-  // counter-up - start
+  // counter-up
   $(".counter-up").counterUp({
     delay: 50,
     time: 5000,
   });
-  // counter-up - end
 });
 
 
-// doctors section > tab - start
+// === doctors section > tab === //
 let myBtn = document.querySelectorAll("#doctors .nav-link");
 
 myBtn.forEach((btn) => {
@@ -74,10 +64,9 @@ myBtn.forEach((btn) => {
     document.getElementById(this.dataset.targetSection).classList.add("active");
   });
 });
-// doctors section > tab - end
 
 
-// === consultation section > dropdown - start === //
+// === consultation section > dropdown === //
 // taking the elements
 let selectedoptions = [...document.querySelectorAll(".selectedoption")];
 let selectedli = document.querySelector(".selectedoption.selected");
@@ -87,9 +76,7 @@ let genderul = document.querySelector("#genderselection");
 let categoryul = document.querySelector("#categoryselection");
 let oldactive;
 let inputArrow = document.querySelectorAll("#consultation form .form-group i");
-let input = document.querySelectorAll(
-  "#consultation form .form-group .selectboxinput"
-);
+let input = document.querySelectorAll("#consultation form .form-group .selectboxinput");
 
 // processes that happen when clicking on the input
 $(".selectboxinput").click(function () {
@@ -140,4 +127,3 @@ selectedoptions.forEach((s) => {
     $(parent).fadeOut();
   });
 });
-// === consultation section > dropdown - end === //

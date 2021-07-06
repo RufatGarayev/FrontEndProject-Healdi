@@ -1,0 +1,37 @@
+// google-maps
+.maps-area {
+  height: 100%;
+  iframe {
+    width: 100%;
+    height: 550px;
+  }
+}
+
+// ======= Responsive Design ======= //
+@media (min-width: 767px) and (max-width: 991.98px) {
+  .contact-in-contactPage {
+    padding: 100px 50px !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .contact-in-contactPage {
+    padding: 60px 25px !important;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .maps-area {
+    height: 100%;
+    iframe {
+      width: 100%;
+      height: 500px;
+    }
+  }
+}
+
+@media screen and (max-width: 374.98px) {
+  .contact-in-contactPage {
+    padding: 55px 15px 55px !important;
+  }
+}

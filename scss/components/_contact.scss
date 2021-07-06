@@ -2,6 +2,7 @@
 #contact {
   overflow: hidden;
   padding: 120px 0;
+
   .contact-items {
     .address-box {
       background-image: url(../img/contact-img.jpg);
@@ -90,39 +91,32 @@
   }
   }
 }
-// contact-section end
 
-
-
-// ======= Responsive Design Start ======= //
-@media (min-width: 768px) and (max-width: 991.98px) {
+// ======= Responsive Design ======= //
+@media screen and (max-width: 991.98px) {
   #contact {
-    padding: 120px 50px !important;
+    padding: 120px 50px;
+
     .address-box {
       margin-bottom: 482px;
+      
       .address-info {
         box-shadow: 0 0 10px #e7e7e7;
         bottom: -30px !important;
       }
     }
+
     .input {
       padding: 65px 0 0 !important;
     }
   }
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media screen and (max-width: 767.98px) {
   #contact {
-    padding: 90px 25px !important;
-    .address-box {
-      margin-bottom: 482px;
-      .address-info {
-        box-shadow: 0 0 10px #e7e7e7;
-        bottom: -30px !important;
-      }
-    }
+    padding: 90px 25px;
+
     .input {
-      padding: 65px 0 0 !important;
       .send-msg-btn{
         display: flex;
         justify-content: center;
@@ -131,15 +125,16 @@
   }
 }
 
-@media (min-width: 375px) and (max-width: 575.98px) {
+@media screen and (max-width: 575.98px) {
   #contact {
-    padding: 90px 15px 80px !important;
+    padding: 90px 15px 80px;
+
     .address-box {
       height: 80% !important;
-      margin-bottom: 482px;
+
       .address-info {
-        box-shadow: 0 0 10px #e7e7e7;
         bottom: -38px !important;
+
         ul {
           flex-direction: column;
           justify-content: space-between !important;
@@ -147,8 +142,10 @@
         }
       }
     }
+
     .input {
       padding: 5px 0 0 !important;
+
       .caption {
         text-align: center;
         h2 {
@@ -157,47 +154,17 @@
             font-size: 20px;
           }
         }
-      }
-      .send-msg-btn{
-        display: flex;
-        justify-content: center;
       }
     }
   }
 }
 
-@media (min-width: 300px) and (max-width: 374.98px) {
+@media screen and (max-width: 374.98px) {
   #contact {
-    padding: 90px 15px 80px !important;
     .address-box {
-      height: 80% !important;
-      margin-bottom: 482px;
       .address-info {
-        box-shadow: 0 0 10px #e7e7e7;
         bottom: -63px !important;
-        ul {
-          flex-direction: column;
-          justify-content: space-between !important;
-          height: 170px;
-        }
-      }
-    }
-    .input {
-      padding: 5px 0 0 !important;
-      .caption {
-        text-align: center;
-        h2 {
-          font-size: 24px !important;
-          strong {
-            font-size: 20px;
-          }
-        }
-      }
-      .send-msg-btn{
-        display: flex;
-        justify-content: center;
       }
     }
   }
 }
-// ======= Responsive Design End ======= //

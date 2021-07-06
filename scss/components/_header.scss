@@ -1,4 +1,4 @@
-// header start
+// header
 header {
   display: flex;
   align-items: center;
@@ -46,10 +46,8 @@ header {
     }
   }
 }
-// header end
 
-
-// ===== Responsive Design Start ===== //
+// ===== Responsive Design ===== //
 @media (min-width: 768px) and (max-width: 991.98px) {
   header {
     .covid {
@@ -64,21 +62,8 @@ header {
   }
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media screen and (max-width: 767.98px) {
   header {
     display: none;
   }
 }
-
-@media (min-width: 375px) and (max-width: 575.98px) {
-  header {
-    display: none;
-  }
-}
-
-@media (min-width: 300px) and (max-width: 374.98px) {
-  header {
-    display: none;
-  }
-}
-// ===== Responsive Design End ===== //

@@ -1,0 +1,161 @@
+// choose-us section
+#choose-us {
+  .bg-cover {
+    background-image: url(../img/doctor3.jpg);
+    height: 839px;
+    width: 100% !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+  }
+
+  .info-box-holder {
+    padding: 120px 0 100px 0;
+    .info-box {
+      padding: 80px 50px;
+      background: #ffffff;
+      box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.08);
+      position: relative;
+      left: -120px;
+      border-bottom: 3px solid #1ebeb6;
+      &::after {
+        content: "";
+        position: absolute;
+        right: -120px;
+        top: -120px;
+        height: 300px;
+        width: 300px;
+        background: url(../img/dotted-shape.png);
+        z-index: -1;
+        background-repeat: no-repeat;
+        opacity: 0.2;
+      }
+      h5 {
+        color: #1ebeb6;
+        font-weight: 600;
+        margin-bottom: 25px;
+        font-size: 20px;
+      }
+      h2 {
+        font-weight: 600;
+        margin-bottom: 25px;
+        font-size: 32px;
+      }
+      p {
+        font-size: 15px;
+        line-height: 30px;
+        color: #666666;
+      }
+      .par {
+        padding-bottom: 30px;
+      }
+
+      .btn2 {
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(
+          90deg,
+          rgba(30, 190, 182, 1) 0%,
+          rgba(0, 130, 124, 1) 100%
+        );
+        z-index: 1;
+        color: #ffffff;
+        padding: 20px 25px;
+        font-weight: 700;
+        transition: 0.3s linear;
+        overflow: hidden;
+        font-size: 17px;
+        i {
+          font-size: 14px;
+          height: 30px;
+          background: #ffffff;
+          color: #1ebeb6;
+          line-height: 30px;
+          text-align: center;
+          width: 30px;
+          border-radius: 50%;
+          margin-right: 5px;
+          &:hover {
+            text-decoration: none !important;
+          }
+        }
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+// ======= Responsive Design ======= //
+@media screen and (max-width: 991.98px) {
+  #choose-us {
+    max-width: 766px;
+    width: 100%;
+    margin: auto;
+    padding: 0 39px 0 44px;
+
+    .bg-cover {
+      height: 300px;
+    }
+
+    .info-box-holder {
+      padding-bottom: 0;
+      .info-box {
+        width: 100%;
+        position: relative;
+        top: -120px;
+        left: 0;
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  #choose-us {
+    max-width: 570px;
+    overflow: visible !important;
+    padding: 0 15px;
+
+    .bg-cover {
+      overflow: hidden;
+    }
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  #choose-us {
+    padding: 0 20px;
+
+    .bg-cover {
+      height: 300px;
+    }
+
+    .info-box-holder {
+      .info-box {
+        padding: 50px 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 374.98px) {
+  #choose-us {
+    .info-box-holder {
+      .info-box {
+        padding: 40px 22px;
+
+        h5 {
+          font-size: 16px;
+        }
+
+        h2 {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}

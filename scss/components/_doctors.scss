@@ -1,57 +1,15 @@
-// doctors section start
+// doctors section
 #doctors {
   width: 100%;
   overflow: hidden;
   background-color: #f7f7f7;
   padding: 120px 0 120px 0;
-  .caption {
-    h4 {
-      color: #1ebeb6;
-      font-size: 22px;
-      font-weight: 600;
-      margin-bottom: 15px;
-    }
-    h2 {
-      font-size: 32px;
-      font-weight: 600;
-      padding-bottom: 20px;
-      margin-bottom: 0;
-      position: relative;
-      letter-spacing: 1px;
-      &::before {
-        content: "";
-        background: #1ebeb6;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        height: 2px;
-        width: 40px;
-        margin-left: -25px;
-      }
-      &::after {
-        content: "";
-        background: #1ebeb6;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        height: 2px;
-        width: 5px;
-        margin-left: 20px;
-      }
-    }
-    p {
-      font-size: 15px;
-      color: #666666;
-      margin: 0;
-      margin-top: 20px;
-      padding: 0 20px;
-      line-height: 30px;
-    }
 
-    @extend %section-header;
+  .caption {
+    @extend %section-caption;
   }
+
   .doctor-segments {
-    padding-top: 60px;
     ul {
       display: block;
       margin-right: 50px;
@@ -158,6 +116,7 @@
       }
     }
   }
+
   @keyframes fadeEffect {
     from {
       opacity: 0;
@@ -167,30 +126,23 @@
     }
   }
 }
-// doctors section end
 
-
-
-// ======= Responsive Design Start ======= //
+// ======= Responsive Design ======= //
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  #doctors{
-    .tab-content{
-      .doctors-big-img{
-        width: 315px !important;
-      }
+  #doctors {
+    .doctors-big-img {
+      width: 315px !important;
     }
   }
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media screen and (max-width: 991.98px) {
   #doctors {
-    padding: 100px 65px 120px 65px;
-    .caption {
-      padding-right: 56px;
-      text-align: center;
-    }
+    padding: 100px 65px;
+
     .doctor-segments {
       width: 100% !important;
+
       #tabs {
         width: 100%;
         display: flex;
@@ -204,8 +156,10 @@
           background-color: #e1f1f1;
         }
       }
+
       .tab-content {
         margin-top: 40px;
+
         .doctors-big-img {
           width: 100% !important;
           padding: 0 14px 0 7px;
@@ -225,143 +179,65 @@
   }
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media screen and (max-width: 767.98px) {
   #doctors {
-    padding: 100px 15px 120px 15px;
-    .caption {
-      text-align: center;
-    }
+    padding: 100px 15px;
+
     .doctor-segments {
-      width: 100% !important;
       #tabs {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        background-color: #f7f7f7;
-        padding: 0 15px 0 15px;
-        border-bottom: 0;
+        padding: 0 15px;
 
         .nav-item {
           width: 100% !important;
-          margin: 5px;
-          background-color: #e1f1f1;
         }
       }
+
       .tab-content {
-        margin-top: 40px;
         .doctors-big-img {
-          width: 100% !important;
           padding: 0 21px;
-          img {
-            width: 100%;
-          }
         }
 
         .info {
           margin: 0 22px;
-          &::after {
-            display: none;
-          }
         }
       }
     }
   }
 }
 
-@media (min-width: 375px) and (max-width: 575.98px) {
+@media screen and (max-width: 575.98px) {
   #doctors {
-    padding: 100px 10px 80px 10px !important;
-    .caption {
-      text-align: center;
-    }
+    padding: 100px 10px 80px;
+
     .doctor-segments {
-      width: 100% !important;
-      #tabs {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        background-color: #f7f7f7;
-        padding: 0 15px 0 15px;
-        border-bottom: 0;
-
-        .nav-item {
-          width: 100% !important;
-          margin: 5px;
-          background-color: #e1f1f1;
-        }
-      }
       .tab-content {
-        margin-top: 40px;
         .doctors-big-img {
-          width: 100% !important;
           padding: 0 22px;
-          img {
-            width: 100%;
-          }
-        }
-
-        .info {
-          margin: 0 22px;
-          &::after {
-            display: none;
-          }
         }
       }
     }
   }
 }
 
-@media (min-width: 300px) and (max-width: 374.98px) {
+@media screen and (max-width: 374.98px) {
   #doctors {
-    padding: 50px 10px 30px !important;
-    .caption {
-      text-align: center;
+    padding: 50px 10px 30px;
 
-      h4 {
-        font-size: 18px !important;
-      }
+    .caption {
       h2 {
         font-size: 24px !important;
       }
       p {
-        padding: 0 !important;
+        padding: 0;
       }
     }
+
     .doctor-segments {
-      width: 100% !important;
-      #tabs {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        background-color: #f7f7f7;
-        padding: 0 15px 0 15px;
-        border-bottom: 0;
-
-        .nav-item {
-          width: 100% !important;
-          margin: 5px;
-          background-color: #e1f1f1;
-        }
-      }
       .tab-content {
-        margin-top: 40px;
-        .doctors-big-img {
-          width: 100% !important;
-          padding: 0 22px;
-          img {
-            width: 100%;
-          }
-        }
-
         .info {
-          margin: 0 22px;
           padding: 43px 20px !important;
-          &::after {
-            display: none;
-          }
         }
       }
     }
   }
 }
-// ======= Responsive Design End ======= //

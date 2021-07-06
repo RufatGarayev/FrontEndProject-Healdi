@@ -1,4 +1,4 @@
-// breadcrumb-section start
+// breadcrumb-section
 #breadcrumb {
   background-image: url(../img/back-pic1.png);
   background-position: center center;
@@ -60,12 +60,9 @@
     }
   }
 }
-// breadcrumb-section end
 
-
-
-// ======= Responsive Design Start ======= //
-@media (min-width: 300px) and (max-width: 767.98px) {
+// ======= Responsive Design ======= //
+@media screen and (max-width: 767.98px) {
   #breadcrumb {
     height: 300px;
     h1{
@@ -79,4 +76,3 @@
     }
   }
 }
-// ======= Responsive Design End ======= //
