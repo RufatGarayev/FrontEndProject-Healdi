@@ -38,6 +38,7 @@
         }
       }
     }
+
     .tab-content {
       transition: linear 0.3s;
       .content {
@@ -222,15 +223,6 @@
 @media screen and (max-width: 374.98px) {
   #doctors {
     padding: 50px 10px 30px;
-
-    .caption {
-      h2 {
-        font-size: 24px !important;
-      }
-      p {
-        padding: 0;
-      }
-    }
 
     .doctor-segments {
       .tab-content {

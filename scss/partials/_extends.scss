@@ -53,4 +53,10 @@
       font-size: 26px !important;
     }
   }
+
+  @media screen and (max-width: 374.98px) {
+    p{
+      padding: 0;
+    }
+  }
 }

@@ -58,6 +58,12 @@
   }
 }
 
+@media screen and (max-width: 374.98px) {
+  #blogs .site-heading p, #doctors .caption p, #services .services-caption p, #department-services .services-caption p, #team .caption p {
+    padding: 0;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1794,9 +1800,6 @@ footer .footer-bottom .social-media ul li a:hover {
 }
 
 @media screen and (max-width: 575.98px) {
-  #consultation {
-    padding: 60px 20px 120px !important;
-  }
   #consultation .appoinment-box {
     width: calc(100% - 33px);
   }
@@ -1979,6 +1982,7 @@ footer .footer-bottom .social-media ul li a:hover {
 @media screen and (max-width: 374.98px) {
   #contact .address-box .address-info {
     bottom: -63px !important;
+    padding: 30px 0 !important;
   }
 }
 
@@ -2409,12 +2413,6 @@ footer .footer-bottom .social-media ul li a:hover {
 @media screen and (max-width: 374.98px) {
   #doctors {
     padding: 50px 10px 30px;
-  }
-  #doctors .caption h2 {
-    font-size: 24px !important;
-  }
-  #doctors .caption p {
-    padding: 0;
   }
   #doctors .doctor-segments .tab-content .info {
     padding: 43px 20px !important;
@@ -3000,30 +2998,30 @@ footer .footer-bottom .social-media ul li a:hover {
   border-radius: 50%;
 }
 
-#consultation {
+.home-consultation {
   padding: 120px 0;
 }
 
-@media (min-width: 992px) and (max-width: 1199.98px) {
+@media screen and (max-width: 1199.98px) {
   #services .item .img-box {
-    width: 100% !important;
+    width: 100%;
     padding-right: 20px;
   }
   #services .item .info {
-    padding: 33px !important;
+    padding: 33px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media screen and (max-width: 991.98px) {
   #banner img {
-    height: 580px !important;
+    height: 580px;
   }
   #banner .carousel-item .layer {
-    padding: 0px 40px !important;
+    padding: 0px 40px;
   }
   #banner .carousel-item .layer .fa-heartbeat {
-    top: 70px !important;
-    left: 15px !important;
+    top: 70px;
+    left: 15px;
   }
   #entry .box {
     margin-top: 40px;
@@ -3032,188 +3030,65 @@ footer .footer-bottom .social-media ul li a:hover {
   }
   #entry .box-1 {
     width: 100%;
-  }
-  #services .services-caption {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #services .services-caption h4 {
-    font-size: 18px !important;
-  }
-  #services .services-caption h2 {
-    font-size: 26px !important;
-  }
-  #services .services-caption p {
-    font-size: 14px !important;
   }
   #services .item {
     margin: 0 25px;
   }
-  #services .item .img-box {
-    width: 680px !important;
-  }
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media screen and (max-width: 767.98px) {
   #banner img {
-    height: 350px !important;
+    height: 350px;
   }
   #banner .carousel-item .layer {
     text-align: center;
-    padding: 0px 40px !important;
   }
   #banner .carousel-item .layer h4 {
-    font-size: 18px !important;
+    font-size: 18px;
   }
   #banner .carousel-item .layer h1 {
-    font-size: 36px !important;
+    font-size: 36px;
   }
   #banner .carousel-item .layer .fa-heartbeat {
-    top: 20px !important;
-    left: calc(50% - 70px) !important;
-  }
-  #entry .box {
-    margin-top: 40px;
-    margin-bottom: 35px;
-    padding: 0 20px !important;
-  }
-  #entry .box-1 {
-    width: 100%;
+    top: 20px;
+    left: calc(50% - 70px);
   }
   #services {
-    padding: 100px 30px !important;
+    padding: 100px 30px;
   }
-  #services .services-caption {
-    padding-bottom: 40px !important;
-  }
-  #services .services-caption h4 {
-    font-size: 18px !important;
-  }
-  #services .services-caption h2 {
-    font-size: 22px !important;
-  }
-  #services .services-caption p {
-    font-size: 14px !important;
+  #services .item {
+    margin: 0;
   }
   #services .item .img-box {
-    width: 96% !important;
+    width: 100%;
+  }
+  .home-consultation {
+    padding: 60px 0 70px !important;
   }
 }
 
-@media (min-width: 375px) and (max-width: 575.98px) {
-  #banner img {
-    height: 350px !important;
-  }
+@media screen and (max-width: 575.98px) {
   #banner .carousel-item .layer {
-    text-align: center;
-    padding: 0px 40px !important;
-  }
-  #banner .carousel-item .layer h4 {
-    font-size: 18px !important;
-  }
-  #banner .carousel-item .layer h1 {
-    font-size: 36px !important;
-  }
-  #banner .carousel-item .layer .fa-heartbeat {
-    top: 20px !important;
-    left: calc(50% - 70px) !important;
+    padding: 0px 40px;
   }
   #entry {
-    padding: 60px 0 40px !important;
-  }
-  #entry .box {
-    margin-top: 40px;
-    margin-bottom: 35px;
-    padding: 0 20px !important;
-  }
-  #entry .box-1 {
-    width: 100%;
+    padding: 60px 0 40px;
   }
   #services {
-    padding: 75px 30px !important;
+    padding: 75px 30px;
   }
-  #services .services-caption {
-    padding-bottom: 40px !important;
-  }
-  #services .services-caption h4 {
-    font-size: 18px !important;
-  }
-  #services .services-caption h2 {
-    font-size: 22px !important;
-  }
-  #services .services-caption p {
-    font-size: 14px !important;
-    padding: 0 !important;
-  }
-  #services .item .img-box {
-    width: 100% !important;
-    padding-right: 20px;
+  .home-consultation {
+    padding: 70px 20px !important;
   }
 }
 
 @media screen and (max-width: 374.98px) {
-  #banner img {
-    height: 350px !important;
-  }
-  #banner .carousel-item .layer {
-    text-align: center;
-    padding: 0px 40px !important;
-  }
-  #banner .carousel-item .layer h4 {
-    font-size: 18px !important;
-  }
-  #banner .carousel-item .layer h1 {
-    font-size: 36px !important;
-  }
-  #banner .carousel-item .layer .fa-heartbeat {
-    top: 20px !important;
-    left: calc(50% - 70px) !important;
-  }
-  #entry {
-    padding: 60px 0 40px !important;
-  }
-  #entry .box {
-    margin-top: 40px;
-    margin-bottom: 35px;
-    padding: 0 20px !important;
-  }
-  #entry .box-1 {
-    width: 100%;
-  }
   #entry .doctor-pic::before {
-    display: none !important;
+    display: none;
   }
   #entry .doctor-pic::after {
-    height: 270px !important;
-    width: 270px !important;
-  }
-  #services {
-    padding: 75px 30px !important;
-  }
-  #services .services-caption {
-    padding-bottom: 40px !important;
-  }
-  #services .services-caption h4 {
-    font-size: 18px !important;
-  }
-  #services .services-caption h2 {
-    font-size: 22px !important;
-  }
-  #services .services-caption p {
-    font-size: 14px !important;
-    padding: 0 !important;
-  }
-  #services .item .img-box {
-    width: 100% !important;
-    padding-right: 20px;
+    height: 270px;
+    width: 270px;
   }
 }
 
@@ -3475,8 +3350,7 @@ footer .footer-bottom .social-media ul li a:hover {
     font-weight: 700;
   }
   #consultation {
-    padding: 0 0 120px;
-    padding-top: 0 !important;
+    padding: 0 0 120px !important;
   }
 }
 
@@ -3504,7 +3378,7 @@ footer .footer-bottom .social-media ul li a:hover {
     margin: 0 20px;
   }
   #consultation {
-    padding: 0px 20px 65px !important;
+    padding: 0px 20px 65px;
   }
   #consultation .main-holder p {
     padding-bottom: 5px !important;
@@ -3516,7 +3390,7 @@ footer .footer-bottom .social-media ul li a:hover {
     padding: 60px 0 110px;
   }
   #consultation {
-    padding: 0px 20px 70px !important;
+    padding: 0px 20px 70px;
   }
 }
 
