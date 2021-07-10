@@ -30,7 +30,7 @@ $(document).ready(function () {
   });
 
   // changing navbar button
-  $(document).on("click", ".navbar button i", () => {
+  $(document).on("click", ".navbar button", () => {
     $(".navbar button i").toggleClass("fa-times");
   });
 

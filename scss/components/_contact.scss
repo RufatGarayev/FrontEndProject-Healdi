@@ -72,23 +72,23 @@
       textarea {
         height: 150px;
       }
-      .send-msg-btn{
-      button {
-        background: linear-gradient(
-          90deg,
-          rgba(30, 190, 182, 1) 0%,
-          rgba(0, 130, 124, 1) 100%
-        );
-        padding: 15px 35px;
-        border-radius: 30px;
-        border: none !important;
-        outline: none !important;
-        color: #ffffff;
-        font-weight: 700;
-        margin-top: 15px;
+      .send-msg-btn {
+        button {
+          background: linear-gradient(
+            90deg,
+            rgba(30, 190, 182, 1) 0%,
+            rgba(0, 130, 124, 1) 100%
+          );
+          padding: 15px 35px;
+          border-radius: 30px;
+          border: none !important;
+          outline: none !important;
+          color: #ffffff;
+          font-weight: 700;
+          margin-top: 15px;
+        }
       }
     }
-  }
   }
 }
 
@@ -99,7 +99,7 @@
 
     .address-box {
       margin-bottom: 482px;
-      
+
       .address-info {
         box-shadow: 0 0 10px #e7e7e7;
         bottom: -30px !important;
@@ -117,7 +117,7 @@
     padding: 90px 25px;
 
     .input {
-      .send-msg-btn{
+      .send-msg-btn {
         display: flex;
         justify-content: center;
       }
