@@ -891,8 +891,9 @@ footer .footer-bottom .social-media ul li a:hover {
   width: 100%;
 }
 
-#about .text-sec ul li .icon {
-  margin-right: 18px;
+#about .text-sec ul li .icon i {
+  font-size: 38px;
+  margin-bottom: 10px;
 }
 
 #about .text-sec ul li .content h5 {
@@ -2072,13 +2073,6 @@ footer .footer-bottom .social-media ul li a:hover {
   height: 90px;
   width: 90px;
   line-height: 90px;
-}
-
-#department-services .item-box .owl-carousel .owl-stage-outer .item .info .icon img {
-  width: 55%;
-  position: absolute;
-  left: 20px;
-  top: 20px;
 }
 
 #department-services .item-box .owl-carousel .owl-stage-outer .item .info .icon::before {

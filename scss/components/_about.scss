@@ -117,7 +117,10 @@
         padding-top: 5px;
         width: 100%;
         .icon {
-          margin-right: 18px;
+          i{
+            font-size: 38px;
+            margin-bottom: 10px;
+          }
         }
         .content {
           h5 {
