@@ -141,7 +141,6 @@
     i {
       display: inline-block;
       font-size: 40px;
-      margin-bottom: 40px;
       color: #1ebeb6;
       height: 100px;
       width: 100px;
@@ -149,19 +148,6 @@
       border-radius: 50%;
       position: relative;
       z-index: 1;
-      &::after {
-        position: absolute;
-        left: -10px;
-        top: -10px;
-        content: "";
-        height: 120px;
-        width: 120px;
-        background: url(https://webhunt.store/themeforest/healdi/assets/img/shape/3.svg);
-        background-size: contain;
-        z-index: -2;
-        background-position: center;
-        background-repeat: no-repeat;
-      }
     }
     h4 {
       font-size: 22px;

@@ -2771,7 +2771,6 @@ footer .footer-bottom .social-media ul li a:hover {
 #entry .box i {
   display: inline-block;
   font-size: 40px;
-  margin-bottom: 40px;
   color: #1ebeb6;
   height: 100px;
   width: 100px;
@@ -2779,20 +2778,6 @@ footer .footer-bottom .social-media ul li a:hover {
   border-radius: 50%;
   position: relative;
   z-index: 1;
-}
-
-#entry .box i::after {
-  position: absolute;
-  left: -10px;
-  top: -10px;
-  content: "";
-  height: 120px;
-  width: 120px;
-  background: url(https://webhunt.store/themeforest/healdi/assets/img/shape/3.svg);
-  background-size: contain;
-  z-index: -2;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 #entry .box h4 {
